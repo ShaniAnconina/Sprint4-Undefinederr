@@ -18,6 +18,7 @@ export function App() {
             <Routes>
               <Route element={<HomePage />} path="/" />
               <Route element={<GigIndex />} path="/gig" />
+              <Route element={<GigDetails />} path="/gig/:gigId" />
             </Routes>
           </main>
 
