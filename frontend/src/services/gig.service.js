@@ -5,7 +5,7 @@ const STORAGE_KEY = 'gig_DB'
 _createGigs()
 
 
-export const GigService = {
+export const gigService = {
     query,
 }
 
@@ -17,19 +17,24 @@ function _createGigs() {
     let Gigs = utilService.loadFromStorage(STORAGE_KEY)
     if (!Gigs || !Gigs.length) {
         Gigs = []
-        Gigs.push(_createGig('Doll'))
+        Gigs.push(_createGig('I will be your social media marketing manager'))
+        Gigs.push(_createGig('I will setup modern wordpress website design or blog design'))
+        Gigs.push(_createGig('I will be your social media manager and personal assistant'))
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
     return Gigs
 }
 
-function _createGig(name = 'New Gig') {
+function _createGig(title, imgUrl = '../assets/img/freelancer.jpg') {
     return {
         _id: utilService.makeId(),
-        name,
-        price: utilService.getRandomIntInclusive(10, 100),
-        labels: ['Doll', 'Battery Powered', 'Baby'],
-        createdAt: Date.now(),
-        inStock: 'true'
+        title,
+        description: 'Lorem ipsum dolor',
+        imgUrl,
+        price: utilService.getRandomIntInclusive(10, 300),
+        daysToMake: utilService.getRandomIntInclusive(1, 10),
+        tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
+        likedByUsers: []
     }
 }
+
