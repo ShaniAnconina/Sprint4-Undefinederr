@@ -5,6 +5,7 @@ import { AppFooter } from './cmps/app-footer'
 import { AppHeader } from './cmps/app-header'
 import { GigIndex } from './pages/gig-index'
 import { HomePage } from './pages/home-page'
+import { GigDetails } from './pages/gig-details'
 
 
 export function App() {
