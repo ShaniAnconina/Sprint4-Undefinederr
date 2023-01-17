@@ -1,10 +1,11 @@
 
-// export function GigPreview({gig}) {
+export function GigPreview({gig}) {
 
 
-//     return (
-//        <section className="gig-preview">
-//         {gig}
-//        </section>
-//     )
-// }
+    return (
+       <section className="gig-preview">
+        <img src={gig.imgUrl} />
+        <h3>{gig.title}</h3>
+       </section>
+    )
+}
