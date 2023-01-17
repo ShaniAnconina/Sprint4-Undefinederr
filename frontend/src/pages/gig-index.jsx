@@ -1,8 +1,7 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
 import { GigList } from "../cmps/gig-list"
-import { gigService } from "../services/gig.service"
-import { loadGigs } from "../store/gig/gig.action";
+import { loadGigs } from "../store/gig/gig.action"
 
 export function GigIndex() {
     const gigs = useSelector((storeState) => storeState.gigModule.gigs)
@@ -17,7 +16,6 @@ export function GigIndex() {
     useEffect(()=> {
         loadGigs()
     }, [])
-
 
 
     return (

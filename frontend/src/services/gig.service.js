@@ -7,10 +7,15 @@ _createGigs()
 
 export const gigService = {
     query,
+    get
 }
 
 function query() {
     return storageService.query(STORAGE_KEY)
+}
+
+function get(gigId) {
+    return storageService.get(STORAGE_KEY, gigId)
 }
 
 function _createGigs() {

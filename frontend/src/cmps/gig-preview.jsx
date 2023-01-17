@@ -4,7 +4,7 @@ export function GigPreview({gig}) {
 
     return (
        <section className="gig-preview">
-        <img src={gig.imgUrl} />
+        <img src={require('../assets/img/freelancer.jpg')} />
         <h3>{gig.title}</h3>
        </section>
     )
