@@ -1,10 +1,17 @@
 import { useParams } from "react-router-dom"
 import { useRef } from "react"
-
+import { useEffect } from "react"
 
 export function GigDetails() {
     const { gigId } = useParams()
     const elReview = useRef(null)
+
+    useEffect(() => {
+        loadGig()
+    }, [])
+    async function loadGig(){
+        
+    }
 
     function goToReview() {
         const revewPlace = elReview.current.scrollIntoView({ behavior: "smooth" })
@@ -13,7 +20,14 @@ export function GigDetails() {
 
     return (
         <section className="gig-details">
-        //TODO:navlink breadcrumds
+
+            //TODO:stiky buying&&contect(chet)
+            <section className="pay-chat-container">
+                <article className="pay"></article>
+                <button className="contact-seller">Contact Seller</button>
+            </section>
+
+            //TODO:navlink breadcrumds
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
         //TODO:mini user: photo, name, miniInfo(level..) , rate(stars+ reviewsCount) , langs...
             <div className="mini-user"> Lorem ipsum dolor sit amet.</div>
@@ -32,7 +46,7 @@ export function GigDetails() {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem.</p>
 
             <strong>What you will get:</strong>
-            
+
             //TODO: about the seller (img, name, mini-des, rate, contact chat link)
             //TODO: about the seller div border()
             //TODO: packeges 
@@ -45,8 +59,7 @@ export function GigDetails() {
             //TODO: filter, checkBox (reviews with imgs)
             //TODO: photo, name || country and name || stars , date || body || review for the review(helpful?yes/no)
 
-
-            <div ref={elReview} id='reviews' >reviews!!!!!!!!!!!!!!</div>
+            <article ref={elReview} id='reviews'>reviews!!!!!!!!!!!!!!</article>
 
         </section>
     )
