@@ -9,8 +9,6 @@ export function AppHeader() {
                 <NavLink to="/"><span className="logo">Fiverr.</span></NavLink>
                 <nav>
                     <NavLink to="/gig">Explore</NavLink>
-                    <NavLink to="/gig">Explore</NavLink>
-                    <NavLink to="/gig">Explore</NavLink>
                     <p>Sign in</p>
                     <p>Join</p>
                 </nav>
