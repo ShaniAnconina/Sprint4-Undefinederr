@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export function AppHeader() {
+export function GuestAppHeader() {
 
 
     return (
@@ -8,9 +8,10 @@ export function AppHeader() {
             <div className="app-header-container">
                 <NavLink to="/"><span className="logo">Fiverr.</span></NavLink>
                 <nav>
-                    <NavLink to="/gig">Explore</NavLink>
-                    <NavLink to="/gig">Explore</NavLink>
-                    <NavLink to="/gig">Explore</NavLink>
+                    {/* <NavLink to="/gig">Explore</NavLink> */}
+                    {/* <NavLink to="/join">Join</NavLink>
+                    <NavLink to="/signin">Sign in</NavLink> */}
+                    <p>explore</p>
                     <p>Sign in</p>
                     <p>Join</p>
                 </nav>
