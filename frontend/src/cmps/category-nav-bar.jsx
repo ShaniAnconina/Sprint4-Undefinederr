@@ -14,8 +14,7 @@ export function CategoryNav() {
     }
 
 
-    return <ul className='flex space-around'>
-        <li key={titles[0]}><a onClick={()=>{OnSelectCatogery(titles[0])}}>{titles[0]}</a></li>
+    return <ul className='flex space-around none-list-style'>
 {
     titles.map((title)=> <li key={title}><a onClick={()=>{OnSelectCatogery(title)}}>{title}</a></li>)
 }

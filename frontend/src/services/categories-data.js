@@ -2,7 +2,7 @@
 
 export function getCategories() {
     const categories = {
-    graphics : [
+    'Graphics & Design' : [
         [
             "Logo & Brand Identity",
             "Logo Design",
@@ -93,7 +93,7 @@ export function getCategories() {
 
 
     ],
-    digitalMarketing : [
+    'Digital Marketing' : [
         [
             "Search",
             "Search Engine Optimization (SEO)",
@@ -138,7 +138,7 @@ export function getCategories() {
         ]
 
     ],
-    writing : [
+    'Writing & Translation' : [
         [
             "Content Writing & Editing",
             "Articles & Blog Posts",
@@ -195,7 +195,7 @@ export function getCategories() {
         ]
 
     ],
-    video : [
+    'Video & Animation' : [
         [
             "Editing & Post-Production",
             "Video Editing",
@@ -252,7 +252,7 @@ export function getCategories() {
             "Other"
         ]
     ],
-    audio : [
+    'Music & Audio' : [
         [
             "Music Production & Writing",
             "Producers & Composers",
@@ -296,7 +296,7 @@ export function getCategories() {
         ]
 
     ],
-    software : [
+    'Programming & Tech' : [
         [
             "Websites",
             "Website Development",
@@ -340,7 +340,7 @@ export function getCategories() {
             "Other"
         ]
     ],
-    business : [
+    'Business' : [
         [
             "Business",
             "Business Plans",

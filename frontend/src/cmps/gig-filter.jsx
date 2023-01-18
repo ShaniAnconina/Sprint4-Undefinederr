@@ -8,9 +8,10 @@ import { utilService } from "../services/util.service.js"
 import { setfilter } from "../store/gig/gig.action.js"
 import { store } from "../store/gig/store.js"
 import { useNavigate } from "react-router-dom"
+import { SearchBar } from "./search-bar.jsx"
 
 
-export function GigFilter() {
+export function GigFilter({suggestShown=true}) {
 
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
     const navigate = useNavigate()
@@ -47,26 +48,28 @@ export function GigFilter() {
 
     }
 
-    return <form className="filter-form" onSubmit={onFilterSubmit}>
-        <div className="filters-container flex">
-            <input
-                className="search-bar"
-                type="text"
-                id="txt"
-                name="txt"
-                placeholder="Try 'building mobile app'"
-                value={filterByToEdit.txt}
-                onChange={onChange}
-            />
-            <button className="search-bar-btn">search</button>
-        </div>
-        <div className="flex">
+    return <div>
+        {/* <SearchBar onChange ={onChange} onFilterSubmit={onFilterSubmit} filterByToEdit={filterByToEdit}/> */}
+        <form className="filter-form" onSubmit={onFilterSubmit}>
+            <div className="filters-container flex">
+                <input
+                    className="search-bar"
+                    type="text"
+                    id="txt"
+                    name="txt"
+                    placeholder="Try 'building mobile app'"
+                    value={filterByToEdit.txt}
+                    onChange={onChange}
+                />
+                <button className="search-bar-btn">search</button>
+            </div>
+        </form>
+        <div className="flex" style={{display: suggestShown ? 'block':'none'}}>
             <p>popular:</p>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("websiteDesign")}>Website Design</button>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("wordpress")}>Wordpress</button>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
         </div>
-    </form>
-
+    </div>
 }
