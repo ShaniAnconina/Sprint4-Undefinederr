@@ -9,6 +9,7 @@ import { AppHeader } from './cmps/app-header'
 import { GigIndex } from './pages/gig-index'
 import { HomePage } from './pages/home-page'
 import { GigDetails } from './pages/gig-details'
+import { UserMsg } from './cmps/user-msg'
 
 
 export function App() {
@@ -28,6 +29,7 @@ export function App() {
           </main>
 
           <AppFooter />
+          <UserMsg />
         </section>
       </Router>
     </Provider>
