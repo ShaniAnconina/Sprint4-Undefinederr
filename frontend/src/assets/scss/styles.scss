@@ -1,17 +1,19 @@
-/* Setup */
-@import 'setup/variables';
-// @import 'setup/typography';
-// @import 'setup/mixins';
-// @import 'setup/functions';
-
 /* Basics */
 @import 'basics/layouts';
 @import 'basics/base';
 @import 'basics/helpers';
+
+/* Setup */
+@import 'setup/variables';
+@import 'setup/typography';
+// @import 'setup/mixins';
+// @import 'setup/functions';
 
 /* Pages */
 // @import 'pages/home-page';
 
 /* Cmps */
 @import 'cmps/app-header';
+@import 'cmps/gig-list';
+@import 'cmps/gig-privew';
 @import 'cmps/user-msg';
