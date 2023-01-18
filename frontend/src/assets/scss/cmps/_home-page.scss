@@ -1,0 +1,25 @@
+.home-hero {
+    position: absolute;
+    top:0;
+    height: 680px;
+    margin: auto 2em;
+    padding: auto 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    & h1 {
+        font-size: 48px;
+        line-height: 56px;
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+    & .filter-form {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+

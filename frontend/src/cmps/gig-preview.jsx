@@ -19,3 +19,4 @@ export function GigPreview({ gig }) {
         </section>
     )
 }
+
