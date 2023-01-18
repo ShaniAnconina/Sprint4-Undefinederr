@@ -1,0 +1,64 @@
+.gig-preview {
+    text-align: left;
+    padding: 0;
+
+    .gig-img {
+        width: 100%;
+        aspect-ratio: 1/0.6;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        padding: 12px 12px 8px;
+        font-size: 14px;
+
+        .user-img {
+            width: 24px;
+        }
+
+        .user-info {
+            margin-left: 8px;
+        }
+
+        .user-info .username {
+            color: $clr7;
+            line-height: 18px;
+            font-weight: 600;
+        }
+
+        .user-info .level {
+            color: $clr4;
+            font-weight: 500;
+            line-height: 21px;
+        }
+
+    }
+
+    h3 {
+        color: $clr7;
+        line-height: 22px;
+        height: 43px;
+        overflow: hidden;
+        padding: 0 12px 5px;
+        margin-top: 5px;
+
+        &:hover {
+            color: $clr9;
+        }
+    }
+
+    .rate {
+        padding: 10px 12px;
+        color: #ffbe5b;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+
+        .rates-count {
+            color: $clr3;
+            font-weight: 400;
+            margin-left: 2px;
+        }
+    }
+}
