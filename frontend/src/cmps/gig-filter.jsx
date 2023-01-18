@@ -19,50 +19,20 @@ export function GigFilter({ onSetFilterBy }) {
         onSetFilterBy.current(filterByToEdit)
     }, [filterByToEdit])
 
-    function handleChange({ target }) {
-        let { value, name: field, type, checked } = target
-        value = (type === 'number') ? +value : value
-        value = (type === 'checkbox' && field === 'inStock') ? checked : value
-        value = (type === 'checkbox' && field === 'desc') ? (checked ? -1 : 1) : value
-        // value = (type === 'checkbox' && field === 'inStock') ? (checked ? true : false) : value
-        if (!checked) value = ''
-        setFilterByToEdit((prevFilter) => {
-            return { ...prevFilter, [field]: value }
-        })
-    }
 
-    function handleSelect(labels) {
-        setSelectedOptions(labels)
-        const labelsToSet = labels.length ? labels.map(i => i.value) : []
-        console.log(labelsToSet)
-        setFilterByToEdit((prevFilter) => ({ ...prevFilter, label: labelsToSet }))
-    }
-
+    function onSubmit(){}
+    
     return <section className="gigs-filter">
         <h2>Filter Them: </h2>
         <form className="filter-form">
             <div className="filters-container">
-                <label htmlFor="name">By Name:
                     <input type="text"
                         id="name"
                         name="name"
                         placeholder="By Text"
                         value={filterByToEdit.name}
-                        onChange={handleChange}
                     />
-                </label>
-
-                <label htmlFor="inStock">In Stock:
-                    <input type="checkbox" name="inStock" id="inStock" onChange={handleChange} value={filterByToEdit.inStock} />
-                </label>
-
-                <Select
-                    options={gigService.getgigLabels().map((label) => ({ value: label, label }))}
-                    placeholder="Select labels"
-                    value={selectedOptions}
-                    onChange={handleSelect}
-                    isMulti={true}
-                />
+    
             </div>
             <hr />
             <h2>Sort Them:</h2>
