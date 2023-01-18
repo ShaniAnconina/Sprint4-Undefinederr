@@ -7,7 +7,8 @@ _createGigs()
 
 export const gigService = {
     query,
-    get
+    get,
+    getDefaultFilter
 }
 
 function query() {
@@ -41,5 +42,9 @@ function _createGig(title, imgUrl = 'https://assets.entrepreneur.com/content/3x2
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: []
     }
+}
+
+function getDefaultFilter(){
+    return {text:''}
 }
 

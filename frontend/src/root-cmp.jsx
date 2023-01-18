@@ -28,8 +28,8 @@ export function App() {
             </Routes>
           </main>
 
-          <AppFooter />
-          <UserMsg />
+          {/* <AppFooter />
+          <UserMsg /> */}
         </section>
       </Router>
     </Provider>
