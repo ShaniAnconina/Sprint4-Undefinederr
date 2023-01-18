@@ -11,6 +11,7 @@ import { GigIndex } from './pages/gig-index'
 import { HomePage } from './pages/home-page'
 import { GigDetails } from './pages/gig-details'
 import { UserMsg } from './cmps/user-msg'
+import { GigPayment } from './pages/gig-payment'
 
 
 export function App() {
@@ -27,6 +28,7 @@ export function App() {
               <Route element={<HomePage />} path="/" />
               <Route element={<GigIndex />} path="/gig" />
               <Route element={<GigDetails />} path="/gig/:gigId" />
+              <Route element={<GigPayment />} path="/gig/payment/:gigId" />
             </Routes>
           </main>
 
