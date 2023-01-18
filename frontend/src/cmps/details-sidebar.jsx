@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { AiOutlineCheck } from "react-icons/ai"
+import { AiOutlineCheck , AiOutlineClockCircle } from "react-icons/ai"
+import { BiRefresh } from "react-icons/bi"
 
 export function DetailsSidebar({ gig }) {
     return <section className="sidebar-content-container">
@@ -10,10 +11,11 @@ export function DetailsSidebar({ gig }) {
             </h3>
             <p className="gig-title">{gig.title}</p>
             <div className="additional-info flex">
-                <p className="delivery-info"><AiOutlineCheck color="gray" />{gig.daysToMake} Days Delivery</p>
-                <p className="revisions-info"><AiOutlineCheck color="gray" />{gig.revisions} Revisions</p>
+                <p className="delivery-info"><AiOutlineClockCircle color="gray" />  {gig.daysToMake}  Days Delivery </p>
+                <p className="revisions-info"><BiRefresh color="gray" />  {gig.revisions}  Revisions</p>
             </div>
-            <div className="list">
+            <div className="features-list">
+                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
