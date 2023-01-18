@@ -39,7 +39,8 @@ function _createGig(title, imgUrl = 'https://assets.entrepreneur.com/content/3x2
         price: utilService.getRandomIntInclusive(10, 300),
         daysToMake: utilService.getRandomIntInclusive(1, 10),
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
-        likedByUsers: []
+        likedByUsers: [],
+        revisions: utilService.getRandomIntInclusive(1,6)
     }
 }
 
