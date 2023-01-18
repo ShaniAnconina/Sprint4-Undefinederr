@@ -46,6 +46,6 @@ function _createGig(title, imgUrl = 'https://assets.entrepreneur.com/content/3x2
 }
 
 function getDefaultFilter(){
-    return {text:''}
+    return {txt:'', label:''}
 }
 
