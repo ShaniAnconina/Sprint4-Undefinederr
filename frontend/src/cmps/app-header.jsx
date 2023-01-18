@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import {CategoryNav} from './category-nav-bar.jsx'
 
 export function AppHeader() {
 
@@ -13,6 +14,7 @@ export function AppHeader() {
                     <p>Sign in</p>
                     <p>Join</p>
                 </nav>
+                <CategoryNav/>
             </div>
         </header>
     )

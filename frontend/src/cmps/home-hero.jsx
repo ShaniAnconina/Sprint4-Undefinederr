@@ -1,4 +1,4 @@
-import {GigFilter} from '../cmps/gig-filter.jsx'
+import {GigFilter} from './gig-filter.jsx'
 export function HomeHero(){
 
     return <section className='home-hero'>

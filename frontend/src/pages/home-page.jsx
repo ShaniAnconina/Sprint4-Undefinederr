@@ -1,4 +1,5 @@
 import {HomeHero} from '../cmps/home-hero.jsx'
+import {AppHeader} from '../cmps/app-header.jsx'
 
 export function HomePage(){
 
