@@ -25,61 +25,94 @@ export function GigDetails() {
         }
     }
 
-    function goToReview() {
-        elReview.current.scrollIntoView({ behavior: "smooth" })
+    function scrollTo(element) {
+        switch (element) {
+            case 'reviews':
+                elReview.current.scrollIntoView({ behavior: "smooth" })
+                break;
+
+            default:
+                break;
+        }
     }
 
     if (!gig) return <p></p> //TODO: loader will be here!
 
     return (
-        <section className="gig-details flex">
-
-            <section className="main">
-
-            //TODO:navlink breadcrumds
-            
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-        //TODO:mini user: photo, name, miniInfo(level..) , rate(stars+ reviewsCount) , langs...
-                <div className="mini-user"> Lorem ipsum dolor sit amet.</div>
-        //TODO:photos gallery (carosela) + mini photos
-
-                //TODO: carosela mini-review (drag-drop support)
-                <br />
-                <h2>What people loved about this seller</h2>
-
-                <button className='open-btn' onClick={goToReview}>See all reviews</button>
-                {/* <a href="#reviews">See all reviews</a> */}
+        <section className="gig-details">
+            <div className="details-layout flex">
+                {/* //TODO:nav in the page in the comps */}
 
 
-        //TODO: about the gig
-                <h2>About This Gig</h2>
-                <p>{gig.description}</p>
+                <section className="main">
+                    {/* //TODO:navlink breadcrumds */}
+                    <h1>{gig.title}</h1>
 
-                <p>I will design a creative and unique webpage for you. The best website design gig on Fiverr!
-                    I can create any page be it homepage for a new website, inner page, designing a landing page, or redesigning an existing webpage</p>
+                    <div className="mini-owner">
+                        <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
+                        <p>Username Levi</p>
+                        <p>seller level</p>
+                        <p>{'⭐'.repeat(5)}(37)</p>
 
-                <strong>What you will get:</strong>
+                    </div>
+                    {/* //TODO:photos gallery (carosela) + mini photos */}
+                    <div className="img-container">
+                        {/* <img className="main-img" src={gig.imgUrl} /> */}
+                    </div>
 
-                <u>Basic $10 gig:</u>
+                    <div className="reviews-snippet">
+                        <header className="flex">
+                            <h2>What people loved about this seller</h2>
+                            <button className='open-btn' onClick={() => scrollTo('reviews')}>See all reviews</button>
+                        </header>
+                        <div className="reviews-carousel">
+                    //TODO: reviews-carousel!!!
+                        </div>
 
+                    </div>
 
-            //TODO: about the seller (img, name, mini-des, rate, contact chat link)
-                //TODO: about the seller div border()
-                //TODO: packeges 
-                //TODO: FAQ
-                //TODO: full reviews (load more...)
+                    {/* //TODO: about the gig */}
+                    <div className="about">
+
+                        <h2>About This Gig</h2>
+                        <p>{gig.description}</p>
+                        <p>I will design a creative and unique webpage for you. The best website design gig on Fiverr!
+                            I can create any page be it homepage for a new website, inner page, designing a landing page, or redesigning an existing webpage</p>
+
+                        <strong>What you will get:</strong>
+                        <u>Basic $10 gig:</u>
+                    </div>
+
+                    {/* //TODO: about the seller (img, name, mini-des, rate, contact chat link) */}
+                    <div className="owner-profile">
+                        <h2>About The Seller</h2>
+
+                        <div className="profile-info flex">
+                            <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
+                            <div>
+                                <p>Username Levi</p>
+                                <p>seller Lorem, ipsum dolor.</p>
+                                <p>{'⭐'.repeat(5)}(37)</p>
+                                <button>Contact Me</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* //TODO: full reviews (load more...)
                 //TODO: count of reviews, 'reviews of this gig', rate(stars)
                 //TODO: filter reviews by stars (count)
                 //TODO: search reviews
                 //TODO: sort reviews
                 //TODO: filter, checkBox (reviews with imgs)
-                //TODO: photo, name || country and name || stars , date || body || review for the review(helpful?yes/no)
+                //TODO: photo, name || country and name || stars , date || body || review for the review(helpful?yes/no) */}
 
-                <div ref={elReview} id='reviews'>reviews!!!!!!!!!!!!!!</div>
+                    {/* <div ref={elReview} id='reviews'>reviews!!!!!!!!!!!!!!</div> */}
 
-            </section>
+                </section>
 
-            <DetailsSidebar gig={gig} />
+                <DetailsSidebar gig={gig} />
+            </div>
+
         </section>
     )
 }
