@@ -1,5 +1,6 @@
 import './assets/scss/styles.scss'
 
+import React from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { store } from './store/gig/store'
 import { Provider } from 'react-redux'
