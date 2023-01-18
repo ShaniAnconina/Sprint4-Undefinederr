@@ -5,7 +5,7 @@ export function HomeHero(){
         <h1>Find the perfect <span>freelance</span> services for your business</h1>
         <GigFilter/>
         <div className='hero-backgrounds'>
-            <div className='hero-andrea' style={{opacity: 1}}>
+            <div className='hero-andrea' style={{opacity: 0}}>
                 <div className='seller-name max-width-container'>
                     <p>Andrea,<b>Fashion Designer</b></p>
                 </div>
