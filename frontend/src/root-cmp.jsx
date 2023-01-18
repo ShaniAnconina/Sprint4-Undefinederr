@@ -19,11 +19,10 @@ export function App() {
     <Provider store={store}>
 
       <Router>
-        <section className="app main-layout">
+        <section className="app main-layout full">
           <AppHeader />
 
-          {/* <main className="full"> */}
-          <main>
+          <main className="full">
             <Routes>
               <Route element={<HomePage />} path="/" />
               <Route element={<GigIndex />} path="/gig" />

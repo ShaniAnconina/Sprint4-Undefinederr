@@ -8,8 +8,10 @@ _createGigs()
 export const gigService = {
     query,
     get,
+    save,
     getDefaultFilter,
-    // getPopulatGigs
+    // getPopulatGigs,
+    addToWishlist
 }
 
 function query() {
@@ -20,6 +22,17 @@ function get(gigId) {
     return storageService.get(STORAGE_KEY, gigId)
 }
 
+function save(gig) {
+    if (gig._id) {
+        return storageService.put(STORAGE_KEY, gig)
+    } else {
+        return storageService.post(STORAGE_KEY, gig)
+    }
+}
+
+function addToWishlist(gigId) {
+    console.log('gigId - service:', gigId)
+}
 // function getPopulatGigs(gigs) {
 //     return gigs.filter(gig => gig.owner.rate === 5)
 // }
@@ -61,6 +74,7 @@ function _createGig(title, imgUrl = 'https://assets.entrepreneur.com/content/3x2
             level: "basic/premium",
             rate: utilService.getRandomIntInclusive(1, 5)
         },
+        isSaved: false
     }
 }
 

@@ -23,9 +23,9 @@ export function GigIndex() {
         // lala()
         loadGigs(filterBy)
         // setTimeout(()=>{
-            // setMostPopularGigs(gigService.getPopulatGigs(gigs))
-            // console.log('gigs:', gigs)
-            // console.log('mostPopularGigs:', mostPopularGigs)
+        // setMostPopularGigs(gigService.getPopulatGigs(gigs))
+        // console.log('gigs:', gigs)
+        // console.log('mostPopularGigs:', mostPopularGigs)
         // },2000)
     }, [filterBy])
 
@@ -51,10 +51,13 @@ export function GigIndex() {
     return (
         <section className="gig-index">
             <h1>test: txt - {filterBy.txt}, label - {filterBy.label}</h1>
-            {/* <div className="sort-by-popular">
+            <div className="main-layout">
+                {/* <div className="sort-by-popular">
                 <GigList mostPopularGigs={mostPopularGigs} />
             </div> */}
-            <GigList gigs={gigs} />
+
+                <GigList gigs={gigs} />
+            </div>
         </section>
     )
 }

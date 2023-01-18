@@ -2,8 +2,18 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { GigPreview } from "./gig-preview"
 import { FaHeart } from "react-icons/fa"
+import { gigService } from '../services/gig.service';
+import { useState } from 'react';
 
 export function GigList({ gigs }) {
+
+    function onAddToWishlist(ev, gig) {
+        ev.preventDefault()
+        gig.isSaved = !gig.isSaved
+        gigService.addToWishlist(gig._id)
+        gigService.save(gig)
+        console.log('gig.isSaved:', gig.isSaved)
+    }
 
     return (
         <ul className="gig-list">
@@ -12,7 +22,7 @@ export function GigList({ gigs }) {
                     <Link to={`/gig/${gig._id}`}>
                         <GigPreview gig={gig} />
                         <div className="card-footer">
-                            <p className="save"><FaHeart /></p>
+                            <div className={gig.isSaved ? 'whishlist saved' : 'whishlist'} onClick={(ev) => onAddToWishlist(ev, gig)}><FaHeart /></div>
                             <div className="price">
                                 <p>STARTING AT</p>
                                 <span>₪{gig.price}</span>
