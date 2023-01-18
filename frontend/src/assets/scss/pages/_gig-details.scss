@@ -1,8 +1,14 @@
 .gig-details {
+    justify-content: center;
 
     .details-layout {
         width: 1300px;
         padding: 32px;
+
+        .main{
+            background-color: lightblue;
+            width: 67%;
+        }
     }
 
 }

@@ -1,29 +1,28 @@
 import { Link } from "react-router-dom";
+import { AiOutlineCheck } from "react-icons/ai"
 
-export function DetailsSidebar({gig}){
-    return  <section className="sidebar-content-container">
-        <header>
-            <h3 className="flex">
-                <b className="title">Package name</b>
-                <div className="price-container">
-                    <span>{gig.price}$</span>
-                </div>
-            </h3>
-            <p>{gig.title}</p>
-        </header>
+export function DetailsSidebar({ gig }) {
+    return <section className="sidebar-content-container">
         <article>
+            <h3 className="flex space-between">
+                <b className="title">Basic</b>
+                <span className="price-container">{gig.price}$</span>
+            </h3>
+            <p className="gig-title">{gig.title}</p>
             <div className="additional-info flex">
-                <div className="delivery-info">
-                    <p>{gig.daysToMake} Days Delivery</p>
-                </div>
-                <div className="revisions-info">
-                    <p>{gig.revisions} Revisions</p>
-                </div>
+                <p className="delivery-info"><AiOutlineCheck color="gray" />{gig.daysToMake} Days Delivery</p>
+                <p className="revisions-info"><AiOutlineCheck color="gray" />{gig.revisions} Revisions</p>
             </div>
-
+            <div className="list">
+                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
+                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
+                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
+                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
+            </div>
+            <button className="Continue-btn"><Link to={`/gig/payment/${gig._id}`} >Continue</Link></button>
         </article>
-        <Link to={`/gig/payment/${gig._id}`} ><button className="Continue-btn">Continue</button></Link>
-
-        <button className="contact-seller">Contact Seller</button>
+        <div className="contact-seller">
+            <button>Contact Seller</button>
+        </div>
     </section>
 }

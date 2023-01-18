@@ -39,7 +39,7 @@ export function GigDetails() {
     if (!gig) return <p></p> //TODO: loader will be here!
 
     return (
-        <section className="gig-details">
+        <section className="gig-details flex">
             <div className="details-layout flex">
                 {/* //TODO:nav in the page in the comps */}
 
