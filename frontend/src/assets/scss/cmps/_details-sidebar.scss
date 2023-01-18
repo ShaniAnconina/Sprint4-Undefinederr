@@ -1,4 +1,71 @@
-.sidebar-content-container{
-    width: 410px;
-    background-color: lightpink;
+.sidebar-content-container {
+    width: 33%;
+
+
+    article {
+        padding: 32px 24px;
+        border: 1px solid #dadbdd;
+
+        .gig-title {
+            text-align: left;
+        }
+
+        .additional-info {
+            font-size: 14px;
+        }
+
+        .list p {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        button {
+            border: solid $clr9 1px;
+            cursor: pointer;
+            background: $clr9;
+            font-weight: 600;
+            padding: 12px 24px;
+            width: 100%;
+            text-align: center;
+            border-radius: 4px;
+            
+            &:hover {
+                background: $clr10;
+                border: solid $clr10 1px;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: $clr0;
+            }
+        }
+    }
+
+    .contact-seller {
+        margin-block: 15px;
+        background-color: #fafafa;
+        padding: 25px;
+
+        button {
+            cursor: pointer;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 4px;
+            border: none;
+            background-color: transparent;
+            color: $clr5;
+            border: solid $clr5 1px;
+            padding: 12px 24px;
+            width: 100%;
+
+
+            &:hover {
+                color: $clr0;
+                border: solid transparent 1px;
+                background: $clr5;
+
+            }
+        }
+    }
 }
