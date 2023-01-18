@@ -15,7 +15,7 @@ export function GigPreview({ gig }) {
                 </div>
             </div>
             <h3>{gig.title}</h3>
-            <span className="rate"><AiFillStar size="15px"/> 4.5<span className="rates-count">(5)</span></span>
+            <span className="rate"><AiFillStar size="15px"/> {gig.owner.rate}<span className="rates-count">(5)</span></span>
         </section>
     )
 }

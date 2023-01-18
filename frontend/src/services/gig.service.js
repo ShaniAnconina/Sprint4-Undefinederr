@@ -8,7 +8,8 @@ _createGigs()
 export const gigService = {
     query,
     get,
-    getDefaultFilter
+    getDefaultFilter,
+    // getPopulatGigs
 }
 
 function query() {
@@ -19,6 +20,10 @@ function get(gigId) {
     return storageService.get(STORAGE_KEY, gigId)
 }
 
+// function getPopulatGigs(gigs) {
+//     return gigs.filter(gig => gig.owner.rate === 5)
+// }
+
 function _createGigs() {
     let Gigs = utilService.loadFromStorage(STORAGE_KEY)
     if (!Gigs || !Gigs.length) {
@@ -26,6 +31,13 @@ function _createGigs() {
         Gigs.push(_createGig('I will be your social media marketing manager'))
         Gigs.push(_createGig('I will setup modern wordpress website design or blog design'))
         Gigs.push(_createGig('I will be your social media manager and personal assistant'))
+        Gigs.push(_createGig('I will create cool beer packaging, craft beer, beer label'))
+        Gigs.push(_createGig('I will create your winning candidate resume, cover letter, and linkedin profile'))
+        Gigs.push(_createGig('I will create a successful resume or cover letter'))
+        Gigs.push(_createGig('I will illustrate childrens book pages for you'))
+        Gigs.push(_createGig('I will design the labels for your beer or beverage can'))
+        Gigs.push(_createGig('I will mix and master your music as charting german audio engineer'))
+        Gigs.push(_createGig('I will draw children story book illustration'))
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
     return Gigs
@@ -41,11 +53,18 @@ function _createGig(title, imgUrl = 'https://assets.entrepreneur.com/content/3x2
         daysToMake: utilService.getRandomIntInclusive(1, 10),
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: [],
-        revisions: utilService.getRandomIntInclusive(1,6)
+        revisions: utilService.getRandomIntInclusive(1, 6),
+        owner: {
+            _id: 'u101',
+            fullname: 'Dudu Da',
+            imgUrl: "url",
+            level: "basic/premium",
+            rate: utilService.getRandomIntInclusive(1, 5)
+        },
     }
 }
 
-function getDefaultFilter(){
-    return {txt:'', label:''}
+function getDefaultFilter() {
+    return { txt: '', label: '' }
 }
 
