@@ -2,56 +2,71 @@
 //TODO create filter template in service
 
 import { useEffect, useRef, useState } from "react"
-import Select from "react-select";
 
 import { gigService } from "../services/gig.service.js"
 import { utilService } from "../services/util.service.js"
+import { setfilter } from "../store/gig/gig.action.js"
+import { store } from "../store/gig/store.js"
+import { useNavigate } from "react-router-dom"
 
 
-export function GigFilter({ onSetFilterBy }) {
+export function GigFilter() {
 
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
-    const [selectedOptions, setSelectedOptions] = useState();
-
-    onSetFilterBy = useRef(utilService.debounce(onSetFilterBy, 500))
+    const navigate = useNavigate()
 
     useEffect(() => {
-        onSetFilterBy.current(filterByToEdit)
+        if (!filterByToEdit.label) return
+        setfilter(filterByToEdit)
+        navigate('/gig')
     }, [filterByToEdit])
 
 
-    function onSubmit(){}
-    
-    return <section className="gigs-filter">
-        <h2>Filter Them: </h2>
-        <form className="filter-form">
-            <div className="filters-container">
-                    <input type="text"
-                        id="name"
-                        name="name"
-                        placeholder="By Text"
-                        value={filterByToEdit.name}
-                    />
-    
-            </div>
-            <hr />
-            <h2>Sort Them:</h2>
-            <div className="sort-container">
+    function onChange({ target }) {
+        const { name: field, value } = target
+        setFilterByToEdit((prev) => { return { ...prev, [field]: value } })
+    }
 
-                <label htmlFor="sort">Sort By:
-                    <select id="sort" name="sortBy" onChange={handleChange} value={filterByToEdit.sortBy}>
-                        <option value="">Choose</option>
-                        <option value="name">Name</option>
-                        <option value="created">Created At</option>
-                        <option value="price">Price</option>
-                    </select>
-                </label>
-                <label htmlFor="desc">Descending:
-                    <input name="desc" id="desc" type="checkbox" value={filterByToEdit.desc} onChange={handleChange} />
-                </label>
-            </div>
+    function onClickSuggest(value) {
+        setFilterByToEdit((prev) => { return { ...prev, label: value, txt: '' } })
+        // console.log("onclick ", filterByToEdit)
+        // setfilter(filterByToEdit)
+        // navigate('/gig')
 
-        </form>
 
-    </section>
+    }
+
+    function onFilterSubmit(ev) {
+
+        ev?.preventDefault()
+        console.log("onSubmit ", filterByToEdit)
+        setfilter(filterByToEdit)
+        //TODO add only if user loged in
+        navigate('/gig')
+        setFilterByToEdit(gigService.getDefaultFilter())
+
+    }
+
+    return <form className="filter-form" onSubmit={onFilterSubmit}>
+        <div className="filters-container flex">
+            <input
+                className="search-bar"
+                type="text"
+                id="txt"
+                name="txt"
+                placeholder="Try 'building mobile app'"
+                value={filterByToEdit.txt}
+                onChange={onChange}
+            />
+            <button className="search-bar-btn">search</button>
+        </div>
+        <div className="flex">
+            <p>popular:</p>
+            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("websiteDesign")}>Website Design</button>
+            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("wordpress")}>Wordpress</button>
+            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
+            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
+        </div>
+    </form>
+
 }

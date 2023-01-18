@@ -1,8 +1,12 @@
+import {HomeHero} from '../cmps/home-hero.jsx'
+
 export function HomePage(){
 
     return (
         <section className="home-page">
-            <h1>hello from home page</h1>
+            <section className="hero-container">
+            <HomeHero/>
+            </section>
         </section>
     )
 }

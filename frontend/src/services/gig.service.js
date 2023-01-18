@@ -7,7 +7,8 @@ _createGigs()
 
 export const gigService = {
     query,
-    get
+    get,
+    getDefaultFilter
 }
 
 function query() {
@@ -42,5 +43,9 @@ function _createGig(title, imgUrl = 'https://assets.entrepreneur.com/content/3x2
         likedByUsers: [],
         revisions: utilService.getRandomIntInclusive(1,6)
     }
+}
+
+function getDefaultFilter(){
+    return {txt:'', label:''}
 }
 
