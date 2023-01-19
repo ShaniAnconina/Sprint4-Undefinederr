@@ -9,8 +9,9 @@ export const gigService = {
     query,
     get,
     save,
+    remove,
     getDefaultFilter,
-    // getPopulatGigs,
+    // getPopularGigs,
     addToWishlist
 }
 
@@ -30,10 +31,15 @@ function save(gig) {
     }
 }
 
+function remove(gigId) {
+    return storageService.remove(STORAGE_KEY, gigId)
+}
+
 function addToWishlist(gigId) {
     console.log('gigId - service:', gigId)
 }
-// function getPopulatGigs(gigs) {
+
+// function getPopularGigs(gigs) {
 //     return gigs.filter(gig => gig.owner.rate === 5)
 // }
 

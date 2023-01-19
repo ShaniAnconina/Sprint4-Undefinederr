@@ -3,17 +3,16 @@ import { Link } from "react-router-dom";
 import { GigPreview } from "./gig-preview"
 import { FaHeart } from "react-icons/fa"
 import { gigService } from '../services/gig.service';
-import { useState } from 'react';
 
-export function GigList({ gigs }) {
+export function GigList({ gigs, onAddToWishlist }) {
 
-    function onAddToWishlist(ev, gig) {
-        ev.preventDefault()
-        gig.isSaved = !gig.isSaved
-        gigService.addToWishlist(gig._id)
-        gigService.save(gig)
-        console.log('gig.isSaved:', gig.isSaved)
-    }
+    // function onAddToWishlist(ev, gig) {
+    //     ev.preventDefault()
+    //     gig.isSaved = !gig.isSaved
+    //     gigService.addToWishlist(gig._id)
+    //     gigService.save(gig)
+    //     console.log('gig.isSaved:', gig.isSaved)
+    // }
 
     return (
         <ul className="gig-list">

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { GigList } from "../cmps/gig-list"
 import { gigService } from "../services/gig.service"
-import { loadGigs } from "../store/gig/gig.action"
+import { loadGigs, saveGig } from "../store/gig/gig.action"
 import { store } from "../store/gig/store"
 
 export function GigIndex() {
@@ -10,12 +10,6 @@ export function GigIndex() {
     const filterBy = useSelector((storeState) => storeState.gigModule.filterBy)
     // const [mostPopularGigs, setMostPopularGigs] = useState(null)
 
-    // DONE: create gigs on local storage
-    // DONE: get (query) the gigs (load gigs)
-    // DONE: render list
-    // DONE: render preview
-    // DONE: pixel prefect gig
-    // DONE: line length
     // TODO: create cards slider
     // TODO: sort by popularity
 
@@ -23,16 +17,23 @@ export function GigIndex() {
         // lala()
         loadGigs(filterBy)
         // setTimeout(()=>{
-        // setMostPopularGigs(gigService.getPopulatGigs(gigs))
+        // setMostPopularGigs(gigService.getPopularGigs(gigs))
         // console.log('gigs:', gigs)
         // console.log('mostPopularGigs:', mostPopularGigs)
         // },2000)
     }, [filterBy])
 
+    function onAddToWishlist(ev, gig) {
+        ev.preventDefault()
+        gig.isSaved = !gig.isSaved
+        gigService.addToWishlist(gig._id)
+        saveGig(gig)
+        console.log('gig.isSaved:', gig.isSaved)
+    }
     // async function lala() {
     //     try {
     //         await loadGigs(filterBy)
-    //         setMostPopularGigs(gigService.getPopulatGigs(gigs))
+    //         setMostPopularGigs(gigService.getPopularGigs(gigs))
     //     } catch (err) {
     //         console.log('ERROR', err)
     //         throw err
@@ -55,8 +56,7 @@ export function GigIndex() {
                 {/* <div className="sort-by-popular">
                 <GigList mostPopularGigs={mostPopularGigs} />
             </div> */}
-
-                <GigList gigs={gigs} />
+                <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
             </div>
         </section>
     )
