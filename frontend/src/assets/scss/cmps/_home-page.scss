@@ -1,25 +1,79 @@
 .home-hero {
-    // position: absolute;
-    // top:0;
+    position: absolute; //
+    z-index: -1;
+    top: 0; // 
     height: 680px;
-    margin: auto 2em;
-    padding: auto 2em;
+    // margin: auto 2em;
+    // padding: auto 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 100%;
 
-    & h1 {
+    h1 {
         font-size: 48px;
+        z-index: 0;
         line-height: 56px;
         grid-column: 1;
         grid-row: 1;
         margin-bottom: 0;
         align-self: flex-end;
     }
-    & .filter-form {
+
+    .filter-form {
+        z-index: 0;
         grid-column: 1;
         grid-row: 2;
     }
+
+    .popular-btn {
+        z-index: 0;
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 5%;
+    }
+
+    .hero-andrea {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        opacity: 0;
+        background-image: url('../../img/home/slide1.jpg');
+    }
+
+    .hero-moon {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        opacity: 1;
+        background-image: url('../../img/home/slide2.jpg');
+
+        p {
+            color: white;
+            position: relative;
+            top: 95%;
+            left: 80%;
+            max-width: fit-content;
+        }
+    }
+
+    .hero-rikita {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        opacity: 0;
+        background-image: url('../../img/home/slide3.jpg');
+    }
+
+    .hero-zach {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        opacity: 0;
+        background-image: url('../../img/home/slide4.jpg');
+    }
+
+    .hero-gabriela {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        opacity: 0;
+        background-image: url('../../img/home/slide5.jpg');
+    }
+
 }
-
-

@@ -3,6 +3,7 @@
 
     
     .app-header-container {
+        z-index: 2; //ADDED By OHAD
         display: flex;
         justify-content: space-between;
         align-items: center;
