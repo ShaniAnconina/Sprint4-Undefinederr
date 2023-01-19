@@ -5,9 +5,11 @@ export const ADD_GIG = 'ADD_GIG'
 export const UPDATE_GIG = 'UPDATE_GIG'
 export const REMOVE_GIG = 'REMOVE_GIG'
 export const SET_FILTER = 'SET_FILTER'
+export const SET_LOGGEDIN_USER = 'SET_LOGGEDIN_USER'
 
 const initialState = {
     gigs: [],
+    // loggedinUser: false,
     filterBy: gigService.getDefaultFilter()
 }
 
@@ -28,6 +30,9 @@ export function gigReducer(state = initialState, action) {
             return { ...state.gigs, gigs }
         case SET_FILTER:
             return { ...state, filterBy: action.filterBy }
+        case SET_LOGGEDIN_USER:
+            return { ...state, loggedinUser: action.loggedinUser }
+
 
         default:
             return state

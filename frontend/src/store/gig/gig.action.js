@@ -1,5 +1,5 @@
 import { gigService } from '../../services/gig.service.js'
-import { ADD_GIG, REMOVE_GIG, SET_FILTER, SET_GIGS, UPDATE_GIG } from './gig.reducer.js'
+import { ADD_GIG, REMOVE_GIG, SET_FILTER, SET_GIGS, SET_LOGGEDIN_USER, UPDATE_GIG } from './gig.reducer.js'
 import { store } from './store.js'
 
 
@@ -7,6 +7,7 @@ export async function loadGigs(filterBy) {
     try {
         let gigs = await gigService.query(filterBy)
         store.dispatch({ type: SET_GIGS, gigs })
+        store.dispatch({ type: SET_LOGGEDIN_USER, loggedinUser: true })
         return gigs
     } catch (err) {
         console.log('ERROR', err)
