@@ -1,0 +1,14 @@
+.popular-btns {
+    z-index: 0;
+    // grid-column: 1;
+    // grid-row: 2;
+    padding-top: calc(5% + 24px);
+
+    button {
+        border: 1px solid $clr0;
+        padding: 1px 12px 0px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
