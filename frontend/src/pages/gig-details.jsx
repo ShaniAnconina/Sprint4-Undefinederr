@@ -56,7 +56,7 @@ export function GigDetails() {
     if (!gig) return <p>Loading...</p> //TODO: loader will be here!
 
     return (
-        <section className="gig-details ">
+        <section className="gig-details">
             <div className="details-nav main-layout full">
                 <ul className="flex">
 
@@ -64,13 +64,13 @@ export function GigDetails() {
                         Overview
                     </li>
                     <li onClick={() => scrollTo('description')}>
-                        description
+                        Description
                     </li>
                     <li onClick={() => scrollTo('aboutTheSeller')}>
-                        aboutTheSeller
+                        About The Seller
                     </li>
                     <li onClick={() => scrollTo('reviews')}>
-                        reviews
+                        Reviews
                     </li>
                 </ul>
             </div>

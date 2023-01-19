@@ -2,15 +2,33 @@
 
 
     .details-nav {
-        border-bottom: 1px solid black;
-        ul{
+        border-bottom: 1px solid $clr11;
+        position: sticky;
+        top: 0;
+        background-color: $clr0;
+
+        ul {
             padding: 0;
+            margin: 0;
         }
+
         li {
+            font-weight: 600;
+            font-size: 14px;
+            color: $clr13;
             list-style: none;
-            padding: 25px;
-            padding-left: 0;
+            padding-right: 24px;
             cursor: pointer;
+            line-height: 53px;
+
+            &:hover {
+                color: $clr4;
+            }
+
+            &.active {
+                color: $clr7;
+                border-bottom: 3px solid #1dbf73;
+            }
         }
 
     }
