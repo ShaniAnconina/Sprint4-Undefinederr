@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { CategoryNav } from './category-nav-bar.jsx'
 import { GigFilter } from './gig-filter.jsx'
 import { RiNotification3Line } from "react-icons/ri"
+import { AiOutlineSearch } from "react-icons/ai" //CHANGED BY Ohad, aded prob to GigFilter line 19
 import { BiEnvelope } from "react-icons/bi"
 import { FaRegHeart } from "react-icons/fa"
 
@@ -15,7 +16,7 @@ export function AppHeader() {
                 <div className="top-header">
                     <div className="logo-filter">
                         <NavLink to="/" className="logo">fiverr<span>.</span></NavLink>
-                        <GigFilter suggestShown={false} />
+                        <GigFilter suggestShown={false} searchBtnContent={<AiOutlineSearch />} placeholderTxt="What service are you looking for today?"/> 
                     </div>
                     <nav className="homepage-nav">
                         <span className="icon" title="Notifications"><RiNotification3Line size="22px" /></span>

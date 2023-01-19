@@ -1,9 +1,11 @@
 import { GigFilter } from './gig-filter.jsx'
+import { AiOutlineSearch } from "react-icons/ai"
+
 export function HomeHero() {
 
     return <section className='home-hero' >
         <h1>Find the perfect <span>freelance</span> services for your business</h1>
-        <GigFilter />
+        <GigFilter searchBtnContent='search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`}/>
         <div className='hero-andrea seller-name max-width-container'>
                 <p>Andrea,<b>Fashion Designer</b></p>
         </div>

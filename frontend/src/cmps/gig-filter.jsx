@@ -11,7 +11,7 @@ import { Fragment } from "react"
 import { useSelector } from "react-redux"
 
 
-export function GigFilter({ suggestShown = true }) {
+export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTxt }) {
     const loggedinUser = useSelector((storeState) => storeState.gigModule.loggedinUser)
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
     const navigate = useNavigate()
@@ -51,11 +51,11 @@ export function GigFilter({ suggestShown = true }) {
                 type="text"
                 id="txt"
                 name="txt"
-                placeholder="What service are you looking for today?"
+                placeholder= {placeholderTxt}
                 value={filterByToEdit.txt}
                 onChange={onChange}
             />
-            <button className="search-bar-btn"><AiOutlineSearch /></button>
+            <button className="search-bar-btn">{searchBtnContent}</button>
         </form>
         <div className="popular-btn flex" style={{ display: suggestShown ? 'block' : 'none' }}>
             <p>Popular:</p>
