@@ -57,12 +57,12 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
             />
             <button className="search-bar-btn">{searchBtnContent}</button>
         </form>
-        <div className="popular-btn flex" style={{ display: suggestShown ? 'block' : 'none' }}>
+        <div className="popular-btns flex" style={{ display: suggestShown ? 'block' : 'none' }}>
             <p>Popular:</p>
-            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("websiteDesign")}>Website Design</button>
-            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("wordpress")}>Wordpress</button>
-            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
-            <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
+            <button className="search-suggestion" onClick={() => onClickSuggest("websiteDesign")}>Website Design</button>
+            <button className="search-suggestion" onClick={() => onClickSuggest("wordpress")}>Wordpress</button>
+            <button className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
+            <button className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
         </div>
         </Fragment>
 }
