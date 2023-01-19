@@ -1,6 +1,8 @@
 .sidebar-content-container {
     width: 33%;
-
+    position: sticky;
+    top: 32px;
+    height: fit-content;
 
     article {
         padding: 32px 24px;

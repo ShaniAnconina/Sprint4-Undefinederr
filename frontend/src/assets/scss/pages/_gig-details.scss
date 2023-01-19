@@ -1,138 +1,182 @@
 .gig-details {
-    justify-content: center;
-    text-align: start;
 
-    h1,
-    h2,
-    h3 {
-        color: $clr6
-    }
 
-    .details-layout {
-        width: 1300px;
-        padding: 32px;
-
-        .main {
-            width: 710px;
-            margin-inline-end: auto;
+    .details-nav {
+        border-bottom: 1px solid black;
+        ul{
+            padding: 0;
         }
+        li {
+            list-style: none;
+            padding: 25px;
+            padding-left: 0;
+            cursor: pointer;
+        }
+
     }
 
-    h1 {
+    .gig-details-container {
+        justify-content: center;
         text-align: start;
-        font-size: 32px;
-        padding-bottom: 16px;
-    }
 
-    .mini-owner {
-        align-items: center;
-
-        img {
-            height: 30px;
-            margin-right: 10px;
+        h1,
+        h2,
+        h3 {
+            color: $clr6
         }
 
-        .owner-level {
-            border-right: 1px solid black;
-            padding-right: 10px;
+
+        .details-layout {
+            width: 1300px;
+            padding: 32px;
+
+            .main {
+                width: 710px;
+                margin-inline-end: auto;
+
+            }
+
+            .breadcrumds {
+
+                .open-btn {
+                    cursor: pointer;
+                    font-family: Macan-Regular;
+                    font-size: 14px;
+                    color: $clr12;
+                    border: none;
+                    background-color: inherit;
+                    margin: none;
+                    padding: none;
+
+                    &:hover {
+                        text-decoration: underline
+                    }
+                }
+            }
         }
 
-        p {
-            margin-right: 10px;
+        h1 {
+            text-align: start;
+            font-size: 32px;
+            padding-bottom: 16px;
+            line-height: 130%;
         }
-    }
 
-    .img-container {
-        .main-img {
-            width: 100%;
-            margin-block: 16px;
+        .mini-owner {
+            align-items: center;
+
+            img {
+                height: 30px;
+                margin-right: 10px;
+            }
+
+            .owner-level {
+                border-right: 1px solid black;
+                padding-right: 10px;
+            }
+
+            .owner-name,
+            .owner-level {
+                margin-right: 10px;
+            }
         }
-    }
 
-    .reviews-snippet {
-        header {
-            align-items: start;
-            margin-block: 20px;
+        .img-container {
+            .main-img {
+                width: 100%;
+                margin-block: 16px;
+            }
+        }
 
+        .reviews-snippet {
+            header {
+                align-items: start;
+                margin-block: 20px;
+
+                h2 {
+                    padding-bottom: 35px;
+                    font-size: 20px;
+                    margin: 0;
+                }
+
+                .open-btn {
+                    cursor: pointer;
+                    font-family: Macan-Regular;
+                    font-size: 14px;
+                    color: $clr9;
+                    border: none;
+                    background-color: inherit;
+                    margin: none;
+                    padding: none;
+
+                    &:hover {
+                        text-decoration: underline
+                    }
+                }
+
+            }
+
+        }
+
+        .about {
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 20px;
+                padding-bottom: 25px;
+            }
+
+            p {
+                padding: 10px;
+                line-height: 1.5rem;
+            }
+
+        }
+
+        .owner-profile {
             h2 {
                 padding-bottom: 35px;
                 font-size: 20px;
                 margin: 0;
             }
 
-            .open-btn {
-                cursor: pointer;
-                font-family: Macan-Regular;
-                font-size: 14px;
-                color: $clr9;
-                border: none;
-                background-color: inherit;
-                margin: none;
-                padding: none;
+            .profile-info {
 
-                &:hover {
-                    text-decoration: underline
+                img {
+                    max-width: 110px;
+                }
+
+                div {
+                    padding-inline-start: 15px;
+                }
+
+                p {
+                    padding-block-end: 10px;
+                }
+
+                button {
+                    cursor: pointer;
+                    margin-block-start: auto;
+                    font-weight: 600;
+                    text-align: center;
+                    border-radius: 4px;
+                    border: none;
+                    background-color: transparent;
+                    color: $clr5;
+                    border: solid $clr5 1px;
+                    padding: 12px 24px;
+                    width: auto;
+
+
+                    &:hover {
+                        color: $clr0;
+                        border: solid transparent 1px;
+                        background: $clr5;
+
+                    }
                 }
             }
 
-        }
-
-    }
-
-    .about {
-        margin-bottom: 60px;
-
-        h2 {
-            font-size: 20px;
-            padding-bottom: 25px;
-        }
-
-        p {
-            padding: 10px;
-            line-height: 1.5rem;
-        }
-
-    }
-
-    .owner-profile {
-        h2 {
-            padding-bottom: 35px;
-            font-size: 20px;
-            margin: 0;
-        }
-
-        .profile-info {
-            
-            img {
-                max-width: 110px;
-            }
-            div{
-                padding-inline-start: 15px;
-            }
-            p{
-                padding-block-end: 10px;
-            }
-            button {
-                cursor: pointer;
-                margin-block-start: auto;
-                font-weight: 600;
-                text-align: center;
-                border-radius: 4px;
-                border: none;
-                background-color: transparent;
-                color: $clr5;
-                border: solid $clr5 1px;
-                padding: 12px 24px;
-                width: auto;
-    
-    
-                &:hover {
-                    color: $clr0;
-                    border: solid transparent 1px;
-                    background: $clr5;
-    
-                }
-            }
         }
 
     }
