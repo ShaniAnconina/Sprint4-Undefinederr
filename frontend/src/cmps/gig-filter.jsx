@@ -18,7 +18,7 @@ export function GigFilter({ suggestShown = true }) {
     const navigate = useNavigate()
 
     useEffect(() => {
-        if (!filterByToEdit.label) return
+        if (!filterByToEdit.tags) return
         setfilter(filterByToEdit)
         navigate('/gig')
     }, [filterByToEdit])
@@ -30,10 +30,10 @@ export function GigFilter({ suggestShown = true }) {
     }
 
     function onClickSuggest(value) {
-        setFilterByToEdit((prev) => { return { ...prev, label: value, txt: '' } })
-        // console.log("onclick ", filterByToEdit)
-        // setfilter(filterByToEdit)
-        // navigate('/gig')
+        setFilterByToEdit((prev) => { return { ...prev, tags: value, txt: '' } })
+        console.log("onclick ", filterByToEdit)
+        setfilter(filterByToEdit)
+        navigate('/gig')
 
 
     }
@@ -41,11 +41,10 @@ export function GigFilter({ suggestShown = true }) {
     function onFilterSubmit(ev) {
 
         ev?.preventDefault()
-        console.log("onSubmit ", filterByToEdit)
         setfilter(filterByToEdit)
         //TODO add only if user loged in
         navigate('/gig')
-        setFilterByToEdit(gigService.getDefaultFilter())
+        // setFilterByToEdit(gigService.getDefaultFilter())
 
     }
 

@@ -5,8 +5,15 @@ import { store } from './store.js'
 
 export async function loadGigs(filterBy) {
     try {
-        const gigs = await gigService.query(filterBy)
-        console.log("in action at loading ", filterBy)
+        let gigs = await gigService.query(filterBy)
+        if (filterBy.txt) {
+            const regex = new RegExp(filterBy.txt, 'ig')
+            gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description) || gig.tags.some((tag) => regex.test(tag)))
+        }
+        if (filterBy.tags) {
+            gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tag))
+        }
+
         store.dispatch({ type: SET_GIGS, gigs })
         return gigs
     } catch (err) {
@@ -15,7 +22,6 @@ export async function loadGigs(filterBy) {
     }
 }
 
-export function setfilter(filterBy){
-    console.log("in action ",filterBy )
-        store.dispatch({type:SET_FILTER, filterBy})
+export function setfilter(filterBy) {
+    store.dispatch({ type: SET_FILTER, filterBy })
 }
