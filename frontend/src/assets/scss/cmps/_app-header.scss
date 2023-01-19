@@ -1,3 +1,7 @@
+.app-header {
+    background-color: $clr0;
+}
+
 .top-header {
     z-index: 2;
     display: flex;
@@ -72,7 +76,9 @@
         a {
             text-decoration: none;
         }
+    }
 
+    .homepage-nav {
         .user-img {
             width: 32px;
             cursor: pointer;
@@ -90,6 +96,31 @@
 
             &:hover {
                 color: $clr9;
+            }
+        }
+    }
+
+    .explore-nav {
+        font-weight: 600;
+
+        .explore,
+        .signin {
+            color: $clr5;
+            cursor: pointer;
+        }
+
+        .join {
+            color: $clr9;
+            border: 1px solid $clr9;
+            font-size: 14px;
+            padding: 10px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover{
+                color: $clr0;
+                border: 1px solid $clr0;
+                background-color: $clr9;
             }
         }
     }

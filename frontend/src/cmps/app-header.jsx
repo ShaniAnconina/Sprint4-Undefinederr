@@ -17,17 +17,17 @@ export function AppHeader() {
                         <NavLink to="/" className="logo">fiverr<span>.</span></NavLink>
                         <GigFilter suggestShown={false} />
                     </div>
-                    <nav>
+                    <nav className="homepage-nav">
                         <span className="icon" title="Notifications"><RiNotification3Line size="22px" /></span>
                         <span className="icon" title="Messages"><BiEnvelope size="22px" /></span>
                         <span className="icon" title="Lists"><FaRegHeart size="18px" /></span>
                         <p className="orders">Orders</p>
                         <img className="user-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
                     </nav>
-                    {/* <nav>
-                        <NavLink to="/gig">Explore</NavLink>
-                        <p>Sign in</p>
-                        <p>Join</p>
+                    {/* <nav className="explore-nav">
+                        <NavLink to="/gig" className="explore">Explore</NavLink>
+                        <p className="signin">Sign in</p>
+                        <p className="join">Join</p>
                     </nav> */}
                 </div>
             </div>
