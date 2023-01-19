@@ -26,10 +26,10 @@ export function GigIndex() {
     function onAddToWishlist(ev, gig) {
         ev.preventDefault()
         gig.isSaved = !gig.isSaved
-        gigService.addToWishlist(gig._id)
+        // gigService.addToWishlist(gig._id)
         saveGig(gig)
-        console.log('gig.isSaved:', gig.isSaved)
     }
+
     // async function lala() {
     //     try {
     //         await loadGigs(filterBy)

@@ -15,7 +15,14 @@ export const gigService = {
     addToWishlist
 }
 
-function query() {
+function query(filterBy) {
+    // if (filterBy.txt) {
+    //     const regex = new RegExp(filterBy.txt, 'ig')
+    //     gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description) || gig.tags.some((tag) => regex.test(tag)))
+    // }
+    // if (filterBy.tags) {
+    //     gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tag))
+    // }
     return storageService.query(STORAGE_KEY)
 }
 
@@ -73,10 +80,10 @@ function _createGigs() {
     return Gigs
 }
 
-// function _createGig(title, description= 'Lorem ipsum dolor', imgUrl = 'https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg') {
-// function _createGig(title, description= 'Lorem ipsum dolor', imgUrl = 'https://picsum.photos/265/159') {
-function _createGig(title, description= 'Lorem ipsum dolor', imgUrl = 'https://loremflickr.com/265/159') {
-return {
+function _createGig(title, description = 'Lorem ipsum dolor', imgUrl = 'https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg') {
+    // function _createGig(title, description= 'Lorem ipsum dolor', imgUrl = 'https://picsum.photos/265/159') {
+    // function _createGig(title, description= 'Lorem ipsum dolor', imgUrl = 'https://loremflickr.com/265/159') {
+    return {
         _id: utilService.makeId(),
         title,
         description,

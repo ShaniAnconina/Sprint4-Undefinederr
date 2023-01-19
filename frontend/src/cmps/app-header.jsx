@@ -9,8 +9,9 @@ export function AppHeader() {
 
     return (
         <header className="app-header full flex column">
-            <div className="lala main-layout">
-                <div className="app-header-container main-layout">
+            <div className=" main-layout">
+                <div className='app-header-container'>
+
                     <div className='logo-filter'>
                         <NavLink to="/"><p className="logo">fiverr<span>.</span></p></NavLink>
                         <GigFilter suggestShown={false} />
@@ -21,6 +22,8 @@ export function AppHeader() {
                         <p>Join</p>
                     </nav>
                 </div>
+            </div>
+            <div className="main-layout">
                 <CategoryNav />
             </div>
         </header>
