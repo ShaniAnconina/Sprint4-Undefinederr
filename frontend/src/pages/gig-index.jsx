@@ -50,7 +50,7 @@ export function GigIndex() {
 
     return (
         <section className="gig-index">
-            <h1>test: txt - {filterBy.txt}, label - {filterBy.label}</h1>
+            {filterBy.txt && <h1>Showing results for: "{filterBy.txt}"</h1>}
             <div className="main-layout">
                 {/* <div className="sort-by-popular">
                 <GigList mostPopularGigs={mostPopularGigs} />
