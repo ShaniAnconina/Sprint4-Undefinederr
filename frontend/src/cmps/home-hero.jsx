@@ -3,7 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai"
 
 export function HomeHero() {
 
-    return <section className='home-hero' >
+    return <section className='main-layout home-hero' >
         <h1>Find the perfect <span>freelance</span> services for your business</h1>
         <GigFilter searchBtnContent='search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`}/>
         <div className='hero-andrea seller-name max-width-container'>
