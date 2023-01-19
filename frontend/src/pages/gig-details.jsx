@@ -56,7 +56,7 @@ export function GigDetails() {
     if (!gig) return <p>Loading...</p> //TODO: loader will be here!
 
     return (
-        <section className="gig-details">
+        <section className="gig-details ">
             <div className="details-nav main-layout full">
                 <ul className="flex">
 
