@@ -8,6 +8,7 @@ import { showErrorMsg } from "../services/event-bus.service"
 import { DetailsSidebar } from "../cmps/details-sidebar"
 import { OwnerRate } from "../cmps/owner-rate"
 import { Reviews } from "../cmps/reviews"
+import { OwnerProfile } from "../cmps/owner-profile"
 
 export function GigDetails() {
     const navigate = useNavigate()
@@ -53,7 +54,7 @@ export function GigDetails() {
         elSection.current.scrollIntoView({ behavior: "smooth" })
     }
 
-    if (!gig) return <p>Loading...</p> //TODO: loader will be here!
+    if (!gig) return <p>Loading...</p>
 
     return (
         <section className="gig-details ">
@@ -77,7 +78,7 @@ export function GigDetails() {
 
             <section className="gig-details-container flex">
 
-                <div className="details-layout flex">
+                <div ref={elOverview} className="details-layout flex">
 
                     <section className="main">
                         <div className="breadcrumds flex align-center" >
@@ -87,13 +88,13 @@ export function GigDetails() {
                         </div>
                         <h1>{gig.title}</h1>
 
-                        <div ref={elOverview} className="mini-owner flex">
+                        <div className="mini-owner flex">
                             <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
                             <p className="owner-name">{gig.owner.fullname}</p>
                             <p className="owner-level">{gig.owner.level}</p>
-                            <div className="owner-rate flex"> <OwnerRate rate={gig.owner.rate} /> </div>
+                            <div className="owner-rate flex"><OwnerRate rate={gig.owner.rate} /> </div>
                         </div>
-                        {/* //TODO:photos gallery (carosela) + mini photos */}
+
                         <div className="img-container">
                             <img className="main-img" src={gig.imgUrl} />
                         </div>
@@ -109,7 +110,6 @@ export function GigDetails() {
 
                         </div>
 
-                        {/* //TODO: about the gig */}
                         <div ref={elDescription} className="about">
 
                             <h2>About This Gig</h2>
@@ -120,32 +120,8 @@ export function GigDetails() {
                             <p>I am also very flexible and understand the importance of deadlines. </p>
                         </div>
 
-                        {/* //TODO: about the seller (img, name, mini-des, rate, contact chat link) */}
-                        <div ref={elAboutTheSeller} className="owner-profile">
-                            <h2>About The Seller</h2>
-
-                            <div className="profile-info flex">
-
-                                <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
-
-                                <div className="flex column ">
-                                    <p className="owner-name">{gig.owner.fullname}</p>
-                                    <div className="owner-rate flex"> <OwnerRate rate={gig.owner.rate} /> </div>
-                                    <button>Contact Me</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* //TODO: full reviews (load more...)
-                //TODO: count of reviews, 'reviews of this gig', rate(stars)
-                //TODO: filter reviews by stars (count)
-                //TODO: search reviews
-                //TODO: sort reviews
-                //TODO: filter, checkBox (reviews with imgs)
-                //TODO: photo, name || country and name || stars , date || body || review for the review(helpful?yes/no) */}
-
-                        <span ref={elReviews}> <Reviews gig={gig} /> </span>
-
+                        <span ref={elAboutTheSeller}><OwnerProfile gig={gig} /></span>
+                        <span ref={elReviews}><Reviews gig={gig} /></span>
                     </section>
 
                     <DetailsSidebar gig={gig} />
