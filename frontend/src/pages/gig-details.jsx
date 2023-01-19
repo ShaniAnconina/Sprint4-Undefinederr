@@ -32,26 +32,25 @@ export function GigDetails() {
     }
 
     function scrollTo(element) {
+        let elSection
         switch (element) {
             case 'overview':
-                elOverview.current.scrollIntoView({ behavior: "smooth" })
-                break;
+                elSection = elOverview
+                break
             case 'description':
-                elDescription.current.scrollIntoView({ behavior: "smooth" })
-                break;
+                elSection = elDescription
+                break
             case 'aboutTheSeller':
-                elAboutTheSeller.current.scrollIntoView({ behavior: "smooth" })
-                break;
-                case 'reviews':
-                    elReviews.current.scrollIntoView({ behavior: "smooth" })
-                    break;
-
-            default:
-                break;
+                elSection = elAboutTheSeller
+                break
+            case 'reviews':
+                elSection = elReviews
+                break
         }
+        elSection.current.scrollIntoView({ behavior: "smooth" })
     }
 
-    if (!gig) return <p></p> //TODO: loader will be here!
+    if (!gig) return <p>Loading...</p> //TODO: loader will be here!
 
     return (
         <section className="gig-details flex">
@@ -122,7 +121,7 @@ export function GigDetails() {
                 //TODO: filter, checkBox (reviews with imgs)
                 //TODO: photo, name || country and name || stars , date || body || review for the review(helpful?yes/no) */}
 
-                    {/* <div ref={elReview} id='reviews'>reviews!!!!!!!!!!!!!!</div> */}
+                    <div ref={elReviews} id='reviews'>reviews!!!!!!!!!!!!!!</div>
 
                 </section>
 
