@@ -9,11 +9,11 @@ export function CategoryNav() {
     }
 
     function OnSelectCatogery(title) {
-        console.log("selected ", title)
+        console.log("selected", title)
     }
 
     return (
-        <ul className='categories-navbar '>
+        <ul className="categories-navbar">
             {titles.map((title) => <li key={title}><a onClick={() => { OnSelectCatogery(title) }}>{title}</a></li>)}
         </ul>
     )

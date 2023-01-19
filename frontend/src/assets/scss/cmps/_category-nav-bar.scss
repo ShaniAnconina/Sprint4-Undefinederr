@@ -6,5 +6,16 @@
     padding-left: 0;
     margin: 0;
     height: 40px;
-    border-top: 1px solid $clr11;
+    
+    li {
+        color: $clr5;
+        padding: 10px 0;
+        margin: 0;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+
+        &:hover{
+            border-bottom: 3px solid #1dbf73;
+        }
+    }
 }
