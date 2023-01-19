@@ -11,6 +11,7 @@
     width: 100%;
 
     h1 {
+        color: $clr0;
         font-size: 48px;
         z-index: 0;
         line-height: 56px;
@@ -22,15 +23,27 @@
 
     .filter-form {
         z-index: 0;
+        margin-top: 24px;
         grid-column: 1;
         grid-row: 2;
+
+        .search-bar{
+            border-radius: 4px 0 0 4px;
+            border: 1px solid #c5c6c9;
+            padding: 10px 2px 10px 16px;
+            width: 545px;
+            height: 42px;
+            font-size: 1rem;
+            letter-spacing: normal;
+            font-family: Macan-Regular;
+        }
     }
 
     .popular-btn {
         z-index: 0;
         grid-column: 1;
         grid-row: 2;
-        padding-top: 5%;
+        padding-top: calc(5% + 24px);
     }
 
     .hero-andrea {
@@ -60,6 +73,14 @@
         grid-row: 1/-1;
         opacity: 0;
         background-image: url('../../img/home/slide3.jpg');
+
+        p { //TODO put the repititive P code in mixing and paste @content
+            color: white;
+            position: relative;
+            top: 95%;
+            left: 80%;
+            max-width: fit-content;
+        }
     }
 
     .hero-zach {
@@ -67,6 +88,14 @@
         grid-row: 1/-1;
         opacity: 0;
         background-image: url('../../img/home/slide4.jpg');
+
+        p {
+            color: white;
+            position: relative;
+            top: 95%;
+            left: 80%;
+            max-width: fit-content;
+        }
     }
 
     .hero-gabriela {
@@ -74,6 +103,14 @@
         grid-row: 1/-1;
         opacity: 0;
         background-image: url('../../img/home/slide5.jpg');
+
+        p {
+            color: white;
+            position: relative;
+            top: 95%;
+            left: 80%;
+            max-width: fit-content;
+        }
     }
 
 }
