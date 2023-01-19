@@ -107,6 +107,10 @@
         .signin {
             color: $clr5;
             cursor: pointer;
+
+            &:hover{
+                color: $clr9;
+            }
         }
 
         .join {
