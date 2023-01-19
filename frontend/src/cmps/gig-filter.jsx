@@ -7,6 +7,7 @@ import { gigService } from "../services/gig.service.js"
 import { setfilter } from "../store/gig/gig.action.js"
 import { useNavigate } from "react-router-dom"
 import { AiOutlineSearch } from "react-icons/ai"
+import { Fragment } from "react"
 import { useSelector } from "react-redux"
 
 
@@ -42,7 +43,7 @@ export function GigFilter({ suggestShown = true }) {
         // setFilterByToEdit(gigService.getDefaultFilter())
     }
 
-    return <div>
+    return <Fragment>
         {/* <SearchBar onChange ={onChange} onFilterSubmit={onFilterSubmit} filterByToEdit={filterByToEdit}/> */}
         <form className="filter-form" onSubmit={onFilterSubmit}>
             <input
@@ -56,12 +57,12 @@ export function GigFilter({ suggestShown = true }) {
             />
             <button className="search-bar-btn"><AiOutlineSearch /></button>
         </form>
-        <div className="flex" style={{ display: suggestShown ? 'block' : 'none' }}>
+        <div className="popular-btn flex" style={{ display: suggestShown ? 'block' : 'none' }}>
             <p>Popular:</p>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("websiteDesign")}>Website Design</button>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("wordpress")}>Wordpress</button>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
             <button type='button' className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
         </div>
-    </div>
+        </Fragment>
 }

@@ -15,15 +15,22 @@ export const gigService = {
     addToWishlist
 }
 
-function query(filterBy) {
-    // if (filterBy.txt) {
-    //     const regex = new RegExp(filterBy.txt, 'ig')
-    //     gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description) || gig.tags.some((tag) => regex.test(tag)))
-    // }
-    // if (filterBy.tags) {
-    //     gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tag))
-    // }
-    return storageService.query(STORAGE_KEY)
+async function query(filterBy) {
+    try {
+    let gigs = await storageService.query(STORAGE_KEY)
+    if (filterBy.txt) {
+        const regex = new RegExp(filterBy.txt, 'ig')
+        // gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description) || gig.tags.some((tag) => regex.test(tag))) //too wide
+        gigs = gigs.filter((gig) => regex.test(gig.title))
+    }
+    if (filterBy.tags) {
+        gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tag))
+    }
+    return gigs
+} catch (err) {
+    console.log("could not retrieve gigs from service")
+    throw err
+}
 }
 
 function get(gigId) {
