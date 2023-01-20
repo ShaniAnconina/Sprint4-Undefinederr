@@ -20,9 +20,7 @@
     &.space-around {
         justify-content: space-around;
     }
-    &.none-list-style {
-        list-style: none;
-    }
+
 }
 
 .grid {
@@ -31,4 +29,8 @@
 
 .max-width-container {
     max-width: 100%;
+}
+
+.none-list-style {
+    list-style: none;
 }
