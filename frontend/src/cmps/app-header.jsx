@@ -9,7 +9,6 @@ import { FaRegHeart } from "react-icons/fa"
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
 
-
 export function AppHeader() {
     const { loggedinUser } = useSelector((storeState) => storeState.gigModule)
     const [scroll, setScroll] = useState(false)
