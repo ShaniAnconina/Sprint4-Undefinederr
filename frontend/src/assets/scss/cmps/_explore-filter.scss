@@ -1,0 +1,32 @@
+.explore-filter {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-filters button {
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: $clr0;
+        color: $clr7;
+        border-radius: 4px;
+        border: 1px solid $clr15;
+        min-width: 50px;
+        height: 38px;
+        padding: 6px 12px;
+        margin-right: 10px;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .right-filters {
+        p {
+            display: inline-block;
+            font-weight: 600;
+            color: $clr5;
+        }
+    }
+}

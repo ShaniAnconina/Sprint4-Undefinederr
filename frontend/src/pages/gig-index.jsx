@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
+import { ExploreFilter } from "../cmps/explore-filter"
 import { GigList } from "../cmps/gig-list"
 import { loadGigs, saveGig } from "../store/gig/gig.action"
 
@@ -25,6 +26,7 @@ export function GigIndex() {
         <section className="gig-index">
             {filterBy.txt && <h1>Showing results for: "{filterBy.txt}"</h1>}
             <div className="main-layout">
+                <ExploreFilter />
                 <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
             </div>
         </section>

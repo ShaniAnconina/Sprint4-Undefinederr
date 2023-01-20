@@ -12,7 +12,6 @@ import { useSelector } from "react-redux"
 
 
 export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTxt }) {
-    const loggedinUser = useSelector((storeState) => storeState.gigModule.loggedinUser)
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
     const navigate = useNavigate()
 
@@ -47,7 +46,7 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
         {/* <SearchBar onChange ={onChange} onFilterSubmit={onFilterSubmit} filterByToEdit={filterByToEdit}/> */}
         <form className="filter-form" onSubmit={onFilterSubmit}>
             <input
-                className={loggedinUser ? 'search-bar loggedin' : 'search-bar'}
+                className="search-bar"
                 type="text"
                 id="txt"
                 name="txt"
