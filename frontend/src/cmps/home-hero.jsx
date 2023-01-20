@@ -30,20 +30,31 @@ export function HomeHero() {
                 return () => clearInterval(idxRef.current)
         }, [])
 
-        return <Fragment><section className="home-hero">
-                <div className="cover-images">
-                        {heros[0]}
-                </div>
-                <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>
-                <GigFilter searchBtnContent='Search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`} />
+        // return <section className="home-hero">
+        //         <div className="slider-container">
+        //                 {heros[0]}
+        //         </div>
+        //         <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>
+        //         <GigFilter searchBtnContent='Search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`} />
+        // </section>
+
+        return <section className='slider-container'>
+                 <div className="menu">
+        <label for="slide-dot-1"></label>
+        <label for="slide-dot-2"></label>
+        <label for="slide-dot-3"></label>
+        <label for="slide-dot-4"></label>
+        <label for="slide-dot-5"></label>
+      </div>
+      <input id="slide-dot-1" type="radio" name="slides" checked/>
+      <div className="slide slide-1"></div>
+      <input id="slide-dot-2" type="radio" name="slides"/>
+      <div className="slide slide-2"></div>
+      <input id="slide-dot-3" type="radio" name="slides"/>
+      <div className="slide slide-3"></div>
+      <input id="slide-dot-4" type="radio" name="slides"/>
+      <div className="slide slide-4"></div>
+      <input id="slide-dot-5" type="radio" name="slides"/>
+      <div className="slide slide-5"></div>
         </section>
-        <ul className='trusted-by flex none-list-style align-center justify-center'>
-                <span><li>Trusted By:</li></span>
-                <li><img src='../assets/img/home/trustedBy/facebook.png'/></li>
-                <li><img src='../assets/img/home/trustedBy/google.png'/></li>
-                <li><img src='../assets/img/home/trustedBy/netflix.png'/></li>
-                <li><img src='../assets/img/home/trustedBy/pandg.png'/></li>
-                <li><img src='../assets/img/home/trustedBy/paypal.png'/></li>
-        </ul>
-        </Fragment>
 }

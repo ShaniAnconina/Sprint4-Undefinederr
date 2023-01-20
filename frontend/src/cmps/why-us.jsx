@@ -1,10 +1,10 @@
 
 export function WhyUs(){
 
-return <section>
+return <section className="">
     <div className="whyus-text">
     <h2>A whole world of freelance talent at your fingertips</h2>
-    <ul>
+    <ul className="none-list-style">
         <li>
 <span>The best for every budget</span><br/>
 Find high-quality services at every price point. No hourly rates, just project-based pricing.
