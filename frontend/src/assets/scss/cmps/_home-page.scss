@@ -1,9 +1,10 @@
 .popular-services {
     display: grid;
+    gap: 36px;
     width: 100vw;
     position: absolute;
     top: 854.9px;
-    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+    grid-template-columns: repeat(auto-fill, 296);
     grid-template-rows: 345px;
 
     a {
@@ -13,11 +14,10 @@
         cursor: pointer;
         grid-row: 1;
         width: 100%;
-        padding: 0 18px;
     }
 
-    p {
-        // color: $clr0;
+    p {//TODO position it
+        color: $clr0;
         position: absolute;
 
     }
