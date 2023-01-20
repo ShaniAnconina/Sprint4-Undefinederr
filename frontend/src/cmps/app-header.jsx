@@ -8,10 +8,12 @@ import { BiEnvelope } from "react-icons/bi"
 import { FaRegHeart } from "react-icons/fa"
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
+import { LoginSignUp } from './logInsignUp.jsx'
 
 export function AppHeader() {
-    const { loggedinUser } = useSelector((storeState) => storeState.gigModule)
+    const { loggedinUser } = useSelector((storeState) => storeState.userModule)
     const [scroll, setScroll] = useState(false)
+    const [openModal, setOpenModal] = useState(null)
     const {hash} = window.location
     const changeScroll = () => {
         if (window.scrollY > 0) setScroll(true)
@@ -36,14 +38,15 @@ export function AppHeader() {
                     </nav>}
                     {!loggedinUser && <nav className="explore-nav">
                         <NavLink to="/gig" className={(!scroll && hash === '#/') ? 'explore before-scroll-txt' : 'explore'}>Explore</NavLink>
-                        <button className={(!scroll && hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</button>
-                        <button className={(!scroll && hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</button>
+                        <button onClick={()=> setOpenModal('login')} className={(!scroll && hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</button>
+                        <button onClick={()=> setOpenModal('signup')} className={(!scroll && hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</button>
                     </nav>}
                 </div>
             </div>
             <div className={(!scroll && hash === '#/') ? 'bottom-header main-layout before-scroll-borders' : 'bottom-header main-layout'}>
                 <CategoryNav />
             </div>
+           {openModal && <LoginSignUp setOpenModal={setOpenModal} status={openModal} />}
         </header>
     )
 }
