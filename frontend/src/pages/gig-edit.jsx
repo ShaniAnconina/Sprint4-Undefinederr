@@ -4,7 +4,7 @@ import { gigService } from "../services/gig.service";
 import { saveGig } from "../store/gig/gig.action";
 
 
-export function GigEdit() {
+export function GigEdit() { 
     const [gigToEdit, setGigToEdit] = useState(gigService.getEmptyGig())
 
     function onSaveGig(ev) {
