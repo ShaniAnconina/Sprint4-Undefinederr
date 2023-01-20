@@ -10,23 +10,31 @@
 
         h3 {
             font-size: 16px;
-            padding-block-end: 11px;
+            padding-block-end: 10px;
+        }
+
+        .price-container {
+            font-size: 20px;
         }
 
         .gig-title {
             text-align: left;
-            padding-block-end: 10px;
+            padding-block-end: 11px;
+            line-height: 1.4;
+            color: $clr5
         }
 
         .additional-info {
             font-size: 14px;
-            margin-block-end: 10px;
+            margin-block-end: 11px;
+            font-family: Macan-Bold;
 
             p {
-                margin-inline-end: 10px;
+                margin-inline-end: 15px;
 
                 span {
                     padding-inline-start: 6px;
+                    color: $clr5
                 }
             }
         }
@@ -35,14 +43,18 @@
             margin-block-end: 20px;
 
             p {
+
                 font-size: 14px;
                 text-align: left;
                 padding-block-end: 5px;
-
-                span {
-                    padding-inline-start: 9px;
-                }
             }
+
+            span {
+                padding-inline-start: 18px;
+                color: $clr13;
+            }
+
+
         }
 
         button {
@@ -55,6 +67,9 @@
             text-align: center;
             border-radius: 4px;
             color: $clr0;
+
+            font-family: Macan-Bold;
+            font-size: 16px;
 
             &:hover {
                 background: $clr10;
@@ -81,6 +96,8 @@
             padding: 12px 24px;
             width: 100%;
 
+            font-family: Macan-Bold;
+            font-size: 16px;
 
             &:hover {
                 color: $clr0;
