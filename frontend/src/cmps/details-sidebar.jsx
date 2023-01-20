@@ -9,19 +9,17 @@ export function DetailsSidebar({ gig }) {
                 <b className="title">Basic</b>
                 <span className="price-container">{gig.price}$</span>
             </h3>
-            <p className="gig-title">{gig.title}</p>
-            
+            <p className="gig-title">{gig.title} Lorem ipsum dolor sit amet.</p>
+
             <div className="additional-info flex">
-                <p className="delivery-info"><AiOutlineClockCircle color="gray" size="18px" />  {gig.daysToMake}  Days Delivery </p>
-                <p className="revisions-info"><BiRefresh color="gray" size="20px" />{gig.revisions}  Revisions</p>
+                <p className="delivery-info flex"><AiOutlineClockCircle color="gray" size="18px" /><span>{gig.daysToMake}  Days Delivery</span></p>
+                <p className="revisions-info flex"><BiRefresh color="gray" size="20px" /> <span>{gig.revisions}  Revisions</span></p>
             </div>
 
             <div className="features-list">
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
+                <p className="flex"><AiOutlineCheck color="green" /><span>Lorem ipsum</span></p>
+                <p className="flex"><AiOutlineCheck color="green" /><span>Lorem ipsum</span></p>
+         
             </div>
             <Link to={`/gig/payment/${gig._id}`}> <button className="Continue-btn">Continue</button></Link>
         </article>
