@@ -11,6 +11,7 @@ export const gigService = {
     save,
     remove,
     getDefaultFilter,
+    getEmptyGig,
     // getPopularGigs,
     addToWishlist
 }
@@ -51,6 +52,25 @@ function remove(gigId) {
 
 function addToWishlist(gigId) {
     console.log('gigId - service:', gigId)
+}
+
+function getEmptyGig() {
+    return {
+        title: '',
+        description: '',
+        price: null,
+        daysToMake: null,
+        imgUrl: '',
+        tags: [],
+        owner: {
+            _id: 'u101',
+            fullname: 'Dudu Da',
+            imgUrl: 'url',
+            level: 'basic/premium',
+            rate: 4
+        },
+        likedByUsers: ['mini-user']
+    }
 }
 
 // function getPopularGigs(gigs) {
