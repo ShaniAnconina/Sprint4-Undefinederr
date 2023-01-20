@@ -37,8 +37,8 @@ export function AppHeader() {
                     </nav>}
                     {!loggedinUser && <nav className="explore-nav">
                         <NavLink to="/gig" className={(!scroll && window.location.hash === '#/') ? 'explore before-scroll-txt' : 'explore'}>Explore</NavLink>
-                        <p className={(!scroll && window.location.hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</p>
-                        <p className={(!scroll && window.location.hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</p>
+                        <button className={(!scroll && window.location.hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</button>
+                        <button className={(!scroll && window.location.hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</button>
                     </nav>}
                 </div>
             </div>
