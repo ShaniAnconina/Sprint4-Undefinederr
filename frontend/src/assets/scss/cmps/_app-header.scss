@@ -119,12 +119,15 @@
     }
 
     .explore-nav {
-        font-weight: 600;
 
         .explore,
         .signin {
+            font-weight: 600;
+            background-color: $clr0;
+            border: none;
             color: $clr5;
             cursor: pointer;
+            font-size: 16px;
 
             &:hover {
                 color: $clr9;
@@ -137,6 +140,8 @@
         }
 
         .join {
+            font-weight: 600;
+            background-color: $clr0;
             color: $clr9;
             border: 1px solid $clr9;
             font-size: 14px;
