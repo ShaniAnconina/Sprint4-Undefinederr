@@ -8,7 +8,7 @@ export function HomePopularServices(){
 'Voice Over' :'https://fiverr-res.cloudinary.com/q_auto,f_auto,w_305,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741669/voiceover-2x.png'
     }
 
-    return <Fragment>
+    return <section className="main-layout">
 <h1>Popular professional services </h1>
 <div className="popular-services">
     <a style={{backgroundImage:"url("+urls['Logo Design']+")"}}>
@@ -24,5 +24,5 @@ export function HomePopularServices(){
         <p>Share your message <br/><span>Voice Over</span></p>
     </a>
 </div>
-</Fragment>
+</section>
 }
