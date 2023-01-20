@@ -3,6 +3,7 @@ import { SwitchBtn } from './switch-btn';
 
 export function ExploreFilter() {
 
+
     return (
         <section className="explore-filter">
             <div className="left-filters">

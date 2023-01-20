@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { getCategories } from '../services/categories-data.js'
+import { getCategories } from '../Data/categories-data.js'
 import { setfilter } from "../store/gig/gig.action.js"
 import { useNavigate } from "react-router-dom"
 import { useSelector } from 'react-redux'
