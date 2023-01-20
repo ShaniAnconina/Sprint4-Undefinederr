@@ -18,13 +18,39 @@ export const gigService = {
 async function query(filterBy) {
     try {
         let gigs = await storageService.query(STORAGE_KEY)
+        if (!filterBy) {
+            console.error('filterBy object is missing')
+            return gigs
+        }
+
+        //filter by free text
         if (filterBy.txt) {
             const regex = new RegExp(filterBy.txt, 'ig')
-            // gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description) || gig.tags.some((tag) => regex.test(tag))) //too wide
-            gigs = gigs.filter((gig) => regex.test(gig.title))
+            gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description))
         }
+
+        //filter by tags
         if (filterBy.tags) {
-            gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tag))
+            gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tags))
+        }
+
+        //filter by budget
+        if (filterBy.budget && filterBy.budget.min && filterBy.budget.max) {
+            gigs = gigs.filter((gig) => gig.price >= filterBy.budget.min && gig.price <= filterBy.budget.max)
+        } else {
+            console.warn('filterBy.budget is missing or invalid')
+        }
+
+        //filter by time range
+        if (filterBy.daysToMake && filterBy.daysToMake.min && filterBy.daysToMake.max) {
+            gigs = gigs.filter((gig) => gig.daysToMake >= filterBy.daysToMake.min && gig.daysToMake <= filterBy.daysToMake.max)
+        } else {
+            console.warn('filterBy.daysToMake is missing or invalid')
+        }
+
+        //filter by is saved
+        if (filterBy.isSaved) {
+            gigs = gigs.filter((gig) => gig.isSaved === true)
         }
         return gigs
     } catch (err) {
@@ -123,7 +149,7 @@ function _createGigs() {
     return Gigs
 }
 
-function _createGig(title, description = 'Lorem ipsum dolor', imgUrl = 'https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg') {
+function _createGig(title, tags, description = 'Lorem ipsum dolor', imgUrl = 'https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg') {
     return {
         _id: utilService.makeId(),
         title,
@@ -131,7 +157,7 @@ function _createGig(title, description = 'Lorem ipsum dolor', imgUrl = 'https://
         imgUrl,
         price: utilService.getRandomIntInclusive(10, 300),
         daysToMake: utilService.getRandomIntInclusive(1, 10),
-        tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
+        tags,
         likedByUsers: [],
         revisions: utilService.getRandomIntInclusive(1, 6),
         owner: {
@@ -146,6 +172,6 @@ function _createGig(title, description = 'Lorem ipsum dolor', imgUrl = 'https://
 }
 
 function getDefaultFilter() {
-    return { txt: '', tags: '' }
+    return { txt: '', tags: '', budget: { min: 0, max: Infinity }, daysToMake: { min: 0, max: Infinity }, isSaved: false }
 }
 
