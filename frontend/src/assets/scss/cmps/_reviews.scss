@@ -1,0 +1,29 @@
+.reviews {
+    .stars {
+        padding-left: 5px;
+        color: $clr14;
+    }
+
+    .review-preview {
+        padding: 40px 0;
+        border-bottom: 1px solid $clr11;
+        gap: 15px;
+
+        .review-container {
+            gap: 16px;
+
+            .stars {
+                padding-left: 0;
+            }
+        }
+
+        img {
+            height: 48px;
+        }
+
+        .review-rate {
+            gap: 10px;
+        }
+
+    }
+}

@@ -47,16 +47,12 @@
             width: 100%;
             text-align: center;
             border-radius: 4px;
+            color: $clr0;
 
             &:hover {
                 background: $clr10;
                 border: solid $clr10 1px;
 
-            }
-
-            a {
-                text-decoration: none;
-                color: $clr0;
             }
         }
     }

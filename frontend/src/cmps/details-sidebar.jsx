@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { AiOutlineCheck , AiOutlineClockCircle } from "react-icons/ai"
+import { AiOutlineCheck, AiOutlineClockCircle } from "react-icons/ai"
 import { BiRefresh } from "react-icons/bi"
 
 export function DetailsSidebar({ gig }) {
@@ -10,10 +10,12 @@ export function DetailsSidebar({ gig }) {
                 <span className="price-container">{gig.price}$</span>
             </h3>
             <p className="gig-title">{gig.title}</p>
+            
             <div className="additional-info flex">
-                <p className="delivery-info"><AiOutlineClockCircle color="gray" />  {gig.daysToMake}  Days Delivery </p>
-                <p className="revisions-info"><BiRefresh color="gray" />  {gig.revisions}  Revisions</p>
+                <p className="delivery-info"><AiOutlineClockCircle color="gray" size="18px" />  {gig.daysToMake}  Days Delivery </p>
+                <p className="revisions-info"><BiRefresh color="gray" size="20px" />{gig.revisions}  Revisions</p>
             </div>
+
             <div className="features-list">
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
@@ -21,7 +23,7 @@ export function DetailsSidebar({ gig }) {
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
                 <p><AiOutlineCheck color="green" />Lorem ipsum</p>
             </div>
-            <button className="Continue-btn"><Link to={`/gig/payment/${gig._id}`} >Continue</Link></button>
+            <Link to={`/gig/payment/${gig._id}`}> <button className="Continue-btn">Continue</button></Link>
         </article>
         <div className="contact-seller">
             <button>Contact Seller</button>

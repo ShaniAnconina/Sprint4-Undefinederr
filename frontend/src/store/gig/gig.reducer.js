@@ -9,7 +9,7 @@ export const SET_LOGGEDIN_USER = 'SET_LOGGEDIN_USER'
 
 const initialState = {
     gigs: [],
-    // loggedinUser: false,
+    loggedinUser: null,
     filterBy: gigService.getDefaultFilter()
 }
 

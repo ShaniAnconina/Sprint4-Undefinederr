@@ -50,8 +50,31 @@
     .profile-Description {
         max-width: 100%;
         border: 1px solid $clr11;
-        padding: 40px;
-        
+        padding: 24px;
+
+        .owner-stas {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 16px;
+            align-items: center;
+
+            p {
+                color: $clr4;
+                padding-bottom: 16px;
+
+                strong {
+                    color: $clr5;
+
+                }
+            }
+
+        }
+
+        .owner-desc {
+            padding-top: 16px;
+            border-top: 1px solid $clr11;
+            color: $clr5;
+        }
+
     }
 
 
