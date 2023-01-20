@@ -1,15 +1,15 @@
 .app-header {
     background-color: transparent;
+    z-index: 2;
 }
 
 .scroll-bg {
-    background-color: blue;
+    background-color: $clr0;
     position: sticky;
     top: 0;
 }
 
 .top-header {
-    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,8 +38,10 @@
         }
 
         .filter-form {
+            opacity: 1;
             display: flex;
             align-items: center;
+            transition: opacity 0.3s;
 
             .search-bar {
                 border-radius: 4px 0 0 4px;
@@ -71,6 +73,10 @@
             }
         }
 
+        .filter-form.before-scroll-hide {
+            opacity: 0;
+        }
+
     }
 
     nav {
@@ -86,6 +92,7 @@
     .homepage-nav {
         .user-img {
             width: 32px;
+            border-radius: 100%;
             cursor: pointer;
         }
 
@@ -103,6 +110,12 @@
                 color: $clr9;
             }
         }
+
+        .icon.before-scroll-txt,
+        .orders.before-scroll-txt {
+            color: $clr0;
+
+        }
     }
 
     .explore-nav {
@@ -118,6 +131,10 @@
             }
         }
 
+        .explore.before-scroll-txt,
+        .signin.before-scroll-txt {
+            color: $clr0;
+        }
 
         .join {
             color: $clr9;
@@ -129,23 +146,27 @@
 
             &:hover {
                 color: $clr0;
-                border: 1px solid $clr0;
+                border: 1px solid $clr9;
                 background-color: $clr9;
             }
         }
 
-        .explore.before-scroll-txt,
-        .signin.before-scroll-txt {
-            color: $clr0;
-        }
 
         .join.before-scroll-txt {
             color: $clr0;
             border: 1px solid $clr0;
+
+            &:hover {
+                border: 1px solid $clr9;
+            }
         }
     }
 }
 
 .bottom-header {
     border-block: 1px solid $clr11;
+}
+
+.bottom-header.before-scroll-borders {
+    border-block: none;
 }

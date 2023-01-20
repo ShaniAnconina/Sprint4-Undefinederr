@@ -14,6 +14,12 @@ import { useSelector } from "react-redux"
 export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTxt }) {
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
     const navigate = useNavigate()
+    const [scroll, setScroll] = useState(false)
+    const changeScroll = () => {
+        if (window.scrollY > 100) setScroll(true)
+        else setScroll(false)
+    }
+    window.addEventListener('scroll', changeScroll)
 
     useEffect(() => {
         if (!filterByToEdit.tags) return
@@ -44,7 +50,7 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
 
     return <Fragment>
         {/* <SearchBar onChange ={onChange} onFilterSubmit={onFilterSubmit} filterByToEdit={filterByToEdit}/> */}
-        <form className="filter-form" onSubmit={onFilterSubmit}>
+        <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}>
             <input
                 className="search-bar"
                 type="text"

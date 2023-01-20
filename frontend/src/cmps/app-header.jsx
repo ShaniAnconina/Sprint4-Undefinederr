@@ -20,32 +20,28 @@ export function AppHeader() {
     window.addEventListener('scroll', changeScroll)
 
     return (
-        <header className={(scroll && window.location.hash === '#/') ? 'app-header scroll full' : 'app-header full'}>
+        <header className={(scroll && window.location.hash === '#/') ? 'app-header scroll-bg full' : 'app-header full'}>
             <div className="main-layout">
                 <div className="top-header">
                     <div className="logo-filter">
                         <NavLink to="/" className={(!scroll && window.location.hash === '#/') ? 'logo before-scroll-txt' : 'logo'}>fiverr<span>.</span></NavLink>
-                        {/* <NavLink to="/" className="logo before-scroll-txt">fiverr<span>.</span></NavLink> */}
                         <GigFilter suggestShown={false} searchBtnContent={<AiOutlineSearch />} placeholderTxt="What service are you looking for today?" />
                     </div>
                     {loggedinUser && <nav className="homepage-nav">
-                        <span className="icon" title="Notifications"><RiNotification3Line size="22px" /></span>
-                        <span className="icon" title="Messages"><BiEnvelope size="22px" /></span>
-                        <span className="icon" title="Lists"><FaRegHeart size="18px" /></span>
-                        <p className="orders">Orders</p>
+                        <span className={(!scroll && window.location.hash === '#/') ? 'icon before-scroll-txt' : 'icon'} title="Notifications"><RiNotification3Line size="22px" /></span>
+                        <span className={(!scroll && window.location.hash === '#/') ? 'icon before-scroll-txt' : 'icon'} title="Messages"><BiEnvelope size="22px" /></span>
+                        <span className={(!scroll && window.location.hash === '#/') ? 'icon before-scroll-txt' : 'icon'} title="Lists"><FaRegHeart size="18px" /></span>
+                        <p className={(!scroll && window.location.hash === '#/') ? 'orders before-scroll-txt' : 'orders'}>Orders</p>
                         <img className="user-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
                     </nav>}
                     {!loggedinUser && <nav className="explore-nav">
                         <NavLink to="/gig" className={(!scroll && window.location.hash === '#/') ? 'explore before-scroll-txt' : 'explore'}>Explore</NavLink>
-                        {/* <NavLink to="/gig" className="explore">Explore</NavLink> */}
                         <p className={(!scroll && window.location.hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</p>
-                        {/* <p className="signin">Sign in</p> */}
                         <p className={(!scroll && window.location.hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</p>
-                        {/* <p className="join">Join</p> */}
                     </nav>}
                 </div>
             </div>
-            <div className="bottom-header main-layout">
+            <div className={(!scroll && window.location.hash === '#/') ? 'bottom-header main-layout before-scroll-borders' : 'bottom-header main-layout'}>
                 <CategoryNav />
             </div>
         </header>
