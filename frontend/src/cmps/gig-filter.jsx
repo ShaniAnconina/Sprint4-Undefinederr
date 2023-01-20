@@ -48,7 +48,7 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
         // setFilterByToEdit(gigService.getDefaultFilter())
     }
 
-    return <Fragment>
+    return  <>
         {/* <SearchBar onChange ={onChange} onFilterSubmit={onFilterSubmit} filterByToEdit={filterByToEdit}/> */}
         <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}>
             <input
@@ -69,5 +69,5 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
             <button className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
             <button className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
         </div>
-        </Fragment>
+        </>
 }
