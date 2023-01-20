@@ -19,9 +19,7 @@ export function DetailsSidebar({ gig }) {
             <div className="features-list">
                 <p className="flex"><AiOutlineCheck color="green" /><span>Lorem ipsum</span></p>
                 <p className="flex"><AiOutlineCheck color="green" /><span>Lorem ipsum</span></p>
-                {/* <p><AiOutlineCheck color="green" />Lorem ipsum</p>
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p>
-                <p><AiOutlineCheck color="green" />Lorem ipsum</p> */}
+         
             </div>
             <Link to={`/gig/payment/${gig._id}`}> <button className="Continue-btn">Continue</button></Link>
         </article>
