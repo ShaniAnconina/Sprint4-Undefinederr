@@ -5,9 +5,10 @@ export function ReviewPreview({ review }) {
         <img src={review.by.imgUrl} alt="" />
 
         <div className="review-container flex column">
-            
-            <p>{review.by.fullname}</p>
-            <p>United States</p>
+            <span>
+                <p>{review.by.fullname}</p>
+                <p>United States</p>
+            </span>
 
             <p className="review-rate flex" ><ReviewRate rate={review.rate} /> <span>|</span> <span>2 weeks ago</span></p>
             <p>{review.txt}</p>

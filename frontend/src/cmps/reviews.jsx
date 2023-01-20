@@ -1,5 +1,5 @@
 import { ReviewRate } from "./review-rate";
-import { ReviewPreview } from "./reviewPreview";
+import { ReviewPreview } from "./review-preview";
 
 export function Reviews({ gig }) {
 
