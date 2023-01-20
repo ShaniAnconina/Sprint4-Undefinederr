@@ -9,10 +9,10 @@ export function GigPreview({ gig, onAddToWishlist }) {
         <Link to={`/gig/${gig._id}`} className="gig-preview">
             <img className="gig-img" src={gig.imgUrl} />
             <div className="user">
-                <img className="user-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
+                <img className="user-img" src={gig.owner.imgUrl} />
                 <div className="user-info">
-                    <p className="username">username</p>
-                    <p className="level">seller level</p>
+                    <p className="username">{gig.owner.username}</p>
+                    <p className="level">{gig.owner.level}</p>
                 </div>
             </div>
             <h3>{gig.title}</h3>

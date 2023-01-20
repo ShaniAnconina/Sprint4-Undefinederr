@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { userService } from "../services/user.service"
-import { login, signup } from "../store/gig/user/user.action"
+import { login, signup } from "../store/user/user.action"
 
 export function LoginSignUp({ status, setOpenModal }) {
     const [isLogin, setIsLogin] = useState(null)

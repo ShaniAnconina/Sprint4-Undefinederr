@@ -4,7 +4,7 @@ import { gigService } from "../services/gig.service";
 import { saveGig } from "../store/gig/gig.action";
 
 
-export function GigEdit() { 
+export function GigEdit() {
     const [gigToEdit, setGigToEdit] = useState(gigService.getEmptyGig())
 
     function onSaveGig(ev) {
@@ -16,7 +16,10 @@ export function GigEdit() {
     function handleChange({ target }) {
         let { type, value, name: field } = target
         value = type === 'number' ? +value : value
+        if (field === 'category') gigToEdit.tags.push(value) // check with shahaf
+        console.log('gigToEdit1:', gigToEdit)
         setGigToEdit((prevGig) => ({ ...prevGig, [field]: value }))
+        console.log('gigToEdit2:', gigToEdit)
     }
 
     return (
@@ -30,7 +33,7 @@ export function GigEdit() {
                         <h3>Gig title</h3>
                         <p>As your Gig storefront, your title is the most important place to include keywords that buyers would likely use to search for a service like yours.</p>
                     </div>
-                    <input type="text" name="title" className="title" placeholder="I will..." value={gigToEdit.title} onChange={handleChange} />
+                    <input required type="text" name="title" className="title" placeholder="I will..." value={gigToEdit.title} onChange={handleChange} />
                 </div>
 
                 <div className="description-container">
@@ -38,7 +41,8 @@ export function GigEdit() {
                         <h3>Gig description</h3>
                         <p>Briefly Describe Your Gig</p>
                     </div>
-                    <input type="text" name="description" className="description" value={gigToEdit.description} onChange={handleChange} />
+                    <textarea required name="description" className="description" value={gigToEdit.description} onChange={handleChange} />
+                    {/* <input required type="text" name="description" className="description" value={gigToEdit.description} onChange={handleChange} /> */}
                 </div>
 
                 <div className="price-container">
@@ -46,7 +50,7 @@ export function GigEdit() {
                         <h3>Price</h3>
                         <p>Price you're offering for this gig</p>
                     </div>
-                    <input type="number" name="price" className="price" value={gigToEdit.price} onChange={handleChange} />
+                    <input required type="number" name="price" className="price" value={gigToEdit.price} onChange={handleChange} />
                 </div>
 
                 <div className="img-container">
@@ -62,7 +66,7 @@ export function GigEdit() {
                         <h3>Category</h3>
                         <p>Choose the category most suitable for your Gig.</p>
                     </div>
-                    <select multiple name="category" className="category" value={gigToEdit.tags} onChange={handleChange}>
+                    <select required multiple name="category" className="category" value={gigToEdit.tags} onChange={handleChange}>
                         <option value=""></option>
                         <option value="graphics-design">Graphics & Design</option>
                         <option value="digital-marketing">Digital Marketing</option>
@@ -81,7 +85,7 @@ export function GigEdit() {
                         <h3>Days to Make</h3>
                         <p>Days it will take you on average to finish this gig.</p>
                     </div>
-                    <select name="daysToMake" className="days-to-Make" value={gigToEdit.daysToMake} onChange={handleChange}>
+                    <select required name="daysToMake" className="days-to-Make" value={gigToEdit.daysToMake} onChange={handleChange}>
                         <option value=""></option>
                         <option value="1">1 day delivery</option>
                         <option value="2">2 days delivery</option>

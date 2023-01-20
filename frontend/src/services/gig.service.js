@@ -12,7 +12,6 @@ export const gigService = {
     remove,
     getDefaultFilter,
     getEmptyGig,
-    // getPopularGigs,
     addToWishlist
 }
 
@@ -84,24 +83,21 @@ function getEmptyGig() {
     return {
         title: '',
         description: '',
-        price: null,
-        daysToMake: null,
+        price: 0,
+        daysToMake: '',
         imgUrl: '',
         tags: [],
         owner: {
             _id: 'u101',
             fullname: 'Dudu Da',
+            username: 'Dududa',
             imgUrl: 'url',
-            level: 'basic/premium',
+            level: 'basic',
             rate: 4
         },
-        likedByUsers: ['mini-user']
+        likedByUsers: []
     }
 }
-
-// function getPopularGigs(gigs) {
-//     return gigs.filter(gig => gig.owner.rate === 5)
-// }
 
 function _createGigs() {
     let Gigs = utilService.loadFromStorage(STORAGE_KEY)
@@ -183,8 +179,9 @@ function _createGig(title, tags, description = 'Lorem ipsum dolor', imgUrl = 'ht
         owner: {
             _id: 'u101',
             fullname: 'Dudu Da',
-            imgUrl: 'url',
-            level: 'basic/premium',
+            username: 'Dududa',
+            imgUrl: 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg',
+            level: 'basic',
             rate: utilService.getRandomIntInclusive(1, 5)
         },
         isSaved: false

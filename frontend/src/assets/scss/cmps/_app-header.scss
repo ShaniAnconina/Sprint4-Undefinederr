@@ -54,6 +54,10 @@
                 font-family: Macan-Regular;
             }
 
+            .search-bar:focus-visible {
+                outline: none;
+            }
+
             button {
                 background-color: $clr7;
                 border-radius: 0 4px 4px 0;
