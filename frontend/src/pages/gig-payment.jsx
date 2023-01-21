@@ -19,7 +19,7 @@ export function GigPayment() {
 
     async function loadGig() {
         try {
-           const gigToOrder = await gigService.get(gigId)
+            const gigToOrder = await gigService.get(gigId)
             setGig(gigToOrder)
         } catch (error) {
             console.log(error)
@@ -50,72 +50,75 @@ export function GigPayment() {
         }
     }
 
-    return <section className="gig-payment-container flex">
+    return <section className="gig-payment-screen main-layout">
 
-        <section className="payment-details">
-            <h6>Payment Options</h6>
-            <p>Credit & Debit Cards <span></span></p>
-            <article className="form-container">
-                <div className="card-details">
+        <div className="gig-payment-container flex">
 
-                    <label htmlFor="card-number">Card Number</label>
-                    <input type="text"
-                        id="card-number"
-                        className="card-number"
-                        value="5555 4444 3333 2222"
-                        onChange={handelChange}
-                    />
 
-                    <label htmlFor="card-expiration">Expiration Date</label>
-                    <input type="txt"
-                        id="card-expiration"
-                        className="card-expiration"
-                        value="11/12"
-                        onChange={handelChange}
-                    />
+            <section className="payment-details">
+                <h6>Payment Options</h6>
+                <p>Credit & Debit Cards <span></span></p>
+                <article className="form-container">
+                    <div className="card-details">
 
-                    <label htmlFor="card-cvv">Security Code</label>
-                    <input type="number"
-                        id="card-cvv"
-                        className="card-cvv"
-                        value="123"
-                        onChange={handelChange}
-                    />
+                        <label htmlFor="card-number">Card Number</label>
+                        <input type="text"
+                            id="card-number"
+                            className="card-number"
+                            value="5555 4444 3333 2222"
+                            onChange={handelChange}
+                        />
 
-                </div>
+                        <label htmlFor="card-expiration">Expiration Date</label>
+                        <input type="txt"
+                            id="card-expiration"
+                            className="card-expiration"
+                            value="11/12"
+                            onChange={handelChange}
+                        />
 
-                <div className="buyer-details">
+                        <label htmlFor="card-cvv">Security Code</label>
+                        <input type="number"
+                            id="card-cvv"
+                            className="card-cvv"
+                            value="123"
+                            onChange={handelChange}
+                        />
 
-                    <label htmlFor="first-name">First Name</label>
-                    <input type="text"
-                        id="first-name"
-                        className="first-name"
-                        value="Puki"
-                        onChange={handelChange}
-                    />
+                    </div>
 
-                    <label htmlFor="last-name">Last Name</label>
-                    <input type="text"
-                        id="last-name"
-                        className="last-name"
-                        value="Pukauv"
-                        onChange={handelChange}
-                    />
+                    <div className="buyer-details">
 
-                </div>
-            </article>
-        </section>
+                        <label htmlFor="first-name">First Name</label>
+                        <input type="text"
+                            id="first-name"
+                            className="first-name"
+                            value="Puki"
+                            onChange={handelChange}
+                        />
 
-        <aside className="purchase-details">
-            <section className="order">
+                        <label htmlFor="last-name">Last Name</label>
+                        <input type="text"
+                            id="last-name"
+                            className="last-name"
+                            value="Pukauv"
+                            onChange={handelChange}
+                        />
 
+                    </div>
+                </article>
             </section>
 
-            <section className="summery">
+            <aside className="purchase-details">
+                <section className="order">
 
-                <button onClick={onConfirm}>Confirm & Pay</button>
-            </section>
-        </aside>
+                </section>
 
+                <section className="summery">
+
+                    <button onClick={onConfirm}>Confirm & Pay</button>
+                </section>
+            </aside>
+        </div>
     </section>
 }

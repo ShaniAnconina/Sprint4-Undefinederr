@@ -1,4 +1,14 @@
-.gig-payment-container{
+.gig-payment-screen {
     margin-inline: auto;
     padding: 32px 0 64px;
+
+    .gig-payment-container {
+        width: 100%;
+
+        .purchase-details {
+            width: 375px;
+            margin-inline: auto;
+        }
+    }
+
 }

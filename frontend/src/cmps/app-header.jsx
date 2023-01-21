@@ -9,7 +9,6 @@ import { BiEnvelope } from "react-icons/bi"
 import { FaRegHeart } from "react-icons/fa"
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
-import { LoginSignUp } from './logInsignUp.jsx'
 import { eventBus, JOIN_USER } from '../services/event-bus.service.js'
 
 export function AppHeader({ elApp }) {
