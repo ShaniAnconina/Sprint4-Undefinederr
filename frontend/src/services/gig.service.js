@@ -85,7 +85,7 @@ function getEmptyGig() {
         description: '',
         price: 0,
         daysToMake: '',
-        imgUrl: '',
+        // imgUrl: '',
         tags: [],
         owner: {
             _id: 'u101',

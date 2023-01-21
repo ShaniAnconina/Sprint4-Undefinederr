@@ -3,10 +3,7 @@ import { GigFilter } from './gig-filter.jsx'
 import { AiOutlineSearch } from "react-icons/ai"
 import { Fragment } from 'react'
 
-
 //TODO fix the routine
-
-
 
 export function HomeHero() {
         const heros = [
@@ -23,7 +20,7 @@ export function HomeHero() {
 
         useEffect(() => {
                 idxRef.current = setInterval(() => {
-                        console.log(currHeroIdx)
+                        // console.log(currHeroIdx)
                         if (currHeroIdx === heros.length - 1) { console.log("reseting idx"); setCurrHeroIdx(0) }
                         setCurrHeroIdx((prevValue) => (prevValue + 1) % heros.length)
                 }, 3000)
