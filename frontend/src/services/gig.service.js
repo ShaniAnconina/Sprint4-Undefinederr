@@ -143,11 +143,11 @@ function _createGigs() {
                 }
 
             ]
-        let gigImgnum = utilService.getRandomIntInclusive(1,20)
-        let gigImgCategory = gig.tags[0]
-        console.log(gigImgCategory)
-        let gigImgUrl = `src/assets/img/demogig/${gigImgCategory}/${gigImgnum}.png`
-        Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl))
+            let gigImgnum = utilService.getRandomIntInclusive(1,20)
+            let gigImgCategory = gig.tags[0]
+            console.log(gigImgCategory)
+            let gigImgUrl = `src/assets/img/demogig/${gigImgCategory}/${gigImgnum}.png`
+            Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
