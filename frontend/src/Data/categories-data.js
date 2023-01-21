@@ -2,15 +2,15 @@
 
 export function getCategories() {
     const categories = {
-        'Graphics & Design': [
+        'Graphics and Design': [
             [
-                "Logo & Brand Identity",
+                "Logo and Brand Identity",
                 "Logo Design",
                 "Brand Style Guides",
-                "Fonts & Typography",
-                "Business Cards & Stationery"
+                "Fonts and Typography",
+                "Business Cards and Stationery"
             ], [
-                "Web & App Design",
+                "Web and App Design",
                 "Website Design",
                 "App Design",
                 "UX Design",
@@ -18,12 +18,12 @@ export function getCategories() {
                 "Icon Design"
             ],
             [
-                "Art & Illustration",
+                "Art and Illustration",
                 "Illustration",
                 "NFT Art",
                 "Pattern Design",
-                "Portraits & Caricatures",
-                "Cartoons & Comics",
+                "Portraits and Caricatures",
+                "Cartoons and Comics",
                 "Tattoo Design",
                 "Storyboards"
             ],
@@ -58,30 +58,30 @@ export function getCategories() {
                 "Invitation Design"
             ],
             [
-                "Packaging & Covers",
-                "Packaging & Label Design",
+                "Packaging and Covers",
+                "Packaging and Label Design",
                 "Book Design",
                 "Album Cover Design",
                 "Podcast Cover Art",
                 "Car Wraps"
             ],
             [
-                "Architecture & Building Design",
-                "Architecture & Interior Design",
+                "Architecture and Building Design",
+                "Architecture and Interior Design",
                 "Landscape Design",
                 "Building Engineering",
                 "Building Information Modeling"
             ],
             [
-                "Product & Characters Design",
-                "Industrial & Product Design",
+                "Product and Characters Design",
+                "Industrial and Product Design",
                 "Character Modeling",
                 "Trade Booth Design"
             ],
             [
-                "Fashion & Merchandise",
+                "Fashion and Merchandise",
                 "Fashion Design",
-                "T-Shirts & Merchandise",
+                "T-Shirts and Merchandise",
                 "Jewelry Design"
             ],
             [
@@ -121,31 +121,31 @@ export function getCategories() {
                 "Affiliate Marketing"
             ],
             [
-                "Industry & Purpose-specific",
+                "Industry and Purpose-specific",
                 "E-Commerce Marketing",
                 "Mobile App Marketing",
-                "Book & eBook Marketing",
+                "Book and eBook Marketing",
                 "Music Promotion",
                 "Podcast Marketing",
                 "Crowdfunding"
 
             ],
             [
-                "Analytics & Strategy",
+                "Analytics and Strategy",
                 "Marketing Strategy",
                 "Marketing Advice",
                 "Web Analytics"
             ]
 
         ],
-        'Writing & Translation': [
+        'Writing and Translation': [
             [
-                "Content Writing & Editing",
-                "Articles & Blog Posts",
-                "Proofreading & Editing",
+                "Content Writing and Editing",
+                "Articles and Blog Posts",
+                "Proofreading and Editing",
                 "Website Content",
                 "UX Writing",
-                "Book & eBook Writing",
+                "Book and eBook Writing",
                 "Book Editing",
                 "Creative Writing",
                 "Beta Reading",
@@ -165,8 +165,8 @@ export function getCategories() {
             ],
             [
                 "Business Copy",
-                "Brand Voice & Tone",
-                "Business Names & Slogans",
+                "Brand Voice and Tone",
+                "Business Names and Slogans",
                 "Case Studies",
                 "White Papers",
                 "Grant Writing",
@@ -174,12 +174,12 @@ export function getCategories() {
                 "Job Descriptions"
             ],
             [
-                "Translation & Transcription",
+                "Translation and Transcription",
                 "Translation",
                 "Transcription"
             ],
             [
-                "Sales & Marketing Copy",
+                "Sales and Marketing Copy",
                 "Ad Copy",
                 "Email Copy",
                 "Sales Copy",
@@ -189,20 +189,20 @@ export function getCategories() {
             [
                 "Miscellaneous",
                 "eLearning Content Development",
-                "Research & Summaries",
+                "Research and Summaries",
                 "Writing Advice",
                 "Other"
             ]
 
         ],
-        'Video & Animation': [
+        'Video and Animation': [
             [
-                "Editing & Post-Production",
+                "Editing and Post-Production",
                 "Video Editing",
                 "Visual Effects",
-                "Intro & Outro Videos",
+                "Intro and Outro Videos",
                 "Video Templates Editing",
-                "Subtitles & Captions",
+                "Subtitles and Captions",
                 "Rigging"
             ],
             [
@@ -211,14 +211,14 @@ export function getCategories() {
                 "Animated Explainers",
                 "Logo Animation",
                 "Animated GIFs",
-                "Lottie & Web Animation",
+                "Lottie and Web Animation",
                 "NFT Animation",
                 "Animation for Streamers",
                 "Animation for Kids"
             ],
             [
-                "Social & Marketing Videos",
-                "Video Ads & Commercials",
+                "Social and Marketing Videos",
+                "Video Ads and Commercials",
                 "Social Media Videos",
                 "Spokesperson Videos",
                 "Music Videos",
@@ -228,18 +228,18 @@ export function getCategories() {
                 "Real Estate Promos"
             ],
             [
-                "Product & Explainer Videos",
+                "Product and Explainer Videos",
                 "3D Product Animation",
                 "E-Commerce Product Videos",
                 "Live Action Explainers",
-                "App & Website Previews",
+                "App and Website Previews",
                 "Unboxing Videos",
                 "Crowdfunding Videos",
                 "Book Trailers",
                 "Game Trailers"
             ],
             [
-                "Tutorials & Education",
+                "Tutorials and Education",
                 "eLearning Video Production",
                 "Screencasting Videos",
                 "Video Advice"
@@ -252,39 +252,39 @@ export function getCategories() {
                 "Other"
             ]
         ],
-        'Music & Audio': [
+        'Music and Audio': [
             [
-                "Music Production & Writing",
-                "Producers & Composers",
+                "Music Production and Writing",
+                "Producers and Composers",
                 "Songwriters",
                 "Beat Making",
-                "Singers & Vocalists",
+                "Singers and Vocalists",
                 "Session Musicians",
-                "Jingles & Intros"
+                "Jingles and Intros"
             ],
             [
-                "Audio Engineering & Post Production",
-                "Mixing & Mastering",
+                "Audio Engineering and Post Production",
+                "Mixing and Mastering",
                 "Audio Editing",
                 "Vocal Tuning",
-                "Audio Logo & Sonic Branding"
+                "Audio Logo and Sonic Branding"
             ],
             [
-                "Voice Over & Streaming",
+                "Voice Over and Streaming",
                 "Voice Over",
                 "Podcast Production",
                 "Audiobook Production",
                 "Audio Ads Production"
             ],
             [
-                "Lessons & Transcription",
+                "Lessons and Transcription",
                 "Online Music Lessons",
                 "Music Transcription",
-                "Music & Audio Advice"
+                "Music and Audio Advice"
             ], [
                 "DJing",
-                "Remixing & Mashups",
-                "DJ Drops & Tags",
+                "Remixing and Mashups",
+                "DJ Drops and Tags",
                 "DJ Mixing"
             ],
             [
@@ -296,7 +296,7 @@ export function getCategories() {
             ]
 
         ],
-        'Programming & Tech': [
+        'Programming and Tech': [
             [
                 "Websites",
                 "Website Development",
@@ -322,18 +322,18 @@ export function getCategories() {
                 "Chatbots"
             ],
             [
-                "Support & Cybersecurity",
-                "Support & IT",
-                "DevOps & Cloud",
-                "Cybersecurity & Data Protection",
+                "Support and Cybersecurity",
+                "Support and IT",
+                "DevOps and Cloud",
+                "Cybersecurity and Data Protection",
                 "Development for Streamers",
                 "Convert Files"
             ],
             [
                 "Miscellaneous",
-                "Blockchain & Cryptocurrency",
+                "Blockchain and Cryptocurrency",
                 "Electronics Engineering",
-                "QA & Review",
+                "QA and Review",
                 "NFT Development",
                 "User Testing",
                 "Online Coding Lessons",
@@ -361,7 +361,7 @@ export function getCategories() {
                 "Event Management"
             ],
             [
-                "Sales & Customer Care",
+                "Sales and Customer Care",
                 "Sales",
                 "Customer Care",
                 "CRM Management"

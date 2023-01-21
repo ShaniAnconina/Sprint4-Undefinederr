@@ -6,27 +6,27 @@
     font-weight: 600;
     font-family: Macan-Regular;
     display: flex;
-    
-    button, div {
+
+    button,
+    div {
         width: fit-content;
         color: $clr0;
         font-size: 14px;
         font-weight: 600;
-        
+
     }
-    
+
     button {
         background: none;
         border: 1px solid $clr0;
         padding: 1px 12px 0px;
-        border-radius:40px ;
+        border-radius: 40px;
         cursor: pointer;
         transition: all .2s ease-in-out;
     }
 
     button:hover {
-background-color: $clr0;
-color: $clr8;
+        background-color: $clr0;
+        color: $clr8;
     }
 }
-
