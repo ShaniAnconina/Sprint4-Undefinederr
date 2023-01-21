@@ -1,4 +1,4 @@
-import { userService } from "../../../services/user.service"
+import { userService } from "../../services/user.service"
 import { store } from "../store"
 import { SET_USER } from "./user.reducer"
 

@@ -1,6 +1,6 @@
 import { gigService } from '../../services/gig.service.js'
 import { ADD_GIG, REMOVE_GIG, SET_FILTER, SET_GIGS, UPDATE_GIG } from './gig.reducer.js'
-import { store } from './store.js'
+import { store } from '../store.js'
 
 
 
@@ -18,7 +18,9 @@ export async function loadGigs(filterBy) {
 export async function saveGig(gig) {
     const type = (gig._id) ? UPDATE_GIG : ADD_GIG
     try {
+        console.log('gig:', gig)
         const savedGig = await gigService.save(gig)
+        console.log('savedGig:', savedGig)
         store.dispatch({ type, gig: savedGig })
         return savedGig
     } catch (err) {

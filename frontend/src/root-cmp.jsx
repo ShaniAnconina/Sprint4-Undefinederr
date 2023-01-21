@@ -2,7 +2,7 @@ import './assets/scss/styles.scss'
 
 import React, { useRef } from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
-import { store } from './store/gig/store'
+import { store } from './store/store'
 import { Provider } from 'react-redux'
 
 import { AppFooter } from './cmps/app-footer'

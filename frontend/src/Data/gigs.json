@@ -1,0 +1,158 @@
+[
+    {
+        "title": "Logo Designer",
+        "description": "I will manage your social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics."
+    },
+    {
+        "title": "Content Creator",
+        "description": "I will produce written, visual, and audio content for your brand or business."
+    },
+    {
+        "title": "Social Media Manager",
+        "description": "I will manage and grow your brand's presence on social media platforms."
+    },
+    {
+        "title": "Search Engine Optimization (SEO) Specialist",
+        "description": "I will optimize your website's content and structure to improve its ranking on search engine results pages (SERPs)."
+    },
+    {
+        "title": "Graphic Designer",
+        "description": "I will create visual designs for your brand or business, including logos, brochures, and website layouts."
+    },
+    {
+        "title": "Web Developer",
+        "description": "I will create and maintain a website for your brand or business, using languages such as HTML, CSS, and JavaScript."
+    },
+    {
+        "title": "Copywriter",
+        "description": "I will write persuasive and compelling copy for your brand or business, including ad copy, product descriptions, and email campaigns."
+    },
+    {
+        "title": "Photographer",
+        "description": "I will take professional photographs for your brand or business, such as product shots, event photography, and headshots."
+    },
+    {
+        "title": "Video Editor",
+        "description": "I will edit and produce videos for your brand or business, including promotional videos, product demos, and tutorial videos."
+    },
+    {
+        "title": "Public Relations (PR) Specialist",
+        "description": "I will create and execute a PR strategy for your brand or business, including media relations, press releases, and crisis management."
+    },
+    {
+        "title": "Marketing Coordinator",
+        "description": "I will assist with coordinating and implementing marketing campaigns for your brand or business."
+    },
+    {
+        "title": "Email Marketing Specialist",
+        "description": "I will create and execute email marketing campaigns for your brand or business, including newsletter and drip campaigns."
+    },
+    {
+        "title": "Advertising Manager",
+        "description": "I will create and manage advertising campaigns for your brand or business, including Google Ads and Facebook Ads."
+    },
+    {
+        "title": "Brand Manager",
+        "description": "I will develop and execute a brand strategy for your business, including market research, brand positioning, and messaging."
+    },
+    {
+        "title": "Product Manager",
+        "description": "I will manage the development and launch of a product for your brand or business."
+    },
+    {
+        "title": "Project Manager",
+        "description": "I will plan, execute, and finalize projects according to strict deadlines and within budget."
+    },
+    {
+        "title": "IT Support",
+        "description": "I will provide technical assistance and support for computer systems, software, and hardware."
+    },
+    {
+        "title": "IT Administrator",
+        "description": "I will manage and maintain an organization's IT systems, including servers, networks, and software."
+    },
+    {
+        "title": "Data Analyst",
+        "description": "I will analyze and interpret complex data for your brand or business, including market research and website analytics."
+    },
+    {
+        "title": "Data Scientist",
+        "description": "I will use statistical and machine learning techniques to analyze and interpret complex data for your brand or business."
+    },
+    {
+        "title": "Business Analyst",
+        "description": "I will analyze and interpret business data for your brand or business, including financial data and market trends."
+    },
+    {
+        "title": "Graphic Designer",
+        "description": "I will create visually appealing designs for your company, including logos, brochures, and websites."
+    },
+    {
+        "title": "Social Media Manager",
+        "description": "I will manage your company's social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics."
+    },
+    {
+        "title": "Content Creator",
+        "description": "I will create engaging and informative content for your company's website, blog, or social media platforms."
+    },
+    {
+        "title": "SEO Specialist",
+        "description": "I will optimize your website for search engines and improve your online visibility."
+    },
+    {
+        "title": "Web Developer",
+        "description": "I will design and develop websites, mobile apps and software to meet your company's needs."
+    },
+    {
+        "title": "Marketing Specialist",
+        "description": "I will develop and implement marketing strategies to promote your company and its products or services."
+    },
+    {
+        "title": "Public Relations Specialist",
+        "description": "I will manage your company's public image and relationships with stakeholders."
+    },
+    {
+        "title": "HR Specialist",
+        "description": "I will handle your company's human resources functions, including recruiting, training, and employee relations."
+    },
+    {
+        "title": "Financial Analyst",
+        "description": "I will analyze financial data and provide insights to inform your company's business decisions."
+    },
+    {
+        "title": "Project Manager",
+        "description": "I will plan and coordinate your company's projects to ensure they are completed on time and within budget."
+    },
+    {
+        "title": "Data Analyst",
+        "description": "I will collect, analyze, and interpret large sets of data to support your company's decision-making process."
+    },
+    {
+        "title": "Business Analyst",
+        "description": "I will provide strategic and operational support to your company's management team."
+    },
+    {
+        "title": "IT Support Specialist",
+        "description": "I will provide technical assistance to your company's employees, troubleshoot and maintain computer systems."
+    },
+    {
+        "title": "Product Manager",
+        "description": "I will oversee the development and launch of your company's products and services."
+    },
+    {
+        "title": "Customer Service Representative",
+        "description": "I will respond to customer inquiries and complaints, provide information about products and services, and resolve issues."
+    },
+    {
+        "title": "Sales Representative",
+        "description": "I will generate sales by promoting and selling your company's products and services to potential customers."
+    },
+    {
+        "title": "Accountant",
+        "description": "I will prepare and analyze financial records, ensure compliance with tax laws, and provide financial advice."
+    },
+    {
+        "title": "Supply Chain Manager",
+        "description": "I will oversee the flow of goods and materials, from suppliers to your company, to ensure timely delivery and cost-effectiveness."
+    }
+]
