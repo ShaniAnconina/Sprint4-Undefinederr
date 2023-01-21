@@ -1,0 +1,253 @@
+[
+    {
+        "_id": "u101",
+        "fullname": "User 1",
+        "imgUrl": "/img/img1.jpg",
+        "username": "user1",
+        "password": "secret",
+        "level": "basic/premium",
+        "reveiws": [
+            {
+                "gig": "Logo Designer",
+                "txt": "Very kind and works fast",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "John Smith",
+        "username": "jsmith",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Graphic Designer",
+                "txt": "Very talented and easy to work with.",
+                "rate": 5
+            },
+            {
+                "gig": "Social Media Manager",
+                "txt": "Great work, highly recommend.",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "Jessica Adams",
+        "username": "jadams",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Web Developer",
+                "txt": "Fast and efficient, great communication.",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Michael Brown",
+        "username": "mbrown",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Content Creator",
+                "txt": "High-quality work and great attention to detail.",
+                "rate": 5
+            },
+            {
+                "gig": "SEO Specialist",
+                "txt": "Very knowledgeable and helpful.",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "Emily Davis",
+        "username": "edavis",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Marketing Specialist",
+                "txt": "Excellent work, exceeded my expectations.",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Jacob Garcia",
+        "username": "jgarcia",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Public Relations Specialist",
+                "txt": "Great job handling our public image.",
+                "rate": 4
+            },
+            {
+                "gig": "HR Specialist",
+                "txt": "Very responsive and helpful.",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "Isabella Martinez",
+        "username": "imartinez",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Financial Analyst",
+                "txt": "Provided valuable insights and advice.",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "Ethan Rodriguez",
+        "username": "erodriguez",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Project Manager",
+                "txt": "Very organized and kept everything on track.",
+                "rate": 5
+            },
+            {
+                "gig": "Data Analyst",
+                "txt": "Provided useful insights and helped us make data-driven decisions.",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "John Smith",
+        "username": "jsmith",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Graphic Designer",
+                "txt": "I was very happy with the logo John designed for my business. He was very responsive and made all the changes I requested",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Jane Doe",
+        "username": "janedoe",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Social Media Manager",
+                "txt": "Jane helped me grow my social media following and engagement significantly. She is very professional and easy to work with",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Michael Johnson",
+        "username": "mjohnson",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Web Developer",
+                "txt": "Michael did a great job developing my website, he was very knowledgeable and patient with me through the process.",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Jessica Williams",
+        "username": "jwilliams",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Content Creator",
+                "txt": "Jessica is a great writer and helped me with my blog and website content. I would definitely recommend her!",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Robert Brown",
+        "username": "rbrown",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "SEO Specialist",
+                "txt": "Robert helped me improve my website's search engine rankings and provided valuable insights on how to improve my online visibility.",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Ashley Davis",
+        "username": "adavis",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Marketing Specialist",
+                "txt": "Ashley was a great help in developing and implementing my company's marketing strategies. She is very professional and easy to work with",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Brian Miller",
+        "username": "bmiller",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Public Relations Specialist",
+                "txt": "Brian helped me improve my company's public image and relationships with stakeholders. He is very knowledgeable and professional.",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "John Smith",
+        "username": "jsmith",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Graphic Designer",
+                "txt": "Great work, delivered on time",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Jane Doe",
+        "username": "jdoe",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Web Developer",
+                "txt": "The website looks great, and the developer was very responsive",
+                "rate": 4
+            }
+        ]
+    },
+    {
+        "fullname": "Mike Johnson",
+        "username": "mjohnson",
+        "level": "basic",
+        "reviews": [
+            {
+                "gig": "Social Media Manager",
+                "txt": "Did a great job managing my social media accounts",
+                "rate": 5
+            }
+        ]
+    },
+    {
+        "fullname": "Emily Davis",
+        "username": "edavis",
+        "level": "premium",
+        "reviews": [
+            {
+                "gig": "Content Creator",
+                "txt": "The content was well-written and engaging",
+                "rate": 4
+            }
+        ]
+    }
+]
