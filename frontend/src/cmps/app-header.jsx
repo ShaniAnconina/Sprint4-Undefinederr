@@ -18,7 +18,7 @@ export function AppHeader({ elApp }) {
     const { hash } = window.location
 
     useEffect(() => {
-        eventBus.on(JOIN_USER, () => setOpenModal('signup'))
+        eventBus.on(JOIN_USER, () => setOpenModal('login'))
     }, [])
     
     const changeScroll = () => {

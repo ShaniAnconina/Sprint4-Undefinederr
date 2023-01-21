@@ -30,7 +30,7 @@ export function showErrorMsg(txt) {
     showUserMsg({txt, type: 'error'})
 }
 
-//JOUN USER
+//LOG IN  USER
 export function openJoinModal() {
     eventBus.emit(JOIN_USER)
 }

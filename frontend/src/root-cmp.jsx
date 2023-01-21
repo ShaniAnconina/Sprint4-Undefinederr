@@ -35,7 +35,7 @@ export function App() {
             </Routes>
           </main>
 
-          <AppFooter />
+          {/* <AppFooter /> */}
           <UserMsg />
         </section>
       </Router>

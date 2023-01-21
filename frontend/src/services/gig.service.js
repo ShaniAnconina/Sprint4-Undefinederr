@@ -76,6 +76,7 @@ function remove(gigId) {
 }
 
 function addToWishlist(gigId) {
+
     console.log('gigId - service:', gigId)
 }
 
@@ -85,7 +86,6 @@ function getEmptyGig() {
         description: '',
         price: 0,
         daysToMake: '',
-        // imgUrl: '',
         tags: [],
         owner: {
             _id: 'u101',
