@@ -1,6 +1,6 @@
 import './assets/scss/styles.scss'
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { store } from './store/gig/store'
 import { Provider } from 'react-redux'
@@ -16,12 +16,13 @@ import { GigEdit } from './pages/gig-edit'
 
 
 export function App() {
+  const elApp = useRef(null)
   return (
     <Provider store={store}>
 
       <Router>
-        <section className="app main-layout full">
-          <AppHeader />
+        <section ref={elApp} className="app main-layout full">
+          <AppHeader elApp={elApp} />
 
           <main className="full">
             <Routes>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from "react-router-dom"
 import { CategoryNav } from './category-nav-bar.jsx'
 import { GigFilter } from './gig-filter.jsx'
@@ -9,12 +9,18 @@ import { FaRegHeart } from "react-icons/fa"
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import { LoginSignUp } from './logInsignUp.jsx'
+import { eventBus, JOIN_USER } from '../services/event-bus.service.js'
 
-export function AppHeader() {
+export function AppHeader({ elApp }) {
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
     const [scroll, setScroll] = useState(false)
     const [openModal, setOpenModal] = useState(null)
-    const {hash} = window.location
+    const { hash } = window.location
+
+    useEffect(() => {
+        eventBus.on(JOIN_USER, () => setOpenModal('signup'))
+    }, [])
+    
     const changeScroll = () => {
         if (window.scrollY > 0) setScroll(true)
         else setScroll(false)
@@ -38,15 +44,15 @@ export function AppHeader() {
                     </nav>}
                     {!loggedinUser && <nav className="explore-nav">
                         <NavLink to="/gig" className={(!scroll && hash === '#/') ? 'explore before-scroll-txt' : 'explore'}>Explore</NavLink>
-                        <button onClick={()=> setOpenModal('login')} className={(!scroll && hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</button>
-                        <button onClick={()=> setOpenModal('signup')} className={(!scroll && hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</button>
+                        <button onClick={() => setOpenModal('login')} className={(!scroll && hash === '#/') ? 'signin before-scroll-txt' : 'signin'}>Sign in</button>
+                        <button onClick={() => setOpenModal('signup')} className={(!scroll && hash === '#/') ? 'join before-scroll-txt' : 'join'}>Join</button>
                     </nav>}
                 </div>
             </div>
             <div className={(!scroll && hash === '#/') ? 'bottom-header main-layout before-scroll-borders' : 'bottom-header main-layout'}>
                 <CategoryNav />
             </div>
-           {openModal && <LoginSignUp setOpenModal={setOpenModal} status={openModal} />}
+            {openModal && <LoginSignUp elApp={elApp} setOpenModal={setOpenModal} status={openModal} />}
         </header>
     )
 }

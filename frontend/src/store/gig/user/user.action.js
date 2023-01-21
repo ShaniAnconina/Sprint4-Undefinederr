@@ -27,4 +27,3 @@ export async function signup(credentials) {
 export function logOut() {
     store.dispatch({ type: SET_USER, loggedinUser: null })
 }
-

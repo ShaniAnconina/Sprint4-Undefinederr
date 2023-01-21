@@ -3,13 +3,14 @@ import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { userService } from "../services/user.service"
 import { login, signup } from "../store/gig/user/user.action"
 
-export function LoginSignUp({ status, setOpenModal }) {
+export function LoginSignUp({ elApp, status, setOpenModal }) {
     const [isLogin, setIsLogin] = useState(null)
     const [credentials, setCredentials] = useState(userService.getEmptyCredentials())
 
     useEffect(() => {
         if (status === 'login') setIsLogin(true)
         else setIsLogin(false)
+        disableScroll(true)
     }, [])
 
     function onToggleLogInStatus() {
@@ -32,15 +33,33 @@ export function LoginSignUp({ status, setOpenModal }) {
         finally {
             setCredentials(userService.getEmptyCredentials())
             setOpenModal(null)
+            disableScroll(false)
+
+        }
+    }
+
+    function onCloseModal() {
+        setOpenModal(null)
+        disableScroll(false)
+    }
+    
+    function disableScroll(status) {
+        if (status) {
+            elApp.current.style.overflow = 'hidden'
+            elApp.current.style.maxHeight = '100vh'
+        }
+        else {
+            elApp.current.style.overflow = 'none'
+            elApp.current.style.maxHeight = 'none'
         }
     }
 
     const passwordPlaceHolder = isLogin ? 'Password' : 'Choose a Password'
     const usernamePlaceHolder = isLogin ? 'Email / Username' : 'Choose a Username'
 
-    return <section className="logIn-signUp-screen flex column">
+    return <section onClick={onCloseModal} className="logIn-signUp-screen flex column">
 
-        <div className="logIn-signUp-container">
+        <div onClick={(ev) => ev.stopPropagation()} className="logIn-signUp-container">
 
             <article className="logIn-signUp">
                 {isLogin && <h4>Sign In to Fiverr</h4>}
@@ -75,14 +94,16 @@ export function LoginSignUp({ status, setOpenModal }) {
                 // required
                 />}
 
-                <button>{isLogin ? 'Continue' : 'Join'}</button>
+                <button className="btn-continue" >{isLogin ? 'Continue' : 'Join'}</button>
+
             </form>
         </div>
 
-        <footer>
-            {isLogin && <span>Not a member yet? <button onClick={onToggleLogInStatus}>Join now</button></span>}
-            {!isLogin && <span>Already a member? <button onClick={onToggleLogInStatus}>Sign In</button></span>}
+        <footer onClick={(ev) => ev.stopPropagation()}>
+            {isLogin && <div>Not a member yet? <button onClick={onToggleLogInStatus}>Join now</button></div>}
+            {!isLogin && <div>Already a member? <button onClick={onToggleLogInStatus}>Sign In</button></div>}
         </footer>
     </section>
-
 }
+
+

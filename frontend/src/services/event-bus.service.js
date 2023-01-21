@@ -1,4 +1,5 @@
 export const SHOW_MSG = 'show-msg'
+export const JOIN_USER = 'JOIN_USER'
 
 function createEventEmitter() {
     const listenersMap = {}
@@ -28,6 +29,12 @@ export function showSuccessMsg(txt) {
 export function showErrorMsg(txt) {
     showUserMsg({txt, type: 'error'})
 }
+
+//JOUN USER
+export function openJoinModal() {
+    eventBus.emit(JOIN_USER)
+}
+
 
 window.showUserMsg = showUserMsg
 

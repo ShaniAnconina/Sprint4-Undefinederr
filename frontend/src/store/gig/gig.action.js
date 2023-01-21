@@ -3,6 +3,7 @@ import { ADD_GIG, REMOVE_GIG, SET_FILTER, SET_GIGS, UPDATE_GIG } from './gig.red
 import { store } from './store.js'
 
 
+
 export async function loadGigs(filterBy) {
     try {
         let gigs = await gigService.query(filterBy)
