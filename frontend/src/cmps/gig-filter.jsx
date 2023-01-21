@@ -62,12 +62,5 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
             />
             <button className="search-bar-btn">{searchBtnContent}</button>
         </form>
-        <div className="popular-btns flex" style={{ display: suggestShown ? 'block' : 'none' }}>
-            <div>Popular:</div>
-            <button className="search-suggestion" onClick={() => onClickSuggest("websiteDesign")}>Website Design</button>
-            <button className="search-suggestion" onClick={() => onClickSuggest("wordpress")}>Wordpress</button>
-            <button className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>logo Design</button>
-            <button className="search-suggestion" onClick={() => onClickSuggest("logoDesign")}>video Editing</button>
-        </div>
         </>
 }
