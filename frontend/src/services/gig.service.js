@@ -147,14 +147,14 @@ function _createGigs() {
             let gigImgCategory = gig.tags[0]
             console.log(gigImgCategory)
             let gigImgUrl = `src/assets/img/demogig/${gigImgCategory}/${gigImgnum}.png`
-            Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl))
+            Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl, gig.reviews))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
     return Gigs
 }
 
-function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg") {
+function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg", reviews) {
     return {
         _id: utilService.makeId(),
         title,
@@ -165,6 +165,7 @@ function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "ht
         tags,
         likedByUsers: [],
         revisions: utilService.getRandomIntInclusive(1, 6),
+        reviews,
         owner: {
             _id: "u101",
             fullname: "Dudu Da",
