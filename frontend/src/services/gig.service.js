@@ -77,6 +77,8 @@ function remove(gigId) {
 }
 
 function addToWishlist(gigId) {
+
+    console.log('gigId - service:', gigId)
     console.log("gigId - service:", gigId)
 }
 

@@ -1,13 +1,146 @@
 .gig-payment-screen {
     margin-inline: auto;
     padding: 32px 0 64px;
+    color: $clr5;
 
     .gig-payment-container {
         width: 100%;
 
+        .payment-details {
+            text-align: left;
+
+            h6 {
+                color: $clr6;
+                text-align: left;
+                font-size: 16px;
+                padding: 16px;
+                width: 100%;
+                margin: 0;
+                background-color: $clr1;
+                border: 1px solid $clr16;
+            }
+
+
+            .credit-cards-container {
+                color: $clr6;
+                height: 65px;
+                padding: 16px;
+                align-items: center;
+
+                .credit-cards {
+                    padding-top: 7px;
+                    margin-inline-start: 10px;
+
+                    span {
+                        margin-inline-end: 7px;
+                        margin-block: auto;
+
+                        svg {
+                            background-color: $clr1;
+                            border: 1px solid $clr18;
+                        }
+                    }
+                }
+            }
+
+            .form-container {
+                background-color: $clr1;
+                border: 1px solid $clr16;
+                padding: 24px 40px;
+                font-size: 14px;
+
+                input {
+                    margin-top: 10px;
+                    height: 40px;
+                }
+
+                .card-details {
+                    margin-bottom: 40px;
+
+                    .card-expiration,
+                    .card-cvv {
+                        width: 110px;
+                    }
+                }
+            }
+        }
+
         .purchase-details {
+            border: 1px solid $clr16;
             width: 375px;
             margin-inline: auto;
+
+            .order {
+                padding: 32px 48px;
+                background-color: $clr1;
+                border-bottom: 1px solid $clr18;
+
+                .header {
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid $clr18;
+
+                    img {
+                        width: 100px;
+                        margin-inline-end: 16px;
+                    }
+
+                    h3 {
+                        line-height: 24px;
+                        text-align: left;
+                    }
+                }
+
+                .services-container {
+
+                    .title {
+                        padding-block: 16px;
+                    }
+
+                    .services {
+                        padding-top: 12px;
+
+                        p {
+                            padding-block: 5px;
+
+                            span {
+                                margin-inline-start: 9px;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            .summery {
+                padding: 16px 48px 32px;
+
+                .price {
+                    font-size: 18px;
+                    padding-bottom: 16px;
+                }
+
+                .delivery {
+                    padding-bottom: 16px;
+
+                }
+
+                button {
+                    width: 100%;
+                    border-radius: 4px;
+                    padding: 15px 24px;
+                    font-size: 16px;
+                    color: $clr0;
+                    background-color: $clr8;
+                    cursor: pointer;
+                    border: none;
+
+                    &:hover {
+                        background-color: $clr6;
+                    }
+                }
+
+            }
         }
     }
 

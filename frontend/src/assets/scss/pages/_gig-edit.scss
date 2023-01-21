@@ -1,0 +1,184 @@
+.gig-edit {
+    background-color: $clr16 ;
+}
+
+.add-gig-form {
+    background-color: $clr0;
+    width: 70%;
+    padding: 30px;
+    margin: 30px auto;
+    border: 1px solid $clr17;
+
+    .form-containers {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: none;
+        }
+
+        .desc {
+            text-align: left;
+        }
+
+        .desc h3 {
+            color: $clr6;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .desc p {
+            color: $clr5;
+            line-height: 1.3;
+        }
+
+        .title-desc {
+            width: 25%;
+        }
+
+        .title {
+            width: 500px;
+            height: 100px;
+            padding: 15px;
+            border: 1px solid $clr17;
+            resize: none;
+            font-family: Macan-Regular;
+        }
+
+        .description-desc {
+            width: 25%;
+        }
+
+        .description {
+            width: 500px;
+            height: 200px;
+            padding: 15px;
+            border: 1px solid $clr17;
+            resize: none;
+            font-family: Macan-Regular;
+        }
+
+        .img-desc {
+            width: 25%;
+        }
+
+        .img-input {
+            display: flex;
+            justify-content: left;
+            width: 500px;
+            height: 150px;
+
+            .upload {
+                width: 200px;
+
+                button {
+                    display: block;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    height: 36px;
+                    width: 190px;
+                    border-radius: 4px;
+                    border: none;
+                    font-weight: 600;
+                    font-size: 16px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $clr8;
+                        color: $clr0;
+                    }
+
+                }
+
+                .file-btn {
+
+                    input {
+                        position: relative;
+                        top: -20px;
+                        left: 15px;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .img-container {
+                width: 200px;
+                height: 150px;
+                margin-left: 20px;
+
+                img {
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+
+    .selects-container {
+        display: flex;
+
+        .line {
+            display: flex;
+            flex-direction: column;
+            width: 33.33%;
+            padding-right: 40px;
+        }
+
+        .tags-container {
+            .tags-desc {
+                // width: 65%;
+            }
+        }
+
+        .days-to-Make-container select,
+        .price-container input {
+            border: 1px solid #b5b6ba;
+            padding: 4px 12px;
+            height: 34px;
+        }
+    }
+}
+
+.add-gig-btns {
+    width: 70%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        padding: 16px 24px;
+        border-radius: 4px;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button.save {
+        color: $clr0;
+        background-color: $clr9;
+
+        &:hover {
+            background-color: $clr10;
+        }
+    }
+
+    button.cancel {
+        background-color: #e6e6e6;
+
+        &:hover {
+            background-color: $clr8;
+
+            a {
+                color: $clr0;
+            }
+        }
+    }
+
+    button a {
+        text-decoration: none;
+        color: $clr8;
+    }
+}
