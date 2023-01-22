@@ -14,17 +14,26 @@ export function ExploreFilter() {
     }
 
     return (
-        <section className="explore-filter">
-            <div className="left-filters">
-                <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
-                {/* <button onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
-                <button onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                <button onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+        <section >
+            <div className="explore-filter">
+                <div className="left-filters">
+                    <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
+                    {/* <button onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
+                    <button onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                    <button onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                </div>
+                {modalType && <FilterModal modalType={modalType} />}
+                <div className="right-filters">
+                    <SwitchBtn />
+                    <p>Pro services</p>
+                </div>
             </div>
-            {modalType && <FilterModal modalType={modalType} />}
-            <div className="right-filters">
-                <SwitchBtn />
-                <p>Pro services</p>
+            <div className="sortBy">
+                <select name="sort" id="sort">
+                    <option value="">Sort By</option>
+                    <option value="top">Top Rated</option>
+                    <option value="price">Best Price</option> {/* cheap to expensive */}
+                </select>
             </div>
         </section>
     )
