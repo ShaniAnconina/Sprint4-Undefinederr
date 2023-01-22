@@ -117,19 +117,9 @@ function _createGigs() {
         let reviewText = require('../Data/review-text.json')
         console.log(gigsUrl)
         gigsData.forEach(gig => {
-            const genUsersIdx =[utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50)] 
+            const genUsersIdx =[utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50)] 
             
             gig.reviews = [
-                {
-                    id: utilService.makeId(),
-                    txt: reviewText[genUsersIdx[0]].txt,
-                    rate: reviewText[genUsersIdx[0]].rate,
-                    by: {
-                        _id: "u102",
-                        fullname: `${users[genUsersIdx[0]].name.first} ${users[genUsersIdx[0]].name.last}`,
-                        imgUrl: users[genUsersIdx[0]].picture.thumbnail
-                    }
-                },
                 {
                     id: utilService.makeId(),
                     txt: reviewText[genUsersIdx[1]].txt,
@@ -169,6 +159,16 @@ function _createGigs() {
                         fullname: `${users[genUsersIdx[4]].name.first} ${users[genUsersIdx[4]].name.last}`,
                         imgUrl: users[genUsersIdx[4]].picture.thumbnail
                     }
+                },
+                {
+                    id: utilService.makeId(),
+                    txt: reviewText[genUsersIdx[5]].txt,
+                    rate: reviewText[genUsersIdx[5]].rate,
+                    by: {
+                        _id: "u102",
+                        fullname: `${users[genUsersIdx[5]].name.first} ${users[genUsersIdx[5]].name.last}`,
+                        imgUrl: users[genUsersIdx[5]].picture.thumbnail
+                    }
                 }
 
 
@@ -177,14 +177,14 @@ function _createGigs() {
         let gigImgIdx = utilService.getRandomIntInclusive(1,20)
         let gigImgCategory = gig.tags[0]
         let gigImgUrl = gigsUrl[gigImgCategory][gigImgIdx] 
-        Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl, gig.reviews))
+        Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl, gig.reviews, users[genUsersIdx[0]]))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
     return Gigs
 }
 
-function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg", reviews) {
+function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "https://assets.entrepreneur.com/content/3x2/2000/20170801121054-graphicstock-workspace-with-laptop-male-hands-notebookeyeglasses-sketchbook-black-wooden-desk-with-bamboo-leaf-flat-lay-top-view-office-table-desk-freelancer-working-place-ruvmpjwlol.jpg", reviews, owner) {
     return {
         _id: utilService.makeId(),
         title,
@@ -198,10 +198,10 @@ function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "ht
         reviews,
         owner: {
             _id: "u101",
-            fullname: "Dudu Da",
-            username: "Dududa",
+            fullname: `${owner.name.first} ${owner.name.last}`,
+            username: owner.login.username,
             // imgUrl: "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg",
-            imgUrl: "",
+            imgUrl: owner.picture.thumbnail,
             level: "basic",
             rate: utilService.getRandomIntInclusive(1, 5)
         },

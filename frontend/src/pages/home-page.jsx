@@ -12,8 +12,8 @@ export function HomePage(){
             <HomeHero/>
             <TrustedBy/>
             <HomePopularServices/>
-            <WhyUs/>
-            <AppFooter/>
+            {/* <WhyUs/> */}
+            {/* <AppFooter/> */}
         </section>
     )
 }

@@ -1,0 +1,38 @@
+.popular-tag-search {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    top: 430px;
+    left: 249px;
+    font-family: Macan-Bold;
+    position: absolute;
+    width: 650px;
+    height: 30px;
+
+    button,
+    p {
+        color: $clr0;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .popular-btns {
+      
+
+        button {
+            background: none;
+            line-height: 24px;
+            font-weight: 600;
+            padding: 1px 12px 0;
+            border: 1px solid $clr0;
+            border-radius: 40px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: $clr0;
+                color: $clr6;
+            }
+        }
+    }
+}
