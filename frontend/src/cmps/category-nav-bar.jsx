@@ -31,7 +31,7 @@ export function CategoryNav() {
 
     return (
         <ul className={(!scroll && window.location.hash === '#/') ? 'categories-navbar before-scroll-hide' : 'categories-navbar'}>
-            {titles.map((title) => <li key={title}><a onClick={() => { OnSelectCatogery(title) }}>{title}</a></li>)}
+            {titles.map((title) => <li key={title}><a onClick={() => { OnSelectCatogery(title.replace('&','and')) }}>{title}</a></li>)}
         </ul>
     )
 }
