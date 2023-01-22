@@ -1,17 +1,25 @@
+import { useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { FilterModal } from './filter-modal';
 import { SwitchBtn } from './switch-btn';
 
 export function ExploreFilter() {
+    const [modalType, setModalType] = useState(false)
 
+    function toggleModal(type) {
+        setModalType(type)
+        if (modalType === type) setModalType(false)
+    }
 
     return (
         <section className="explore-filter">
             <div className="left-filters">
-                <button><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
-                {/* <button><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
-                <button><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                <button><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
+                {/* <button onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
+                <button onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                <button onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
             </div>
+            {modalType && <FilterModal modalType={modalType} />}
             <div className="right-filters">
                 <SwitchBtn />
                 <p>Pro services</p>
