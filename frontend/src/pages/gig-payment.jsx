@@ -51,7 +51,7 @@ export function GigPayment() {
         }
     }
     if (!gig) return <p>loading...</p>
-    return <section className="gig-payment-screen main-layout">
+    return <section className="gig-payment-screen  main-layout">
 
         <div className="gig-payment-container flex">
 
@@ -63,7 +63,7 @@ export function GigPayment() {
 
                     <div className="card-details flex">
 
-                        <div className="flex column">
+                        <div className="card-number-container flex column">
                             <label htmlFor="card-number">Card Number</label>
                             <input type="text"
                                 id="card-number"
@@ -73,7 +73,7 @@ export function GigPayment() {
                             />
                         </div>
 
-                        <div className="flex column">
+                        <div className="card-expiration-container flex column">
                             <label htmlFor="card-expiration">Expiration Date</label>
                             <input type="txt"
                                 id="card-expiration"
@@ -83,7 +83,7 @@ export function GigPayment() {
                             />
                         </div>
 
-                        <div className="flex column">
+                        <div className="card-cvv-container flex column">
                             <label htmlFor="card-cvv">Security Code</label>
                             <input type="number"
                                 id="card-cvv"
@@ -97,7 +97,7 @@ export function GigPayment() {
 
                     <div className="buyer-details flex">
 
-                        <div className="flex column">
+                        <div className="first-name-container flex column">
                             <label htmlFor="first-name">First Name</label>
                             <input type="text"
                                 id="first-name"
@@ -106,7 +106,7 @@ export function GigPayment() {
                                 onChange={handelChange}
                             />
                         </div>
-                        <div className="flex column">
+                        <div className="last-name-container flex column">
                             <label htmlFor="last-name">Last Name</label>
                             <input type="text"
                                 id="last-name"
@@ -118,52 +118,52 @@ export function GigPayment() {
                     </div>
                 </article>
             </section>
+       
+        <aside className="purchase-details">
 
-            <aside className="purchase-details">
+            <section className="order">
 
-                <section className="order">
+                <div className="header flex bold">
+                    <img src={gig.imgUrl} />
+                    <h3>{gig.title}</h3>
+                </div>
 
-                    <div className="header flex bold">
-                        <img src={gig.imgUrl} />
-                        <h3>{gig.title}</h3>
-                    </div>
+                <div className="services-container flex column">
 
-                    <div className="services-container flex column">
-
-                        <div className="title flex space-between">
-                            <span className="bold">Services</span>
-                            <span>{gig.price}$</span>
-                        </div>
-
-                        <div className="services">
-                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span >Review & edit</span></p>
-                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >1 targeted cover letter</span></p>
-                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >{gig.revisions}  Revisions</span></p>
-                        </div>
-
-
-
-
-                    </div>
-
-                </section>
-
-                <section className="summery">
-                    <div className="price flex space-between bold">
-                        <span>Total</span>
+                    <div className="title flex space-between">
+                        <span className="bold">Services</span>
                         <span>{gig.price}$</span>
                     </div>
 
-                    <div className="delivery flex space-between">
-                        <span>Total delivery time</span>
-                        <span>{gig.daysToMake} days</span>
+                    <div className="services">
+                        <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span >Review & edit</span></p>
+                        <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >1 targeted cover letter</span></p>
+                        <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >{gig.revisions}  Revisions</span></p>
                     </div>
 
-                    <button className="bold" onClick={onConfirm}>Confirm & Pay</button>
 
-                </section>
 
-            </aside>
+
+                </div>
+
+            </section>
+
+            <section className="summery">
+                <div className="price flex space-between bold">
+                    <span>Total</span>
+                    <span>{gig.price}$</span>
+                </div>
+
+                <div className="delivery flex space-between">
+                    <span>Total delivery time</span>
+                    <span>{gig.daysToMake} days</span>
+                </div>
+
+                <button className="bold" onClick={onConfirm}>Confirm & Pay</button>
+
+            </section>
+
+        </aside>
         </div>
     </section>
 }

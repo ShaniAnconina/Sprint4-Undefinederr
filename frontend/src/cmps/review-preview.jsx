@@ -10,7 +10,7 @@ export function ReviewPreview({ review }) {
                 <p>United States</p>
             </span>
 
-            <p className="review-rate flex" ><ReviewRate rate={review.rate} /> <span>|</span> <span>2 weeks ago</span></p>
+            <span className="review-rate flex align-center" > <span className="flex"><ReviewRate rate={review.rate} /> </span><span>|</span> <span>2 weeks ago</span></span>
             <p>{review.txt}</p>
         </div>
 
