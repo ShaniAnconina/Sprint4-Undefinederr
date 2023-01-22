@@ -10,6 +10,7 @@
 
         img {
             max-width: 110px;
+            border-radius: 2rem;
         }
 
         div {
@@ -17,6 +18,7 @@
 
             div {
                 padding-inline-start: 0;
+                align-items: baseline;
             }
         }
 

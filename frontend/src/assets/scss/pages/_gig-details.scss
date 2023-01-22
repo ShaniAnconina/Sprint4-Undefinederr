@@ -1,6 +1,5 @@
 .gig-details {
 
-
     .details-nav {
         border-bottom: 1px solid $clr11;
         position: sticky;
@@ -97,9 +96,17 @@
                 width: 710px;
                 margin-inline-end: auto;
 
+                h1 {
+                    font-size: 28px;
+                    margin: 0px;
+                    padding-bottom: 16px;
+                }
+
             }
 
             .breadcrumds {
+
+                padding-bottom: 10px;
 
                 .open-btn {
                     cursor: pointer;
@@ -118,19 +125,14 @@
             }
         }
 
-        h1 {
-            text-align: start;
-            font-size: 32px;
-            padding-bottom: 16px;
-            line-height: 130%;
-        }
-
         .mini-owner {
             align-items: center;
+            margin-bottom: 24px;
 
             img {
                 height: 30px;
                 margin-right: 10px;
+                border-radius: 2rem;
             }
 
             .owner-level {
@@ -147,7 +149,7 @@
         .img-container {
             .main-img {
                 width: 100%;
-                margin-block: 16px;
+                margin-block-end: 16px;
             }
         }
 

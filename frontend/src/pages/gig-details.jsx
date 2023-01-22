@@ -117,6 +117,7 @@ export function GigDetails() {
                             <SlArrowRight size="10px" />
                             <button className='open-btn subcategory' >Subcategory</button>
                         </div>
+                        
                         <h1>{gig.title}</h1>
 
                         <div className="mini-owner flex">
