@@ -1,18 +1,21 @@
 import { useEffect, useState } from "react"
-import { BsCheckLg } from "react-icons/bs"
 import { useSelector } from "react-redux"
 import { useNavigate, useParams } from "react-router-dom"
+
 import { CreditCards } from "../cmps/details/credit-cards"
+
 import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
+import { BsCheckLg } from "react-icons/bs"
+
 export function GigPayment() {
-    const { gigId } = useParams()
     const navigate = useNavigate()
+    const { gigId } = useParams()
+    const [gig, setGig] = useState(null)
     const [order, setOrder] = useState(orderService.getEmptyOrder())
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
-    const [gig, setGig] = useState(null)
 
     useEffect(() => {
         loadGig()
@@ -22,6 +25,7 @@ export function GigPayment() {
         try {
             const gigToOrder = await gigService.get(gigId)
             setGig(gigToOrder)
+            //TODO: MsG
         } catch (error) {
             console.log(error)
             showErrorMsg('Had issues please try again...')
@@ -30,7 +34,6 @@ export function GigPayment() {
     }
 
     function handelChange() { }
-
 
     async function onConfirm() {
         try {
@@ -42,14 +45,13 @@ export function GigPayment() {
             order.seller = seller
             order.gig = gigToSave
             const newOrder = await orderService.save(order)
-            console.log('newOrder', newOrder)
             showSuccessMsg('Your order send')
             navigate(-1) //Maby to another path
         } catch (error) {
-            console.log(error)
             showErrorMsg('Had issues please try again... 1')
         }
     }
+
     if (!gig) return <p>loading...</p>
     return <section className="gig-payment-screen  main-layout">
 
@@ -118,52 +120,50 @@ export function GigPayment() {
                     </div>
                 </article>
             </section>
-       
-        <aside className="purchase-details">
 
-            <section className="order">
+            <aside className="purchase-details">
 
-                <div className="header flex bold">
-                    <img src={gig.imgUrl} />
-                    <h3>{gig.title}</h3>
-                </div>
+                <section className="order">
 
-                <div className="services-container flex column">
+                    <div className="header flex bold">
+                        <img src={gig.imgUrl} />
+                        <h3>{gig.title}</h3>
+                    </div>
 
-                    <div className="title flex space-between">
-                        <span className="bold">Services</span>
+                    <div className="services-container flex column">
+
+                        <div className="title flex space-between">
+                            <span className="bold">Services</span>
+                            <span>{gig.price}$</span>
+                        </div>
+
+                        <div className="services">
+                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span >Review & edit</span></p>
+                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >1 targeted cover letter</span></p>
+                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >{gig.revisions}  Revisions</span></p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section className="summery">
+                    
+                    <div className="price flex space-between bold">
+                        <span>Total</span>
                         <span>{gig.price}$</span>
                     </div>
 
-                    <div className="services">
-                        <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span >Review & edit</span></p>
-                        <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >1 targeted cover letter</span></p>
-                        <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >{gig.revisions}  Revisions</span></p>
+                    <div className="delivery flex space-between">
+                        <span>Total delivery time</span>
+                        <span>{gig.daysToMake} days</span>
                     </div>
 
+                    <button className="bold" onClick={onConfirm}>Confirm & Pay</button>
 
+                </section>
 
-
-                </div>
-
-            </section>
-
-            <section className="summery">
-                <div className="price flex space-between bold">
-                    <span>Total</span>
-                    <span>{gig.price}$</span>
-                </div>
-
-                <div className="delivery flex space-between">
-                    <span>Total delivery time</span>
-                    <span>{gig.daysToMake} days</span>
-                </div>
-
-                <button className="bold" onClick={onConfirm}>Confirm & Pay</button>
-
-            </section>
-
-        </aside>
+            </aside>
         </div>
     </section>
 }

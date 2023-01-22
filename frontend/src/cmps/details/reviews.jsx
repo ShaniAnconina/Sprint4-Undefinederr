@@ -4,7 +4,7 @@ import { ReviewPreview } from "./review-preview";
 export function Reviews({ gig }) {
     return <section className="reviews">
         <h2>Reviews</h2>
-        <span className="flex" >{gig.reviews.length} reviews for this Gig <ReviewRate rate={4} /></span>
+        <span className="flex" >{gig.reviews.length} reviews for this Gig <ReviewRate rate={4} /></span> //TODO dynamic rate
         {/* <ReviewSearch /> */}
         <ul className="none-list-style">
             {gig.reviews.map(review => {

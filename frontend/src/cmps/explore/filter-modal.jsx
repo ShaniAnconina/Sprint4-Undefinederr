@@ -1,6 +1,6 @@
-import { BudgetModal } from "./budget-modal";
-import { DeliveryTimeModal } from "./delivery-time-modal";
-import { ServicesOptionsModal } from "./services-options-modal";
+import { BudgetModal } from "./budget-modal"
+import { DeliveryTimeModal } from "./delivery-time-modal"
+import { ServicesOptionsModal } from "./services-options-modal"
 
 export function FilterModal({ modalType }) {
 

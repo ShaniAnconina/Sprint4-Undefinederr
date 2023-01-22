@@ -1,5 +1,3 @@
-
-
 export function TrustedBy() {
     return <section className='trusted-by flex align-center justify-center full'>
         <span className="trusted-by-text">Trusted By:</span>

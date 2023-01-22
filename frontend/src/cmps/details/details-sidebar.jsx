@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+
 import { GoClock } from "react-icons/go"
 import { TbRefresh } from "react-icons/tb"
 import { BsCheckLg } from "react-icons/bs"
@@ -20,7 +21,7 @@ export function DetailsSidebar({ gig }) {
             <div className="features-list">
                 <p className="feature flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
                 <p className="feature flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
-         
+
             </div>
             <Link to={`/gig/payment/${gig._id}`}> <button className="Continue-btn">Continue ({`${gig.price}$`})</button></Link>
         </article>

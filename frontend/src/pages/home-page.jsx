@@ -10,7 +10,7 @@ export function HomePage(){
             <HomeHero/>
             <TrustedBy/>
             <HomePopularServices/>
-            {/* <WhyUs/> */}
+            <WhyUs/>
         </section>
     )
 }

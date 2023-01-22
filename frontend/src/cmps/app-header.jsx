@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import { NavLink } from "react-router-dom"
-import { CategoryNav } from './category-nav-bar.jsx'
-import { GigFilter } from './gig-filter.jsx'
-import { LoginSignUp } from './user/login-signup.jsx'
-import { RiNotification3Line } from "react-icons/ri"
+
+import { LoginSignUp } from './user/login-signup'
+import { CategoryNav } from './category-nav-bar'
+import { GigFilter } from './gig-filter'
+
+import { eventBus, JOIN_USER } from '../services/event-bus.service.js'
+
 import { AiOutlineSearch } from "react-icons/ai"
 import { BiEnvelope } from "react-icons/bi"
 import { FaRegHeart } from "react-icons/fa"
-import { useSelector } from 'react-redux'
-import { useState } from 'react'
-import { eventBus, JOIN_USER } from '../services/event-bus.service.js'
+import { RiNotification3Line } from "react-icons/ri"
 
 export function AppHeader({ elApp }) {
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
@@ -20,7 +22,7 @@ export function AppHeader({ elApp }) {
     useEffect(() => {
         eventBus.on(JOIN_USER, () => setOpenModal('login'))
     }, [])
-    
+
     const changeScroll = () => {
         if (window.scrollY > 0) setScroll(true)
         else setScroll(false)

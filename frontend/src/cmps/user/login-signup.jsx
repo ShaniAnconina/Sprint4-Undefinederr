@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-import { showErrorMsg, showSuccessMsg } from "../../services/event-bus.service"
-import { userService } from "../../services/user.service"
-import { login, signup } from "../../store/user/user.action"
+
+import { login, signup } from "../../store/user/user.action.js"
+import { showErrorMsg, showSuccessMsg } from "../../services/event-bus.service.js"
+import { userService } from "../../services/user.service.js"
 
 export function LoginSignUp({ elApp, status, setOpenModal }) {
     const [isLogin, setIsLogin] = useState(null)
@@ -16,7 +17,8 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
     function onToggleLogInStatus() {
         setIsLogin(!isLogin)
     }
-    function handelChange({ target }) {
+
+    function handleChange({ target }) {
         const { name: field, value } = target
         setCredentials((prevCreds) => ({ ...prevCreds, [field]: value }))
     }
@@ -26,15 +28,14 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
         try {
             const func = isLogin ? login : signup
             await func(credentials)
+            //TODO:msg
         } catch (err) {
-            console.log(err)
             showErrorMsg('Had issues please try again...')
         }
         finally {
             setCredentials(userService.getEmptyCredentials())
             setOpenModal(null)
             disableScroll(false)
-
         }
     }
 
@@ -42,7 +43,7 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
         setOpenModal(null)
         disableScroll(false)
     }
-    
+
     function disableScroll(status) {
         if (status) {
             elApp.current.style.overflow = 'hidden'
@@ -72,7 +73,7 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
                     name="username"
                     value={credentials.username}
                     placeholder={usernamePlaceHolder}
-                    onChange={handelChange}
+                    onChange={handleChange}
                 // required
                 />
 
@@ -81,7 +82,7 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
                     name="password"
                     value={credentials.password}
                     placeholder={passwordPlaceHolder}
-                    onChange={handelChange}
+                    onChange={handleChange}
                 // required
                 />
 
@@ -90,7 +91,7 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
                     name="fullname"
                     value={credentials.fullname}
                     placeholder="Full name"
-                    onChange={handelChange}
+                    onChange={handleChange}
                 // required
                 />}
 
@@ -105,5 +106,3 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
         </footer>
     </section>
 }
-
-

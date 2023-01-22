@@ -1,8 +1,7 @@
-import { setfilter } from "../../store/gig/gig.action.js"
 import { useSelector } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 
-
+import { setfilter } from "../../store/gig/gig.action.js"
 
 export function PopularTagSearch() {
 
@@ -10,14 +9,11 @@ export function PopularTagSearch() {
     const navigate = useNavigate()
 
     function OnSelectCatogery(tag) {
-        console.log("selected", tag)
         let filterByToEdit = { ...filterBy, tags: tag }
         setfilter(filterByToEdit)
         navigate('/gig')
     }
 
-
-    // return  <div className="popular-btns flex" style={{ display: suggestShown ? 'block' : 'none' }}>
     return (
         <div className="popular-tag-search ">
             <p>Popular:  </p>

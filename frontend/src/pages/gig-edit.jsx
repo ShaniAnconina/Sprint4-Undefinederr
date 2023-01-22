@@ -1,23 +1,24 @@
-import axios from "axios"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
-import { gigService } from "../services/gig.service"
 import { saveGig } from "../store/gig/gig.action"
 
+import axios from "axios"
+
+import { gigService } from "../services/gig.service"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
+
 export function GigEdit() {
+    const navigate = useNavigate()
+    const [imageData, setImageData] = useState('')
     const [gigToEdit, setGigToEdit] = useState(gigService.getEmptyGig())
     const [selectedImage, setSelectedImage] = useState(null)
-    const [imageData, setImageData] = useState('')
     const [tags, setTags] = useState([])
-    const navigate = useNavigate()
 
     async function onSaveGig(ev) {
         ev.preventDefault()
         try {
             gigToEdit.imgUrl = imageData.secure_url
             gigToEdit.tags = tags
-            console.log('gigToEdit:', gigToEdit)
             await saveGig(gigToEdit)
             navigate('/gig')
             showSuccessMsg('Your gig has been saved!')
@@ -31,7 +32,6 @@ export function GigEdit() {
         value = type === 'number' ? +value : value
         if (field === 'tags') {
             setTags((prevTags) => [...prevTags, value])
-            console.log('tags:', tags)
             return
         }
         setGigToEdit((prevGig) => ({ ...prevGig, [field]: value }))
@@ -47,10 +47,7 @@ export function GigEdit() {
         FORM_DATA.append('upload_preset', UPLOAD_PRESET)
         try {
             const res = await axios.post(UPLOAD_URL, FORM_DATA)
-            console.log('res:', res)
             setImageData(res.data)
-            console.log('res.data.secure_url:', res.data.secure_url)
-
         } catch (err) {
             console.error(err)
         }

@@ -1,8 +1,8 @@
-import * as React from 'react';
+import * as React from 'react'
+
 import Switch from '@mui/material/Switch'
 import { styled } from '@mui/material/styles'
-import { FormControlLabel } from '@mui/material';
-
+import { FormControlLabel } from '@mui/material'
 
 export function SwitchBtn() {
     const IOSSwitch = styled((props) => (

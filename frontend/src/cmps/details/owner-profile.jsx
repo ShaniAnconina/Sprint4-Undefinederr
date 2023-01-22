@@ -6,7 +6,6 @@ export function OwnerProfile({ gig }) {
 
         <div className="profile-info flex">
 
-            {/* <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" /> */}
             <img className="owner-img" src={gig.owner.imgUrl} />
             <div className="flex column ">
                 <p className="owner-name">{gig.owner.fullname}</p>
@@ -37,10 +36,11 @@ export function OwnerProfile({ gig }) {
             </div>
 
             <p className="owner-desc">
-                Hello,I am Warda :)
-                Your Creative Graphic Designer & Website Designer & Developer.. My first Priority is my client satisfaction I hope you will enjoy working with Me..
+                Hello,I am Warda :
+                Your Creative Graphic Designer & Website Designer & Developer..
+                My first Priority is my client satisfaction I hope you will enjoy working with Me..
                 So.. Place your order and lets Get started
-                looking forward to work with you :)
+                looking forward to work with you :
             </p>
 
         </div>

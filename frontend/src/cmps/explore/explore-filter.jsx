@@ -1,7 +1,9 @@
-import { useState } from 'react';
-import { MdKeyboardArrowDown } from 'react-icons/md';
-import { FilterModal } from './filter-modal';
-import { SwitchBtn } from './switch-btn';
+import { useState } from 'react'
+
+import { FilterModal } from './filter-modal'
+import { SwitchBtn } from './switch-btn'
+
+import { MdKeyboardArrowDown } from 'react-icons/md'
 
 export function ExploreFilter() {
     const [modalType, setModalType] = useState(false)

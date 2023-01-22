@@ -1,5 +1,3 @@
-import { Fragment } from "react"
-
 export function HomePopularServices() {
 
     const urls = {
@@ -14,23 +12,18 @@ export function HomePopularServices() {
         <h2 className="trusted-by-text">Popular professional services </h2>
         <div className="popular-services">
             <a style={{ backgroundImage: "url(" + urls['Logo Design'] + ")" }}>
-                {/* <img src={urls['Logo Design']} /> */}
                 <p>Build your brand <br /><span>Logo Design</span></p>
             </a>
             <a style={{ backgroundImage: "url(" + urls['WordPress'] + ")" }}>
-                {/* <img src={urls['WordPress']} /> */}
                 <p>Customize your site <br /><span>WordPress</span></p>
             </a>
             <a style={{ backgroundImage: "url(" + urls['Voice Over'] + ")" }}>
-                {/* <img src={urls['Voice Over']} /> */}
                 <p>Share your message <br /><span>Voice Over</span></p>
             </a>
             <a style={{ backgroundImage: "url(" + urls['Video Explainer'] + ")" }}>
-                {/* <img src={urls['Voice Over']} /> */}
                 <p>Engage your audience <br /><span>Video Explainer</span></p>
             </a>
             <a style={{ backgroundImage: "url(" + urls['Social Media'] + ")" }}>
-                {/* <img src={urls['Voice Over']} /> */}
                 <p>Reach more customers <br /><span>Social Media</span></p>
             </a>
         </div>

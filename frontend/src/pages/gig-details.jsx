@@ -1,26 +1,25 @@
-
-import { SlArrowRight } from "react-icons/sl"
+import { useRef, useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
-import { useRef, useState } from "react"
-import { useEffect } from "react"
-import { gigService } from "../services/gig.service"
-import { showErrorMsg } from "../services/event-bus.service"
+
 import { DetailsSidebar } from "../cmps/details/details-sidebar"
 import { OwnerRate } from "../cmps/details/owner-rate"
 import { Reviews } from "../cmps/details/reviews"
 import { OwnerProfile } from "../cmps/details/owner-profile"
+
 import { FaHeart } from "react-icons/fa"
+import { SlArrowRight } from "react-icons/sl"
+
+import { gigService } from "../services/gig.service"
+import { showErrorMsg } from "../services/event-bus.service"
 
 export function GigDetails() {
     const navigate = useNavigate()
     const { gigId } = useParams()
     const [gig, setGig] = useState(null)
-
     const elOverview = useRef(null)
     const elDescription = useRef(null)
     const elAboutTheSeller = useRef(null)
     const elReviews = useRef(null)
-
     const elReviewNav = useRef(null)
 
     // useEffect(() => {
@@ -42,7 +41,6 @@ export function GigDetails() {
     //     }
     // }, [elReviews.current])
 
-
     useEffect(() => {
         loadGig()
     }, [])
@@ -51,6 +49,7 @@ export function GigDetails() {
         try {
             const gig = await gigService.get(gigId)
             setGig(gig)
+            //TODO:add msg
         } catch (err) {
             showErrorMsg('eror msg from details, need to thing about txt...')
             navigate('/gig')
@@ -80,7 +79,7 @@ export function GigDetails() {
 
     return (
         <section className="gig-details ">
-            
+
             <div className="details-nav main-layout full">
                 <div className="flex space-between">
 
@@ -117,11 +116,11 @@ export function GigDetails() {
                             <SlArrowRight size="10px" />
                             <button className='open-btn subcategory' >Subcategory</button>
                         </div>
-                        
+
                         <h1>{gig.title}</h1>
 
                         <div className="mini-owner flex">
-                            <img className="owner-img" src={gig.owner.imgUrl}/>
+                            <img className="owner-img" src={gig.owner.imgUrl} />
                             <p className="owner-name">{gig.owner.fullname}</p>
                             <p className="owner-level">{gig.owner.level}</p>
                             <div className="owner-rate flex align-center"><OwnerRate rate={gig.owner.rate} /> </div>
@@ -146,7 +145,7 @@ export function GigDetails() {
 
                             <h2>About This Gig</h2>
                             <p>{gig.description}</p>
-                            <p>Please message me before ordering :)</p>
+                            <p>Please message me before ordering :</p>
                             <p>As an experienced, published writer I have a real eye for words and grammar.</p>
                             <p>I will proofread, grammar check and edit your cover letter so that it is personal to you and the job you are applying for. It will make you stand out from the crowd and give you the best chance of getting an interview and landing your dream role!</p>
                             <p>I am also very flexible and understand the importance of deadlines. </p>

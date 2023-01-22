@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux'
+import { Link } from "react-router-dom"
+
 import { FaHeart } from "react-icons/fa"
 import { AiFillStar } from "react-icons/ai"
-import { useSelector } from 'react-redux';
 
 export function GigPreview({ gig, onAddToWishlist }) {
     const loggedinUser = useSelector((storeState) => storeState.userModule.loggedinUser)
