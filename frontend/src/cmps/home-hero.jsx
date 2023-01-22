@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import { GigFilter } from './gig-filter.jsx'
 import { AiOutlineSearch } from "react-icons/ai"
 import { Fragment } from 'react'
-import {PopularTagSearch} from './popular-tag-search.jsx'
+import { PopularTagSearch } from './popular-tag-search.jsx'
 
 import img1 from '../assets/img/home/carousel/slide1.jpg';
 import img2 from '../assets/img/home/carousel/slide2.jpg';
@@ -30,13 +30,13 @@ export function HomeHero() {
 
 
 
-function changeSlide(){
-        console.log('working on image number ', idxRef.current)
-        if (idxRef.current  === heros.length -1 ) idxRef.current=0 
-        else idxRef.current ++
-        setCurrImg(heros[idxRef.current])
+        function changeSlide() {
+                console.log('working on image number ', idxRef.current)
+                if (idxRef.current === heros.length - 1) idxRef.current = 0
+                else idxRef.current++
+                setCurrImg(heros[idxRef.current])
 
-}
+        }
 
         // useEffect(() => {
         //         idxRef.current = setInterval(() => {
@@ -48,18 +48,21 @@ function changeSlide(){
         // }, [])
         useEffect(() => {
                 let interval = setInterval(() => {
-                        setCurrHeroIdx(changeSlide)}, 5000)
+                        setCurrHeroIdx(changeSlide)
+                }, 5000)
                 return () => clearInterval(interval)
         }, [])
 
         return <section className="home-hero">
-                <div className="slider-container">
-                        {/* {heros[0]} */}
-                        {currImg}
+                <div className='home-hero-content'>
+                        <div className="slider-container">
+                                {/* {heros[0]} */}
+                                {currImg}
+                        </div>
+                        <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>
+                        {/* <GigFilter searchBtnContent='Search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`} /> */}
+                        <GigFilter searchBtnContent='Search' placeholderTxt={`Try \"building mobile app\"`} />
+                        <PopularTagSearch />
                 </div>
-                <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>
-                {/* <GigFilter searchBtnContent='Search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`} /> */}
-                <GigFilter searchBtnContent='Search' placeholderTxt={`Try \"building mobile app\"`} />
-                <PopularTagSearch/>
         </section>
 }
