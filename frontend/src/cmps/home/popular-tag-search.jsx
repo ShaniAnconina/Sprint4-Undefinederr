@@ -1,4 +1,4 @@
-import { setfilter } from "../store/gig/gig.action.js"
+import { setfilter } from "../../store/gig/gig.action.js"
 import { useSelector } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 
