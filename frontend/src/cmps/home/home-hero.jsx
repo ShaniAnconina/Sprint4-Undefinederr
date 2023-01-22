@@ -19,7 +19,7 @@ export function HomeHero() {
                 <div className='hero hero-andrea opacity'><p>Andrea,<b>Fashion Designer</b></p></div>,
                 <div className='hero hero-rikita opacity'><p>Rikita,<b>Showmaker and Designer</b></p></div>,
                 <div className='hero hero-zach opacity'><p>Zach,<b>Bar Owner</b></p></div>,
-                // <div className='hero hero-gabriela opacity'><p>Gabriela,<b>Video Editor</b></p></div>
+                <div className='hero hero-gabriela opacity'><p>Gabriela,<b>Video Editor</b></p></div>
         ]
 
         const [currHeroIdx, setCurrHeroIdx] = useState(0)

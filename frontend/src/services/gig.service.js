@@ -19,38 +19,30 @@ export const gigService = {
 async function query(filterBy) {
     try {
         let gigs = await storageService.query(STORAGE_KEY)
-        if (!filterBy) {
-            console.error("filterBy object is missing")
-            return gigs
-        }
 
         //filter by free text
-        if (filterBy.txt) {
+        if (filterBy?.txt) {
             const regex = new RegExp(filterBy.txt, "ig")
             gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description))
         }
 
         //filter by tags
-        if (filterBy.tags) {
+        if (filterBy?.tags) {
             gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tags))
         }
 
         //filter by budget
-        if (filterBy.budget && filterBy.budget.min && filterBy.budget.max) {
+        if (filterBy?.budget && filterBy?.budget.min && filterBy?.budget.max) {
             gigs = gigs.filter((gig) => gig.price >= filterBy.budget.min && gig.price <= filterBy.budget.max)
-        } else {
-            console.warn("filterBy.budget is missing or invalid")
         }
 
         //filter by time range
-        if (filterBy.daysToMake && filterBy.daysToMake.min && filterBy.daysToMake.max) {
+        if (filterBy?.daysToMake && filterBy?.daysToMake.min && filterBy?.daysToMake.max) {
             gigs = gigs.filter((gig) => gig.daysToMake >= filterBy.daysToMake.min && gig.daysToMake <= filterBy.daysToMake.max)
-        } else {
-            console.warn("filterBy.daysToMake is missing or invalid")
-        }
+        } 
 
         //filter by is saved
-        if (filterBy.isSaved) {
+        if (filterBy?.isSaved) {
             gigs = gigs.filter((gig) => gig.isSaved === true)
         }
         return gigs
@@ -79,7 +71,6 @@ function remove(gigId) {
 function addToWishlist(gigId) {
 
     console.log('gigId - service:', gigId)
-    console.log("gigId - service:", gigId)
 }
 
 function getEmptyGig() {
@@ -92,7 +83,6 @@ function getEmptyGig() {
         description: "",
         price: 0,
         daysToMake: "",
-        // imgUrl: "",
         tags: [],
         owner: {
             _id: "u101",
