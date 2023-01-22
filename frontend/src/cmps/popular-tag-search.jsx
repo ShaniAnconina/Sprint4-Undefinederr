@@ -19,10 +19,10 @@ export function PopularTagSearch() {
 
     // return  <div className="popular-btns flex" style={{ display: suggestShown ? 'block' : 'none' }}>
     return <div className="popular-btns flex space-between">
-        <div>Popular:  </div>
-        <button className="search-suggestion" onClick={() => OnSelectCatogery("Graphics & Design")}>Website Design</button>
-        <button className="search-suggestion" onClick={() => OnSelectCatogery("Programming & Tech")}>Wordpress</button>
-        <button className="search-suggestion" onClick={() => OnSelectCatogery("Graphics & Design")}>logo Design</button>
-        <button className="search-suggestion" onClick={() => OnSelectCatogery("Video & Animation")}>video Editing</button>
+        <p>Popular:  </p>
+        <button className="search-suggestion" onClick={() => OnSelectCatogery("Graphics & Design")}><a>Website Design</a></button>
+        <button className="search-suggestion" onClick={() => OnSelectCatogery("Programming & Tech")}><a>Wordpress</a></button>
+        <button className="search-suggestion" onClick={() => OnSelectCatogery("Graphics & Design")}><a>logo Design</a></button>
+        <button className="search-suggestion" onClick={() => OnSelectCatogery("Video & Animation")}><a>video Editing</a></button>
     </div>
 }

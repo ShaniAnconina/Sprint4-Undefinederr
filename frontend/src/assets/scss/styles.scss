@@ -10,16 +10,15 @@
 // @import 'setup/functions';
 
 /* Pages */
-// @import 'pages/home-page';
 @import 'pages/gig-details';
 @import 'pages/gig-edit';
+@import 'pages/home-page';
 
 /* Cmps */
 @import 'cmps/app-header';
 @import 'cmps/gig-list';
 @import 'cmps/gig-privew';
 @import 'cmps/user-msg';
-@import 'cmps/home-page';
 @import 'cmps/home-hero';
 @import 'cmps/app-header';
 @import 'cmps/gig-filter';

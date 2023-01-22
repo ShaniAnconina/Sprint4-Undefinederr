@@ -2,13 +2,18 @@
     z-index: 0;
     top: 437px;
     left: 249px;
-    width: 548px;
     font-weight: 600;
     font-family: Macan-Regular;
     display: flex;
+    position: absolute;
+    width: 650px;
+    height: 27px;
+    a {
+        padding: 1px 12px 0px;
+    }
 
     button,
-    div {
+    p {
         width: fit-content;
         color: $clr0;
         font-size: 14px;

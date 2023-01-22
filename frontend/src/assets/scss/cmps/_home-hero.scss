@@ -13,9 +13,14 @@
     position: absolute;
     top: 0;
 
-    .popular-btns {
-        position: absolute;
-    }
+    // .popular-btns {
+    //     position: absolute;
+    //     width: 650px;
+    //     height: 27px;
+    //     a {
+    //         padding: 1px 12px 0px;
+    //     }
+    // }
     h1 {
         left: 250px;
         top: 156px;
@@ -30,6 +35,8 @@
 
         span {
             font-family: DomaineDispNar-Regular;
+            letter-spacing: 2px;
+            font-weight: 300;
         }
     }
 
@@ -78,6 +85,7 @@
         .hero {
             height: 100%;
             background-position-x: right;
+
             p {
                 color: white;
                 position: absolute;
@@ -94,16 +102,19 @@
         // background-image: url('../../img/home/carousel/slide1.jpg');
         background-image: url('https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/2413b8415dda9dbd7756d02cb87cd4b1-1599595203045/bg-hero-2-1792-x1.png');
     }
+
     .hero-andrea {
         opacity: 0;
         // background-image: url('../../img/home/carousel/slide5.jpg');
         background-image: url('https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049983/bg-hero-1-1792-x1.png');
     }
+
     .hero-rikita {
         opacity: 0;
         // background-image: url('../../img/home/carousel/slide2.jpg');
         background-image: url('https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/d14871e2d118f46db2c18ad882619ea8-1599835783966/bg-hero-3-1792-x1.png');
     }
+
     .hero-zach {
         opacity: 0;
         // background-image: url('../../img/home/carousel/slide3.jpg');
