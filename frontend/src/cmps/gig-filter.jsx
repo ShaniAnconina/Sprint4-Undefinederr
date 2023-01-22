@@ -48,9 +48,9 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
         // setFilterByToEdit(gigService.getDefaultFilter())
     }
 
-    return  <>
+  
         {/* <SearchBar onChange ={onChange} onFilterSubmit={onFilterSubmit} filterByToEdit={filterByToEdit}/> */}
-        <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}>
+        return  <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}>
             <input
                 className="search-bar"
                 type="text"
@@ -62,5 +62,5 @@ export function GigFilter({ suggestShown = true, searchBtnContent, placeholderTx
             />
             <button className="search-bar-btn">{searchBtnContent}</button>
         </form>
-        </>
+
 }

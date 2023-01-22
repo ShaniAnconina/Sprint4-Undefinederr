@@ -83,6 +83,10 @@ function addToWishlist(gigId) {
 }
 
 function getEmptyGig() {
+    const usersData = require('../Data/users-for-review.json')
+    const users = usersData.results
+    const genUsersIdx = utilService.getRandomIntInclusive(1, 50)
+
     return {
         title: "",
         description: "",
@@ -92,11 +96,11 @@ function getEmptyGig() {
         tags: [],
         owner: {
             _id: "u101",
-            fullname: "Dudu Da",
-            username: "Dududa",
-            imgUrl: "url",
+            fullname: `${users[genUsersIdx].name.first} ${users[genUsersIdx].name.last}`,
+            username: users[genUsersIdx].login.username,
+            imgUrl: users[genUsersIdx].picture.thumbnail,
             level: "basic",
-            rate: 4
+            rate: utilService.getRandomIntInclusive(1,5)
         },
         likedByUsers: []
     }
@@ -106,48 +110,74 @@ function _createGigs() {
     let Gigs = utilService.loadFromStorage(STORAGE_KEY)
     if (!Gigs || !Gigs.length) {
         Gigs = []
-        let GigsData = require('../Data/gigs.json')
-        console.log(GigsData)
-        GigsData.forEach(gig => {
+        let gigsData = require('../Data/gigs.json')
+        let gigsUrl = require('../assets/img/demogig/cloudinaryURL.json')
+        let usersData = require('../Data/users-for-review.json')
+        let users = usersData.results
+        let reviewText = require('../Data/review-text.json')
+        console.log(gigsUrl)
+        gigsData.forEach(gig => {
+            const genUsersIdx =[utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50)] 
+            
             gig.reviews = [
                 {
                     id: utilService.makeId(),
-                    txt: utilService.makeLorem(5),
-                    rate: utilService.getRandomIntInclusive(1, 5),
+                    txt: reviewText[genUsersIdx[0]].txt,
+                    rate: reviewText[genUsersIdx[0]].rate,
                     by: {
                         _id: "u102",
-                        fullname: "user2",
-                        imgUrl: "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"
+                        fullname: `${users[genUsersIdx[0]].name.first} ${users[genUsersIdx[0]].name.last}`,
+                        imgUrl: users[genUsersIdx[0]].picture.thumbnail
                     }
                 },
                 {
                     id: utilService.makeId(),
-                    txt: utilService.makeLorem(12),
-                    rate: utilService.getRandomIntInclusive(1, 5),
+                    txt: reviewText[genUsersIdx[1]].txt,
+                    rate: reviewText[genUsersIdx[1]].rate,
                     by: {
                         _id: "u102",
-                        fullname: "user2",
-                        imgUrl: "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"
+                        fullname: `${users[genUsersIdx[1]].name.first} ${users[genUsersIdx[1]].name.last}`,
+                        imgUrl: users[genUsersIdx[1]].picture.thumbnail
                     }
                 },
                 {
                     id: utilService.makeId(),
-                    txt: utilService.makeLorem(7),
-
-                    rate: utilService.getRandomIntInclusive(1, 5),
+                    txt: reviewText[genUsersIdx[2]].txt,
+                    rate: reviewText[genUsersIdx[2]].rate,
                     by: {
-                        _id: "mumui",
-                        fullname: "momi2",
-                        imgUrl: "https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"
+                        _id: "u102",
+                        fullname: `${users[genUsersIdx[2]].name.first} ${users[genUsersIdx[2]].name.last}`,
+                        imgUrl: users[genUsersIdx[2]].picture.thumbnail
+                    }
+                },
+                {
+                    id: utilService.makeId(),
+                    txt: reviewText[genUsersIdx[3]].txt,
+                    rate: reviewText[genUsersIdx[3]].rate,
+                    by: {
+                        _id: "u102",
+                        fullname: `${users[genUsersIdx[3]].name.first} ${users[genUsersIdx[3]].name.last}`,
+                        imgUrl: users[genUsersIdx[3]].picture.thumbnail
+                    }
+                },
+                {
+                    id: utilService.makeId(),
+                    txt: reviewText[genUsersIdx[4]].txt,
+                    rate: reviewText[genUsersIdx[4]].rate,
+                    by: {
+                        _id: "u102",
+                        fullname: `${users[genUsersIdx[4]].name.first} ${users[genUsersIdx[4]].name.last}`,
+                        imgUrl: users[genUsersIdx[4]].picture.thumbnail
                     }
                 }
 
+
+
             ]
-            let gigImgnum = utilService.getRandomIntInclusive(1,20)
-            let gigImgCategory = gig.tags[0]
-            console.log(gigImgCategory)
-            let gigImgUrl = `src/assets/img/demogig/${gigImgCategory}/${gigImgnum}.png`
-            Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl, gig.reviews))
+        let gigImgIdx = utilService.getRandomIntInclusive(1,20)
+        let gigImgCategory = gig.tags[0]
+        let gigImgUrl = gigsUrl[gigImgCategory][gigImgIdx] 
+        Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl, gig.reviews))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
