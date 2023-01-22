@@ -6,7 +6,6 @@ import { GigFilter } from '../gig-filter'
 // import { AiOutlineSearch } from "react-icons/ai"
 
 export function HomeHero() {
-        const [currImg, setCurrImg] = useState(heros[0])
         let idxRef = useRef(0)
 
         const heros = [
@@ -16,6 +15,8 @@ export function HomeHero() {
                 <div className='hero hero-zach opacity'><p>Zach,<b>Bar Owner</b></p></div>,
                 <div className='hero hero-gabriela opacity'><p>Gabriela,<b>Video Editor</b></p></div>
         ]
+
+        const [currImg, setCurrImg] = useState(heros[0])
 
         function changeSlide() {
                 if (idxRef.current === heros.length - 1) idxRef.current = 0
