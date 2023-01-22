@@ -1,14 +1,14 @@
 import { useEffect, useState, useRef } from 'react'
-import { GigFilter } from './gig-filter.jsx'
-import { AiOutlineSearch } from "react-icons/ai"
-import { Fragment } from 'react'
+import { GigFilter } from '../gig-filter.jsx'
+// import { AiOutlineSearch } from "react-icons/ai"
+// import { Fragment } from 'react'
 import { PopularTagSearch } from './popular-tag-search.jsx'
 
-import img1 from '../assets/img/home/carousel/slide1.jpg';
-import img2 from '../assets/img/home/carousel/slide2.jpg';
-import img3 from '../assets/img/home/carousel/slide3.jpg';
-import img4 from '../assets/img/home/carousel/slide4.jpg';
-import img5 from '../assets/img/home/carousel/slide5.jpg';
+// import img1 from '../assets/img/home/carousel/slide1.jpg';
+// import img2 from '../assets/img/home/carousel/slide2.jpg';
+// import img3 from '../assets/img/home/carousel/slide3.jpg';
+// import img4 from '../assets/img/home/carousel/slide4.jpg';
+// import img5 from '../assets/img/home/carousel/slide5.jpg';
 
 //TODO fix the routine
 

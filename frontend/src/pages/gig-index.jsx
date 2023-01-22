@@ -1,9 +1,9 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
-import { ExploreFilter } from "../cmps/explore-filter"
-import { GigList } from "../cmps/gig-list"
+import { ExploreFilter } from "../cmps/explore/explore-filter"
+import { GigList } from "../cmps/explore/gig-list"
 import { openJoinModal } from "../services/event-bus.service"
-import { gigService } from "../services/gig.service"
+import { gigService } from "../services/gig.service" 
 import { loadGigs, saveGig } from "../store/gig/gig.action"
 
 export function GigIndex() {
