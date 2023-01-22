@@ -6,7 +6,8 @@ export function OwnerProfile({ gig }) {
 
         <div className="profile-info flex">
 
-            <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
+            {/* <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" /> */}
+            <img className="owner-img" src={gig.owner.imgUrl} />
             <div className="flex column ">
                 <p className="owner-name">{gig.owner.fullname}</p>
                 <div className="owner-rate flex"> <OwnerRate rate={gig.owner.rate} /> </div>

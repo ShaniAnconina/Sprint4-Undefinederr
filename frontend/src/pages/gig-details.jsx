@@ -120,7 +120,7 @@ export function GigDetails() {
                         <h1>{gig.title}</h1>
 
                         <div className="mini-owner flex">
-                            <img className="owner-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
+                            <img className="owner-img" src={gig.owner.imgUrl}/>
                             <p className="owner-name">{gig.owner.fullname}</p>
                             <p className="owner-level">{gig.owner.level}</p>
                             <div className="owner-rate flex align-center"><OwnerRate rate={gig.owner.rate} /> </div>
