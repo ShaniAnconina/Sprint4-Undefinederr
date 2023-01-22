@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { NavLink } from "react-router-dom"
 import { CategoryNav } from './category-nav-bar.jsx'
 import { GigFilter } from './gig-filter.jsx'
-import { LoginSignUp } from './logInsignUp.jsx'
+import { LoginSignUp } from './login-signup.jsx'
 import { RiNotification3Line } from "react-icons/ri"
 import { AiOutlineSearch } from "react-icons/ai"
 import { BiEnvelope } from "react-icons/bi"

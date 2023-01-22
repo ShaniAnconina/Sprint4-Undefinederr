@@ -9,6 +9,7 @@ import { DetailsSidebar } from "../cmps/details-sidebar"
 import { OwnerRate } from "../cmps/owner-rate"
 import { Reviews } from "../cmps/reviews"
 import { OwnerProfile } from "../cmps/owner-profile"
+import { FaHeart } from "react-icons/fa"
 
 export function GigDetails() {
     const navigate = useNavigate()
@@ -19,6 +20,27 @@ export function GigDetails() {
     const elDescription = useRef(null)
     const elAboutTheSeller = useRef(null)
     const elReviews = useRef(null)
+
+    const elReviewNav = useRef(null)
+
+    // useEffect(() => {
+    //     if (!elReviews.current) return
+    //     const headerObserver = new IntersectionObserver(onHeaderObserved, {
+    //         //   rootMargin: "100px 0px 0px",
+    //     });
+
+    //     headerObserver.observe(elReviews.current)
+
+    //     function onHeaderObserved(entries) {
+    //         entries.forEach((entry) => {
+
+    //             console.log('helllooo')
+    //             // elReviewNav.classList.toggle('active') = entry.isIntersecting ? 'static' : 'fixed';
+    //             if (entry.isIntersecting) elReviewNav.current.classList.toggle('active')
+
+    //         })
+    //     }
+    // }, [elReviews.current])
 
 
     useEffect(() => {
@@ -59,23 +81,30 @@ export function GigDetails() {
     return (
         <section className="gig-details ">
             <div className="details-nav main-layout full">
-                <ul className="flex">
+                <div className="flex space-between">
 
-                    <li onClick={() => scrollTo('overview')}>
-                        Overview
-                    </li>
-                    <li onClick={() => scrollTo('description')}>
-                        Description
-                    </li>
-                    <li onClick={() => scrollTo('aboutTheSeller')}>
-                        About The Seller
-                    </li>
-                    <li onClick={() => scrollTo('reviews')}>
-                        Reviews
-                    </li>
-                </ul>
+                    <ul className="flex">
+                        <li onClick={() => scrollTo('overview')}>
+                            Overview
+                        </li>
+                        <li onClick={() => scrollTo('description')}>
+                            Description
+                        </li>
+                        <li onClick={() => scrollTo('aboutTheSeller')}>
+                            About The Seller
+                        </li >
+                        {gig.reviews.length && <li ref={elReviewNav} onClick={() => scrollTo('reviews')}>
+                            Reviews
+                        </li>}
+                    </ul>
+
+                    <div className="wish-list flex align-center">
+                        <button className="add-wishlist"> <FaHeart /> </button>
+                        <span className="count-wishlist">14</span>
+                    </div>
+                </div>
+
             </div>
-
             <section className="gig-details-container flex">
 
                 <div ref={elOverview} className="details-layout flex">
@@ -99,7 +128,7 @@ export function GigDetails() {
                             <img className="main-img" src={gig.imgUrl} />
                         </div>
 
-                        <div className="reviews-snippet">
+                        {gig.reviews.length && <div className="reviews-snippet">
                             <header className="flex space-between">
                                 <h2>What people loved about this seller</h2>
                                 <button className='open-btn' onClick={() => scrollTo('reviews')}>See all reviews</button>
@@ -108,7 +137,7 @@ export function GigDetails() {
                                 {/* //TODO: reviews-carousel!!! */}
                             </div>
 
-                        </div>
+                        </div>}
 
                         <div ref={elDescription} className="about">
 
@@ -121,7 +150,7 @@ export function GigDetails() {
                         </div>
 
                         <span ref={elAboutTheSeller}><OwnerProfile gig={gig} /></span>
-                        <span ref={elReviews}><Reviews gig={gig} /></span>
+                        {gig.reviews.length && <span ref={elReviews}><Reviews gig={gig} /></span>}
                     </section>
 
                     <DetailsSidebar gig={gig} />

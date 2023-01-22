@@ -7,10 +7,10 @@ export function ExploreFilter() {
     return (
         <section className="explore-filter">
             <div className="left-filters">
-                <button><div><p>Service option</p><MdKeyboardArrowDown /></div></button>
-                <button><div><p>Seller details</p><MdKeyboardArrowDown /></div></button>
+                <button><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
+                {/* <button><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
                 <button><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                <button><div><p>Delivery time</p><MdKeyboardArrowDown /></div></button>
+                <button><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
             </div>
             <div className="right-filters">
                 <SwitchBtn />
