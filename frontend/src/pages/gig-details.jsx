@@ -26,7 +26,7 @@ export function GigDetails() {
     // useEffect(() => {
     //     if (!elReviews.current) return
     //     const headerObserver = new IntersectionObserver(onHeaderObserved, {
-    //         //   rootMargin: "100px 0px 0px",
+    //           rootMargin: "100px 0px 0px",
     //     });
 
     //     headerObserver.observe(elReviews.current)
@@ -80,6 +80,7 @@ export function GigDetails() {
 
     return (
         <section className="gig-details ">
+            
             <div className="details-nav main-layout full">
                 <div className="flex space-between">
 
@@ -105,6 +106,7 @@ export function GigDetails() {
                 </div>
 
             </div>
+
             <section className="gig-details-container flex">
 
                 <div ref={elOverview} className="details-layout flex">
@@ -157,6 +159,7 @@ export function GigDetails() {
                 </div>
 
             </section>
+
         </section>
     )
 }
