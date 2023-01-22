@@ -22,6 +22,7 @@
 
         .user-img {
             width: 24px;
+            border-radius: 100%;
         }
 
         .user-info {
@@ -38,14 +39,14 @@
             color: $clr4;
             font-weight: 500;
             line-height: 21px;
+            line-height: 1rem;
         }
-
     }
 
     h3 {
         color: $clr7;
         line-height: 22px;
-        height: 43px;
+        height: 45px;
         overflow: hidden;
         padding: 0 12px 5px;
         margin-top: 5px;
