@@ -45,7 +45,9 @@ export function GigPayment() {
             order.seller = seller
             order.gig = gigToSave
             const newOrder = await orderService.save(order)
+            console.log('newOrder', newOrder)
             showSuccessMsg('Your order send')
+            //TODO check if we need to add to the buyer some data??!?!@?#
             navigate(-1) //Maby to another path
         } catch (error) {
             showErrorMsg('Had issues please try again... 1')
@@ -167,4 +169,3 @@ export function GigPayment() {
         </div>
     </section>
 }
-
