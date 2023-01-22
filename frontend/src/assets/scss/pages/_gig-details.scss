@@ -30,6 +30,52 @@
                 border-bottom: 3px solid #1dbf73;
             }
         }
+
+        .wish-list {
+            .add-wishlist {
+                border: 1px solid $clr11;
+                background-color: $clr0;
+                padding: 6px 10px;
+                height: fit-content;
+                border-radius: 4px;
+                color: $clr11;
+
+                &.saved {
+                    color: $clr19
+                }
+            }
+
+            .count-wishlist {
+                border: 1px solid $clr11;
+                margin-left: 13px;
+                padding: 7px 10px;
+                position: relative;
+                border-radius: 4px;
+
+                &::before {
+                    border-color: transparent $clr17 transparent transparent;
+                    border-width: 8px 9px 8px 0;
+                    left: -9px;
+                    top: 6px;
+                    z-index: 2;
+                    border-style: solid;
+                    content: "";
+                    position: absolute;
+                }
+
+                &::after {
+                    border-color: transparent $clr0 transparent transparent;
+                    border-width: 6px 8px 6px 0;
+                    left: -8px;
+                    top: 8px;
+                    z-index: 3;
+                    border-style: solid;
+                    content: "";
+                    position: absolute;
+                }
+            }
+
+        }
     }
 
     .gig-details-container {

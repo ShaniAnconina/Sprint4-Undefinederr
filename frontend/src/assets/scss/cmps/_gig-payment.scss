@@ -8,6 +8,7 @@
 
         .payment-details {
             text-align: left;
+            width: 765px;
 
             h6 {
                 color: $clr6;
@@ -26,6 +27,7 @@
                 height: 65px;
                 padding: 16px;
                 align-items: center;
+                border: 1px solid $clr16;
 
                 .credit-cards {
                     padding-top: 7px;
@@ -48,6 +50,7 @@
                 border: 1px solid $clr16;
                 padding: 24px 40px;
                 font-size: 14px;
+                border: 1px solid $clr16;
 
                 input {
                     margin-top: 10px;
@@ -57,9 +60,25 @@
                 .card-details {
                     margin-bottom: 40px;
 
+                    .card-number-container {
+                        padding-right: 45px;
+                    }
+
+                    .card-expiration-container,
+                    .card-cvv-container{
+                        padding-left: 15px;
+                    }
+
                     .card-expiration,
                     .card-cvv {
                         width: 110px;
+                    }
+                }
+
+                .buyer-details{
+                    .first-name-container{
+                        padding-right: 60px;
+
                     }
                 }
             }
@@ -142,6 +161,8 @@
 
             }
         }
+
     }
+
 
 }
