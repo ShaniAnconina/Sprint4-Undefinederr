@@ -58,7 +58,8 @@ function changeSlide(){
                         {currImg}
                 </div>
                 <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>
-                <GigFilter searchBtnContent='Search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`} />
+                {/* <GigFilter searchBtnContent='Search' placeholderTxt={`${<AiOutlineSearch />} Try \"building mobile app\"`} /> */}
+                <GigFilter searchBtnContent='Search' placeholderTxt={`Try \"building mobile app\"`} />
                 <PopularTagSearch/>
         </section>
 }
