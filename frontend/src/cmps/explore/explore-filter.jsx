@@ -5,7 +5,7 @@ import { SwitchBtn } from './switch-btn'
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
-export function ExploreFilter() {
+export function ExploreFilter({ gigs }) {
     const [modalType, setModalType] = useState(false)
 
     function toggleModal(type) {
@@ -13,18 +13,34 @@ export function ExploreFilter() {
         if (modalType === type) setModalType(false)
     }
 
+
+
     return (
-        <section className="explore-filter">
-            <div className="left-filters">
-                <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
-                {/* <button onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
-                <button onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                <button onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+        <section >
+            <div className="explore-filter">
+                <div className="left-filters">
+                    <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>
+                    {/* <button onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
+                    <button onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                    <button onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                </div>
+                {modalType && <FilterModal modalType={modalType} />}
+                <div className="right-filters">
+                    {/* <SwitchBtn />
+                    <p>Pro services</p> */}
+                </div>
             </div>
-            {modalType && <FilterModal modalType={modalType} />}
-            <div className="right-filters">
-                <SwitchBtn />
-                <p>Pro services</p>
+
+            <div className="explore-count-sort">
+                <div className='count'>{gigs.length} services available</div>
+                <div className='sort'>
+                    <p>Sort By</p>
+                    <select name="sortBy" id="sort-by">
+                        <option value="">Sort By</option>
+                        <option value="top">Top Rated</option>
+                        <option value="price">Best Price</option> {/* cheap to expensive */}
+                    </select>
+                </div>
             </div>
         </section>
     )

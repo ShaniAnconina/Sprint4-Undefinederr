@@ -20,7 +20,12 @@ p {
     margin: 0;
 }
 
-button{
+button {
     cursor: pointer;
     font-family: Macan-Regular;
+}
+
+input:focus-visible,
+select:focus-visible {
+    outline: none;
 }

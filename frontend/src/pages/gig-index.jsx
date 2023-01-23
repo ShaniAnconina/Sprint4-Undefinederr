@@ -5,7 +5,7 @@ import { ExploreFilter } from "../cmps/explore/explore-filter"
 import { GigList } from "../cmps/explore/gig-list"
 import { loadGigs, saveGig } from "../store/gig/gig.action"
 
-import { openJoinModal } from "../services/event-bus.service"
+import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
 
 export function GigIndex() {
@@ -17,23 +17,25 @@ export function GigIndex() {
         loadGigs(filterBy)
     }, [filterBy])
 
-    function onAddToWishlist(ev, gig) {
-        //TODO: ASYNC 
-        //TODO: MSGS
-        ev.preventDefault()
-        if (!loggedinUser) return openJoinModal()
-        gig.isSaved = !gig.isSaved
-        gigService.addToWishlist(gig._id)
-        saveGig(gig)
+    async function onAddToWishlist(ev, gig) {
+        try {
+            ev.preventDefault()
+            if (!loggedinUser) return openJoinModal()
+            gig.isSaved = !gig.isSaved
+            gigService.addToWishlist(gig._id)
+            await saveGig(gig)
+            showSuccessMsg('This item added to wishlist successfully')
+        } catch (err) {
+            showErrorMsg('Had issues please try again...')
+        }
     }
 
     return (
-        <section className="gig-index">
-            {filterBy.txt && <h1>Showing results for: "{filterBy.txt}"</h1>}
-            <div className="main-layout">
-                <ExploreFilter />
-                <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
-            </div>
+        <section className="gig-index main-layout">
+            {!filterBy.tags && <h1>All</h1>}
+            {filterBy.tags && <h1>{filterBy.tags.replace('and', '&')}</h1>}
+            <ExploreFilter gigs={gigs} />
+            <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
         </section>
     )
 }
