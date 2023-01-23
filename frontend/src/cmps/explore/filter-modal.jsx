@@ -24,7 +24,9 @@ export function FilterModal({ modalType }) {
 
     function onSubmit(ev){
         ev?.preventDefault()
-        console.log("clicked apply")
+        console.log("event: ",ev)
+        console.log(ev.target.name)
+        console.log(ev.target.checked)
 
     }
 
