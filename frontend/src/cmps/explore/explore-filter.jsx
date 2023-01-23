@@ -28,12 +28,17 @@ export function ExploreFilter() {
                     <p>Pro services</p>
                 </div>
             </div>
-            <div className="sortBy">
-                <select name="sort" id="sort">
-                    <option value="">Sort By</option>
-                    <option value="top">Top Rated</option>
-                    <option value="price">Best Price</option> {/* cheap to expensive */}
-                </select>
+
+            <div className="explore-count-sort">
+                <div className='count'>14,160 services available</div>
+                <div className='sort'>
+                    <p>Sort By</p>
+                    <select name="sortBy" id="sort-by">
+                        <option value="">Sort By</option>
+                        <option value="top">Top Rated</option>
+                        <option value="price">Best Price</option> {/* cheap to expensive */}
+                    </select>
+                </div>
             </div>
         </section>
     )

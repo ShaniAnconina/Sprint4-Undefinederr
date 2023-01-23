@@ -1,8 +1,10 @@
 .explore-filter {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    height: 70px;
 
     .left-filters button {
         font-size: 1rem;
@@ -10,7 +12,7 @@
         background-color: $clr0;
         color: $clr7;
         border-radius: 4px;
-        border: 1px solid $clr15;
+        border: 1px solid $clr17;
         min-width: 50px;
         height: 38px;
         padding: 6px 12px;
@@ -20,15 +22,49 @@
             display: flex;
             align-items: center;
         }
+
+        p {
+            margin-right: 10px;
+        }
     }
 
     .right-filters {
         width: 250px;
         text-align: right;
+
         p {
             display: inline-block;
             font-weight: 600;
             color: $clr5;
+        }
+    }
+
+}
+
+.explore-count-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 39px;
+
+    .count {
+        color: $clr4;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+
+    .sort {
+        p {
+            display: inline-block;
+            color: $clr5;
+        }
+
+        select {
+            font-size: 16px;
+            line-height: 120%;
+            font-weight: 700;
+            border: none;
         }
     }
 }

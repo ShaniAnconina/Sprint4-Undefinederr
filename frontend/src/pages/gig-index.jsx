@@ -28,8 +28,9 @@ export function GigIndex() {
     }
 
     return (
-        <section className="gig-index">
-            {filterBy.txt && <h1>Showing results for: "{filterBy.txt}"</h1>}
+        <section className="gig-index main-layout">
+            {!filterBy.txt && <h1>All</h1>}
+            {filterBy.txt && <h1>{filterBy.txt}</h1>}
             <div className="main-layout">
                 <ExploreFilter />
                 <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />

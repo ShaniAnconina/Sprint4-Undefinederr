@@ -24,7 +24,7 @@ export function GigPreview({ gig, onAddToWishlist }) {
                 <div className={(gig.isSaved && gig.likedByUsers.some(userId => userId === loggedinUser._id)) ? 'whishlist saved' : 'whishlist'} onClick={(ev) => onAddToWishlist(ev, gig)}><FaHeart /></div>
                 <div className="price">
                     <p>STARTING AT</p>
-                    <span>₪{gig.price}</span>
+                    <span>US${gig.price}</span>
                 </div>
             </div>
         </Link>
