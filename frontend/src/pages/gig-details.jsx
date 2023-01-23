@@ -113,11 +113,12 @@ export function GigDetails() {
                     <section className="main">
                         <div className="breadcrumds flex align-center" >
                             <button className='open-btn category' >Category</button>
-                            <SlArrowRight size="10px" />
+                            <span><SlArrowRight size="10px" /></span>
                             <button className='open-btn subcategory' >Subcategory</button>
                         </div>
 
-                        <h1>{gig.title}</h1>
+                        {/* <h1>{gig.title}</h1> */}
+                        <h1>I will do high quality contextual seo dofollow backlinks</h1>
 
                         <div className="mini-owner flex">
                             <img className="owner-img" src={gig.owner.imgUrl} />

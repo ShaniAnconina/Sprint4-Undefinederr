@@ -97,6 +97,7 @@
                 margin-inline-end: auto;
 
                 h1 {
+                    line-height: 130%;
                     font-size: 28px;
                     margin: 0px;
                     padding-bottom: 16px;
@@ -105,9 +106,7 @@
             }
 
             .breadcrumds {
-
-                padding-bottom: 10px;
-
+                padding-bottom: 18px;
                 .open-btn {
                     cursor: pointer;
                     font-family: Macan-Regular;
@@ -116,12 +115,16 @@
                     border: none;
                     background-color: inherit;
                     margin: none;
-                    padding: none;
+                    padding: 0px;
 
                     &:hover {
                         text-decoration: underline
                     }
+                   
                 }
+                 span{
+                        margin-inline: 8px;
+                    }
             }
         }
 
