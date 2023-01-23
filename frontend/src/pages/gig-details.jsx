@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react"
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 
 import { DetailsSidebar } from "../cmps/details/details-sidebar"
 import { OwnerRate } from "../cmps/details/owner-rate"
@@ -11,16 +11,20 @@ import { SlArrowRight } from "react-icons/sl"
 
 import { gigService } from "../services/gig.service"
 import { showErrorMsg } from "../services/event-bus.service"
+import { useSelector } from "react-redux"
 
-export function GigDetails({elApp}) {
+export function GigDetails({ elApp }) {
     const navigate = useNavigate()
     const { gigId } = useParams()
     const [gig, setGig] = useState(null)
+    const { filterBy } = useSelector((storeState) => storeState.gigModule)
+
     const elOverview = useRef(null)
     const elDescription = useRef(null)
     const elAboutTheSeller = useRef(null)
     const elReviews = useRef(null)
     const elReviewNav = useRef(null)
+
 
 
 
@@ -114,9 +118,11 @@ export function GigDetails({elApp}) {
 
                     <section className="main">
                         <div className="breadcrumds flex align-center" >
-                            <button className='open-btn category' >Category</button>
+                            <Link to={'/'} > <button className='open-btn category' >Home Page</button> </Link>
                             <span><SlArrowRight size="10px" /></span>
-                            <button className='open-btn subcategory' >Subcategory</button>
+                            <Link to={'/gig'}> <button className='open-btn subcategory' >All Gigs</button> </Link>
+                            {filterBy.tags && <span><SlArrowRight size="10px" /></span>}
+                            {filterBy.tags && <Link to={`/gig?filterBy=${filterBy.tags}`}> <button className='open-btn category'>{filterBy.tags}</button> </Link>}
                         </div>
 
                         <h1>{gig.title}</h1>

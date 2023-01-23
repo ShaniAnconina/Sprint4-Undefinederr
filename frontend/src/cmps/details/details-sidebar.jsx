@@ -18,9 +18,9 @@ export function DetailsSidebar({ gig }) {
 
         <article>
             <h3 >
-                {Package === 'basic' && <span className="price-container bold">US${gig.price.toFixed(1)}</span>}
-                {Package === 'standard' && <span className="price-container bold">US${(gig.price * 1.1).toFixed(1)}</span>}
-                {Package === 'premium' && <span className="price-container bold">US${(gig.price * 1.5).toFixed(1)}</span>}
+                {Package === 'basic' && <span className="price-container bold">US${gig.price.toFixed(0)}</span>}
+                {Package === 'standard' && <span className="price-container bold">US${(gig.price * 1.1).toFixed(0)}</span>}
+                {Package === 'premium' && <span className="price-container bold">US${(gig.price * 1.5).toFixed(0)}</span>}
             </h3>
             <p className="gig-title">{gig.title}</p>
 
@@ -48,9 +48,9 @@ export function DetailsSidebar({ gig }) {
                 <p className="feature flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
 
             </div>
-            {Package === 'basic' &&<Link to={`/gig/payment/${gig._id}?Package=basic`}> <button className="Continue-btn">Continue ({`US$${gig.price.toFixed(1)}`})</button></Link>}
-            {Package === 'standard' &&<Link to={`/gig/payment/${gig._id}?Package=standard`}> <button className="Continue-btn">Continue ({`US$${(gig.price * 1.1).toFixed(1)}`})</button></Link>}
-            {Package === 'premium' &&<Link to={`/gig/payment/${gig._id}?Package=premium`}> <button className="Continue-btn">Continue ({`US$${(gig.price * 1.5).toFixed(1)}`})</button></Link>}
+            {Package === 'basic' &&<Link to={`/gig/payment/${gig._id}?Package=basic`}> <button className="Continue-btn">Continue ({`US$${gig.price.toFixed(0)}`})</button></Link>}
+            {Package === 'standard' &&<Link to={`/gig/payment/${gig._id}?Package=standard`}> <button className="Continue-btn">Continue ({`US$${(gig.price * 1.1).toFixed(0)}`})</button></Link>}
+            {Package === 'premium' &&<Link to={`/gig/payment/${gig._id}?Package=premium`}> <button className="Continue-btn">Continue ({`US$${(gig.price * 1.5).toFixed(0)}`})</button></Link>}
         </article>
         <div className="contact-seller">
             <button>Contact Seller</button>

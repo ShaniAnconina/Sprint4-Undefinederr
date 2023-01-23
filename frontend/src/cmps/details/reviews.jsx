@@ -9,9 +9,11 @@ export function Reviews({ elApp, gig }) {
 
 
     return <section className="reviews">
-        <h2>Reviews</h2>
 
-        <button onClick={()=>setIsAddReview(true)}>Add Review</button>
+        <div className="flex space-between">
+            <h2>Reviews</h2>
+            <button className="add-review-btn" onClick={() => setIsAddReview(true)}>Add Review</button>
+        </div>
 
         <span className="flex" >{gig.reviews.length} reviews for this Gig <ReviewRate rate={gig.rate} /></span>
         {/* <ReviewSearch /> */}
@@ -23,7 +25,7 @@ export function Reviews({ elApp, gig }) {
             })}
         </ul>
 
-        {isAddReview && <AddReview elApp={elApp} /> }
+        {isAddReview && <AddReview setIsAddReview={setIsAddReview} elApp={elApp} />}
 
     </section>
 }

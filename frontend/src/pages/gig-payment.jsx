@@ -139,9 +139,9 @@ export function GigPayment() {
                             {Package === 'standard' && <span className="bold">Standard</span>}
                             {Package === 'premium' && <span className="bold">Premium</span>}
 
-                            {Package === 'basic' && <span>{`US$${gig.price.toFixed(1)}`}</span>}
-                            {Package === 'standard' && <span>{`US$${(gig.price * 1.1).toFixed(1)}`}</span>}
-                            {Package === 'premium' && <span>{`US$${(gig.price * 1.5).toFixed(1)}`}</span>}
+                            {Package === 'basic' && <span>{`US$${gig.price.toFixed(0)}`}</span>}
+                            {Package === 'standard' && <span>{`US$${(gig.price * 1.1).toFixed(0)}`}</span>}
+                            {Package === 'premium' && <span>{`US$${(gig.price * 1.5).toFixed(0)}`}</span>}
                         </div>
                         <div className="services">
 
@@ -163,9 +163,9 @@ export function GigPayment() {
                 <section className="summery">
                     <div className="price flex space-between bold">
                         <span>Total</span>
-                        {Package === 'basic' && <span>{`US$${gig.price.toFixed(1)}`}</span>}
-                        {Package === 'standard' && <span>{`US$${(gig.price * 1.1).toFixed(1)}`}</span>}
-                        {Package === 'premium' && <span>{`US$${(gig.price * 1.5).toFixed(1)}`}</span>}
+                        {Package === 'basic' && <span>{`US$${gig.price.toFixed(0)}`}</span>}
+                        {Package === 'standard' && <span>{`US$${(gig.price * 1.1).toFixed(0)}`}</span>}
+                        {Package === 'premium' && <span>{`US$${(gig.price * 1.5).toFixed(0)}`}</span>}
                     </div>
                     <div className="delivery flex space-between">
                         <span>Total delivery time</span>
