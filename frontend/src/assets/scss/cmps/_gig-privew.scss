@@ -122,4 +122,8 @@
             display: inline-block;
         }
     }
+
+    &:hover .sliders-btns button {
+        opacity: 1;
+    }
 }
