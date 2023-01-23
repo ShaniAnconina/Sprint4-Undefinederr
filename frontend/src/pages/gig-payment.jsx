@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
-import { useNavigate, useParams } from "react-router-dom"
+import { useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom"
 
 import { CreditCards } from "../cmps/details/credit-cards"
 
@@ -9,10 +9,12 @@ import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
 import { BsCheckLg } from "react-icons/bs"
+import { TbRefresh } from "react-icons/tb"
 
 export function GigPayment() {
     const navigate = useNavigate()
     const { gigId } = useParams()
+    const Package = new URLSearchParams(useLocation().search).get('Package')
     const [gig, setGig] = useState(null)
     const [order, setOrder] = useState(orderService.getEmptyOrder())
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
@@ -62,7 +64,6 @@ export function GigPayment() {
             <section className="payment-details">
                 <h6>Payment Options</h6>
                 <p className="credit-cards-container flex">Credit & Debit Cards <CreditCards /></p>
-
                 <article className="form-container bold">
 
                     <div className="card-details flex">
@@ -124,47 +125,58 @@ export function GigPayment() {
             </section>
 
             <aside className="purchase-details">
-
                 <section className="order">
-
                     <div className="header flex bold">
-                        <img src={gig.imgUrl} />
+                        <span className="img-container">
+                            <img src={gig.imgUrl} />
+                        </span>
                         <h3>{gig.title}</h3>
                     </div>
 
                     <div className="services-container flex column">
-
                         <div className="title flex space-between">
-                            <span className="bold">Services</span>
-                            <span>{gig.price}$</span>
-                        </div>
+                            {Package === 'basic' && <span className="bold">Basic</span>}
+                            {Package === 'standard' && <span className="bold">Standard</span>}
+                            {Package === 'premium' && <span className="bold">Premium</span>}
 
+                            {Package === 'basic' && <span>{`US$${gig.price.toFixed(1)}`}</span>}
+                            {Package === 'standard' && <span>{`US$${(gig.price * 1.1).toFixed(1)}`}</span>}
+                            {Package === 'premium' && <span>{`US$${(gig.price * 1.5).toFixed(1)}`}</span>}
+                        </div>
                         <div className="services">
-                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span >Review & edit</span></p>
-                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >1 targeted cover letter</span></p>
-                            <p className="flex align-center"> <BsCheckLg color="#1dbf73" /> <span >{gig.revisions}  Revisions</span></p>
-                        </div>
 
+                            {/* {gig.features.map(feature => <p key={feature.id} className="flex align-center">
+                    {Package === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
+                    {Package === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
+                    {Package === 'premium' && <BsCheckLg color="#1dbf73" />}
+                    <span>{feature.txt}</span>
+                </p>)} */}
+                                        //delete after the demo data
+                            <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
+                            {Package === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
+                            {Package === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
+                            {Package === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>Unlimited Revisions</span></p>}
+                        </div>
                     </div>
 
                 </section>
-
                 <section className="summery">
-                    
                     <div className="price flex space-between bold">
                         <span>Total</span>
-                        <span>{gig.price}$</span>
+                        {Package === 'basic' && <span>{`US$${gig.price.toFixed(1)}`}</span>}
+                        {Package === 'standard' && <span>{`US$${(gig.price * 1.1).toFixed(1)}`}</span>}
+                        {Package === 'premium' && <span>{`US$${(gig.price * 1.5).toFixed(1)}`}</span>}
                     </div>
-
                     <div className="delivery flex space-between">
                         <span>Total delivery time</span>
-                        <span>{gig.daysToMake} days</span>
+                        {Package === 'basic' && <span>{gig.daysToMake}  days</span>}
+                        {Package === 'standard' && <span>{gig.daysToMake - 1}  days</span>}
+                        {Package === 'premium' && <span>{gig.daysToMake - 2}  days</span>}
                     </div>
-
                     <button className="bold" onClick={onConfirm}>Confirm & Pay</button>
 
-                </section>
 
+                </section>
             </aside>
         </div>
     </section>

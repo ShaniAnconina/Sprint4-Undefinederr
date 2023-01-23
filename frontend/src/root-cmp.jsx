@@ -28,10 +28,9 @@ export function App() {
             <Routes>
               <Route element={<HomePage />} path="/" />
               <Route element={<GigIndex />} path="/gig" />
-              <Route element={<GigDetails />} path="/gig/:gigId" />
+              <Route element={<GigDetails elApp={elApp} />} path="/gig/:gigId" />
               <Route element={<GigEdit />} path="/gig/edit" />
-              {/* <Route element={<GigEdit />} path="/gig/edit/:gigId" /> */}
-              <Route element={<GigPayment />} path="/gig/payment/:gigId" />
+              <Route element={<GigPayment  />} path="/gig/payment/:gigId" />
             </Routes>
           </main>
 

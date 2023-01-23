@@ -12,7 +12,7 @@ import { SlArrowRight } from "react-icons/sl"
 import { gigService } from "../services/gig.service"
 import { showErrorMsg } from "../services/event-bus.service"
 
-export function GigDetails() {
+export function GigDetails({elApp}) {
     const navigate = useNavigate()
     const { gigId } = useParams()
     const [gig, setGig] = useState(null)
@@ -21,6 +21,8 @@ export function GigDetails() {
     const elAboutTheSeller = useRef(null)
     const elReviews = useRef(null)
     const elReviewNav = useRef(null)
+
+
 
     // useEffect(() => {
     //     if (!elReviews.current) return
@@ -117,8 +119,7 @@ export function GigDetails() {
                             <button className='open-btn subcategory' >Subcategory</button>
                         </div>
 
-                        {/* <h1>{gig.title}</h1> */}
-                        <h1>I will do high quality contextual seo dofollow backlinks</h1>
+                        <h1>{gig.title}</h1>
 
                         <div className="mini-owner flex">
                             <img className="owner-img" src={gig.owner.imgUrl} />
@@ -127,7 +128,6 @@ export function GigDetails() {
                                 <p className="owner-name">{gig.owner.username}</p>
                                 <p className="owner-level">{gig.owner.level}</p>
                                 <p className="separator">|</p>
-                                {console.log('gig', gig)}
                                 <div className="owner-rate flex align-center"><OwnerRate count={gig.reviews.length} rate={gig.rate} /> </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@ export function GigDetails() {
                         </div>
 
                         <span ref={elAboutTheSeller}><OwnerProfile gig={gig} /></span>
-                        {gig.reviews.length && <span ref={elReviews}><Reviews gig={gig} /></span>}
+                        {gig.reviews.length && <span ref={elReviews}><Reviews elApp={elApp} gig={gig} /></span>}
                     </section>
 
                     <DetailsSidebar gig={gig} />

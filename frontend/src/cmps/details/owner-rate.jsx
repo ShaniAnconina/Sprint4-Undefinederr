@@ -1,6 +1,7 @@
 import { AiFillStar } from "react-icons/ai"
+import { utilService } from "../../services/util.service"
 
-export function  OwnerRate({ count, rate }) {
+export function  OwnerRate({ count = utilService.getRandomIntInclusive(50,350), rate }) {
     return <>
         {rate >= 1 && <p className="stars"><AiFillStar size="15px" /></p>}
         {rate >= 2 && <p className="stars"><AiFillStar size="15px" /></p>}
