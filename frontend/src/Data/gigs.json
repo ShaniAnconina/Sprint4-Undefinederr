@@ -113,7 +113,7 @@
     {
         "profession": "Advertising Manager",
         "title": "I will create and manage advertising campaigns for your brand or business, including Google Ads and Facebook Ads.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation",
@@ -136,7 +136,7 @@
     {
         "profession": "Product Manager",
         "title": "I will manage the development and launch of a product for your brand or business.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation",
@@ -146,7 +146,7 @@
     {
         "profession": "Project Manager",
         "title": "I will plan, execute, and finalize projects according to strict deadlines and within budget.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation",
@@ -155,7 +155,7 @@
     },
     {
         "profession": "IT Support",
-        "title": "I will provide technical assistance and support for computer systems, software, and hardware.",
+        "title": "I will provide technical assistance and support for computer systems, softwadata analysre, and hardware.",
         "description": "I can help you make the most of your Office 365 Suite, network and systems configuration including linux, microsoft terminals and servers. and assist in setup and configuration, training and support",
         "tags": [
             "Programming and Tech"
@@ -172,7 +172,7 @@
     {
         "profession": "Data Analyst",
         "title": "I will analyze and interpret complex data for your brand or business, including market research and website analytics.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Programming and Tech",
             "Business"
@@ -181,7 +181,7 @@
     {
         "profession": "Data Scientist",
         "title": "I will use statistical and machine learning techniques to analyze and interpret complex data for your brand or business.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Programming and Tech"
         ]
@@ -189,7 +189,7 @@
     {
         "profession": "Business Analyst",
         "title": "I will analyze and interpret business data for your brand or business, including financial data and market trends.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Programming and Tech",
@@ -209,7 +209,7 @@
     {
         "profession": "Social Media Manager",
         "title": "I will manage your company's social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Digital Marketing",
@@ -219,7 +219,7 @@
     {
         "profession": "Content Creator",
         "title": "I will create engaging and informative content for your company's website, blog, or social media platforms.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Writing and Translation",
             "Lifestyle"
@@ -246,7 +246,7 @@
     {
         "profession": "Marketing Specialist",
         "title": "I will develop and implement marketing strategies to promote your company and its products or services.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Digital Marketing",
             "Trending",
@@ -256,7 +256,7 @@
     {
         "profession": "Public Relations Specialist",
         "title": "I will manage your company's public image and relationships with stakeholders.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Writing and Translation",
             "Trending",
@@ -266,7 +266,7 @@
     {
         "profession": "HR Specialist",
         "title": "I will handle your company's human resources functions, including recruiting, training, and employee relations.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation",
@@ -276,7 +276,7 @@
     {
         "profession": "Financial Analyst",
         "title": "I will analyze financial data and provide insights to inform your company's business decisions.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Programming and Tech",
             "Business"
@@ -285,7 +285,7 @@
     {
         "profession": "Project Manager",
         "title": "I will plan and coordinate your company's projects to ensure they are completed on time and within budget.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation",
@@ -295,13 +295,13 @@
     {
         "profession": "Data Analyst",
         "title": "I will collect, analyze, and interpret large sets of data to support your company's decision-making process.",
-        "description": "",
-        "tags": []
+        "description": "ipsum dolooorr!!!!!!",
+        "tags": ["Programming and Tech","Business"]
     },
     {
         "profession": "Business Analyst",
         "title": "I will provide strategic and operational support to your company's management team.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Programming and Tech",
@@ -319,7 +319,7 @@
     {
         "profession": "Product Manager",
         "title": "I will oversee the development and launch of your company's products and services.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation",
@@ -329,7 +329,7 @@
     {
         "profession": "Customer Service Representative",
         "title": "I will respond to customer inquiries and complaints, provide information about products and services, and resolve issues.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation"
@@ -338,7 +338,7 @@
     {
         "profession": "Sales Representative",
         "title": "I will generate sales by promoting and selling your company's products and services to potential customers.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Trending"
@@ -347,7 +347,7 @@
     {
         "profession": "Accountant",
         "title": "I will prepare and analyze financial records, ensure compliance with tax laws, and provide financial advice.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business"
         ]
@@ -355,7 +355,7 @@
     {
         "profession": "Supply Chain Manager",
         "title": "I will oversee the flow of goods and materials, from suppliers to your company, to ensure timely delivery and cost-effectiveness.",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business"
         ]
@@ -363,7 +363,7 @@
     {
         "profession": "social media marketing manager",
         "title": "I will be your social media marketing manager",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Graphics and Design",
             "Digital Marketing",
@@ -384,7 +384,7 @@
     {
         "profession": "personal assistant",
         "title": "I will be your social media manager and personal assistant",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Digital Marketing",
@@ -394,7 +394,7 @@
     {
         "profession": "marketing manager",
         "title": "I will create cool beer packaging, craft beer, beer label",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Digital Marketing",
             "Trending"
@@ -403,7 +403,7 @@
     {
         "profession": "marketing manager",
         "title": "I will design the labels for your beer or beverage can",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Graphics and Design",
             "Digital Marketing",
@@ -413,7 +413,7 @@
     {
         "profession": "career coacher",
         "title": "I will create your winning candidate resume, cover letter, and linkedin profile",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Business",
             "Writing and Translation"
@@ -422,7 +422,7 @@
     {
         "profession": "Children books writer",
         "title": "I will illustrate childrens book pages for you",
-        "description": "",
+        "description": "ipsum dolooorr!!!!!!",
         "tags": [
             "Graphics and Design"
         ]
