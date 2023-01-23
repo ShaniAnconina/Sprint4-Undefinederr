@@ -31,7 +31,7 @@ export class SimpleSlider extends Component {
         }
 
         return (
-            <div>
+            <>
                 <Slider ref={c => (this.slider = c)} {...settings}>
                     <div key={1}>
                         <img onClick={(ev) => ev.preventDefault()} height="195px" src="https://images.unsplash.com/photo-1674170117831-7a0bb884b398?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDUwMTg4MQ&ixlib=rb-4.0.3&q=80&w=1080" />
@@ -59,7 +59,7 @@ export class SimpleSlider extends Component {
                     <button className="previous-btn" onClick={this.previous}><GrPrevious size="10px" /></button>
                     <button className="next-btn" onClick={this.next}><GrNext size="10px" /></button>
                 </div>
-            </div>
+            </>
         )
     }
 }
