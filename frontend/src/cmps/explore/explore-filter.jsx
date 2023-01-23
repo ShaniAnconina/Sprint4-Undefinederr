@@ -5,7 +5,7 @@ import { SwitchBtn } from './switch-btn'
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
-export function ExploreFilter() {
+export function ExploreFilter({ gigs }) {
     const [modalType, setModalType] = useState(false)
 
     function toggleModal(type) {
@@ -26,13 +26,13 @@ export function ExploreFilter() {
                 </div>
                 {modalType && <FilterModal modalType={modalType} />}
                 <div className="right-filters">
-                    <SwitchBtn />
-                    <p>Pro services</p>
+                    {/* <SwitchBtn />
+                    <p>Pro services</p> */}
                 </div>
             </div>
 
             <div className="explore-count-sort">
-                <div className='count'>14,160 services available</div>
+                <div className='count'>{gigs.length} services available</div>
                 <div className='sort'>
                     <p>Sort By</p>
                     <select name="sortBy" id="sort-by">
