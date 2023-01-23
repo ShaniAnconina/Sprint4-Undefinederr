@@ -13,6 +13,8 @@ export function ExploreFilter() {
         if (modalType === type) setModalType(false)
     }
 
+
+
     return (
         <section >
             <div className="explore-filter">

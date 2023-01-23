@@ -8,17 +8,24 @@ export function FilterModal({ modalType }) {
 
     switch (modalType) {
         case 'servicesOptions':
-            type = <ServicesOptionsModal />
+            type = <ServicesOptionsModal onSubmit={onSubmit}/>
             break
         case 'budget':
-            type = <BudgetModal />
+            type = <BudgetModal onSubmit={onSubmit}/>
             break
         case 'deliveryTime':
-            type = <DeliveryTimeModal />
+            type = <DeliveryTimeModal onSubmit={onSubmit}/>
             break
 
         default:
             break
+    }
+
+
+    function onSubmit(ev){
+        ev?.preventDefault()
+        console.log("clicked apply")
+
     }
 
     return (
