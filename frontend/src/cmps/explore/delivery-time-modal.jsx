@@ -1,7 +1,18 @@
-export function DeliveryTimeModal() {
+import { useState } from "react";
+import { gigService } from "../../services/gig.service";
+
+
+export function DeliveryTimeModal(onSubmit) {
+
+    const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
+
+
+    function onChangeValue(event) {
+        console.log(event.target.value);
+      }
 
     return (
-        <form id="filters" className="delivery">
+        <form id="filters" className="delivery" onChange={onChangeValue} onSubmit={onSubmit}>
             <div>
                 <input type="radio" id="24h" name="delivery-time" value="24h" />
                 <label for="24h">Express 24H</label>
@@ -15,7 +26,7 @@ export function DeliveryTimeModal() {
                 <label for="7d">Up to 7 days</label>
             </div>
             <div>
-                <input type="radio" id="anytime" name="delivery-time" value="" checked />
+                <input type="radio" id="anytime" name="delivery-time" value="" />
                 <label for="anytime">Anytime</label>
             </div>
         </form>
