@@ -107,6 +107,7 @@
 
             .breadcrumds {
                 padding-bottom: 18px;
+
                 .open-btn {
                     cursor: pointer;
                     font-family: Macan-Regular;
@@ -120,17 +121,20 @@
                     &:hover {
                         text-decoration: underline
                     }
-                   
+
                 }
-                 span{
-                        margin-inline: 8px;
-                    }
+
+                span {
+                    margin-inline: 8px;
+                }
             }
         }
 
         .mini-owner {
+            font-size: 14px;
             align-items: center;
             margin-bottom: 24px;
+            align-items: start;
 
             img {
                 height: 30px;
@@ -138,8 +142,17 @@
                 border-radius: 2rem;
             }
 
-            .separator{
+            .separator {
                 color: $clr20;
+                margin-right: 10px;
+            }
+
+            .owner-name {
+                font-weight: 700;
+            }
+
+            .owner-level {
+                color: $clr5;
             }
 
             .owner-name,
@@ -149,9 +162,15 @@
         }
 
         .img-container {
+            margin-block-end: 16px;
+            height: 430px;
+            width: 100%;
+            
+            //TODO : fixe that
             .main-img {
+                height: 100%;
                 width: 100%;
-                margin-block-end: 16px;
+                object-fit: cover;
             }
         }
 

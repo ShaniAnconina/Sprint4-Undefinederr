@@ -19,7 +19,8 @@ export const gigService = {
 async function query(filterBy) {
     try {
         let gigs = await storageService.query(STORAGE_KEY)
-
+        getAvgRate(gigs)
+        utilService.saveToStorage(STORAGE_KEY, gigs)
         //filter by free text
         if (filterBy?.txt) {
             const regex = new RegExp(filterBy.txt, "ig")
@@ -39,17 +40,33 @@ async function query(filterBy) {
         //filter by time range
         if (filterBy?.daysToMake && filterBy?.daysToMake.min && filterBy?.daysToMake.max) {
             gigs = gigs.filter((gig) => gig.daysToMake >= filterBy.daysToMake.min && gig.daysToMake <= filterBy.daysToMake.max)
-        } 
+        }
 
         //filter by is saved
         if (filterBy?.isSaved) {
             gigs = gigs.filter((gig) => gig.isSaved === true)
         }
+
+
+
         return gigs
     } catch (err) {
         console.log("could not retrieve gigs from service")
         throw err
     }
+}
+
+function getAvgRate(gigs) {
+    gigs.forEach(gig => {
+        let avg
+        let sum = gig.reviews?.reduce(
+            (acc, review) => {
+                acc += review.rate
+                return acc
+            }, 0)
+        avg = sum / gig.reviews?.length
+        gig.rate = avg.toFixed(1)
+    })
 }
 
 function get(gigId) {
@@ -90,7 +107,7 @@ function getEmptyGig() {
             username: users[genUsersIdx].login.username,
             imgUrl: users[genUsersIdx].picture.thumbnail,
             level: "basic",
-            rate: utilService.getRandomIntInclusive(1,5)
+            rate: utilService.getRandomIntInclusive(1, 5)
         },
         likedByUsers: []
     }
@@ -107,8 +124,8 @@ function _createGigs() {
         let reviewText = require('../Data/review-text.json')
         console.log(gigsUrl)
         gigsData.forEach(gig => {
-            const genUsersIdx =[utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50),utilService.getRandomIntInclusive(1, 50)] 
-            
+            const genUsersIdx = [utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50)]
+
             gig.reviews = [
                 {
                     id: utilService.makeId(),
@@ -164,10 +181,10 @@ function _createGigs() {
 
 
             ]
-        let gigImgIdx = utilService.getRandomIntInclusive(1,20)
-        let gigImgCategory = gig.tags[0]
-        let gigImgUrl = gigsUrl[gigImgCategory][gigImgIdx] 
-        Gigs.push(_createGig(gig.title, gig.tags, gig.description,gigImgUrl, gig.reviews, users[genUsersIdx[0]]))
+            let gigImgIdx = utilService.getRandomIntInclusive(1, 20)
+            let gigImgCategory = gig.tags[0]
+            let gigImgUrl = gigsUrl[gigImgCategory][gigImgIdx]
+            Gigs.push(_createGig(gig.title, gig.tags, gig.description, gigImgUrl, gig.reviews, users[genUsersIdx[0]]))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }

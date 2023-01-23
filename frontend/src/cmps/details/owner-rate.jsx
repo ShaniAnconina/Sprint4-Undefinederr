@@ -1,6 +1,6 @@
 import { AiFillStar } from "react-icons/ai"
 
-export function  OwnerRate({ rate }) {
+export function  OwnerRate({ count, rate }) {
     return <>
         {rate >= 1 && <p className="stars"><AiFillStar size="15px" /></p>}
         {rate >= 2 && <p className="stars"><AiFillStar size="15px" /></p>}
@@ -8,6 +8,6 @@ export function  OwnerRate({ rate }) {
         {rate >= 4 && <p className="stars"><AiFillStar size="15px" /></p>}
         {rate >= 5 && <p className="stars"><AiFillStar size="15px" /></p>}
         <p>{rate}</p>
-        <span>(37)</span>
+        <span>({count})</span>
     </>
 }
