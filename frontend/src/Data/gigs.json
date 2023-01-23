@@ -1,252 +1,462 @@
 [
     {
-        "title": "Logo Designer",
-        "description": "I will manage your social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics.",
-        "tags": ["Graphics and Design"]
+        "profession": "Logo Designer",
+        "title": "I will manage your social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics.",
+        "description": "Welcome to my services! \nI do creative minimal unique modern professional business logo design. \n I am professional logo design service provider, offering 100% original and theoretical logo design solutions for businesses.Creative & Unique Professional Business Logo Design Services.My goal is to provide you the highest creative and unique logo design from your opponent. \nNo Cheap Services - No Junk Designs.",
+        "tags": [
+            "Graphics and Design"
+        ]
     },
     {
-        "title": "Content Creator",
-        "description": "I will produce written, visual, and audio content for your brand or business.",
-        "tags": ["Business","Writing and Translation","Digital Marketing"]
+        "profession": "Content Creator",
+        "title": "I will produce written, visual, and audio content for your brand or business.",
+        "description": "Your social media content is crucial for increasing brand awareness and fast growth of your business.\nI create content for all social media accounts but I specialize in Interior Design and Real Estate.\nThe images will have one design style which will stay the same across all of your platforms.\nI can create:\n-Instagram posts\n-Tips & tricks posts.\n-Engagement posts\n-Call to action posts\n-Carousel posts\n-Reels\nMy primary platforms are Facebook, Instagram and Pinterest.\nIf you have any questions feel free to reach out. I look forward to working with you!",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Social Media Manager",
-        "description": "I will manage and grow your brand's presence on social media platforms.",
-        "tags": ["Business","Digital Marketing"]
+        "profession": "Social Media Manager",
+        "title": "I will manage and grow your brand's presence on social media platforms.",
+        "description": "Your social media content is crucial for increasing brand awareness and fast growth of your business.\nI create content for all social media accounts but I specialize in Interior Design and Real Estate.\nThe images will have one design style which will stay the same across all of your platforms.\nI can create:\n-Instagram posts\n-Tips & tricks posts.\n-Engagement posts\n-Call to action posts\n-Carousel posts\n-Reels\nMy primary platforms are Facebook, Instagram and Pinterest.\nIf you have any questions feel free to reach out. I look forward to working with you!",
+        "tags": [
+            "Business",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Search Engine Optimization (SEO) Specialist",
-        "description": "I will optimize your website's content and structure to improve its ranking on search engine results pages (SERPs).",
-        "tags": ["Programming and Tech","Business","Writing and Translation","Digital Marketing"]
+        "profession": "Search Engine Optimization (SEO) Specialist",
+        "title": "I will optimize your website's content and structure to improve its ranking on search engine results pages (SERPs).",
+        "description": "One of The Most Trusted SEO Professionals on Fiverr With Over 14 Years Of Experience In SEO.\nIMPORTANT: The backlinks will be placed on general sites as described below! If you are looking for contextual links in niche related posts please check out my other gig here: https://cutt.ly/cFZYDUe\nWith this link building service, you will get 150 permanent backlinks from general, diverse link sources (natural mix of dofollow and nofollow links). Most of the sites have high Domain Authority and Trust Flow scores. Safe, white-hat approach. No PBNs, no spam links, no black-hat methods. All links will be from unique domains, no duplicates!",
+        "tags": [
+            "Programming and Tech",
+            "Business",
+            "Writing and Translation",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Graphic Designer",
-        "description": "I will create visual designs for your brand or business, including logos, brochures, and website layouts.",
-        "tags": ["Graphics and Design"]
+        "profession": "Graphic Designer",
+        "title": "I will create visual designs for your brand or business, including logos, brochures, and website layouts.",
+        "description": "Welcome to my services! \nI do creative unique modern professional business Graphic design. \n I am professional Graphic design service provider, offering 100% original and theoretical logo design solutions for businesses.Creative & Unique Professional Business Logo Design Services.My goal is to provide you the highest creative and unique logo design from your opponent. \nNo Cheap Services - No Junk Designs.",
+        "tags": [
+            "Graphics and Design"
+        ]
     },
     {
-        "title": "Web Developer",
-        "description": "I will create and maintain a website for your brand or business, using languages such as HTML, CSS, and JavaScript.",
-        "tags": ["Programming and Tech"]
+        "profession": "Web Developer",
+        "title": "I will create and maintain a website for your brand or business, using languages such as HTML, CSS, and JavaScript.",
+        "description": "Being in the IT product development industry for more than 6 years, I have developed my expertise and experience in designing and developing customized web applications and websites for clients across the globe.\nI have the ability to provide customized web based solutions, be it using CMS tools like wordpress, squarespace, wix or a completely customized dynamic website using basic level programming languages for example PHP and its frameworks for simplified applications, or expert level webapps using typescript languages NodeJS, ReactJS with various databases; MySQL, PostGreSQL or Mongo/MariaDB and GraphQL.\nI have the experience of developing more than a 100 websites and some of the industries that i have worked for are education and entertainment, real-estate industry, retail and distribution platforms, wedding websites, ecommerce marketplaces, heath and fitness stores, non-profit organizations\nHTML5 | CSS3 | PHP | Laravel | CodeIgniter | JavaScript | ES6 | BootStrap4 | JQuery | NodeJS |JSON | | MongoDB | GraphQL | Firebase| CMS| Wordpress",
+        "tags": [
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Copywriter",
-        "description": "I will write persuasive and compelling copy for your brand or business, including ad copy, product descriptions, and email campaigns.",
-        "tags": ["Writing and Translation"]
+        "profession": "Copywriter",
+        "title": "I will write persuasive and compelling copy for your brand or business, including ad copy, product titles, and email campaigns.",
+        "description": "Your brand events and website content is crucial for increasing brand awareness and fast growth of your business.\nI create content for all social media accounts but I specialize in Interior Design and Real Estate.\nThe images will have one design style which will stay the same across all of your platforms.\nI can create:\n-Instagram posts\n-Tips & tricks posts.\n-Engagement posts\n-Call to action posts\n-Carousel posts\n-Reels\nMy primary platforms are Facebook, Instagram and Pinterest.\nIf you have any questions feel free to reach out. I look forward to working with you!",
+        "tags": [
+            "Writing and Translation"
+        ]
     },
     {
-        "title": "Photographer",
-        "description": "I will take professional photographs for your brand or business, such as product shots, event photography, and headshots.",
-        "tags": ["Graphics and Design","Business","Digital Marketing"]
+        "profession": "Photographer",
+        "title": "I will take professional photographs for your brand or business, such as product shots, event photography, and headshots.",
+        "description": "I will capture your event, business, or real estate listing for you to use for any purpose you need! I have years of practice behind the camera and I'm truly passionate about creating exactly what the client wants.\nFeel free to upgrade or mix and match your packages, I'm always willing to discuss the client's needs! I can also create video packages and have a US drone license if you're looking to create more content for whatever you need.",
+        "tags": [
+            "Graphics and Design",
+            "Business",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Video Editor",
-        "description": "I will edit and produce videos for your brand or business, including promotional videos, product demos, and tutorial videos.",
-        "tags": ["Video and Animation","Graphics and Design"]
+        "profession": "Video Editor",
+        "title": "I will edit and produce videos for your brand or business, including promotional videos, product demos, and tutorial videos.",
+        "description": "I will capture your event, business, or real estate listing for you to use for any purpose you need! I have years of practice behind the camera and I'm truly passionate about creating exactly what the client wants.\nFeel free to upgrade or mix and match your packages, I'm always willing to discuss the client's needs! I can also create video packages and have a US drone license if you're looking to create more content for whatever you need.",
+        "tags": [
+            "Video and Animation",
+            "Graphics and Design"
+        ]
     },
     {
-        "title": "Public Relations (PR) Specialist",
-        "description": "I will create and execute a PR strategy for your brand or business, including media relations, press releases, and crisis management.",
-        "tags": ["Business","Writing and Translation","Digital Marketing"]
+        "profession": "Public Relations (PR) Specialist",
+        "title": "I will create and execute a PR strategy for your brand or business, including media relations, press releases, and crisis management.",
+        "description": "I am here to help you get media coverage! \nAs an experienced PR professional, I understand how confusing and difficult it can be to garner media attention for your company. If you have an upcoming event, product launch, rebrand, or if you are just looking to increase brand awareness, this service may be for you.",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Marketing Coordinator",
-        "description": "I will assist with coordinating and implementing marketing campaigns for your brand or business.",
-        "tags": ["Business","Writing and Translation","Digital Marketing"]
+        "profession": "Marketing Coordinator",
+        "title": "I will assist with coordinating and implementing marketing campaigns for your brand or business.",
+        "description": "I can be your social media marketing coordinator. I can work with you to create content both graphics and captions for your social media pages. I can engage with your target audience as well. I can also give you ideas of how to improve your social media marketing efforts and help you execute these ideas as well. With many years of experience working at a Marketing Agency, I can help increase your follower count which in turn can lead to more sales.",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Email Marketing Specialist",
-        "description": "I will create and execute email marketing campaigns for your brand or business, including newsletter and drip campaigns.",
-        "tags": ["Business","Writing and Translation","Digital Marketing"]
+        "profession": "Email Marketing Specialist",
+        "title": "I will create and execute email marketing campaigns for your brand or business, including newsletter and drip campaigns.",
+        "description": "You are at the right place if you want to make perfect email marketing for your Business. It is my job to hunt for emails. I can help you provide/collect/scraping/gather niche targeted 20k,50k,100k verified bulk email list for your Affiliate or any business Email Marketing?\nHere is my service:\n⍟ Any Country-based Email List\n⍟ Any Niche/ Keyword based Email List\n⍟ Specific Location or City wise bulk Email collect\n⍟ Active, Valid, and Clean bulk email list\n⍟ Global Email List\n⍟ Duplicate free email list\n⍟ All types of Email List (According To Buyer's Demand)",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Advertising Manager",
-        "description": "I will create and manage advertising campaigns for your brand or business, including Google Ads and Facebook Ads.",
-        "tags": ["Business","Writing and Translation","Trending","Digital Marketing","Lifestyle"]
+        "profession": "Advertising Manager",
+        "title": "I will create and manage advertising campaigns for your brand or business, including Google Ads and Facebook Ads.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Trending",
+            "Digital Marketing",
+            "Lifestyle"
+        ]
     },
     {
-        "title": "Brand Manager",
-        "description": "I will develop and execute a brand strategy for your business, including market research, brand positioning, and messaging.",
-        "tags": ["Business","Lifestyle","Trending","Digital Marketing"]
+        "profession": "Brand Manager",
+        "title": "I will develop and execute a brand strategy for your business, including market research, brand positioning, and messaging.",
+        "description": "Professional and Certified FBA Private Label Virtual Assistant, amazon vendor, and seller account Manager.\nHi everybody welcome to my gig, If you looking for a professional Amazon Account Manager to run and optimize your Store then you are at the right place to hire an outclass Virtual Assistant. I am certified, experienced, and determined having 2 years(and running) experience in FBA private Label with many successful launches.",
+        "tags": [
+            "Business",
+            "Lifestyle",
+            "Trending",
+            "Digital Marketing"
+        ]
     },
     {
-        "title": "Product Manager",
-        "description": "I will manage the development and launch of a product for your brand or business.",
-        "tags": ["Business","Writing and Translation","Trending"]
+        "profession": "Product Manager",
+        "title": "I will manage the development and launch of a product for your brand or business.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Trending"
+        ]
     },
     {
-        "title": "Project Manager",
-        "description": "I will plan, execute, and finalize projects according to strict deadlines and within budget.",
-        "tags": ["Business","Writing and Translation","Programming and Tech"]
+        "profession": "Project Manager",
+        "title": "I will plan, execute, and finalize projects according to strict deadlines and within budget.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "IT Support",
-        "description": "I will provide technical assistance and support for computer systems, software, and hardware.",
-        "tags": ["Programming and Tech"]
+        "profession": "IT Support",
+        "title": "I will provide technical assistance and support for computer systems, software, and hardware.",
+        "description": "I can help you make the most of your Office 365 Suite, network and systems configuration including linux, microsoft terminals and servers. and assist in setup and configuration, training and support",
+        "tags": [
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "IT Administrator",
-        "description": "I will manage and maintain an organization's IT systems, including servers, networks, and software.",
-        "tags": ["Programming and Tech"]
+        "profession": "IT Administrator",
+        "title": "I will manage and maintain an organization's IT systems, including servers, networks, and software.",
+        "description": "I can help you make the most of your Office 365 Suite, network and systems configuration including linux, microsoft terminals and servers. and assist in setup and configuration, training and support",
+        "tags": [
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Data Analyst",
-        "description": "I will analyze and interpret complex data for your brand or business, including market research and website analytics.",
-        "tags": ["Programming and Tech","Business"]
+        "profession": "Data Analyst",
+        "title": "I will analyze and interpret complex data for your brand or business, including market research and website analytics.",
+        "description": "",
+        "tags": [
+            "Programming and Tech",
+            "Business"
+        ]
     },
     {
-        "title": "Data Scientist",
-        "description": "I will use statistical and machine learning techniques to analyze and interpret complex data for your brand or business.",
-        "tags": ["Programming and Tech"]
+        "profession": "Data Scientist",
+        "title": "I will use statistical and machine learning techniques to analyze and interpret complex data for your brand or business.",
+        "description": "",
+        "tags": [
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Business Analyst",
-        "description": "I will analyze and interpret business data for your brand or business, including financial data and market trends.",
-        "tags": ["Business","Programming and Tech","Lifestyle"]
+        "profession": "Business Analyst",
+        "title": "I will analyze and interpret business data for your brand or business, including financial data and market trends.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Programming and Tech",
+            "Lifestyle"
+        ]
     },
     {
-        "title": "Graphic Designer",
-        "description": "I will create visually appealing designs for your company, including logos, brochures, and websites.",
-        "tags": ["Graphics and Design","Trending","Video and Animation"]
+        "profession": "Graphic Designer",
+        "title": "I will create visually appealing designs for your company, including logos, brochures, and websites.",
+        "description": "Welcome to my services! \nI do creative unique modern professional business Graphic design. \n I am professional Graphic design service provider, offering 100% original and theoretical logo design solutions for businesses.Creative & Unique Professional Business Logo Design Services.My goal is to provide you the highest creative and unique logo design from your opponent. \nNo Cheap Services - No Junk Designs.",
+        "tags": [
+            "Graphics and Design",
+            "Trending",
+            "Video and Animation"
+        ]
     },
     {
-        "title": "Social Media Manager",
-        "description": "I will manage your company's social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics.",
-        "tags": ["Business","Digital Marketing","Lifestyle"]
+        "profession": "Social Media Manager",
+        "title": "I will manage your company's social media accounts and assist you with daily tasks. I have experience in scheduling posts, creating content, and analyzing analytics.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Digital Marketing",
+            "Lifestyle"
+        ]
     },
     {
-        "title": "Content Creator",
-        "description": "I will create engaging and informative content for your company's website, blog, or social media platforms.",
-        "tags": ["Writing and Translation","Lifestyle"]
+        "profession": "Content Creator",
+        "title": "I will create engaging and informative content for your company's website, blog, or social media platforms.",
+        "description": "",
+        "tags": [
+            "Writing and Translation",
+            "Lifestyle"
+        ]
     },
     {
-        "title": "SEO Specialist",
-        "description": "I will optimize your website for search engines and improve your online visibility.",
-        "tags": ["Writing and Translation","Digital Marketing","Programming and Tech"]
+        "profession": "SEO Specialist",
+        "title": "I will optimize your website for search engines and improve your online visibility.",
+        "description": "One of The Most Trusted SEO Professionals on Fiverr With Over 14 Years Of Experience In SEO.\nIMPORTANT: The backlinks will be placed on general sites as described below! If you are looking for contextual links in niche related posts please check out my other gig here: https://cutt.ly/cFZYDUe\nWith this link building service, you will get 150 permanent backlinks from general, diverse link sources (natural mix of dofollow and nofollow links). Most of the sites have high Domain Authority and Trust Flow scores. Safe, white-hat approach. No PBNs, no spam links, no black-hat methods. All links will be from unique domains, no duplicates!",
+        "tags": [
+            "Writing and Translation",
+            "Digital Marketing",
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Web Developer",
-        "description": "I will design and develop websites, mobile apps and software to meet your company's needs.",
-        "tags": ["Programming and Tech"]
+        "profession": "Web Developer",
+        "title": "I will design and develop websites, mobile apps and software to meet your company's needs.",
+        "description": "Being in the IT product development industry for more than 6 years, I have developed my expertise and experience in designing and developing customized web applications and websites for clients across the globe.\nI have the ability to provide customized web based solutions, be it using CMS tools like wordpress, squarespace, wix or a completely customized dynamic website using basic level programming languages for example PHP and its frameworks for simplified applications, or expert level webapps using typescript languages NodeJS, ReactJS with various databases; MySQL, PostGreSQL or Mongo/MariaDB and GraphQL.\nI have the experience of developing more than a 100 websites and some of the industries that i have worked for are education and entertainment, real-estate industry, retail and distribution platforms, wedding websites, ecommerce marketplaces, heath and fitness stores, non-profit organizations\nHTML5 | CSS3 | PHP | Laravel | CodeIgniter | JavaScript | ES6 | BootStrap4 | JQuery | NodeJS |JSON | | MongoDB | GraphQL | Firebase| CMS| Wordpress",
+        "tags": [
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Marketing Specialist",
-        "description": "I will develop and implement marketing strategies to promote your company and its products or services.",
-        "tags": ["Digital Marketing","Trending","Writing and Translation"]
+        "profession": "Marketing Specialist",
+        "title": "I will develop and implement marketing strategies to promote your company and its products or services.",
+        "description": "",
+        "tags": [
+            "Digital Marketing",
+            "Trending",
+            "Writing and Translation"
+        ]
     },
     {
-        "title": "Public Relations Specialist",
-        "description": "I will manage your company's public image and relationships with stakeholders.",
-        "tags": ["Writing and Translation","Trending","Business"]
+        "profession": "Public Relations Specialist",
+        "title": "I will manage your company's public image and relationships with stakeholders.",
+        "description": "",
+        "tags": [
+            "Writing and Translation",
+            "Trending",
+            "Business"
+        ]
     },
     {
-        "title": "HR Specialist",
-        "description": "I will handle your company's human resources functions, including recruiting, training, and employee relations.",
-        "tags": ["Business","Writing and Translation","Programming and Tech"]
+        "profession": "HR Specialist",
+        "title": "I will handle your company's human resources functions, including recruiting, training, and employee relations.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Financial Analyst",
-        "description": "I will analyze financial data and provide insights to inform your company's business decisions.",
-        "tags": ["Programming and Tech","Business"]
+        "profession": "Financial Analyst",
+        "title": "I will analyze financial data and provide insights to inform your company's business decisions.",
+        "description": "",
+        "tags": [
+            "Programming and Tech",
+            "Business"
+        ]
     },
     {
-        "title": "Project Manager",
-        "description": "I will plan and coordinate your company's projects to ensure they are completed on time and within budget.",
-        "tags": ["Business","Writing and Translation","Programming and Tech"]
+        "profession": "Project Manager",
+        "title": "I will plan and coordinate your company's projects to ensure they are completed on time and within budget.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Data Analyst",
-        "description": "I will collect, analyze, and interpret large sets of data to support your company's decision-making process.",
-        "tags": ["Programming and Tech","Business"]
+        "profession": "Data Analyst",
+        "title": "I will collect, analyze, and interpret large sets of data to support your company's decision-making process.",
+        "description": "",
+        "tags": []
     },
     {
-        "title": "Business Analyst",
-        "description": "I will provide strategic and operational support to your company's management team.",
-        "tags": ["Business","Programming and Tech","Trending"]
+        "profession": "Business Analyst",
+        "title": "I will provide strategic and operational support to your company's management team.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Programming and Tech",
+            "Trending"
+        ]
     },
     {
-        "title": "IT Support Specialist",
-        "description": "I will provide technical assistance to your company's employees, troubleshoot and maintain computer systems.",
-        "tags": ["Programming and Tech"]
+        "profession": "IT Support Specialist",
+        "title": "I will provide technical assistance to your company's employees, troubleshoot and maintain computer systems.",
+        "description": "I can help you make the most of your Office 365 Suite, network and systems configuration including linux, microsoft terminals and servers. and assist in setup and configuration, training and support",
+        "tags": [
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "Product Manager",
-        "description": "I will oversee the development and launch of your company's products and services.",
-        "tags": ["Business","Writing and Translation","Trending"]
+        "profession": "Product Manager",
+        "title": "I will oversee the development and launch of your company's products and services.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation",
+            "Trending"
+        ]
     },
     {
-        "title": "Customer Service Representative",
-        "description": "I will respond to customer inquiries and complaints, provide information about products and services, and resolve issues.",
-        "tags": ["Business","Writing and Translation"]
+        "profession": "Customer Service Representative",
+        "title": "I will respond to customer inquiries and complaints, provide information about products and services, and resolve issues.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation"
+        ]
     },
     {
-        "title": "Sales Representative",
-        "description": "I will generate sales by promoting and selling your company's products and services to potential customers.",
-        "tags": ["Business","Trending"]
+        "profession": "Sales Representative",
+        "title": "I will generate sales by promoting and selling your company's products and services to potential customers.",
+        "description": "",
+        "tags": [
+            "Business",
+            "Trending"
+        ]
     },
     {
-        "title": "Accountant",
-        "description": "I will prepare and analyze financial records, ensure compliance with tax laws, and provide financial advice.",
-        "tags": ["Business"]
+        "profession": "Accountant",
+        "title": "I will prepare and analyze financial records, ensure compliance with tax laws, and provide financial advice.",
+        "description": "",
+        "tags": [
+            "Business"
+        ]
     },
     {
-        "title": "Supply Chain Manager",
-        "description": "I will oversee the flow of goods and materials, from suppliers to your company, to ensure timely delivery and cost-effectiveness.",
-        "tags": ["Business"]
+        "profession": "Supply Chain Manager",
+        "title": "I will oversee the flow of goods and materials, from suppliers to your company, to ensure timely delivery and cost-effectiveness.",
+        "description": "",
+        "tags": [
+            "Business"
+        ]
     },
     {
-        "title":"social media marketing manager",
-        "description":"I will be your social media marketing manager",
-        "tags":["Graphics and Design","Digital Marketing","Writing and Translation","Video and Animation"]
+        "profession": "social media marketing manager",
+        "title": "I will be your social media marketing manager",
+        "description": "",
+        "tags": [
+            "Graphics and Design",
+            "Digital Marketing",
+            "Writing and Translation",
+            "Video and Animation"
+        ]
     },
     {
-        "title":"Website and blog designer",
-        "description": "I will setup modern wordpress website design or blog design",
-        "tags":["Graphics and Design","Writing and Translation","Programming and Tech"]
+        "profession": "Website and blog designer",
+        "title": "I will setup modern wordpress website design or blog design",
+        "description": "Welcome to my services! \nI do creative unique modern professional business Graphic design. \n I am professional Graphic design service provider, offering 100% original and theoretical logo design solutions for businesses.Creative & Unique Professional Business Logo Design Services.My goal is to provide you the highest creative and unique logo design from your opponent. \nNo Cheap Services - No Junk Designs.",
+        "tags": [
+            "Graphics and Design",
+            "Writing and Translation",
+            "Programming and Tech"
+        ]
     },
     {
-        "title": "personal assistant",
-        "description":"I will be your social media manager and personal assistant",
-        "tags":["Business","Digital Marketing","Writing and Translation"]
+        "profession": "personal assistant",
+        "title": "I will be your social media manager and personal assistant",
+        "description": "",
+        "tags": [
+            "Business",
+            "Digital Marketing",
+            "Writing and Translation"
+        ]
     },
     {
-        "title": "marketing manager",
-        "description":"I will create cool beer packaging, craft beer, beer label",
-        "tags":["Digital Marketing","Trending"]
+        "profession": "marketing manager",
+        "title": "I will create cool beer packaging, craft beer, beer label",
+        "description": "",
+        "tags": [
+            "Digital Marketing",
+            "Trending"
+        ]
     },
     {
-        "title": "marketing manager",
-        "description":"I will design the labels for your beer or beverage can",
-        "tags":["Graphics and Design","Digital Marketing","Trending"]
+        "profession": "marketing manager",
+        "title": "I will design the labels for your beer or beverage can",
+        "description": "",
+        "tags": [
+            "Graphics and Design",
+            "Digital Marketing",
+            "Trending"
+        ]
     },
     {
-        "title":"career coacher",
-        "description":"I will create your winning candidate resume, cover letter, and linkedin profile",
-        "tags": ["Business","Writing and Translation"]
+        "profession": "career coacher",
+        "title": "I will create your winning candidate resume, cover letter, and linkedin profile",
+        "description": "",
+        "tags": [
+            "Business",
+            "Writing and Translation"
+        ]
     },
     {
-        "title":"Children books writer",
-        "description":"I will illustrate childrens book pages for you",
-        "tags":["Graphics and Design"]
+        "profession": "Children books writer",
+        "title": "I will illustrate childrens book pages for you",
+        "description": "",
+        "tags": [
+            "Graphics and Design"
+        ]
     },
     {
-        "title":"German audio engineer",
-        "description":"I will mix and master your music as charting german audio engineer",
-        "tags":["Music and Audio"]
+        "profession": "German audio engineer",
+        "title": "I will mix and master your music as charting german audio engineer",
+        "description": "I will professionally Mix and Master your songs! I will put to use some of the best plug-ins available on the market to make your songs sound complete Radio Ready. I love being able to help make a great song and make it sound even better.",
+        "tags": [
+            "Music and Audio"
+        ]
     },
     {
-        "title":"English audio engineer",
-        "description":"I will mix and master your music as charting english audio engineer",
-        "tags":["Music and Audio"]
+        "profession": "English audio engineer",
+        "title": "I will mix and master your music as charting english audio engineer",
+        "description": "I will professionally Mix and Master your songs! I will put to use some of the best plug-ins available on the market to make your songs sound complete Radio Ready. I love being able to help make a great song and make it sound even better.",
+        "tags": [
+            "Music and Audio"
+        ]
     },
     {
-        "title":"Spanish audio engineer",
-        "description":"I will mix and master your music as charting spanish audio engineer",
-        "tags":["Music and Audio"]
+        "profession": "Spanish audio engineer",
+        "title": "I will mix and master your music as charting spanish audio engineer",
+        "description": "I will professionally Mix and Master your songs! I will put to use some of the best plug-ins available on the market to make your songs sound complete Radio Ready. I love being able to help make a great song and make it sound even better.",
+        "tags": [
+            "Music and Audio"
+        ]
     },
     {
-        "title":"chinese audio engineer",
-        "description":"I will mix and master your music as charting chinese audio engineer",
-        "tags":["Music and Audio"]
+        "profession": "chinese audio engineer",
+        "title": "I will mix and master your music as charting chinese audio engineer",
+        "description": "I will professionally Mix and Master your songs! I will put to use some of the best plug-ins available on the market to make your songs sound complete Radio Ready. I love being able to help make a great song and make it sound even better.",
+        "tags": [
+            "Music and Audio"
+        ]
     }
 ]
