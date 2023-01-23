@@ -9,7 +9,7 @@ export function OwnerProfile({ gig }) {
             <img className="owner-img" src={gig.owner.imgUrl} />
             <div className="flex column ">
                 <p className="owner-name bold">{gig.owner.fullname}</p>
-                <div className="owner-rate flex"> <OwnerRate rate={gig.owner.rate} /> </div>
+                <div className="owner-rate flex"> <OwnerRate  rate={gig.owner.rate} /> </div>
                 <button>Contact Me</button>
 
             </div>
