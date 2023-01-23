@@ -50,9 +50,9 @@
     h3 {
         color: $clr7;
         line-height: 22px;
-        height: 49px;
+        height: 44px;
         overflow: hidden;
-        padding: 0 12px 5px;
+        padding: 0 12px 8px;
         margin-top: 5px;
 
         // &:hover h3 {
@@ -61,11 +61,19 @@
     }
 
     .rate {
-        padding: 10px 12px;
+        padding: 10px 12px 8px;
         color: #ffbe5b;
         font-size: 14px;
         font-weight: 700;
         display: flex;
+
+        .star {
+            padding-top: 2px;
+        }
+
+        p {
+            margin-right: 5px;
+        }
 
         .rates-count {
             color: $clr3;
@@ -104,13 +112,14 @@
             font-weight: 700;
             display: inline-block;
         }
-        
+
         .price span {
             color: $clr6;
             font-size: 18px;
             line-height: 20px;
             margin: 1px;
-            padding-left: 6px;            display: inline-block;
+            padding-left: 6px;
+            display: inline-block;
         }
     }
 }

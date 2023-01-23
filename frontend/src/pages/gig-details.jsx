@@ -51,7 +51,7 @@ export function GigDetails() {
             setGig(gig)
             //TODO:add msg
         } catch (err) {
-            showErrorMsg('eror msg from details, need to thing about txt...')
+            showErrorMsg()
             navigate('/gig')
         }
     }

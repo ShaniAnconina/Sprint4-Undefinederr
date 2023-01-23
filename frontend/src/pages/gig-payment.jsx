@@ -28,7 +28,7 @@ export function GigPayment() {
             //TODO: MsG
         } catch (error) {
             console.log(error)
-            showErrorMsg('Had issues please try again...')
+            showErrorMsg()
             navigate(-1)
         }
     }
@@ -50,7 +50,7 @@ export function GigPayment() {
             //TODO check if we need to add to the buyer some data??!?!@?#
             navigate(-1) //Maby to another path
         } catch (error) {
-            showErrorMsg('Had issues please try again... 1')
+            showErrorMsg()
         }
     }
 

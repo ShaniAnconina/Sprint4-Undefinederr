@@ -24,9 +24,9 @@ export function GigIndex() {
             gig.isSaved = !gig.isSaved
             gigService.addToWishlist(gig._id)
             await saveGig(gig)
-            showSuccessMsg('This item added to wishlist successfully')
+            showSuccessMsg('The item saved to your wishlist')
         } catch (err) {
-            showErrorMsg('Had issues please try again...')
+            showErrorMsg()
         }
     }
 
