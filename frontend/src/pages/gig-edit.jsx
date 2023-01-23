@@ -23,7 +23,7 @@ export function GigEdit() {
             navigate('/gig')
             showSuccessMsg('Your gig has been saved!')
         } catch (err) {
-            showErrorMsg('Cannot save your gig')
+            showErrorMsg()
         }
     }
 

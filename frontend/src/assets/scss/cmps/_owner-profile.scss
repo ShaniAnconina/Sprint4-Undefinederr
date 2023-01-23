@@ -6,6 +6,8 @@
     }
 
     .profile-info {
+        color: $clr5;
+
         padding-bottom: 24px;
 
         img {
@@ -34,10 +36,11 @@
             border-radius: 4px;
             border: none;
             background-color: transparent;
-            color: $clr5;
             border: solid $clr5 1px;
             padding: 12px 24px;
             width: auto;
+            color: $clr5;
+
 
 
             &:hover {

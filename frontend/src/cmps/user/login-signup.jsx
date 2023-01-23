@@ -30,7 +30,7 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
             await func(credentials)
             //TODO:msg
         } catch (err) {
-            showErrorMsg('Had issues please try again...')
+            showErrorMsg()
         }
         finally {
             setCredentials(userService.getEmptyCredentials())

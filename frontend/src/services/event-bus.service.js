@@ -26,7 +26,7 @@ export function showUserMsg(msg) {
 export function showSuccessMsg(txt) {
     showUserMsg({txt, type: 'success'})
 }
-export function showErrorMsg(txt) {
+export function showErrorMsg(txt= 'We\'re sorry, something went wrong') {
     showUserMsg({txt, type: 'error'})
 }
 

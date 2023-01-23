@@ -1,6 +1,7 @@
 import { gigService } from '../../services/gig.service.js'
 import { ADD_GIG, REMOVE_GIG, SET_FILTER, SET_GIGS, UPDATE_GIG } from './gig.reducer.js'
 import { store } from '../store.js'
+import { showErrorMsg } from '../../services/event-bus.service.js'
 
 
 
@@ -11,7 +12,7 @@ export async function loadGigs(filterBy) {
         return gigs
     } catch (err) {
         console.log('ERROR', err)
-        throw err
+        showErrorMsg()
     }
 }
 

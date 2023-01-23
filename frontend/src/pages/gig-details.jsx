@@ -51,7 +51,7 @@ export function GigDetails() {
             setGig(gig)
             //TODO:add msg
         } catch (err) {
-            showErrorMsg('eror msg from details, need to thing about txt...')
+            showErrorMsg()
             navigate('/gig')
         }
     }
@@ -122,10 +122,14 @@ export function GigDetails() {
 
                         <div className="mini-owner flex">
                             <img className="owner-img" src={gig.owner.imgUrl} />
-                            <p className="owner-name">{gig.owner.fullname}</p>
-                            <p className="owner-level">{gig.owner.level}</p>
-                            <p className="separator">|</p>
-                            <div className="owner-rate flex align-center"><OwnerRate rate={gig.owner.rate} /> </div>
+                            <div className=" flex">
+
+                                <p className="owner-name">{gig.owner.username}</p>
+                                <p className="owner-level">{gig.owner.level}</p>
+                                <p className="separator">|</p>
+                                {console.log('gig', gig)}
+                                <div className="owner-rate flex align-center"><OwnerRate count={gig.reviews.length} rate={gig.rate} /> </div>
+                            </div>
                         </div>
 
                         <div className="img-container">
