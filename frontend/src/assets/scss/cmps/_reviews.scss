@@ -28,6 +28,11 @@
 
         .review-rate {
             gap: 10px;
+            
+            .separator{
+                color: $clr20;
+                margin-right: 8px;
+            }
         }
 
     }

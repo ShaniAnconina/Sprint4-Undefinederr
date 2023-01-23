@@ -123,6 +123,7 @@ export function GigDetails() {
                             <img className="owner-img" src={gig.owner.imgUrl} />
                             <p className="owner-name">{gig.owner.fullname}</p>
                             <p className="owner-level">{gig.owner.level}</p>
+                            <p className="separator">|</p>
                             <div className="owner-rate flex align-center"><OwnerRate rate={gig.owner.rate} /> </div>
                         </div>
 
