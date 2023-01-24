@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import { ReviewRate } from "./review-rate"
 import { ReviewPreview } from "./review-preview"
-import { AddReview } from "../../pages/add-review"
+import { AddReview } from "../add-review"
 
 export function Reviews({ elApp, gig }) {
     const [isAddReview, setIsAddReview] = useState(false)
