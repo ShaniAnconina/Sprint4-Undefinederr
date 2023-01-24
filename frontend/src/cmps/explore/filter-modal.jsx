@@ -55,8 +55,8 @@ export function FilterModal({ modalType }) {
         <section className="filter-modal">
             {type}
             <div className="filters-footer">
-                <button type="button">Clear All</button>
-                <button form="filters" type="submit">Apply</button>
+                <button className="clear" type="button">Clear All</button>
+                <button className="apply" form="filters" type="submit">Apply</button>
             </div>
         </section>
     )
