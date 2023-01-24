@@ -8,8 +8,6 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 export function ExploreFilter({ gigs, filterBy }) {
     const [modalType, setModalType] = useState(false)
 
-    console.log(filterBy)
-
     function toggleModal(type) {
         setModalType(type)
         if (modalType === type) setModalType(false)

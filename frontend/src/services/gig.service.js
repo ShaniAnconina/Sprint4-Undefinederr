@@ -87,7 +87,6 @@ function remove(gigId) {
 }
 
 function addToWishlist(gigId) {
-
     console.log('gigId - service:', gigId)
 }
 
@@ -184,8 +183,11 @@ function _createGigs() {
             ]
             let gigImgIdx = utilService.getRandomIntInclusive(1, 20)
             let gigImgCategory = gig.tags[0]
-            let gigImgUrl = gigsUrl[gigImgCategory][gigImgIdx]
-            Gigs.push(_createGig(gig.title, gig.tags, gig.description, imgUrls, gig.reviews, users[genUsersIdx[0]]))
+            let gigImgUrls = []
+            for (let i = 0; i<imgUrls.length;i++){     
+            gigImgUrls.push(gigsUrl[gigImgCategory][i])
+            }
+            Gigs.push(_createGig(gig.title, gig.tags, gig.description, gigImgUrls, gig.reviews, users[genUsersIdx[0]]))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }

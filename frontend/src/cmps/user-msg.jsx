@@ -1,5 +1,6 @@
-import { eventBus } from "../services/event-bus.service.js"
 import { useState, useEffect, useRef } from 'react'
+import { eventBus } from "../services/event-bus.service.js"
+import { GrClose } from "react-icons/gr"
 
 export function UserMsg() {
 
@@ -27,7 +28,7 @@ export function UserMsg() {
   return (
     <section className={`user-msg ${msg.type}`}>
       {msg.txt}
-      <button onClick={closeMsg}>x</button>
+      <button onClick={closeMsg}><GrClose size="10px" /></button>
     </section>
   )
 }
