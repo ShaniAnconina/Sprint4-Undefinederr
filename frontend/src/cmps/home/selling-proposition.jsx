@@ -1,7 +1,8 @@
-export function WhyUs() {
+export function SellingProposition() {
 
-    return <section className="">
-        <div className="whyus-text">
+    return <section className="selling-proposition-container">
+        <div className="selling-proposition flex">
+        <pre className="selling-text">
             <h2>A whole world of freelance talent at your fingertips</h2>
             <ul className="none-list-style">
                 <li>
@@ -21,7 +22,10 @@ export function WhyUs() {
                     Questions? Our round-the-clock support team is available to help anytime, anywhere.
                 </li>
             </ul>
-        </div>
+        </pre>
+        <div className="selling-img">
         <img alt="Video teaser image" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_700,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png" loading="auto" />
+        </div>
+        </div>
     </section>
 }

@@ -2,12 +2,19 @@
     overflow-x: hidden;
 
     .trusted-by {
-        margin-top: 574px;
-        margin-left: 310px;
+        margin-top: 559px;
+        margin-left: 270px;
         font-family: Macan-Semibold;
         font-weight: 600;
         max-width: 1400px;
         color: $clr3;
+
+        .trusted-by-logos {
+            display: flex;
+            align-items: center;
+            height: 95px;
+            list-style: none;
+        }
 
         li.trusted-by-text {
             padding: 0px 20px 0px 0px;
@@ -32,44 +39,59 @@
         h2 {
             // padding: 0px 0px 24px;
             text-align: left;
-            margin-top: 115px;
+            margin-top: 96px;
             // padding-left: 100px;
             font-size: 32px;
             font-family: Macan-Bold;
         }
-    }
 
+        
     .popular-services {
-        display: grid;
-        gap: 36px;
-        // width: 100vw;
-        // position: absolute;
-        // top: 854.9px;
-        // grid-template-columns: repeat(auto-fill, 296);
-        grid-template-columns: repeat(auto-fill, 209);
-        grid-template-rows: 345px;
-
-
+        display: flex;
         a {
             background-image: url();
             background-repeat: no-repeat;
-            // position:relative;
+            position:relative;
             text-align: center;
             cursor: pointer;
             grid-row: 1;
-            width: 100%;
+            width: 252px;
+            height: 345px;
+            margin: 0 18px;
+        }
+
+        a:first-child {
+            margin: 0 18px 0 0;
+        }
+        a:last-child {
+            margin: 0 0 0 18px;
         }
 
         p {
-            //TODO position it
-            color: $clr0;
-            // position: absolute;
 
+            color: $clr0;
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            font-size: 14px;
+            font-family: Macan-Bold;
+            text-align: left;
+            line-height: 160%;
+
+            span {
+                font-size: 24px;
+            }
         }
 
         img {
             width: 100%;
             height: 100%;
         }
+    }
+    }
+
+    .selling-proposition-container {
+        background-color: #f1fdf7;
+
     }
 }
