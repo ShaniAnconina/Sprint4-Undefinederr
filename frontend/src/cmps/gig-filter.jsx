@@ -2,12 +2,12 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
-import { AiOutlineSearch } from "react-icons/ai"
+import { CgSearch } from "react-icons/cg"
 
 import { setfilter } from "../store/gig/gig.action.js"
 import { gigService } from "../services/gig.service.js"
 
-export function GigFilter({ searchBtnContent, placeholderTxt }) {
+export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false }) {
     const navigate = useNavigate()
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
     const [scroll, setScroll] = useState(false)
@@ -44,6 +44,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
     }
 
     return <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}>
+        { inHomeHero && <div className='search-icon-container'>{<CgSearch />}</div>}
         <input
             className="search-bar"
             type="text"
