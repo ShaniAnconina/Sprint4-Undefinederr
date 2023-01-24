@@ -1,8 +1,11 @@
 .sliders-btns {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: -110px;
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    // position: relative;
+    // top: -110px;
 
     button{
         // opacity: 1;

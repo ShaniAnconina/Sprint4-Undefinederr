@@ -49,8 +49,6 @@ async function query(filterBy) {
             gigs = gigs.filter((gig) => gig.isSaved === true)
         }
 
-
-
         return gigs
     } catch (err) {
         console.log("could not retrieve gigs from service")
@@ -88,7 +86,6 @@ function remove(gigId) {
 }
 
 function addToWishlist(gigId) {
-
     console.log('gigId - service:', gigId)
 }
 
