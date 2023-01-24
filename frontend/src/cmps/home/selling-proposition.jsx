@@ -1,7 +1,7 @@
 export function SellingProposition() {
 
-    return <section className="selling-proposition-container">
-        <div className="selling-proposition flex">
+    return <section className="selling-proposition-container main-layout">
+        <div className="selling-proposition flex ">
         <pre className="selling-text">
             <h2>A whole world of freelance talent at your fingertips</h2>
             <ul className="none-list-style">
