@@ -61,29 +61,14 @@ export function AddReview({ setIsAddReview, elApp }) {
 
                 <form onSubmit={onSubmit}>
 
+                    <div className="txt-review flex space-between">
 
-                    <div className="flex space-between">
-                        <label htmlFor="fullname">
-
-                            <b>Your Name</b>
-                        </label>
-                        <input type="text"
-                            name="fullname"
-                            id="fullname"
-                            placeholder="Enter yoy'r name"
-                            onChange={handleChange}
-                            value={reviewToAdd.by.fullname} />
-
-                    </div>
-
-                    <div className="flex space-between">
-
-                        <label htmlFor="txt-review">
+                        <label className="flex column" htmlFor="txt-review">
                             <b>Your Review</b>
-                            Enter you'r review about this gig and the Seller
+                            <small>Enter you'r review about this gig and the Seller</small>
                         </label>
 
-                        <input type="text"
+                        <textarea type="text"
                             name="txt"
                             id="txt-review"
                             placeholder="This gig..."
@@ -92,36 +77,54 @@ export function AddReview({ setIsAddReview, elApp }) {
 
                     </div>
 
-                    <div className="flex space-between">
-                        <b>Rate</b>
+                    <div className="footer flex space-between">
 
-                        <div className="flex">
+                        <div className="fullname flex column">
 
-                            <span onClick={() => setRateToAdd(1)} className={rateToAdd >= 0 ? 'gold' : ''}>
-                                <AiFillStar size="15px" />
-                            </span>
+                            <label htmlFor="fullname">
+                                <b>Your Name</b>
+                            </label>
 
-                            <span onClick={() => setRateToAdd(2)}className={rateToAdd >= 1 ? 'gold' : ''}>
-                                <AiFillStar size="15px" />
-                            </span>
-
-                            <span onClick={() => setRateToAdd(3)}className={rateToAdd >= 2 ? 'gold' : ''}>
-                                <AiFillStar size="15px" />
-                            </span>
-
-                            <span onClick={() => setRateToAdd(4)}className={rateToAdd >= 3 ? 'gold' : ''}>
-                                <AiFillStar size="15px" />
-                            </span>
-
-                            <span onClick={() => setRateToAdd(5)}className={rateToAdd >= 4 ? 'gold' : ''}>
-                                <AiFillStar size="15px" />
-                            </span>
-
-                            <p>(rate)</p>
+                            <input type="text"
+                                name="fullname"
+                                id="fullname"
+                                placeholder="Enter yoy'r name"
+                                onChange={handleChange}
+                                value={reviewToAdd.by.fullname} />
 
                         </div>
-                    </div>
 
+
+                        <div className="rate flex column">
+                            <b>Rate</b>
+
+                            <div className="rate-stars flex">
+
+                                <span onClick={() => setRateToAdd(1)} className={rateToAdd >= 0 ? 'gold' : ''}>
+                                    <AiFillStar size="15px" />
+                                </span>
+
+                                <span onClick={() => setRateToAdd(2)} className={rateToAdd >= 1 ? 'gold' : ''}>
+                                    <AiFillStar size="15px" />
+                                </span>
+
+                                <span onClick={() => setRateToAdd(3)} className={rateToAdd >= 2 ? 'gold' : ''}>
+                                    <AiFillStar size="15px" />
+                                </span>
+
+                                <span onClick={() => setRateToAdd(4)} className={rateToAdd >= 3 ? 'gold' : ''}>
+                                    <AiFillStar size="15px" />
+                                </span>
+
+                                <span onClick={() => setRateToAdd(5)} className={rateToAdd >= 4 ? 'gold' : ''}>
+                                    <AiFillStar size="15px" />
+                                </span>
+
+                                <p>(rate)</p>
+
+                            </div>
+                        </div>
+                    </div>
 
                     <button>Send Your Review</button>
 
