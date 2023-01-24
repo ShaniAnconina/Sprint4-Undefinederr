@@ -23,6 +23,10 @@ export function AppHeader({ elApp }) {
         eventBus.on(JOIN_USER, () => setOpenModal('login'))
     }, [])
 
+    // useEffect(() => {
+
+    // }, [hash])
+
     const changeScroll = () => {
         if (window.scrollY > 0) setScroll(true)
         else setScroll(false)

@@ -50,7 +50,7 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
             elApp.current.style.maxHeight = '100vh'
         }
         else {
-            elApp.current.style.overflow = 'none'
+            elApp.current.style.overflow = 'visible '
             elApp.current.style.maxHeight = 'none'
         }
     }
