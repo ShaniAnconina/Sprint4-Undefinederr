@@ -11,7 +11,26 @@
             margin: 0;
         }
 
-        li {
+        // li {
+        //     font-weight: 600;
+        //     font-size: 14px;
+        //     color: $clr13;
+        //     list-style: none;
+        //     margin-right: 24px;
+        //     cursor: pointer;
+        //     line-height: 53px;
+
+        //     &:hover {
+        //         color: $clr4;
+        //     }
+
+        //     &.active {
+        //         color: $clr7;
+        //         border-bottom: 3px solid #1dbf73;
+        //     }
+        // }
+
+        a {
             font-weight: 600;
             font-size: 14px;
             color: $clr13;

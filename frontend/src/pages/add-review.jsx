@@ -20,7 +20,7 @@ export function AddReview({ setIsAddReview, elApp }) {
             elApp.current.style.maxHeight = '100vh'
         }
         else {
-            elApp.current.style.overflow = 'none'
+            elApp.current.style.overflow = 'visible '
             elApp.current.style.maxHeight = 'none'
         }
     }
