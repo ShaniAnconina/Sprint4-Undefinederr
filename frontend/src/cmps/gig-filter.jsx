@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
 import { AiOutlineSearch } from "react-icons/ai"
@@ -11,6 +12,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
     const [scroll, setScroll] = useState(false)
 
+
     const changeScroll = () => {
         if (window.scrollY > 100) setScroll(true)
         else setScroll(false)
@@ -18,7 +20,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
     window.addEventListener('scroll', changeScroll)
 
     useEffect(() => {
-        if (filterByToEdit.tags.length > 0) return
+        if (filterByToEdit.tags.length === 0) return
         setfilter(filterByToEdit)
         navigate('/gig')
     }, [filterByToEdit])
