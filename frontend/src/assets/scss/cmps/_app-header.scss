@@ -1,178 +1,262 @@
 .app-header {
     background-color: transparent;
     z-index: 2;
-}
 
-.scroll-bg {
-    background-color: $clr0;
-    position: sticky;
-    top: 0;
-}
+    // .scroll-bg {
+    //     background-color: $clr0;
+    //     position: sticky;
+    //     top: 0;
+    // }
 
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-
-    .logo-filter {
+    .top-header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 35px;
+        height: 80px;
 
-        .logo {
-            text-decoration: none;
-            color: $clr6;
-            cursor: pointer;
-            font-size: 2.2rem;
-            font-family: Macan-Bold;
-            letter-spacing: -3px;
+        .logo-filter {
+            display: flex;
+            align-items: center;
+            gap: 35px;
 
-            span {
-                color: $clr9;
+            .logo {
+                text-decoration: none;
+                color: $clr6;
+                cursor: pointer;
+                font-size: 2.2rem;
+                font-family: Macan-Bold;
+                letter-spacing: -3px;
+
+                span {
+                    color: $clr9;
+                }
+            }
+
+            // .logo.before-scroll-txt {
+            //     color: $clr0;
+            // }
+
+            .filter-form {
+                opacity: 1;
+                display: flex;
+                align-items: center;
+                transition: opacity 0.3s;
+
+                .search-bar {
+                    border-radius: 4px 0 0 4px;
+                    border: 1px solid #c5c6c9;
+                    padding: 10px 2px 10px 16px;
+                    // width: 818px;
+                    width: 518px;
+                    height: 42px;
+                    font-size: 1rem;
+                    letter-spacing: normal;
+                    font-family: Macan-Regular;
+                }
+
+                button {
+                    background-color: $clr7;
+                    border-radius: 0 4px 4px 0;
+                    border: none;
+                    color: $clr0;
+                    width: 50px;
+                    height: 42px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $clr6;
+                    }
+                }
+
+                button svg {
+                    font-size: 20px;
+                }
+            }
+
+            // .filter-form.before-scroll-hide {
+            //     opacity: 0;
+            // }
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            a {
+                text-decoration: none;
             }
         }
 
-        .logo.before-scroll-txt {
+        .loggedin-nav {
+            .user-img {
+                width: 32px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+
+            .icon {
+                color: $clr4;
+                cursor: pointer;
+            }
+
+            .orders {
+                font-weight: 600;
+                cursor: pointer;
+                color: $clr4;
+
+                &:hover {
+                    color: $clr9;
+                }
+            }
+
+            // .icon.before-scroll-txt,
+            // .orders.before-scroll-txt {
+            //     color: $clr0;
+
+            // }
+        }
+
+        .main-nav {
+
+            .explore,
+            .signin {
+                font-weight: 600;
+                background-color: transparent;
+                border: none;
+                color: $clr5;
+                cursor: pointer;
+                font-size: 16px;
+
+                &:hover {
+                    color: $clr9;
+                }
+            }
+
+            .explore.before-scroll-txt,
+            .signin.before-scroll-txt {
+                color: $clr0;
+            }
+
+            .join {
+                font-weight: 600;
+                background-color: transparent;
+                color: $clr9;
+                border: 1px solid $clr9;
+                font-size: 14px;
+                padding: 10px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $clr0;
+                    border: 1px solid $clr9;
+                    background-color: $clr9;
+                }
+            }
+
+
+            .join.before-scroll-txt {
+                color: $clr0;
+                border: 1px solid $clr0;
+
+                &:hover {
+                    border: 1px solid $clr9;
+                }
+            }
+        }
+
+    }
+
+    .bottom-header {
+        border-block: 1px solid $clr11;
+        transform: scaleY(0);
+
+        // &.before-scroll-borders {
+        // border-block: none;
+        // }
+    }
+}
+
+.app-header.home {
+    position: sticky;
+    top: 0;
+
+    .logo-filter {
+        .logo {
             color: $clr0;
         }
 
         .filter-form {
-            opacity: 1;
-            display: flex;
-            align-items: center;
-            transition: opacity 0.3s;
-
-            .search-bar {
-                border-radius: 4px 0 0 4px;
-                border: 1px solid #c5c6c9;
-                padding: 10px 2px 10px 16px;
-                // width: 818px;
-                width: 518px;
-                height: 42px;
-                font-size: 1rem;
-                letter-spacing: normal;
-                font-family: Macan-Regular;
-            }
-
-            button {
-                background-color: $clr7;
-                border-radius: 0 4px 4px 0;
-                border: none;
-                color: $clr0;
-                width: 50px;
-                height: 42px;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: $clr6;
-                }
-            }
-
-            button svg {
-                font-size: 20px;
-            }
-        }
-
-        .filter-form.before-scroll-hide {
-            opacity: 0;
-        }
-
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 24px;
-
-        a {
-            text-decoration: none;
+            transform: scaleY(0);
+            transition: .4s transform;
         }
     }
 
-    .homepage-nav {
-        .user-img {
-            width: 32px;
-            border-radius: 100%;
-            cursor: pointer;
-        }
+    .loggedin-nav {
 
-        .icon {
-            color: $clr4;
-            cursor: pointer;
-        }
-
+        .icon,
         .orders {
-            font-weight: 600;
-            cursor: pointer;
             color: $clr4;
-
-            &:hover {
-                color: $clr9;
-            }
-        }
-
-        .icon.before-scroll-txt,
-        .orders.before-scroll-txt {
-            color: $clr0;
-
         }
     }
 
-    .explore-nav {
+    .main-nav {
 
         .explore,
         .signin {
-            font-weight: 600;
-            background-color: transparent;
-            border: none;
-            color: $clr5;
-            cursor: pointer;
-            font-size: 16px;
-
-            &:hover {
-                color: $clr9;
-            }
-        }
-
-        .explore.before-scroll-txt,
-        .signin.before-scroll-txt {
             color: $clr0;
         }
 
         .join {
-            font-weight: 600;
-            background-color: transparent;
-            color: $clr9;
-            border: 1px solid $clr9;
-            font-size: 14px;
-            padding: 10px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-
-            &:hover {
-                color: $clr0;
-                border: 1px solid $clr9;
-                background-color: $clr9;
-            }
-        }
-
-
-        .join.before-scroll-txt {
             color: $clr0;
             border: 1px solid $clr0;
-
-            &:hover {
-                border: 1px solid $clr9;
-            }
         }
     }
-}
 
-.bottom-header {
-    border-block: 1px solid $clr11;
-}
+    &.sticky {
+        background-color: $clr0;
 
-.bottom-header.before-scroll-borders {
-    border-block: none;
+        .logo-filter {
+
+            .logo {
+                color: $clr6;
+            }
+
+            .filter-form {
+                transform: scaleY(1);
+            }
+        }
+
+        .loggedin-nav {
+
+            .icon,
+            .orders {
+                color: $clr4;
+            }
+        }
+
+        .main-nav {
+
+            .explore,
+            .signin {
+                color: $clr5;
+            }
+
+            .join {
+                color: $clr9;
+                border: 1px solid $clr9;
+
+                &:hover {
+                    color: $clr0;
+                }
+            }
+        }
+
+        .bottom-header {
+            transform: scaleY(1);
+
+        }
+    }
 }

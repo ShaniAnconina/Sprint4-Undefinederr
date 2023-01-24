@@ -8,7 +8,7 @@ import { loadGigs, saveGig } from "../store/gig/gig.action"
 import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
 
-export function GigIndex() {
+export function GigIndex({ elApp }) {
     const gigs = useSelector((storeState) => storeState.gigModule.gigs)
     const filterBy = useSelector((storeState) => storeState.gigModule.filterBy)
     const loggedinUser = useSelector((storeState) => storeState.userModule.loggedinUser)
@@ -37,7 +37,7 @@ export function GigIndex() {
             {/* {!filterBy.tags && <h1>All</h1>} */}
             {filterBy.tags.length === 0 && <h1>All</h1>}
             {filterBy.tags.length > 0 && <h1>{filterBy.tags[0].replace('and', '&')}</h1>}
-            <ExploreFilter gigs={gigs} filterBy={filterBy}/>
+            <ExploreFilter gigs={gigs} filterBy={filterBy} elApp={elApp} />
             <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
         </section>
     )

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 
 import { LoginSignUp } from './user/login-signup'
 import { CategoryNav } from './category-nav-bar'
@@ -15,14 +15,37 @@ import { RiNotification3Line } from "react-icons/ri"
 
 export function AppHeader({ elApp }) {
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
-    const [scroll, setScroll] = useState(false)
+    // const [scroll, setScroll] = useState(false)
     const [openModal, setOpenModal] = useState(null)
+    const [stickyClassname, setStickyClassname] = useState('')
+    const [homeClassname, setHomeClassname] = useState('')
+    const elHeader = useRef(null)
     // const { hash } = window.location
+    let location = useLocation()
+
+    useEffect(() => {
+        if (location.pathname === "/") {
+            setHomeClassname('home')
+            console.log('location.pathname:', location.pathname)
+        }
+        else  setHomeClassname('')
+    }, [location])
+
+
+    useEffect(() => {
+        const headerObserver = new IntersectionObserver(onHeaderObserved, { rootMargin: "-91px 0px 0px" })
+        headerObserver.observe(elHeader.current)
+        function onHeaderObserved(entries) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) setStickyClassname('')
+                else if (!entry.isIntersecting) setStickyClassname('sticky')
+            })
+        }
+    }, [])
 
     useEffect(() => {
         eventBus.on(JOIN_USER, () => setOpenModal('login'))
     }, [])
-
 
     // const changeScroll = () => {
     //     if (window.scrollY > 0) setScroll(true)
@@ -31,7 +54,7 @@ export function AppHeader({ elApp }) {
     // window.addEventListener('scroll', changeScroll)
 
     return (
-        <header className='app-header full'>
+        <header ref={elHeader} className={`app-header full ${stickyClassname} ${homeClassname} `}>
             {/* <header className={(scroll && hash === '#/') ? 'app-header scroll-bg full' : 'app-header full'}> */}
             <div className="main-layout">
                 <div className="top-header">
@@ -40,7 +63,7 @@ export function AppHeader({ elApp }) {
                         {/* <NavLink to="/" className={(!scroll && hash === '#/') ? 'logo before-scroll-txt' : 'logo'}>undefinederr<span>.</span></NavLink> */}
                         <GigFilter searchBtnContent={<AiOutlineSearch />} placeholderTxt="What service are you looking for today?" />
                     </div>
-                    {loggedinUser && <nav className="homepage-nav">
+                    {loggedinUser && <nav className="loggedin-nav">
                         <span className='icon' title="Notifications"><RiNotification3Line size="22px" /></span>
                         <span className='icon' title="Messages"><BiEnvelope size="22px" /></span>
                         <span className='icon' title="Lists"><FaRegHeart size="18px" /></span>
@@ -51,7 +74,7 @@ export function AppHeader({ elApp }) {
                         <p className={(!scroll && hash === '#/') ? 'orders before-scroll-txt' : 'orders'}>Orders</p> */}
                         <img className="user-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" />
                     </nav>}
-                    {!loggedinUser && <nav className="explore-nav">
+                    {!loggedinUser && <nav className="main-nav">
                         <NavLink to="/gig" className='explore'>Explore</NavLink>
                         {/* <NavLink to="/gig" className={(!scroll && hash === '#/') ? 'explore before-scroll-txt' : 'explore'}>Explore</NavLink> */}
                         <button onClick={() => setOpenModal('login')} className='signin'>Sign in</button>
@@ -62,7 +85,7 @@ export function AppHeader({ elApp }) {
                 </div>
             </div>
             <div className='bottom-header main-layout'>
-            {/* <div className={(!scroll && hash === '#/') ? 'bottom-header main-layout before-scroll-borders' : 'bottom-header main-layout'}> */}
+                {/* <div className={(!scroll && hash === '#/') ? 'bottom-header main-layout before-scroll-borders' : 'bottom-header main-layout'}> */}
                 <CategoryNav />
             </div>
             {openModal && <LoginSignUp elApp={elApp} setOpenModal={setOpenModal} status={openModal} />}

@@ -18,9 +18,7 @@ export const gigService = {
 
 async function query(filterBy) {
     try {
-        console.log("trying to query with filterBy: ", filterBy)
         let gigs = await storageService.query(STORAGE_KEY)
-        console.log("from gigs:", gigs)
 
         getAvgRate(gigs)
         utilService.saveToStorage(STORAGE_KEY, gigs)

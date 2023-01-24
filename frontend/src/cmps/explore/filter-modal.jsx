@@ -5,26 +5,18 @@ import { useEffect, useState } from "react"
 import { useSelector } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 import { setfilter } from "../../store/gig/gig.action.js"
-import { store } from '../../store/store.js'
-import { gigService } from "../../services/gig.service"
-
-
 
 export function FilterModal({ modalType }) {
 
     const navigate = useNavigate()
     const {filterBy} = useSelector((storeState)=>storeState.gigModule)
     const [filterByToEdit, setFilterByToEdit] = useState(filterBy)
-
+    let type
 
     useEffect(() => {
         setfilter(filterByToEdit)
-        console.log("setting filters: ", filterByToEdit)
         navigate('/gig')
     }, [filterByToEdit])
-
-
-    let type
 
     switch (modalType) {
         case 'servicesOptions':
@@ -41,18 +33,16 @@ export function FilterModal({ modalType }) {
             break
     }
 
-
     function onSubmit(ev, value){
         ev?.preventDefault()
         let field = ev.target.name
-        console.log("event: ",ev)
         console.log(ev.target.name)
-        console.log("value:", value)
         setFilterByToEdit({...filterBy, [field]:value})
     }
 
     return (
         <section className="filter-modal">
+        {/* <section onClick={(ev) => ev.stopPropagation()} className="filter-modal"> */}
             {type}
             <div className="filters-footer">
                 <button className="clear" type="button">Clear All</button>

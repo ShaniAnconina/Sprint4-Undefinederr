@@ -1,5 +1,3 @@
-//TODO refactor to loop on categories
-
 export function ServicesOptionsModal({onSubmit}) {
 
     return (
