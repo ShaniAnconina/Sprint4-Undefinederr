@@ -11,11 +11,10 @@ function getEmptyReview() {
         txt: '',
         rate: 1,
         reviewedAt: '',
-        by: {
-            name: '',
-            country: '',
-            flag: ''
-        }
+        fullname: '',
+        country: '',
+        flag: ''
+
     }
 }
 
