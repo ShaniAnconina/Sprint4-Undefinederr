@@ -12,13 +12,8 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
     const elNav = useRef(null)
 
     useEffect(() => {
-
-        const navObserver = new IntersectionObserver(onNavObserved, {
-            rootMargin: "-100px 0px 0px"
-        })
-
+        const navObserver = new IntersectionObserver(onNavObserved, {rootMargin: "-100px 0px 0px"})
         navObserver.observe(elNav.current)
-
         function onNavObserved(entries) {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) setFiltersClassname('')

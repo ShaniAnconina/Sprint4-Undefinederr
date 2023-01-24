@@ -9,7 +9,6 @@ export function HomeHero() {
         const [imgIdx, setImgIdx] = useState(0)
 
         function changeSlide() {
-                console.log(imgIdx)
                 setImgIdx((prev) => (prev === 4) ? 0 : prev + 1)
         }
 
@@ -17,7 +16,6 @@ export function HomeHero() {
                 let interval = setInterval(changeSlide, 5000)
                 return () => clearInterval(interval)
         }, [])
-        console.log("hero: ", imgIdx)
         return <section className="home-hero">
                 <div className='home-hero-content'>
                         <div className="slider-container">
@@ -28,7 +26,7 @@ export function HomeHero() {
                                 <div className={`hero hero-gabriela ${imgIdx === 4 ? "opacity" : ""}`}><p>Gabriela,<b>Video Editor</b></p></div>
                         </div>
                         <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>
-                                <GigFilter searchBtnContent='Search' placeholderTxt={`Try \"building mobile app\"`} inHomeHero = {true} />
+                        <GigFilter searchBtnContent='Search' placeholderTxt={`Try \"building mobile app\"`} inHomeHero={true} />
                         <PopularTagSearch />
                 </div>
         </section>
