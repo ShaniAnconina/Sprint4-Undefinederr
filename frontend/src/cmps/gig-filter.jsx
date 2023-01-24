@@ -18,7 +18,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
     window.addEventListener('scroll', changeScroll)
 
     useEffect(() => {
-        if (!filterByToEdit.tags) return
+        if (filterByToEdit.tags.length > 0) return
         setfilter(filterByToEdit)
         navigate('/gig')
     }, [filterByToEdit])
