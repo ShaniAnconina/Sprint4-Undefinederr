@@ -13,8 +13,31 @@
         padding: 45px;
         background-color: $clr0;
 
-        .header{
+        input:focus-visible {
+            outline: none;
+        }
+
+
+        .header {
             gap: 250px;
+        }
+
+        .txt-review {
+            padding-block: 35px;
+            gap: 150px;
+
+            label{
+                justify-content: space-around;
+                width: 35%;
+            }
+
+            textarea {
+                resize: none;
+                height: 100px;
+                flex-grow: 1;
+            }
+
+            
         }
     }
 
