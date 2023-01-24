@@ -20,7 +20,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
     useEffect(() => {
         if (!filterByToEdit.tags) return
         setfilter(filterByToEdit)
-        navigate('/gig')
+        //! navigate('/gig') !//
     }, [filterByToEdit])
 
     function onChange({ target }) {

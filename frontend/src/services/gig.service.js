@@ -21,8 +21,10 @@ async function query(filterBy) {
         console.log("trying to query with filterBy: ", filterBy)
         let gigs = await storageService.query(STORAGE_KEY)
         console.log("from gigs:", gigs)
+
         getAvgRate(gigs)
         utilService.saveToStorage(STORAGE_KEY, gigs)
+
         //filter by free text
         if (filterBy?.txt) {
             const regex = new RegExp(filterBy.txt, "ig")
@@ -48,9 +50,6 @@ async function query(filterBy) {
         if (filterBy?.isSaved) {
             gigs = gigs.filter((gig) => gig.isSaved === true)
         }
-
-
-
         return gigs
     } catch (err) {
         console.log("could not retrieve gigs from service")

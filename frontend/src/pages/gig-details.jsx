@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react"
-import { Link, useNavigate, useParams } from "react-router-dom"
-
+import { Link, NavLink, useNavigate, useParams } from "react-router-dom"
+// import { Link } from "react-scroll"
 import { DetailsSidebar } from "../cmps/details/details-sidebar"
 import { OwnerRate } from "../cmps/details/owner-rate"
 import { Reviews } from "../cmps/details/reviews"
@@ -25,27 +25,26 @@ export function GigDetails({ elApp }) {
     const elReviews = useRef(null)
     const elReviewNav = useRef(null)
 
+    //     useEffect(() => {
+    //         console.log(elReviews);
+    //         if (!elReviews.current) return
+    //         const headerObserver = new IntersectionObserver(onHeaderObserved, {
+    //               rootMargin: "100px 0px 0px",
+    //         });
 
+    //         headerObserver.observe(elReviews.current)
+    // console.log('headerObserver', headerObserver)
+    //         function onHeaderObserved(entries) {
+    //             entries.forEach((entry) => {
+    //                 console.log('entry', entry)
 
+    //                 console.log('helllooo')
+    //                 // elReviewNav.classList.toggle('active') = entry.isIntersecting ? 'static' : 'fixed';
+    //                 if (entry.isIntersecting) elReviewNav.current.classList.toggle('active')
 
-    // useEffect(() => {
-    //     if (!elReviews.current) return
-    //     const headerObserver = new IntersectionObserver(onHeaderObserved, {
-    //           rootMargin: "100px 0px 0px",
-    //     });
-
-    //     headerObserver.observe(elReviews.current)
-
-    //     function onHeaderObserved(entries) {
-    //         entries.forEach((entry) => {
-
-    //             console.log('helllooo')
-    //             // elReviewNav.classList.toggle('active') = entry.isIntersecting ? 'static' : 'fixed';
-    //             if (entry.isIntersecting) elReviewNav.current.classList.toggle('active')
-
-    //         })
-    //     }
-    // }, [elReviews.current])
+    //             })
+    //         }
+    //     }, [elReviews.current])
 
     useEffect(() => {
         loadGig()
@@ -96,12 +95,29 @@ export function GigDetails({ elApp }) {
                         <li onClick={() => scrollTo('description')}>
                             Description
                         </li>
-                        <li onClick={() => scrollTo('aboutTheSeller')}>
+
+
+                        {/* <li onClick={() => scrollTo('aboutTheSeller')}>
                             About The Seller
+                        </li > */}
+
+                        <li>
+                            <Link to="aboutTheSeller" >
+                            About The Seller
+
+                            </Link>
                         </li >
-                        {gig.reviews.length && <li ref={elReviewNav} onClick={() => scrollTo('reviews')}>
+
+                        {/* {gig.reviews.length && <li ref={elReviewNav} onClick={() => scrollTo('reviews')}>
                             Reviews
+                        </li>} */}
+
+                        {gig.reviews.length && <li>
+                            <Link activeClass="active" to="reviews">
+                                Reviews
+                            </Link>
                         </li>}
+
                     </ul>
 
                     <div className="wish-list flex align-center">
@@ -121,8 +137,8 @@ export function GigDetails({ elApp }) {
                             <Link to={'/'} > <button className='open-btn category' >Home Page</button> </Link>
                             <span><SlArrowRight size="10px" /></span>
                             <Link to={'/gig'}> <button className='open-btn subcategory' >All Gigs</button> </Link>
-                            {filterBy.tags && <span><SlArrowRight size="10px" /></span>}
-                            {filterBy.tags && <Link to={`/gig?filterBy=${filterBy.tags}`}> <button className='open-btn category'>{filterBy.tags}</button> </Link>}
+                            {filterBy.tags.length > 0 && <span><SlArrowRight size="10px" /></span>}
+                            {filterBy.tags.length > 0 && <Link to={`/gig?filterBy=${filterBy.tags}`}> <button className='open-btn category'>{filterBy.tags[0].replace('and', '&')}</button> </Link>}
                         </div>
 
                         <h1>{gig.title}</h1>
@@ -163,8 +179,12 @@ export function GigDetails({ elApp }) {
                             <p>I am also very flexible and understand the importance of deadlines. </p>
                         </div>
 
-                        <span ref={elAboutTheSeller}><OwnerProfile gig={gig} /></span>
-                        {gig.reviews.length && <span ref={elReviews}><Reviews elApp={elApp} gig={gig} /></span>}
+                        {/* <span ref={elAboutTheSeller}><OwnerProfile gig={gig} /></span> */}
+                        <span id={elAboutTheSeller}><OwnerProfile gig={gig} /></span>
+
+                        {/* {gig.reviews.length && <span id="reviews" ref={elReviews}><Reviews elApp={elApp} gig={gig} /></span>} */}
+                        {gig.reviews.length && <span id="reviews" ><Reviews elApp={elApp} gig={gig} /></span>}
+
                     </section>
 
                     <DetailsSidebar gig={gig} />

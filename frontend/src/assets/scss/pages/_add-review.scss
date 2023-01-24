@@ -1,4 +1,4 @@
-.add-review-screen{
+.add-review-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,6 +9,10 @@
     place-items: center;
     justify-content: center;
 
-    
+    .add-review {
+        padding: 45px;
+        background-color: $clr0;
+    }
+
 
 }
