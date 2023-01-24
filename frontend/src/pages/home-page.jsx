@@ -1,7 +1,7 @@
 import {HomeHero} from '../cmps/home/home-hero.jsx'
 import {HomePopularServices} from '../cmps/home/home-popular-services.jsx'
 import { TrustedBy } from '../cmps/home/trusted-by.jsx'
-import {WhyUs} from '../cmps/home/why-us.jsx'
+import {SellingProposition} from '../cmps/home/selling-proposition.jsx'
 
 export function HomePage(){
 
@@ -10,7 +10,7 @@ export function HomePage(){
             <HomeHero/>
             <TrustedBy/>
             <HomePopularServices/>
-            <WhyUs/>
+            <SellingProposition/>
         </section>
     )
 }

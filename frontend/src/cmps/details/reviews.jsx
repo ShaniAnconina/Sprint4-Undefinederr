@@ -5,7 +5,7 @@ import { ReviewPreview } from "./review-preview"
 import { AddReview } from "../add-review"
 
 export function Reviews({ elApp, gig }) {
-    const [isAddReview, setIsAddReview] = useState(false)
+    const [isAddReview, setIsAddReview] = useState(true)
 
 
     return <section className="reviews">

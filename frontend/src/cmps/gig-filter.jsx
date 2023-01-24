@@ -45,7 +45,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false
 
     return <form className='filter-form' onSubmit={onFilterSubmit}>
     {/* return <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}> */}
-        <div className="search-icon-container">{<CgSearch/>}</div>
+        {inHomeHero && <div className="search-icon-container">{<CgSearch/>}</div>}
         <input
             className="search-bar"
             type="text"
