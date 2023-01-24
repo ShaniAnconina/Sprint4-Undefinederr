@@ -13,11 +13,11 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
     const [scroll, setScroll] = useState(false)
 
 
-    const changeScroll = () => {
-        if (window.scrollY > 100) setScroll(true)
-        else setScroll(false)
-    }
-    window.addEventListener('scroll', changeScroll)
+    // const changeScroll = () => {
+    //     if (window.scrollY > 100) setScroll(true)
+    //     else setScroll(false)
+    // }
+    // window.addEventListener('scroll', changeScroll)
 
     useEffect(() => {
         if (filterByToEdit.tags.length === 0) return
@@ -41,9 +41,10 @@ export function GigFilter({ searchBtnContent, placeholderTxt }) {
         ev?.preventDefault()
         setfilter(filterByToEdit)
         navigate('/gig')
-    }
+    } 
 
-    return <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}>
+    return <form className='filter-form' onSubmit={onFilterSubmit}>
+    {/* return <form className={(!scroll && window.location.hash === '#/') ? 'filter-form before-scroll-hide' : 'filter-form'} onSubmit={onFilterSubmit}> */}
         <input
             className="search-bar"
             type="text"

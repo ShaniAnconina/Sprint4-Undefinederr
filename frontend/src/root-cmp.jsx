@@ -16,7 +16,41 @@ import { GigEdit } from './pages/gig-edit'
 
 
 export function App() {
-  const elApp = useRef(null)
+  const elApp = useRef(null);
+
+
+  // const appObserver = new IntersectionObserver(updateState, {})
+  // appObserver.observe(elApp.current);
+
+  // function updateState(entries) {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       console.log('isIntersecting')
+  //     }
+  //   })
+  // }
+  // const appObserver = new IntersectionObserver(updateState, { rootMargin: '120px 0 0'  })
+  // appObserver.observe(elApp.current);
+
+  // function updateState(entries) {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       console.log('isIntersecting')
+  //     }
+  //   })
+  // }
+  // const appObserver = new IntersectionObserver(updateState, {})
+  // appObserver.observe(elApp.current);
+
+  // function updateState(entries) {
+  //   entries.forEach(entry => {
+  //     if (entry.isIntersecting) {
+  //       console.log('isIntersecting')
+  //     }
+  //   })
+  // }
+
+
   return (
     <Provider store={store}>
 
