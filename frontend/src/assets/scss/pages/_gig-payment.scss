@@ -64,7 +64,7 @@
                     }
 
                     .card-expiration-container,
-                    .card-cvv-container{
+                    .card-cvv-container {
                         padding-left: 15px;
                     }
 
@@ -74,8 +74,8 @@
                     }
                 }
 
-                .buyer-details{
-                    .first-name-container{
+                .buyer-details {
+                    .first-name-container {
                         padding-right: 60px;
 
                     }
@@ -97,9 +97,15 @@
                     padding-bottom: 16px;
                     border-bottom: 1px solid $clr18;
 
-                    img {
-                        width: 100px;
+                    .img-container {
+                        max-height: 75px;
+                        max-width: 100px;
                         margin-inline-end: 16px;
+
+                        img {
+                            object-fit: fill;
+                            width: 100%;
+                        }
                     }
 
                     h3 {

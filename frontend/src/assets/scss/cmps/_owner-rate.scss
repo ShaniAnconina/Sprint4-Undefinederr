@@ -1,14 +1,15 @@
 .owner-rate {
     .stars {
         padding-top: 2px;
-
     }
 
     p {
         color: $clr14;
         padding-inline-end: 4px;
-        padding-top: 2px;
+        // padding-top: 2px;
     }
 
-
+    span {
+        color: $clr5;
+    }
 }

@@ -34,7 +34,7 @@ export function AppHeader({ elApp }) {
             <div className="main-layout">
                 <div className="top-header">
                     <div className="logo-filter">
-                        <NavLink to="/" className={(!scroll && hash === '#/') ? 'logo before-scroll-txt' : 'logo'}>Undefinederr<span>.</span></NavLink>
+                        <NavLink to="/" className={(!scroll && hash === '#/') ? 'logo before-scroll-txt' : 'logo'}>undefinederr<span>.</span></NavLink>
                         <GigFilter searchBtnContent={<AiOutlineSearch />} placeholderTxt="What service are you looking for today?" />
                     </div>
                     {loggedinUser && <nav className="homepage-nav">

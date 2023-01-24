@@ -88,7 +88,7 @@
         }
 
 
-        .details-layout {
+        .details-layout  {
             width: 1300px;
             padding: 32px;
 
@@ -149,10 +149,12 @@
 
             .owner-name {
                 font-weight: 700;
+                color: $clr6;
             }
 
             .owner-level {
                 color: $clr5;
+
             }
 
             .owner-name,
@@ -165,7 +167,7 @@
             margin-block-end: 16px;
             height: 430px;
             width: 100%;
-            
+
             //TODO : fixe that
             .main-img {
                 height: 100%;

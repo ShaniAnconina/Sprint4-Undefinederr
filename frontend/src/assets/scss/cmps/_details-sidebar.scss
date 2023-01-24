@@ -4,9 +4,38 @@
     top: 80px;
     height: fit-content;
 
+    .packages-btn {
+        border-top: 1px solid $clr17;
+        border-inline: 1px solid $clr17;
+
+        & :last-child {
+            border: none;
+            border-bottom: 3px solid  $clr1;
+        }
+
+        button {
+            border: none;
+            border-right: 1px solid $clr17;
+            background-color: $clr1;
+            border-bottom: 3px solid  $clr1;
+            color: $clr4;
+            flex-grow: 1;
+            padding-block: 20px;
+            font-size: 16px;
+        }
+
+        .active {
+            background-color: $clr0;
+            color: $clr9;
+            border-bottom: 3px solid $clr9;
+        }
+
+
+    }
+
     article {
         padding: 32px 22px 20px;
-        border: 1px solid #dadbdd;
+        border: 1px solid $clr17;
 
         h3 {
             font-size: 16px;
