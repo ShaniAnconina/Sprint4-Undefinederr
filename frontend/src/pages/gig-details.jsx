@@ -47,31 +47,33 @@ export function GigDetails({ elApp }) {
 
                     <ul className="flex">
 
-                        <li>
-                            <Link activeClass="active" smooth spy to="overview" offset={-50} >
+                        <Link activeClass="active" smooth spy to="overview" offset={-50} >
+                            <li>
                                 Overview
-                            </Link>
-                        </li >
+                            </li >
+                        </Link>
 
-                        <li>
-                            <Link activeClass="active" smooth spy to="description" offset={-50} >
+                        <Link activeClass="active" smooth spy to="description" offset={-50} >
+                            <li>
                                 Description
-                            </Link>
-                        </li >
+                            </li >
+                        </Link>
 
-                        <li>
-                            <Link activeClass="active" smooth spy to="aboutTheSeller" offset={-50} >
+                        <Link activeClass="active" smooth spy to="aboutTheSeller" offset={-50} >
+                            <li>
                                 About The Seller
 
-                            </Link>
-                        </li >
+                            </li >
+                        </Link>
 
-                        {gig.reviews.length && <li>
+                        {gig.reviews.length &&
                             <Link activeClass="active" smooth spy to="reviews" offset={-50}>
-                                Reviews
-                            </Link>
-                        </li>}
+                                <li>
 
+                                    Reviews
+                                </li>
+                            </Link>
+                        }
                     </ul>
 
                     <div className="wish-list flex align-center">
