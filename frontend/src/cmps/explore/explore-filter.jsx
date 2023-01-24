@@ -8,16 +8,18 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 export function ExploreFilter({ gigs, filterBy }) {
     const [modalType, setModalType] = useState(false)
 
+    console.log(filterBy)
+
     function toggleModal(type) {
         setModalType(type)
         if (modalType === type) setModalType(false)
     }
-
     return (
         <section >
             <div className="explore-filter">
                 <div className="left-filters">
-                    {!filterBy.tags && <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
+                    {filterBy.tags.length === 0 && <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
+                    {/* <button onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>} */}
                     {/* <button onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
                     <button onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
                     <button onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>

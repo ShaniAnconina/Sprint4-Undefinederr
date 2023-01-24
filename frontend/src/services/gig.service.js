@@ -18,9 +18,9 @@ export const gigService = {
 
 async function query(filterBy) {
     try {
-        console.log("trying to query with filterBy: ",filterBy)
+        console.log("trying to query with filterBy: ", filterBy)
         let gigs = await storageService.query(STORAGE_KEY)
-        console.log("from gigs:",gigs)
+        console.log("from gigs:", gigs)
         getAvgRate(gigs)
         utilService.saveToStorage(STORAGE_KEY, gigs)
         //filter by free text
@@ -127,7 +127,7 @@ function _createGigs() {
         console.log(gigsUrl)
         gigsData.forEach(gig => {
             const genUsersIdx = [utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50)]
-
+            const imgUrls = [utilService.getRandomIntInclusive(1, 20),utilService.getRandomIntInclusive(1, 20),utilService.getRandomIntInclusive(1, 20)]
             gig.reviews = [
                 {
                     id: utilService.makeId(),
@@ -186,7 +186,7 @@ function _createGigs() {
             let gigImgIdx = utilService.getRandomIntInclusive(1, 20)
             let gigImgCategory = gig.tags[0]
             let gigImgUrl = gigsUrl[gigImgCategory][gigImgIdx]
-            Gigs.push(_createGig(gig.title, gig.tags, gig.description, gigImgUrl, gig.reviews, users[genUsersIdx[0]]))
+            Gigs.push(_createGig(gig.title, gig.tags, gig.description, imgUrls, gig.reviews, users[genUsersIdx[0]]))
         })
         utilService.saveToStorage(STORAGE_KEY, Gigs)
     }
@@ -219,6 +219,6 @@ function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "ht
 }
 
 function getDefaultFilter() {
-    return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity , isSaved: false }
+    return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity, isSaved: false }
 }
 
