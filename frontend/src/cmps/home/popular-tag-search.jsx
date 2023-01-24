@@ -9,7 +9,9 @@ export function PopularTagSearch() {
     const navigate = useNavigate()
 
     function OnSelectCatogery(tag) {
-        let filterByToEdit = { ...filterBy, tags: tag }
+        let tags = filterBy.tags
+        tags.push(tag)
+        let filterByToEdit = { ...filterBy, tags: tags }
         setfilter(filterByToEdit)
         navigate('/gig')
     }

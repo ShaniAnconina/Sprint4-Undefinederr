@@ -23,7 +23,10 @@ export function CategoryNav() {
     }
 
     function OnSelectCatogery(tag) {
-        let filterByToEdit = { ...filterBy, tags: tag }
+        let tagsToEdit = []
+        tagsToEdit.push(tag) 
+        let filterByToEdit = { ...filterBy, tags: tagsToEdit }
+        console.log(filterByToEdit)
         setfilter(filterByToEdit)
         navigate('/gig')
     }

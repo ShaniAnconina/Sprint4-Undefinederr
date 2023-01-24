@@ -18,7 +18,9 @@ export const gigService = {
 
 async function query(filterBy) {
     try {
+        console.log("trying to query with filterBy: ",filterBy)
         let gigs = await storageService.query(STORAGE_KEY)
+        console.log("from gigs:",gigs)
         getAvgRate(gigs)
         utilService.saveToStorage(STORAGE_KEY, gigs)
         //filter by free text
@@ -29,7 +31,7 @@ async function query(filterBy) {
 
         //filter by tags
         if (filterBy?.tags) {
-            gigs = gigs.filter((gig) => gig.tags.includes(filterBy.tags))
+            gigs = gigs.filter((gig) => filterBy.tags.every((tag) => gig.tags.includes(tag)))
         }
 
         //filter by budget
@@ -38,8 +40,8 @@ async function query(filterBy) {
         }
 
         //filter by time range
-        if (filterBy?.daysToMake && filterBy?.daysToMake.min && filterBy?.daysToMake.max) {
-            gigs = gigs.filter((gig) => gig.daysToMake >= filterBy.daysToMake.min && gig.daysToMake <= filterBy.daysToMake.max)
+        if (filterBy?.daysToMake) {
+            gigs = gigs.filter((gig) => gig.daysToMake <= filterBy.daysToMake)
         }
 
         //filter by is saved
@@ -217,6 +219,6 @@ function _createGig(title, tags, description = "Lorem ipsum dolor", imgUrl = "ht
 }
 
 function getDefaultFilter() {
-    return { txt: "", tags: "", budget: { min: 0, max: Infinity }, daysToMake: { min: 0, max: Infinity }, isSaved: false }
+    return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity , isSaved: false }
 }
 

@@ -30,10 +30,13 @@ export function GigIndex() {
         }
     }
 
+
+
     return (
         <section className="gig-index main-layout">
-            {!filterBy.tags && <h1>All</h1>}
-            {filterBy.tags && <h1>{filterBy.tags.replace('and', '&')}</h1>}
+            {/* {!filterBy.tags && <h1>All</h1>} */}
+            {filterBy.tags.length === 0 && <h1>All</h1>}
+            {filterBy.tags.length > 0 && <h1>{filterBy.tags[0].replace('and', '&')}</h1>}
             <ExploreFilter gigs={gigs} />
             <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
         </section>
