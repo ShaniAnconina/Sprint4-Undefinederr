@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 
 import { FilterModal } from './filter-modal'
-import { SwitchBtn } from './switch-btn'
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
-export function ExploreFilter({ gigs, filterBy }) {
-    const [modalType, setModalType] = useState(false)
+export function ExploreFilter({ gigs, filterBy, elApp }) {
+    const [modalType, setModalType] = useState(null)
+    const [sortModal, setSortModal] = useState(false)
     const [filtersClassname, setFiltersClassname] = useState('')
+    const [value, setValue] = useState('Recommended')
     const elNav = useRef(null)
 
     useEffect(() => {
@@ -20,28 +21,38 @@ export function ExploreFilter({ gigs, filterBy }) {
 
         function onNavObserved(entries) {
             entries.forEach((entry) => {
-                console.log('entry:', entry)
                 if (entry.isIntersecting) setFiltersClassname('')
                 else if (!entry.isIntersecting) setFiltersClassname('sticky')
             })
         }
     }, [])
 
-
-    function toggleModal(type) {
+    function toggleFilterModal(type) {
         setModalType(type)
-        if (modalType === type) setModalType(false)
+        // elApp.current.addEventListener('click', onCloseModal)
+        if (modalType === type) setModalType(null)
+    }
+    function toggleSortModal() {
+        // elApp.current.addEventListener('click', onCloseModal)
+        if (!sortModal) setSortModal(true)
+        else setSortModal(false)
+    }
+
+    function onCloseModal() {
+        setModalType(null)
+        setSortModal(false)
+        // elApp.current.removeEventListener('click')
     }
 
     return (
         <>
             <div ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}>
+            {/* <div onClick={(ev) => ev.preventDefault()} ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}> */}
                 <div className="filters-container main-layout">
                     <div className="filters">
-                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={() => toggleModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
-                        {/* <button className='filter-btn' onClick={() => toggleModal('sellerDetails')}><div><p>Seller Details</p><MdKeyboardArrowDown /></div></button> */}
-                        <button className='filter-btn' onClick={() => toggleModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                        <button className='filter-btn' onClick={() => toggleModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={() => toggleFilterModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
+                        <button className='filter-btn' onClick={() => toggleFilterModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                        <button className='filter-btn' onClick={() => toggleFilterModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
                         {modalType && <FilterModal modalType={modalType} />}
                     </div>
                     {/* <div className="right-filters">
@@ -51,16 +62,15 @@ export function ExploreFilter({ gigs, filterBy }) {
                 </div>
             </div>
 
-
             <div className="explore-count-sort">
                 <div className='count'>{gigs.length} services available</div>
-                <div className='sort'>
-                    <p>Sort By</p>
-                    <select name="sortBy" id="sort-by">
-                        <option value="">Sort By</option>
-                        <option value="top">Top Rated</option>
-                        <option value="price">Best Price</option> {/* cheap to expensive */}
-                    </select>
+                <div className='sort-by'>
+                    <p>Sort By <button onClick={toggleSortModal}><p>{value}</p><MdKeyboardArrowDown /></button></p>
+                    {sortModal && <div className='sort-modal'>
+                        {value !== 'top' && <button value="top">Top Rated</button>}
+                        {value !== 'price' && <button value="price">Best Price</button>}
+                        {value !== 'delivery' && <button value="delivery">Delivery Time</button>}
+                    </div>}
                 </div>
             </div>
         </>

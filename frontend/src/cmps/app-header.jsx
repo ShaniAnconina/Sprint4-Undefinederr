@@ -15,7 +15,7 @@ import { RiNotification3Line } from "react-icons/ri"
 
 export function AppHeader({ elApp }) {
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
-    const [scroll, setScroll] = useState(false)
+    // const [scroll, setScroll] = useState(false)
     const [openModal, setOpenModal] = useState(null)
     // const { hash } = window.location
 
