@@ -3,7 +3,7 @@ export const SET_USER = 'SET_USER'
 const initialState = {
     // loggedinUser: null //place back after profile dev
     loggedinUser: {
-        fullname: "ohad",
+        fullname: "Eliasi the king!",
         imgUrl: "https://randomuser.me/api/portraits/men/20.jpg",
         password: "ohad",
         username: "ohad",

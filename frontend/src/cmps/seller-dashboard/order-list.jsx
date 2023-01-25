@@ -2,9 +2,10 @@
 
 
 
-export function OrderList(orders) {
+export function OrderList({orders}) {
 
-    return (
+
+     return (
         <table className="orders-table">
             <thead>
                 <tr>
@@ -17,22 +18,19 @@ export function OrderList(orders) {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
+                {orders.map((order) => {
+                    return <tr>
+                    <td className="row-buyer flex space-around">    
+                        <img src={order.buyerImg} />
+                        <h4>{order.buyer}</h4>
+                    </td>
+                    <td>{order.gig}</td>
+                    <td>{order.dueDate}</td>
+                    <td>{order.deliveredDate}</td>
+                    <td>{order.price}$</td>
+                    <td>{order.status}</td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                </tr>
+                                })}
             </tbody>
         </table>
     );

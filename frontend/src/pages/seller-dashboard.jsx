@@ -7,7 +7,7 @@ import { useSelector} from 'react-redux'
 
 export function SellerDashboard(){
 
-    const loggedInUser = useSelector((globalStore) => globalStore.userModule.loggedInUser)
+    const loggedInUser = useSelector((globalStore) => globalStore.userModule.loggedinUser)
 
     console.log(loggedInUser)
 
@@ -15,9 +15,9 @@ export function SellerDashboard(){
     <SellerHeader/>
     <div className='seller-dashboard-wrapper flex space-between'>
         <div>
-    <MiniProfile/>
+    <MiniProfile loggedinUser= {loggedInUser}/>
     </div>
-    <OrderList/>
+    <OrderList orders={loggedInUser.miniOrders}/>
     </div>
 
     

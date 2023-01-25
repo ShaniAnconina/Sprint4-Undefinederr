@@ -1,5 +1,6 @@
 .seller-dashboard {
     background-color: $clr2;
+    padding: 20px 0;
 
     .seller-dashboard-wrapper {
         padding: 20px 0;
@@ -13,11 +14,28 @@
             background-color: $clr0;
             padding: 1px 20px 5px;
 
+            .profile-username{
+                padding: 20px;
+                img {
+                    border-radius: 100%; 
+                    width: 75px;
+                    height: 75px;
+                 }
+                 h4 {
+                    margin: auto;
+                }
+
+            }
+
+
+
+
         }
 
         .orders-table {
             width: 70vw;
             max-width: 936px;
+            height: fit-content;
             border: 1px solid $clr3;
             background-color: $clr0;
 
@@ -25,6 +43,17 @@
                 padding: 15px;
                 color: $clr4;
             }
+            td {
+                margin: auto;
+                padding: 20px;
+                img {
+                    border-radius: 100%; 
+                    width: 75px;
+                    height: 75px;
+                 }
+            }
+
+
         }
     }
 }

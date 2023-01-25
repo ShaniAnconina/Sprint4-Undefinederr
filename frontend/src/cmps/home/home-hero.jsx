@@ -19,10 +19,10 @@ export function HomeHero() {
         return <section className="home-hero">
                 <div className='home-hero-content'>
                         <div className="slider-container">
-                                <div className={`hero hero-moon ${imgIdx === 0 ? "opacity" : ""}`}><p>Moon,<b>Marketing Expert</b></p></div>,
-                                <div className={`hero hero-andrea ${imgIdx === 1 ? "opacity" : ""}`}><p>Andrea,<b>Fashion Designer</b></p></div>,
-                                <div className={`hero hero-rikita ${imgIdx === 2 ? "opacity" : ""}`}><p>Rikita,<b>Showmaker and Designer</b></p></div>,
-                                <div className={`hero hero-zach ${imgIdx === 3 ? "opacity" : ""}`}><p>Zach,<b>Bar Owner</b></p></div>,
+                                <div className={`hero hero-moon ${imgIdx === 0 ? "opacity" : ""}`}><p>Moon,<b>Marketing Expert</b></p></div>
+                                <div className={`hero hero-andrea ${imgIdx === 1 ? "opacity" : ""}`}><p>Andrea,<b>Fashion Designer</b></p></div>
+                                <div className={`hero hero-rikita ${imgIdx === 2 ? "opacity" : ""}`}><p>Rikita,<b>Showmaker and Designer</b></p></div>
+                                <div className={`hero hero-zach ${imgIdx === 3 ? "opacity" : ""}`}><p>Zach,<b>Bar Owner</b></p></div>
                                 <div className={`hero hero-gabriela ${imgIdx === 4 ? "opacity" : ""}`}><p>Gabriela,<b>Video Editor</b></p></div>
                         </div>
                         <h1>Find the perfect <span>freelance</span><br /> services for your business</h1>

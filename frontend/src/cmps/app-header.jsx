@@ -31,8 +31,9 @@ export function AppHeader({ elApp }) {
         headerObserver.observe(elHeader.current)
         function onHeaderObserved(entries) {
             entries.forEach((entry) => {
+                console.log('changed',entry);
                 if (entry.isIntersecting) setStickyClassname('')
-                else if (!entry.isIntersecting) setStickyClassname('sticky')
+                else setStickyClassname('sticky')
             })
         }
     }, [])

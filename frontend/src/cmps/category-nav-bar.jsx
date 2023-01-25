@@ -3,18 +3,18 @@ import { useNavigate } from "react-router-dom"
 import { useSelector } from 'react-redux'
 
 import { setfilter } from "../store/gig/gig.action.js"
-import { getCategories } from '../Data/categories-data.js'
+// import { getCategories } from '../Data/categories-data.js'
 
 export function CategoryNav() {
     const navigate = useNavigate()
     const filterBy = useSelector(storeState => storeState.gigModule.filterBy)
     const [scroll, setScroll] = useState(false)
-    const categories = getCategories()
-    const titles = []
+    // const categories = getCategories()
+    const titles = ['Graphics & Design','Digital Marketing','Writing & Translation','Video & Animation','Music & Audio','Programming & Tech','Business','Lifestyle','Trending']
 
-    for (let key in categories) {
-        titles.push(key)
-    }
+    // for (let key in categories) {
+    //     titles.push(key)
+    // }
 
     function OnSelectCatogery(tag) {
         let tagsToEdit = []
