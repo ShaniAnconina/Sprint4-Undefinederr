@@ -32,8 +32,8 @@ export function GigIndex({ elApp }) {
 
     return (
         <section className="gig-index main-layout">
-            {filterBy.tags.length === 0 && <h1>All</h1>}
-            {filterBy.tags.length > 0 && <h1>{filterBy.tags[0].replace('and', '&')}</h1>}
+            {!filterBy.tags.length && <h1>All</h1>}
+            {filterBy.tags.length && <h1>{filterBy.tags[0].replace('and', '&')}</h1>}
             <ExploreFilter gigs={gigs} filterBy={filterBy} elApp={elApp} />
             <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
         </section>
