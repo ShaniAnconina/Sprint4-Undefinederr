@@ -12,6 +12,7 @@ export function CategoryNav() {
     // const categories = getCategories()
     const titles = ['Graphics & Design','Digital Marketing','Writing & Translation','Video & Animation','Music & Audio','Programming & Tech','Business','Lifestyle','Trending']
 
+    
     // for (let key in categories) {
     //     titles.push(key)
     // }

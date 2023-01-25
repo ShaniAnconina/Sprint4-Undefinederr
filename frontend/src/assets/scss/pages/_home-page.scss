@@ -47,42 +47,33 @@
             // padding-left: 100px;
             font-size: 32px;
             font-family: Macan-Bold;
+            color: $clr6
         }
 
 
         .popular-services {
-            display: flex;
+            padding-bottom: 95px;
 
-            a {
-                background-image: url();
-                background-repeat: no-repeat;
-                position: relative;
-                text-align: center;
-                cursor: pointer;
-                grid-row: 1;
+            div {
                 width: 252px;
                 height: 345px;
-                margin: 0 18px;
+                position: relative;
             }
 
-            a:first-child {
-                margin: 0 18px 0 0;
-            }
-
-            a:last-child {
-                margin: 0 0 0 18px;
+            img {
+                object-fit: cover;
+                border-radius: 4px;
             }
 
             p {
-
                 color: $clr0;
                 position: absolute;
-                left: 15px;
-                top: 20px;
+                padding: 16px;
+                line-height: 25px;
+                top: 0;
                 font-size: 14px;
                 font-family: Macan-Bold;
                 text-align: left;
-                line-height: 160%;
 
                 span {
                     font-size: 24px;
@@ -109,7 +100,7 @@
             text-align: left;
             font-family: Macan-Regular;
             line-height: 130%;
-            // font-weight: 700;
+            color: $clr6;
 
             h2 {
                 line-height: 120%;
@@ -123,6 +114,10 @@
                 padding: 0 8px 0 0;
                 width: fit-content;
                 height: fit-content;
+
+                svg {
+                    fill: #7a7d85;
+                }
             }
 
             h6 {
@@ -135,6 +130,7 @@
             p {
                 font-family: Macan-Regular;
                 font-size: 18px;
+                color: $clr5;
             }
 
         }
@@ -142,6 +138,7 @@
 
     .explore-marketplace-container {
         h2 {
+            color: $clr6;
             text-align: left;
             margin: 112px 0 40px;
             padding: 0 0 24px;
@@ -154,24 +151,25 @@
             grid-template-columns: repeat(auto-fill, minmax(164px, 280px));
 
             a {
-                // width: 20%;
+                color: $clr7;
                 height: 150px;
                 display: inline-flex;
                 flex-direction: column;
                 padding: 0 10px 55px;
                 text-decoration: none;
-            }
 
-            a::after{
-                content: "";
-                position: absolute;
-                top: 45px;
-                right: 50%;
-                -webkit-transform: translateX(50%);
-                transform: translateX(50%);
-                padding: 0 0 8px;
-                width: 48px;
-                border-bottom: 2px solid #c5c6c9;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 45px;
+                    right: 50%;
+                    -webkit-transform: translateX(50%);
+                    transform: translateX(50%);
+                    padding: 0 0 8px;
+                    width: 48px;
+                    border-bottom: 2px solid $clr20;
+                }
             }
 
             img {
