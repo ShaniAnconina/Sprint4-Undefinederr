@@ -14,8 +14,10 @@ const initialState = {
             buyerImg: "https://randomuser.me/api/portraits/women/42.jpg",
             gig:"I will design beautiful webiste",
             price: 172,
-            dueDate: Date.UTC(2023, 1, 31),
-            deliveredDate: Date.UTC(2023, 1, 27),
+            dueDate: Date(1677801600000),
+            deliveredDate: Date(1677456000000),
+            // dueDate: Date.UTC(2023, 1, 31),
+            // deliveredDate: Date.UTC(2023, 1, 27),
             status: "pending"
         }]
     }
