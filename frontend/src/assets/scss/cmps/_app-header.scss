@@ -171,7 +171,6 @@
 
     .bottom-header {
         border-block: 1px solid $clr11;
-        transform: scaleY(0);
 
         // &.before-scroll-borders {
         // border-block: none;
@@ -198,7 +197,7 @@
 
         .icon,
         .orders {
-            color: $clr4;
+            color: $clr0;
         }
     }
 
@@ -213,6 +212,11 @@
             color: $clr0;
             border: 1px solid $clr0;
         }
+    }
+    
+    .bottom-header {
+        transform: scaleY(0);
+
     }
 
     &.sticky {
