@@ -1,0 +1,42 @@
+25.1.2023, 14:31:33 - INFO - Server is running on port: 3030 
+25.1.2023, 14:33:33 - DEBUG - Getting Gigs 
+25.1.2023, 14:35:10 - INFO - Server is running on port: 3030 
+25.1.2023, 14:36:44 - INFO - Server is running on port: 3030 
+25.1.2023, 14:38:48 - INFO - Server is running on port: 3030 
+25.1.2023, 14:42:43 - ERROR - Failed to get gig | Gig not found 
+25.1.2023, 14:47:41 - INFO - Server is running on port: 3030 
+25.1.2023, 14:48:24 - INFO - Server is running on port: 3030 
+25.1.2023, 14:48:43 - INFO - Server is running on port: 3030 
+25.1.2023, 14:49:12 - ERROR - Failed to get gig | Gig not found 
+25.1.2023, 14:49:15 - ERROR - Failed to get gig | Gig not found 
+25.1.2023, 14:49:17 - ERROR - Failed to get gig | Gig not found 
+25.1.2023, 14:49:26 - INFO - Server is running on port: 3030 
+25.1.2023, 14:49:36 - INFO - Server is running on port: 3030 
+25.1.2023, 14:53:21 - ERROR - Failed to add gig | ReferenceError: _makeId is not defined 
+25.1.2023, 14:54:48 - INFO - Server is running on port: 3030 
+25.1.2023, 14:54:51 - ERROR - Failed to add gig | ReferenceError: fs is not defined 
+25.1.2023, 14:55:09 - INFO - Server is running on port: 3030 
+25.1.2023, 14:55:35 - INFO - Server is running on port: 3030 
+25.1.2023, 15:01:43 - INFO - Server is running on port: 3030 
+25.1.2023, 15:02:08 - INFO - Server is running on port: 3030 
+25.1.2023, 15:05:21 - INFO - Server is running on port: 3030 
+25.1.2023, 15:05:59 - INFO - Server is running on port: 3030 
+25.1.2023, 15:06:46 - INFO - Server is running on port: 3030 
+25.1.2023, 15:07:04 - INFO - Server is running on port: 3030 
+25.1.2023, 15:11:53 - INFO - Server is running on port: 3030 
+25.1.2023, 15:23:08 - INFO - Server is running on port: 3030 
+25.1.2023, 15:23:22 - INFO - Server is running on port: 3030 
+25.1.2023, 15:31:38 - INFO - Server is running on port: 3030 
+25.1.2023, 15:32:45 - INFO - Server is running on port: 3030 
+25.1.2023, 15:34:31 - INFO - Server is running on port: 3030 
+25.1.2023, 15:35:52 - INFO - Server is running on port: 3030 
+25.1.2023, 15:36:39 - INFO - Server is running on port: 3030 
+25.1.2023, 15:37:48 - INFO - Server is running on port: 3030 
+25.1.2023, 15:38:28 - INFO - Server is running on port: 3030 
+25.1.2023, 15:39:40 - INFO - Server is running on port: 3030 
+25.1.2023, 15:40:12 - INFO - Server is running on port: 3030 
+25.1.2023, 15:44:52 - INFO - Server is running on port: 3030 
+25.1.2023, 16:06:50 - INFO - Server is running on port: 3030 
+25.1.2023, 16:07:11 - INFO - Server is running on port: 3030 
+25.1.2023, 16:07:46 - INFO - Server is running on port: 3030 
+25.1.2023, 16:11:52 - INFO - Server is running on port: 3030 
