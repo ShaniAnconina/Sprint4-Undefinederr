@@ -61,7 +61,7 @@ export function App() {
           <main className="full">
             <Routes>
               <Route element={<HomePage />} path="/" />
-              <Route element={<GigIndex />} path="/gig" />
+              <Route element={<GigIndex elApp={elApp} />} path="/gig" />
               <Route element={<GigDetails elApp={elApp} />} path="/gig/:gigId" />
               <Route element={<GigEdit />} path="/gig/edit" />
               <Route element={<GigPayment  />} path="/gig/payment/:gigId" />

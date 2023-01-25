@@ -1,5 +1,4 @@
-import { useState,useRef } from "react";
-
+import { useRef } from "react";
 
 export function DeliveryTimeModal({onSubmit}) {
 

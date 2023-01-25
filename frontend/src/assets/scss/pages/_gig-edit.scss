@@ -21,17 +21,18 @@
 
         .desc {
             text-align: left;
-        }
 
-        .desc h3 {
-            color: $clr6;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
 
-        .desc p {
-            color: $clr5;
-            line-height: 1.3;
+            h3 {
+                color: $clr6;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: $clr5;
+                line-height: 1.3;
+            }
         }
 
         .title-desc {
@@ -124,12 +125,6 @@
             flex-direction: column;
             width: 33.33%;
             padding-right: 40px;
-        }
-
-        .tags-container {
-            .tags-desc {
-                // width: 65%;
-            }
         }
 
         .days-to-Make-container select,

@@ -72,11 +72,36 @@
                 input {
                     border: none;
                     width: 90px;
+
+                    &::placeholder {
+                        font-weight: 600;
+                    }
                 }
 
                 span {
                     color: $clr3;
                     font-weight: 600;
+                }
+            }
+        }
+
+        &.delivery {
+
+            div {
+                padding: 6px 0;
+                margin: 4px 0;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                label {
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 600;
+                    color: $clr6;
+                    margin-left: 5px;
+                    padding-top: 5px;
                 }
             }
         }
