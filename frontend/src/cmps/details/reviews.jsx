@@ -19,7 +19,7 @@ export function Reviews({ elApp, gig }) {
         {/* <ReviewSearch /> */}
         <ul className="none-list-style">
             {gig.reviews.map(review => {
-                return <li key={review.id}>
+                return <li key={review._id}>
                     <ReviewPreview review={review} />
                 </li>
             })}
