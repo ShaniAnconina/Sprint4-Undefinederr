@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { AiFillStar } from "react-icons/ai"
 
-import { GrClose } from "react-icons/gr"
 import { useSelector } from "react-redux"
 import { reviewService } from "../services/review.service"
 

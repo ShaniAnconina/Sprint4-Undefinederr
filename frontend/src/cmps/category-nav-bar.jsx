@@ -12,19 +12,13 @@ export function CategoryNav() {
     const categories = getCategories()
     const titles = []
 
-    // const changeScroll = () => {
-    //     if (window.scrollY > 100) setScroll(true)
-    //     else setScroll(false)
-    // }
-    // window.addEventListener('scroll', changeScroll)
-
     for (let key in categories) {
         titles.push(key)
     }
 
     function OnSelectCatogery(tag) {
         let tagsToEdit = []
-        tagsToEdit.push(tag) 
+        tagsToEdit.push(tag)
         let filterByToEdit = { ...filterBy, tags: tagsToEdit }
         console.log(filterByToEdit)
         setfilter(filterByToEdit)
@@ -33,7 +27,6 @@ export function CategoryNav() {
 
     return (
         <ul className='categories-navbar'>
-        {/* <ul className={(!scroll && window.location.hash === '#/') ? 'categories-navbar before-scroll-hide' : 'categories-navbar'}> */}
             {titles.map((title) => <li key={title}><a onClick={() => { OnSelectCatogery(title.replace('&', 'and')) }}>{title}</a></li>)}
         </ul>
     )
