@@ -3,6 +3,7 @@ import {HomePopularServices} from '../cmps/home/home-popular-services.jsx'
 import { TrustedBy } from '../cmps/home/trusted-by.jsx'
 import {SellingProposition} from '../cmps/home/selling-proposition.jsx'
 import {ExploreMarketplace} from '../cmps/home/explore-marketplace.jsx'
+import {AppFooter} from '../cmps/app-footer.jsx'
 
 export function HomePage(){
 
@@ -13,6 +14,7 @@ export function HomePage(){
             <HomePopularServices/>
             <SellingProposition/>
             <ExploreMarketplace/>
+            <AppFooter/>
         </section>
     )
 }
