@@ -2,11 +2,10 @@
     background-color: transparent;
     z-index: 2;
 
-    // .scroll-bg {
-    //     background-color: $clr0;
-    //     position: sticky;
-    //     top: 0;
-    // }
+    .header-container {
+        background-color: transparent;
+        transition: .3s background-color;
+    }
 
     .top-header {
         display: flex;
@@ -31,10 +30,6 @@
                     color: $clr9;
                 }
             }
-
-            // .logo.before-scroll-txt {
-            //     color: $clr0;
-            // }
 
             .filter-form {
                 opacity: 1;
@@ -72,11 +67,6 @@
                     font-size: 20px;
                 }
             }
-
-            // .filter-form.before-scroll-hide {
-            //     opacity: 0;
-            // }
-
         }
 
         nav {
@@ -179,20 +169,21 @@
 }
 
 .app-header.home {
-    
+
     .logo-filter {
         .logo {
             color: $clr0;
         }
 
         .filter-form {
-            transform: scaleY(0);
-            transition: .4s transform;
+            // transform: scaleY(0);
+            transform: rotateX(90deg);
+            transition: .2s transform ease;
         }
     }
-    
+
     .loggedin-nav {
-        
+
         .icon,
         .orders {
             color: $clr0;
@@ -205,62 +196,75 @@
         .signin {
             color: $clr0;
         }
-        
+
         .join {
             color: $clr0;
             border: 1px solid $clr0;
         }
     }
-    
-    .bottom-header {
-        transform: scaleY(0);
 
+    .bottom-header {
+        // transform: scaleY(0);
+        transform: rotateX(90deg);
+        transition: .2s transform ease;
     }
 
     &.sticky {
-        background-color: $clr0;
         position: sticky;
         top: 0;
 
-        .logo-filter {
+        .header-container {
+            background-color: $clr0;
 
-            .logo {
-                color: $clr6;
+            .logo-filter {
+
+                .logo {
+                    color: $clr6;
+                }
+
             }
 
-            .filter-form {
-                transform: scaleY(1);
-            }
-        }
+            .loggedin-nav {
 
-        .loggedin-nav {
-
-            .icon,
-            .orders {
-                color: $clr4;
-            }
-        }
-
-        .main-nav {
-
-            .explore,
-            .signin {
-                color: $clr5;
-            }
-
-            .join {
-                color: $clr9;
-                border: 1px solid $clr9;
-
-                &:hover {
-                    color: $clr0;
+                .icon,
+                .orders {
+                    color: $clr4;
                 }
             }
+
+            .main-nav {
+
+                .explore,
+                .signin {
+                    color: $clr5;
+                }
+
+                .join {
+                    color: $clr9;
+                    border: 1px solid $clr9;
+
+                    &:hover {
+                        color: $clr0;
+                    }
+                }
+            }
+
         }
 
-        .bottom-header {
-            transform: scaleY(1);
+        &.sticky-nav {
+            .logo-filter .filter-form {
+                // transform: scaleY(1);
+                transform: rotateX(0deg);
 
+            }
+
+            .bottom-header {
+                background-color: $clr0;
+                // transform: scaleY(1);
+                transform: rotateX(0deg);
+
+
+            }
         }
     }
 }
