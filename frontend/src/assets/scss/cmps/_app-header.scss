@@ -179,9 +179,7 @@
 }
 
 .app-header.home {
-    position: sticky;
-    top: 0;
-
+    
     .logo-filter {
         .logo {
             color: $clr0;
@@ -192,9 +190,9 @@
             transition: .4s transform;
         }
     }
-
+    
     .loggedin-nav {
-
+        
         .icon,
         .orders {
             color: $clr0;
@@ -207,7 +205,7 @@
         .signin {
             color: $clr0;
         }
-
+        
         .join {
             color: $clr0;
             border: 1px solid $clr0;
@@ -221,6 +219,8 @@
 
     &.sticky {
         background-color: $clr0;
+        position: sticky;
+        top: 0;
 
         .logo-filter {
 
