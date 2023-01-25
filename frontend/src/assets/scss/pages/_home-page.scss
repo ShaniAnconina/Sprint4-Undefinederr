@@ -3,11 +3,15 @@
 
     .trusted-by {
         margin-top: 559px;
-        margin-left: 270px;
+        // margin-left: 270px;
         font-family: Macan-Semibold;
         font-weight: 600;
-        max-width: 1400px;
+        // max-width: 1400px;
         color: $clr3;
+
+        .trusted-by-wrap {
+            background-color: $clr1;
+        }
 
         .trusted-by-logos {
             display: flex;
