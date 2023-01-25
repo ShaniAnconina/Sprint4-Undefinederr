@@ -1,0 +1,30 @@
+.seller-dashboard {
+    background-color: $clr2;
+
+    .seller-dashboard-wrapper {
+        padding: 20px 0;
+
+
+
+        .mini-profile {
+            width: 299px;
+            height: 40vh;
+            border: 1px solid $clr3;
+            background-color: $clr0;
+            padding: 1px 20px 5px;
+
+        }
+
+        .orders-table {
+            width: 70vw;
+            max-width: 936px;
+            border: 1px solid $clr3;
+            background-color: $clr0;
+
+            th {
+                padding: 15px;
+                color: $clr4;
+            }
+        }
+    }
+}
