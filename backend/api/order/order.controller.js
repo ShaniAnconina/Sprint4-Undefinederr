@@ -5,10 +5,11 @@ const logger = require('../../services/logger.service')
 async function getOrders(req, res) {
   try {
     logger.debug('Getting Orders')
-    const filterBy = {
-      txt: req.query.txt || ''
-    }
-    const orders = await orderService.query(filterBy)
+    // const filterBy = {
+    //   txt: req.query.txt || ''
+    // }
+    const orders = await orderService.query()
+    // const orders = await orderService.query(filterBy)
     res.json(orders)
   } catch (err) {
     logger.error('Failed to get orders', err)
