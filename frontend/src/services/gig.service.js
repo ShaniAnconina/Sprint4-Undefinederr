@@ -604,7 +604,7 @@ function _createGigs() {
               "daysToMake": 10,
               "description": "Looking for an experienced data entry expert? don't waste your time, just hire me and relax.\nWe are team of qualified professionals for guaranteed high quality work to our clients\nI will provide professional data entry work, data collecting from web, table graphs and all type of internet research like research related to businesses, companies information and enter into excel within fastest possible time.\nWhether you have big project like thousands of rows entries in excel or very tiny project like minutes of work, i'm here to provide you highly satisfied experience for your project.\nHere are the services we offer:\nData Entry\nWeb Research\nLead Generation\nCopy Paste Work\nCompanies Data Research\nInternet Research\nData Conversion into Excel\nTyping in Excel\nProperty Research\nCopy Paste Work\nPDF to Excel\nFormatting of excel sheets\nWhy hire me?\nGuaranteed quality work\nAll time communication during the project within Fiverr\nQuick Turnaround\nI will give my best and 100% to the project\nI can provide sample for the satisfaction before the order\nFeel free and don't hesitate to contact us for superior work\nNote: All communication and payment should be done via the fiverr platform.",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/128385654/original/3dae388cef7d9c837186d54a47d3861c70f0847d.png",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528316/demoGig/Digital%20Marketing/27_ajbtz1.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529064/demoGig/Programming%20and%20Tech/27_gzzh2k.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529064/demoGig/Programming%20and%20Tech/19_xz3dfh.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529063/demoGig/Programming%20and%20Tech/18_itnvev.jpg"
@@ -925,7 +925,7 @@ function _createGigs() {
               "daysToMake": 2,
               "description": "Hi esteemed buyer!\nLooking for modern unique and creative 2d or 3d logo design? Yes, you're at the right place.\nHaving a vast experience with hundreds of satisfied customers across the globe, I extend my services to design modern unique and creative logo design to represent your brand idea in a befitting manner.\nWhat proves my individuality over others?\nQuick delivery, quality work and transforming your brain idea into a 3d creative unique and modern logo design are my attributes.\nMY GIG OFFERINGS ARE:\nBest customer care\nRevisions within 24 Hours\n100% satisfaction guaranteed\nModern unique and creative designing ideas\nLogically and aesthetically hypnotizing logos\n1 free revision after completion of order\nEditable and re-sizeable vector files\nFont download link included\nHigh resolution final files in zip\nNote: For Complex Illustrations and Mascots, please discuss in inbox before placing order! It is also not included in our packages.\nHave queries? Contact us in inbox anytime!\n★Hearing from you would be an absolute pleasure, Go ahead and ORDER NOW!★",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/103152154/original/b89645456b7f6906afa872771737e980b6f57cfb.jpg",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528647/demoGig/Graphics%20and%20Design/11_m6pvc5.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528646/demoGig/Graphics%20and%20Design/3_u3nfhn.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528646/demoGig/Graphics%20and%20Design/5_dsp9re.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528648/demoGig/Graphics%20and%20Design/22_q0faqt.jpg"
@@ -1087,7 +1087,7 @@ function _createGigs() {
               "daysToMake": 21,
               "description": "Greetings!! Welcome to Budding Solutions.\n\"Your one-stop-shop for all your graphic needs\"\nIf you are looking for a Modern and Professional Business logo design, then you are at the right place. We focus on creating simple yet effective designs that elevate your business outlook and leave an everlasting impression.\nWe stand out from our competition due to our best-in-class Customer Support and Quality Designs.\nWhy Us?\n✔ Combination of experience and creativity\n✔ Unique and original designs\n✔ Superior customer care and satisfaction\n✔ Transparent and High-resolution image types\n✔ Different types of source files (AI, EPS, PDF and SVG)\n✔ Complete Branding Guide\n✔ Unlimited revisions until you are 100% satisfied\n✔ Full Copyrights\nMASCOT DESIGNS ARE NOT INCLUDED IN BASIC OR STANDARD GIGS.\nTHE DESIGNS SHOWN ON THE PORTFOLIO ARE FROM STANDARD OR PREMIUM PACKS.\nLogo Design | Professional Logo | Modern Logo | Badge | Hand drawn | Feminine | Signature | Business Logo\nWe look forward to working with you. Please don't hesitate to reach out at any time with any questions.\nPlease review the FAQ section for further clarification.",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/142024147/original/25c0cb214ccc1e1458cb975cddec0e3e348f75ee.jpg",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528316/demoGig/Digital%20Marketing/24_xct2qs.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528648/demoGig/Graphics%20and%20Design/23_wkuohd.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528648/demoGig/Graphics%20and%20Design/24_n0xop3.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528646/demoGig/Graphics%20and%20Design/6_m5tdkw.jpg"
@@ -1248,7 +1248,7 @@ function _createGigs() {
               "daysToMake": 21,
               "description": "Why me?\nI have worked with Fortune 500 brands such as Adidas, L’Oreal, Xiaomi and Pfizer on numerous marketing and branding campaigns.\nI’ve successfully delivered 4000+ hashtag strategies with over 2600+ happy clients to help them achieve organic instagram growth.\nWhy my service?\nI will strategically research, analyze and handpick best-performing hashtags tailored to your Instagram account. I will teach you:\n✅ How you can effectively use hashtags to rank and grow organically\n✅ How to avoid bad hashtags to avoid negative growth\n✅ Stand out from your competition and increase your sales\n✅ How to increase traffic and conversion organically\n✅ Account optimization and posting secrets to gain new Instagram followers\nWhat will you get?\n✅ Data-backed high-ranking hashtags tailored to your niche and brand\n✅ Profile optimization so you can be discovered quickly\n✅ Personalized hashtag strategy to help you grow and increase your followers\n✅ Expert video guide to teach you to find high-ranking hashtags\n✅ Monthly newsletter based on Instagram's newest algorithm updates\n✅ Masters Course 2021/2022 (Platinum or Diamond Gig)",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/video/upload/so_0.0,t_gig_cards_web/jylhbgosxfqilptpru24.png",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674527336/demoGig/Business/1_hukguw.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528316/demoGig/Digital%20Marketing/27_ajbtz1.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528314/demoGig/Digital%20Marketing/7_ikaxws.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528315/demoGig/Digital%20Marketing/17_fxdvdz.jpg"
@@ -1328,7 +1328,7 @@ function _createGigs() {
               "daysToMake": 7,
               "description": "Do you want to Monitize your YouTube Channel?\ni'm the best for digital media marketing, i will help you make youtube monetization\nSafe methods we use:\n· Web 2.0\n· iFrame Embedding\n· PPC advertising campaign\n· Do SEO friendly Video optimization\n· Will share video in Suggested and related videos\n· Add video in Niche related playlists for more impressions\nI strictly follow YT and Fiverr TOS so it means you will get organic You Tube Promotion for your channel monetization.\nREQUIREMENT:\nChannel Link\nWhat do you get from this gig?\n● Watch time boost\n● Compliance with YT TOS\n● Fully Organic And Real Traffic\n● 100% chances of monetization\n● Naturally helps in Video Ranking\nThink that your best friend is Elon Musk, and tomorrow morning you are asking him to post a post asking people to watch your vide0, probably you will get monetized in less than an hour!\nI do the same, just without Elon Musk :)",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/167364631/original/ddbe1967fc0deba979b6d66f2871051245a1544a.jpeg",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529813/demoGig/Writing%20and%20Translation/12_qmv7a3.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528316/demoGig/Digital%20Marketing/23_vcwjhb.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528314/demoGig/Digital%20Marketing/9_wutaxy.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528316/demoGig/Digital%20Marketing/24_xct2qs.jpg"
@@ -1887,10 +1887,10 @@ function _createGigs() {
               "daysToMake": 15,
               "description": "**The one and only Top Rated Seller with flawless Russian as the mother tongue (34+ years in Moscow)**\nOn this page, you can order professional and flawless Russian to English translation and English to Russian translation by a native and experienced Russian and English translator.\nI work in the field of Russian to English and English to Russian translation since 2009 and have successfully received a diploma with honors and a Master of Arts degree in Spanish and English.\nIn case if you are looking for perfect quality at the best price, I am your best choice!\nI offer the following:\n- An individual approach for every customer\n- My goal is quality, and I will never make something average just to finish it as fast as I can\n- Free correction after implementation is offered for all the orders\n- Flexible rules and ultimate solutions for my customers\n- I research translated topics, reading articles and related websites in order to get the context\nI have vast experience in Russian and English translation of\n- religious documents\n- whitepapers (ICOs)\n- software\n- games\n- websites\n- CMS\n- agreements\n- manuals\n- subtitles\nand other materials\nOrder Russian and English translation",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/3296856/original/767ea5cb0ccd4893231d198cbd1e7a82a42d1faf.jpg",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529812/demoGig/Writing%20and%20Translation/7_tklyhc.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529813/demoGig/Writing%20and%20Translation/14_gtfplv.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529811/demoGig/Writing%20and%20Translation/3_gbvj36.jpg",
-                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529811/demoGig/Writing%20and%20Translation/3_gbvj36.jpg"
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529812/demoGig/Writing%20and%20Translation/8_urfgh0.jpg"
               ],
               "tags": [
                 "Writing and Translation"
@@ -1965,10 +1965,10 @@ function _createGigs() {
               "daysToMake": 6,
               "description": "Who am I?\nI'm a French native translator (copywriter) born in Paris working as a freelancer since 2008 for well-known clients and agencies (KAYAK, L'EXPRESS, Expedia). If you've been looking for a French translator that'll actually make your translation accurate (english to french translation and french to english), you've just found him.\nI will :\nTranslate from English to French and French to English\nMake it sound natural (localization)\nFor resumes, documents, PDFs, and Amazon listing please message me first.\nWhy should you choose me?\n\"We highly recommend Alexis. He read the guidelines carefully and provided a top-quality output. And now he is working on another project with us.\" L'EXPRESS (Black Friday content)\n\"Alexis was very willing to take on new work, responded fast to messages, and finished the work ahead of schedule. He is open to changes and very flexible. I recommend him for any French translation work.\" KAYAK\nI've written and translated content into French / English for small businesses, entrepreneurs at all levels, Fortune 100 and tech giants, as well as celebrities and bestselling authors.",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/129378192/original/accecd46dd68bf0eae72b5c91db4edc34c625cd3.jpg",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529813/demoGig/Writing%20and%20Translation/16_dzr6so.jpg",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529814/demoGig/Writing%20and%20Translation/20_f46ohq.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529811/demoGig/Writing%20and%20Translation/4_m8p88t.jpg",
-                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529811/demoGig/Writing%20and%20Translation/5_koczhf.jpg",
-                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529813/demoGig/Writing%20and%20Translation/16_dzr6so.jpg"
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529811/demoGig/Writing%20and%20Translation/5_koczhf.jpg"
               ],
               "tags": [
                 "Writing and Translation"
@@ -2122,7 +2122,7 @@ function _createGigs() {
               "daysToMake": 7,
               "description": "Kindly contact me for orders above 90 seconds.\nWhat does my package include?\nMotion whiteboard video\nScriptwriting (Additional $50 per 150 words)\nVoice over; Male and Female(English and German)\nBackground music and imagery\nHD Video\nColored whiteboard\nCommercial Rights (Additional $20)\nBroadcast Rights (Additional $50)\nNote: Voice-over is available in German, US English, and UK English.\n.\n.\n.\nBitte kontaktieren Sie mich für Bestellungen über 90 Sekunden.\nWas beinhaltet mein Paket?\nMotion Whiteboard Video\nDrehbuchschreiben (Zusätzliche €50 pro 150 Wörter)\nVoice-over; Männlich and Weiblich (Englisch und Deutsch)\nHintergrundmusik und Bilder\nHD-Video\nFarbiges Whiteboard\nKommerzielle Rechte (Zusätzliche €20)\nÜbertragungsrechte (Zusätzliche €50)\nHinweis: Voice-Over ist in Deutsch, US-Englisch und UK-Englisch verfügbar.",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/video/upload/t_gig_cards_web/lrceizjt7bnvlvkd8dbo.png",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529626/demoGig/Video%20and%20Animation/16_qglohx.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528314/demoGig/Digital%20Marketing/8_vesjc5.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528314/demoGig/Digital%20Marketing/9_wutaxy.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674528316/demoGig/Digital%20Marketing/23_vcwjhb.jpg"
@@ -2281,7 +2281,7 @@ function _createGigs() {
               "daysToMake": 12,
               "description": "Hii, Welcome to my Whiteboard Animation Video Gig!\nIn this gig, I'll Create the Most EYE-CATCHING whiteboard animation videos tailored to fit your needs.\nThese unique whiteboard Explainer videos for your brand Or business will help to increase your sales and it will definitely create a unique impression on your clients by making them engaging.\nyou'll Get:\n1. The most Unique Explainer Videos compared to other normal whiteboard videos\n2. Fully Colored Videos\n3. Unlimited Revisions Until you're Satisfied\n4. High-Quality Delivery\n5. Fast Communication\n6. All Niche Available\n7. 100% Satisfaction Guaranty\n8. Moneyback Guaranty\n**************\nIf you need custom drawings please check my other gig! or Feel Free to Ping me We'll discuss it : )\nI'm also providing Voiceover and Script Writing Services Please check the extras for the same...\nKindly ensure all required information is readily available before ordering.\nStill, Have Questions?\nFeel Free to contact me Anytime I'm Always here to help you : )\nLooking forward to receiving your Order...\nRegards\nArnold",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/video/upload/so_26.270999,t_gig_cards_web/tfl3oturwkkl0qp55kmf.png",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529261/demoGig/Lifestyle/6_bzb9by.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529626/demoGig/Video%20and%20Animation/10_fljfru.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529626/demoGig/Video%20and%20Animation/9_nesk2f.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529626/demoGig/Video%20and%20Animation/8_jjrdw8.jpg"
@@ -2361,7 +2361,7 @@ function _createGigs() {
               "daysToMake": 12,
               "description": "ENGAGE YOUR AUDIENCE!!!\nwith your own whiteboard animated doodle video\nULTRA FAST 48 Hours turn-around available\nPUT YOUR VIDEO MARKETING ON STEROIDS\nWe`ll create a fantastic speed-draw or whiteboard animation of any logo, picture, script or text\nWhat you get for $35:\n30-second video with voice over recording\nImages from our Exclusive Hand Drawn Library + 2 Custom Drawings\nBackground Music\nYou must Provide the Script for the video - Up to 75 words\n1080p Video in MP4 or any video format you need\nExtras Available\nFull HD 1920x1080 Delivery\nFast Delivery\nScript Writing\nWatermark\nColor\nSubtitles\nIf you have other requirements just contact us and we´ll reply soon.\n100% Satisfaction Guaranteed\nYour satisfaction is important to us.\nORDER NOW!\nATTENTION - Projects of 300+ words, contact me for a quote and timeframe first.",
               "imgUrl": [
-                "https://fiverr-res.cloudinary.com/video/upload/so_4.985944,t_gig_cards_web/llttjkqfxz0ybon92ifg.png",
+                "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529262/demoGig/Lifestyle/12_z93ydj.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529626/demoGig/Video%20and%20Animation/14_v4jdvo.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529626/demoGig/Video%20and%20Animation/15_iienyu.jpg",
                 "https://res.cloudinary.com/dr0gkmsrl/image/upload/v1674529625/demoGig/Video%20and%20Animation/1_x2zqa0.jpg"
