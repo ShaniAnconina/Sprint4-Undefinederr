@@ -13,6 +13,7 @@ import { GigDetails } from './pages/gig-details'
 import { UserMsg } from './cmps/user-msg'
 import { GigPayment } from './pages/gig-payment'
 import { GigEdit } from './pages/gig-edit'
+import { SellerDashboard } from './pages/seller-dashboard'
 
 
 export function App() {
@@ -65,6 +66,8 @@ export function App() {
               <Route element={<GigDetails elApp={elApp} />} path="/gig/:gigId" />
               <Route element={<GigEdit />} path="/gig/edit" />
               <Route element={<GigPayment  />} path="/gig/payment/:gigId" />
+ {/* reroute with userID: */}
+              <Route element={<SellerDashboard />} path="/user" />
             </Routes>
           </main>
 

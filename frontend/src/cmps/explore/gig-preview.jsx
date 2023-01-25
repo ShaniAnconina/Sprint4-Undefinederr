@@ -12,11 +12,11 @@ export function GigPreview({ gig, onAddToWishlist }) {
     return (
        <Link to={`/gig/${gig._id}`} className="gig-preview">
             {/* <img className="gig-img" src={gig.imgUrl} /> */}
-            <SimpleSlider />
+            <SimpleSlider gig={gig} />
             <div className="user">
                 <img className="user-img" src={gig.owner.imgUrl} />
                 <div className="user-info">
-                    <p className="username">{gig.owner.username}</p>
+                    <p className="username">{gig.owner.fullname}</p>
                     <p className="level">{gig.owner.level}</p>
                 </div>
             </div>
