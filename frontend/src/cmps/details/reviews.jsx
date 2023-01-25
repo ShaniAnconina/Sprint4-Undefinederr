@@ -5,7 +5,7 @@ import { ReviewPreview } from "./review-preview"
 import { AddReview } from "../add-review"
 
 export function Reviews({ elApp, gig }) {
-    const [isAddReview, setIsAddReview] = useState(true)
+    const [isAddReview, setIsAddReview] = useState(false)
 
 
     return <section className="reviews">
@@ -19,7 +19,7 @@ export function Reviews({ elApp, gig }) {
         {/* <ReviewSearch /> */}
         <ul className="none-list-style">
             {gig.reviews.map(review => {
-                return <li key={review.id}>
+                return <li key={review._id}>
                     <ReviewPreview review={review} />
                 </li>
             })}

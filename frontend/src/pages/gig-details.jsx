@@ -40,32 +40,25 @@ export function GigDetails({ elApp }) {
 
     return (
         <section className="gig-details ">
-
             <div className="details-nav main-layout full">
-
                 <div className="flex space-between">
-
                     <ul className="flex">
-
                         <Link activeClass="active" smooth spy to="overview" offset={-50} >
                             <li>
                                 Overview
                             </li >
                         </Link>
-
-                        <Link activeClass="active" smooth spy to="description" offset={-50} >
+                        <Link activeClass="active" smooth spy to="gig-description" offset={-50} >
                             <li>
                                 Description
                             </li >
                         </Link>
-
-                        <Link activeClass="active" smooth spy to="aboutTheSeller" offset={-50} >
+                        <Link activeClass="active" smooth spy to="about-the-seller" offset={-50} >
                             <li>
                                 About The Seller
 
                             </li >
                         </Link>
-
                         {gig.reviews.length &&
                             <Link activeClass="active" smooth spy to="reviews" offset={-50}>
                                 <li>
@@ -75,81 +68,54 @@ export function GigDetails({ elApp }) {
                             </Link>
                         }
                     </ul>
-
                     <div className="wish-list flex align-center">
-                        <button className="add-wishlist"> <FaHeart /> </button>
+                        <button className="add-wishlist"> <FaHeart /></button>
+                        {/* <span className="count-wishlist">{gig.likedByUsers.length}</span> */}
                         <span className="count-wishlist">14</span>
                     </div>
                 </div>
-
             </div>
-
             <section className="gig-details-container flex">
-
                 <div className="details-layout flex">
-
-
                     <section className="main">
                         <span id="overview">
-
                             <Breadcrumds filterBy={filterBy} />
-
                             <h1>{gig.title}</h1>
-
                             <div className="mini-owner flex">
                                 <img className="owner-img" src={gig.owner.imgUrl} />
                                 <div className=" flex">
 
-                                    <p className="owner-name">{gig.owner.username}</p>
+                                    <p className="owner-name">{gig.owner.fullname}</p>
                                     <p className="owner-level">{gig.owner.level}</p>
                                     <p className="separator">|</p>
                                     <div className="owner-rate flex align-center"><OwnerRate count={gig.reviews.length} rate={gig.rate} /> </div>
                                 </div>
                             </div>
-
                             <div className="img-container">
-                                <img className="main-img" src={gig.imgUrl} />
+                                <img className="main-img" src={gig.imgUrl[0]} />
                             </div>
-
                             {gig.reviews.length && <div className="reviews-snippet">
-
                                 <header className="flex space-between">
                                     <h2>What people loved about this seller</h2>
                                     <Link smooth spy to="reviews" offset={-50}>
                                         <button className='open-btn'>See all reviews</button>
                                     </Link>
-
                                 </header>
-
                                 <div className="reviews-carousel">
                                     {/* //TODO: reviews-carousel!!! */}
                                 </div>
-
                             </div>}
-
                         </span>
-
-                        <div id="description" className="about">
-
+                        <div id="gig-description" className="about">
                             <h2>About This Gig</h2>
                             <p>{gig.description}</p>
-                            <p>Please message me before ordering :</p>
-                            <p>As an experienced, published writer I have a real eye for words and grammar.</p>
-                            <p>I will proofread, grammar check and edit your cover letter so that it is personal to you and the job you are applying for. It will make you stand out from the crowd and give you the best chance of getting an interview and landing your dream role!</p>
-                            <p>I am also very flexible and understand the importance of deadlines. </p>
                         </div>
-
-                        <span id="aboutTheSeller"><OwnerProfile gig={gig} /></span>
-
+                        <span id="about-the-seller"><OwnerProfile gig={gig} /></span>
                         {gig.reviews.length && <span id="reviews" ><Reviews elApp={elApp} gig={gig} /></span>}
-
                     </section>
-
                     <DetailsSidebar gig={gig} />
                 </div>
-
             </section>
-
         </section>
     )
 }

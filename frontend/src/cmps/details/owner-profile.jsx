@@ -9,7 +9,7 @@ export function OwnerProfile({ gig }) {
             <img className="owner-img" src={gig.owner.imgUrl} />
             <div className="flex column ">
                 <p className="owner-name bold">{gig.owner.fullname}</p>
-                <div className="owner-rate flex"> <OwnerRate  rate={gig.owner.rate} /> </div>
+                <div className="owner-rate flex"> <OwnerRate rate={gig.owner.rate} /> </div>
                 <button>Contact Me</button>
 
             </div>
@@ -19,28 +19,27 @@ export function OwnerProfile({ gig }) {
             <div className="owner-stas grid" >
                 <p className="from flex column">
                     From
-                    <strong>Israel</strong>
+                    <strong>{gig.country}</strong>
                 </p>
                 <p className="respone flex column">
                     Avg. response time
-                    <strong>1 hour</strong>
+                    <strong>1 hour</strong> {//TODO: make it randon}} }    }
+                    }
                 </p>
                 <p className="member flex column">
                     Member since
-                    <strong>Jun 2019</strong>
+                    <strong>Jun 2019</strong> {//TODO: make it randon}} }    }
+                    }
                 </p>
                 <p className="delivery flex column">
                     Last delivery
-                    <strong>2 days</strong>
+                    <strong>2 days</strong>{//TODO: make it randon}} }    }
+                    }
                 </p>
             </div>
 
             <p className="owner-desc">
-                Hello,I am Warda :
-                Your Creative Graphic Designer & Website Designer & Developer..
-                My first Priority is my client satisfaction I hope you will enjoy working with Me..
-                So.. Place your order and lets Get started
-                looking forward to work with you :
+                {gig.about}
             </p>
 
         </div>
