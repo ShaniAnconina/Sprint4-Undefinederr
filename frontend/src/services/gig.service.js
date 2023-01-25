@@ -120,7 +120,6 @@ function _createGigs() {
         let usersData = require('../Data/users-for-review.json')
         let users = usersData.results
         let reviewText = require('../Data/review-text.json')
-        console.log(gigsUrl)
         gigsData.forEach(gig => {
             const genUsersIdx = [utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50), utilService.getRandomIntInclusive(1, 50)]
             const imgUrls = [utilService.getRandomIntInclusive(1, 20),utilService.getRandomIntInclusive(1, 20),utilService.getRandomIntInclusive(1, 20)]

@@ -9,7 +9,6 @@ import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
 import { BsCheckLg } from "react-icons/bs"
-import { TbRefresh } from "react-icons/tb"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -27,7 +26,6 @@ export function GigPayment() {
         try {
             const gigToOrder = await gigService.get(gigId)
             setGig(gigToOrder)
-            //TODO: MsG
         } catch (error) {
             console.log(error)
             showErrorMsg()
@@ -47,10 +45,9 @@ export function GigPayment() {
             order.seller = seller
             order.gig = gigToSave
             const newOrder = await orderService.save(order)
-            console.log('newOrder', newOrder)
             showSuccessMsg('Your order send')
             //TODO check if we need to add to the buyer some data??!?!@?#
-            navigate(-1) //Maby to another path
+            navigate('/gig') //TODO: need to change the path to the user profile
         } catch (error) {
             showErrorMsg()
         }
