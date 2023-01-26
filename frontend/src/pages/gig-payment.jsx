@@ -9,6 +9,7 @@ import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
 import { BsCheckLg } from "react-icons/bs"
+import { socketService } from "../services/socket.service"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -46,6 +47,7 @@ export function GigPayment() {
             order.gig = gigToSave
             const newOrder = await orderService.save(order)
             console.log('order', order)
+            // socketService.emit('EVENT_ORDER_DONE', { orderId })
             showSuccessMsg('Your order has been sent')
             //TODO check if we need to add to the buyer some data??!?!@?#
             navigate('/gig') //TODO: need to change the path to the user profile

@@ -10,14 +10,13 @@ export function GigPreview({ gig, onAddToWishlist }) {
     const loggedinUser = useSelector((storeState) => storeState.userModule.loggedinUser)
 
     return (
-       <Link to={`/gig/${gig._id}`} className="gig-preview">
-            {/* <img className="gig-img" src={gig.imgUrl} /> */}
+        <Link to={`/gig/${gig._id}`} className="gig-preview">
             <SimpleSlider gig={gig} />
             <div className="user">
                 <img className="user-img" src={gig.owner.imgUrl} />
                 <div className="user-info">
                     <p className="username">{gig.owner.fullname}</p>
-                    <p className="level">{gig.owner.level}</p>
+                    <p className={gig.owner.level === 'Top Rated Seller' ? 'level top' : 'level'}>{gig.owner.level}</p>
                 </div>
             </div>
             <h3>{gig.title}</h3>

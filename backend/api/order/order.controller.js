@@ -35,6 +35,7 @@ async function addOrder(req, res) {
     const order = req.body
     order.owner = loggedinUser
     const addedOrder = await orderService.add(order)
+    
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)

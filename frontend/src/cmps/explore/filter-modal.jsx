@@ -1,9 +1,11 @@
-import { BudgetModal } from "./budget-modal"
-import { DeliveryTimeModal } from "./delivery-time-modal"
-import { ServicesOptionsModal } from "./services-options-modal"
 import { useEffect, useState } from "react"
 import { useSelector } from 'react-redux'
 import { useNavigate } from "react-router-dom"
+
+import { BudgetModal } from "./budget-modal"
+import { DeliveryTimeModal } from "./delivery-time-modal"
+import { ServicesOptionsModal } from "./services-options-modal"
+
 import { setfilter } from "../../store/gig/gig.action.js"
 
 export function FilterModal({ modalType }) {
