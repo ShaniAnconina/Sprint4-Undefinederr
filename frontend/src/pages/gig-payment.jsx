@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
-import { useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom"
+import { useLocation, useNavigate, useParams } from "react-router-dom"
 
 import { CreditCards } from "../cmps/details/credit-cards"
 

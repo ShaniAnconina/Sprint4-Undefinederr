@@ -40,3 +40,52 @@
 25.1.2023, 16:07:11 - INFO - Server is running on port: 3030 
 25.1.2023, 16:07:46 - INFO - Server is running on port: 3030 
 25.1.2023, 16:11:52 - INFO - Server is running on port: 3030 
+25.1.2023, 22:37:03 - INFO - Server is running on port: 3030 
+25.1.2023, 22:37:26 - DEBUG - Getting Gigs 
+25.1.2023, 22:42:19 - INFO - Server is running on port: 3030 
+25.1.2023, 22:42:30 - DEBUG - Getting Gigs 
+25.1.2023, 22:42:52 - INFO - Server is running on port: 3030 
+25.1.2023, 22:42:57 - DEBUG - Getting Gigs 
+25.1.2023, 22:43:04 - INFO - Server is running on port: 3030 
+25.1.2023, 22:45:41 - INFO - Server is running on port: 3030 
+25.1.2023, 22:45:47 - DEBUG - Getting Gigs 
+25.1.2023, 22:45:48 - ERROR - cannot find gigs | ReferenceError: gigs is not defined 
+25.1.2023, 22:45:48 - ERROR - Failed to get gigs | ReferenceError: gigs is not defined 
+25.1.2023, 22:45:56 - DEBUG - Getting Gigs 
+25.1.2023, 22:45:56 - ERROR - cannot find gigs | ReferenceError: gigs is not defined 
+25.1.2023, 22:45:56 - ERROR - Failed to get gigs | ReferenceError: gigs is not defined 
+25.1.2023, 22:46:32 - INFO - Server is running on port: 3030 
+25.1.2023, 22:46:33 - DEBUG - Getting Gigs 
+25.1.2023, 22:52:25 - DEBUG - Getting Gigs 
+25.1.2023, 22:54:10 - DEBUG - Getting Gigs 
+25.1.2023, 22:54:35 - DEBUG - Getting Gigs 
+25.1.2023, 22:56:05 - INFO - Server is running on port: 3030 
+25.1.2023, 22:58:50 - INFO - Server is running on port: 3030 
+25.1.2023, 22:59:12 - INFO - Server is running on port: 3030 
+25.1.2023, 22:59:47 - INFO - Server is running on port: 3030 
+25.1.2023, 23:00:30 - INFO - Server is running on port: 3030 
+25.1.2023, 23:52:18 - INFO - Server is running on port: 3030 
+25.1.2023, 23:55:04 - DEBUG - Getting Gigs 
+25.1.2023, 23:55:30 - DEBUG - Getting Gigs 
+25.1.2023, 23:55:47 - DEBUG - Getting Gigs 
+25.1.2023, 23:56:10 - DEBUG - Getting Gigs 
+25.1.2023, 23:56:42 - DEBUG - Getting Gigs 
+26.1.2023, 0:04:17 - DEBUG - Getting Gigs 
+26.1.2023, 0:04:18 - DEBUG - Getting Gigs 
+26.1.2023, 0:04:25 - DEBUG - Getting Gigs 
+26.1.2023, 0:05:53 - DEBUG - Getting Gigs 
+26.1.2023, 0:06:17 - DEBUG - Getting Gigs 
+26.1.2023, 0:06:22 - DEBUG - Getting Gigs 
+26.1.2023, 0:06:58 - ERROR - Failed to update gig | ReferenceError: gigId is not defined 
+26.1.2023, 0:07:01 - ERROR - Failed to update gig | ReferenceError: gigId is not defined 
+26.1.2023, 0:07:02 - ERROR - Failed to update gig | ReferenceError: gigId is not defined 
+26.1.2023, 0:07:14 - ERROR - Failed to update gig | ReferenceError: gigId is not defined 
+26.1.2023, 0:08:12 - DEBUG - Getting Gigs 
+26.1.2023, 0:08:14 - DEBUG - Getting Gigs 
+26.1.2023, 0:08:20 - DEBUG - Getting Gigs 
+26.1.2023, 0:08:27 - DEBUG - Getting Gigs 
+26.1.2023, 0:09:46 - DEBUG - Getting Gigs 
+26.1.2023, 0:10:02 - DEBUG - Getting Gigs 
+26.1.2023, 0:10:05 - DEBUG - Getting Gigs 
+26.1.2023, 0:11:25 - DEBUG - Getting Gigs 
+26.1.2023, 0:16:30 - DEBUG - Getting Gigs 
