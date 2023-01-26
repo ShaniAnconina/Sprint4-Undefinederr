@@ -2,6 +2,10 @@
     background-color: $clr2;
     padding: 20px 0;
 
+    h1 {
+        margin: 0;
+    }
+
     .profile-switch {
         text-align: right;
         cursor: pointer;
@@ -25,7 +29,7 @@
         padding: 20px 0;
 
         .mini-profile {
-            width: 340px;
+            width: 370px;
             height: fit-content;
             border: 1px solid $clr11;
             background-color: $clr0;
@@ -44,7 +48,9 @@
                     margin: auto;
                 }
             }
-
+            .row-buyer {
+                   width: 230px; 
+            }
             .performance-stats {
                 margin: 26px 0px 0px;
                 padding: 18px 0px 4px;
@@ -83,11 +89,12 @@
         td {
             margin: auto;
             padding: 20px;
+            text-align: left;
 
             img {
                 border-radius: 100%;
-                width: 75px;
-                height: 75px;
+                width: 60px;
+                height: 60px;
             }
 
 
@@ -103,23 +110,20 @@
         .status-modal-cell {
             position: relative;
             width: 133px;
+        }
+        .status-modal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+            background-color: $clr0;
+            box-shadow: 0 12px 18px rgb(0 0 0 / 14%);
+            border: 1px solid #dadbdd;
+            border-radius: 4px;
+            min-width: 100px;
+            min-height: 128px;
+            padding: 12px 24px;
 
-            .status-modal {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 70%;
-                right: 0;
-                z-index: 1;
-                background-color: $clr0;
-                box-shadow: 0 12px 18px rgb(0 0 0 / 14%);
-                border: 1px solid #dadbdd;
-                border-radius: 4px;
-                min-width: 100px;
-                min-height: 128px;
-                padding: 12px 24px;
-
-            }
         }
     }
 }

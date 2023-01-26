@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
@@ -6,19 +6,49 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 
 export function OrderList({ orders }) {
 
-    const [sortModal, setStatusModal] = useState(false)
-    const [value, setValue] = useState('Deny')
+    const [statusModal, setStatusModal] = useState({})
+    const [openModal, setOpenModal] = useState(false)
+    // const [statusValue, setStatusValue] = useState({})
+
+    useEffect(() => {
+        //TODO ADD HERE Orders array generation from ID list
+orders.forEach(element => {
+    
+});
+
+    }, [])
 
 
+    // function toggleStatusModal() {
+    //     if (!statusModal) setStatusModal(true)
+    //     else setStatusModal(false)
+    
 
-    function toggleStatusModal(){
-        if (!sortModal) setStatusModal(true)
-        else setStatusModal(false)
+    function onSetStatusValue(value) {
+        console.log("clicked ", value)
+
     }
 
-    function onSetValue({target}){
-        setValue(target.value)
-        toggleStatusModal()
+    function onOpenModal(order,ev){
+        setStatusModal({order,ev})
+        setOpenModal((prev) => !prev)
+        DynamicModal()
+        console.log("orderID: " ,order._id)
+    }
+
+    function DynamicModal(){
+        const {order,ev} = statusModal
+        let y = ev.pageY + 'px'
+        let x = ev.pageX + 'px'
+        console.log("ev pagey ", y)
+        return  <div className='status-modal' style={{top:y, left:x}}>
+        {order.status !== 'Pending' && <button value="Pending" onClick={()=> onSetStatusValue("Pending")}>Pending</button>}
+        {order.status !== 'In process' && <button value="In process" onClick={()=> onSetStatusValue("In process")}>In process</button>}
+        {order.status !== 'Done' && <button value="Done" onClick={()=> onSetStatusValue("Done")}>Completed</button>}
+        {order.status !== 'Deny' && <button value="Deny" onClick={()=> onSetStatusValue("Deny")}>Rejected</button>}
+    </div>
+
+
     }
 
     return (
@@ -35,7 +65,7 @@ export function OrderList({ orders }) {
             </thead>
             <tbody>
                 {orders.map((order) => {
-                    return <tr>
+                    return <tr key={order._id}>
                         <td className="row-buyer flex space-around">
                             <img src={order.buyerImg} />
                             <h4>{order.buyer}</h4>
@@ -44,19 +74,17 @@ export function OrderList({ orders }) {
                         <td>{order.dueDate}</td>
                         <td>{order.deliveredDate}</td>
                         <td>{order.price}$</td>
-                        <td className='status-modal-cell'><button onClick={toggleStatusModal}><p>{value}</p><MdKeyboardArrowDown /></button>
-                            {sortModal && <div className='status-modal'>
-                                {value !== 'Pending' && <button value="Pending" onClick={onSetValue}>Pending</button>}
-                                {value !== 'In process' && <button value="In process" onClick={onSetValue}>In process</button>}
-                                {value !== 'Done' && <button value="Done" onClick={onSetValue}>Done</button>}
-                                {value !== 'Deny' && <button value="Deny" onClick={onSetValue}>Deny</button>}
-                            </div>
-                            }
+                        <td className='status-modal-cell'><button onClick={(ev)=> {
+                            console.log(ev)
+                            onOpenModal(order,ev)
+                            }}><p>{order.status}</p><MdKeyboardArrowDown/>
+                            </button>
+                            {/* {statusModal && <DynamicModal order={order}/>} */}
                         </td>
                     </tr>
                 })}
             </tbody>
+            {openModal && <DynamicModal/>}
         </table>
     );
-
-}
+            }
