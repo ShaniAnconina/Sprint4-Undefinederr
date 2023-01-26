@@ -32,7 +32,7 @@ async function addGig(req, res) {
 
   try {
     const gig = req.body
-    gig.owner = loggedinUser
+    // gig.owner = loggedinUser
     const addedGig = await gigService.add(gig)
     res.json(addedGig)
   } catch (err) {

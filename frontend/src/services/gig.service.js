@@ -21,10 +21,10 @@ export const gigService = {
 function getFeatures() {
   return [
     { id: 101, txt: 'Grammar & spelling' },
-     { id: 102, txt: 'Review & edit' },
-      { id: 103, txt: 'Off-page strategy' },
-       { id: 104, txt:'Episode summary' },
-        { id: 105, txt:'Episode summary' }
+    { id: 102, txt: 'Review & edit' },
+    { id: 103, txt: 'Off-page strategy' },
+    { id: 104, txt: 'Episode summary' },
+    { id: 105, txt: 'Episode summary' }
   ]
 }
 
@@ -108,9 +108,6 @@ function getAvgRate(gigs) {
 }
 
 function getEmptyGig() {
-  const usersData = require('../Data/users-for-review.json')
-  const users = usersData.results
-  const genUsersIdx = utilService.getRandomIntInclusive(1, 50)
 
   return {
     title: "",
@@ -119,12 +116,7 @@ function getEmptyGig() {
     daysToMake: "",
     tags: [],
     owner: {
-      _id: "u101",
-      fullname: `${users[genUsersIdx].name.first} ${users[genUsersIdx].name.last}`,
-      username: users[genUsersIdx].login.username,
-      imgUrl: users[genUsersIdx].picture.thumbnail,
-      level: "basic",
-      rate: utilService.getRandomIntInclusive(1, 5)
+      imgUrl : 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg',
     },
     likedByUsers: []
   }

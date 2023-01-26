@@ -6,6 +6,7 @@ import axios from "axios"
 
 import { gigService } from "../services/gig.service"
 import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
+import { useSelector } from "react-redux"
 
 export function GigEdit() {
     const navigate = useNavigate()
@@ -13,12 +14,16 @@ export function GigEdit() {
     const [gigToEdit, setGigToEdit] = useState(gigService.getEmptyGig())
     const [selectedImage, setSelectedImage] = useState(null)
     const [tags, setTags] = useState([])
+    const { loggedinUser } = useSelector((storeState) => storeState.userModule)
 
     async function onSaveGig(ev) {
         ev.preventDefault()
         try {
-            gigToEdit.imgUrl = imageData.secure_url
+            gigToEdit.owner.fullname = loggedinUser?.fullname || 'User'
+            gigToEdit.owner._id = loggedinUser?._id || '_123'
+            gigToEdit.imgUrl =[ imageData.secure_url]
             gigToEdit.tags = tags
+            console.log(gigToEdit)
             await saveGig(gigToEdit)
             navigate('/gig')
             showSuccessMsg('Your gig has been saved!')
