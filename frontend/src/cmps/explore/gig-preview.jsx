@@ -21,7 +21,7 @@ export function GigPreview({ gig, onAddToWishlist }) {
                 </div>
             </div>
             <h3>{gig.title}</h3>
-            <span className="rate"><p className='star'><AiFillStar size="15px" /></p><p>{gig.rate}<span className="rates-count">({gig.reviews.length})</span></p></span>
+            <span className="rate"><p className='star'><AiFillStar size="15px" /></p><p>{gig.rate}<span className="rates-count">({gig.reviews?.length})</span></p></span>
             <div className="card-footer">
                 <div className={(gig.isSaved && gig.likedByUsers.some(userId => userId === loggedinUser._id)) ? 'whishlist saved' : 'whishlist'} onClick={(ev) => onAddToWishlist(ev, gig)}><FaHeart /></div>
                 <div className="price">
