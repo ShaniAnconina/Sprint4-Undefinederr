@@ -137,3 +137,25 @@
 26.1.2023, 13:25:51 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
 26.1.2023, 13:26:47 - INFO - Server is running on port: 3030 
 26.1.2023, 13:27:35 - INFO - Server is running on port: 3030 
+26.1.2023, 13:30:23 - INFO - Server is running on port: 3030 
+26.1.2023, 13:30:31 - DEBUG - Getting Gigs 
+26.1.2023, 14:12:21 - DEBUG - Getting Gigs 
+26.1.2023, 16:52:16 - DEBUG - Getting Gigs 
+26.1.2023, 18:02:40 - INFO - Server is running on port: 3030 
+26.1.2023, 18:09:57 - DEBUG - Getting Gigs 
+26.1.2023, 20:37:52 - INFO - Server is running on port: 3030 
+26.1.2023, 20:41:17 - INFO - Server is running on port: 3030 
+26.1.2023, 21:08:22 - INFO - Server is running on port: 3030 
+26.1.2023, 21:08:36 - INFO - New connected socket [id: h_zTsBJWXAhomRfZAAAB] 
+26.1.2023, 21:10:19 - DEBUG - Getting Gigs 
+26.1.2023, 21:12:03 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 21:13:10 - INFO - New connected socket [id: 00h5MbjxJSEl3tHGAAAD] 
+26.1.2023, 21:13:21 - DEBUG - Getting Gigs 
+26.1.2023, 21:13:36 - DEBUG - Getting Gigs 
+26.1.2023, 21:13:47 - DEBUG - Getting Gigs 
+26.1.2023, 22:29:01 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 22:29:08 - INFO - New connected socket [id: gvnN7lk1KREZzmSNAAAF] 
+26.1.2023, 22:29:08 - DEBUG - Getting Gigs 
+26.1.2023, 22:33:21 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 22:33:25 - INFO - New connected socket [id: WQjUbFe91loSUf_kAAAH] 
+26.1.2023, 22:33:25 - DEBUG - Getting Gigs 

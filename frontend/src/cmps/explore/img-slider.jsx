@@ -25,7 +25,6 @@ export class SimpleSlider extends Component {
 
     render() {
         const gig = this.props.gig
-        console.log('gig:', gig)
         const settings = {
             arrows: true,
             slidesToShow: 1,
@@ -39,21 +38,7 @@ export class SimpleSlider extends Component {
                         <div className="img-slide" key={gig.imgUrl.length + 1}>
                             <img onClick={(ev) => ev.preventDefault()} height="195px" src={img} />
                         </div>
-
                     )}
-
-
-                    {/* <div key={1}>
-                        <img onClick={(ev) => ev.preventDefault()} height="195px" src="https://images.unsplash.com/photo-1674170117831-7a0bb884b398?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDUwMTg4MQ&ixlib=rb-4.0.3&q=80&w=1080" />
-                    </div>
-                    <div key={2}>
-                        <img onClick={(ev) => ev.preventDefault()} height="195px" src="https://images.unsplash.com/photo-1672071664623-d5d6744467e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDUwMTg3NA&ixlib=rb-4.0.3&q=80&w=1080" />
-                    </div>
-                    <div key={3}>
-                        <img onClick={(ev) => ev.preventDefault()} height="195px" src="https://images.unsplash.com/photo-1673407456341-8bddce1157eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY3NDUwMTg2Mw&ixlib=rb-4.0.3&q=80&w=1080" />
-                    </div> */}
-
-
                 </Slider>
                 <div className="sliders-btns" onClick={(ev) => ev.preventDefault()}>
                     <button className="previous-btn" onClick={this.previous}><GrPrevious size="10px" /></button>
