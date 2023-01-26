@@ -7,7 +7,6 @@ const initialState = {
         imgUrl: "https://randomuser.me/api/portraits/men/20.jpg",
         password: "ohad",
         isSeller: true,
-        earnedLastMonth: 1260,
         memberSince:"May, 2019",
         username: "ohad",
         _id: "xH6r9",
