@@ -151,6 +151,7 @@
             grid-template-columns: repeat(auto-fill, minmax(164px, 280px));
 
             a {
+                position: relative;
                 color: $clr7;
                 height: 150px;
                 display: inline-flex;

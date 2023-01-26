@@ -4,9 +4,11 @@ import { GoClock } from "react-icons/go"
 import { TbRefresh } from "react-icons/tb"
 import { BsCheckLg } from "react-icons/bs"
 import { useState } from "react"
+import { gigService } from "../../services/gig.service"
 
 export function DetailsSidebar({ gig }) {
     const [packageType, setPackageType] = useState('basic')
+    const features = gigService.getFeatures()
 
     return <section className="sidebar-content-container">
 
@@ -37,15 +39,13 @@ export function DetailsSidebar({ gig }) {
 
             <div className="features-list">
 
-                    //TODO: after the demo data
-                {/* {gig.features.map(feature => <p key={feature.id} className="feature flex align-center">
+                {features.map(feature => <p key={feature.id} className="feature flex align-center">
                     {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
                     {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
                     {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
                     <span>{feature.txt}</span>
-                </p>)} */}
-                                        //delete after the demo data
-                <p className="feature flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
+                </p>)}
+
 
             </div>
             {packageType === 'basic' &&<Link to={`/gig/payment/${gig._id}?packageType=basic`}> <button className="Continue-btn">Continue ({`US$${gig.price.toFixed(0)}`})</button></Link>}

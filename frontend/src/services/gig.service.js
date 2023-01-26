@@ -14,7 +14,18 @@ export const gigService = {
   remove,
   getDefaultFilter,
   getEmptyGig,
-  addToWishlist
+  addToWishlist,
+  getFeatures
+}
+
+function getFeatures() {
+  return [
+    { id: 101, txt: 'Grammar & spelling' },
+     { id: 102, txt: 'Review & edit' },
+      { id: 103, txt: 'Off-page strategy' },
+       { id: 104, txt:'Episode summary' },
+        { id: 105, txt:'Episode summary' }
+  ]
 }
 
 async function query(filterBy) {
