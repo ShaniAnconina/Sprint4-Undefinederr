@@ -3,15 +3,9 @@
 
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
-import InputLabel from '@mui/material/InputLabel';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
+
+import { utilService } from '../../services/util.service.js';
+
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 import LinearProgress, { LinearProgressProps } from '@mui/material/LinearProgress';
@@ -90,7 +84,7 @@ export function MiniProfile ({loggedinUser, onSellerProfile}) {
 
 <div className="stat flex space-between">
 Earned in January
-<p>US${loggedinUser.earnedLastMonth}</p>
+<p>US${utilService.getRandomIntInclusive(500,3000)}</p>
 </div>
 </section>
 }
