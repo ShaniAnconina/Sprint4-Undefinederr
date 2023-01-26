@@ -25,7 +25,7 @@ async function getById(gigId) {
         throw err
     }
 }
-
+// remove('63d261a40bba4ff9de2eff1b')
 async function remove(gigId) {
     try {
         const collection = await dbService.getCollection('gig')

@@ -94,3 +94,46 @@
 26.1.2023, 9:21:57 - DEBUG - Getting Gigs 
 26.1.2023, 9:22:58 - DEBUG - Getting Gigs 
 26.1.2023, 9:25:48 - DEBUG - Getting Gigs 
+26.1.2023, 10:02:12 - DEBUG - Getting Gigs 
+26.1.2023, 10:02:37 - DEBUG - Getting Gigs 
+26.1.2023, 10:02:43 - DEBUG - Getting Gigs 
+26.1.2023, 10:03:21 - DEBUG - Getting Gigs 
+26.1.2023, 10:07:26 - DEBUG - Getting Gigs 
+26.1.2023, 10:07:53 - DEBUG - Getting Gigs 
+26.1.2023, 10:27:57 - DEBUG - Getting Gigs 
+26.1.2023, 11:32:51 - DEBUG - auth.service - signup with username: admin, fullname: admin 
+26.1.2023, 11:32:51 - DEBUG - auth.service - login with username: admin 
+26.1.2023, 11:32:51 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$.6EvJFIdAUXtV1.JtcudfONTsgNCa7ga.UDfyYC5/0oZtOKGQ0Afe","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100,"_id":"63d248c3ffc84864e2195c61"} 
+26.1.2023, 11:32:51 - INFO - User signup: | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} 
+26.1.2023, 11:35:16 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 11:35:17 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 11:38:07 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 11:40:52 - INFO - Server is running on port: 3030 
+26.1.2023, 11:40:58 - INFO - Server is running on port: 3030 
+26.1.2023, 11:41:25 - INFO - Server is running on port: 3030 
+26.1.2023, 11:41:28 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 12:54:04 - INFO - Server is running on port: 3030 
+26.1.2023, 12:54:16 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:03:45 - INFO - Server is running on port: 3030 
+26.1.2023, 13:03:48 - INFO - Server is running on port: 3030 
+26.1.2023, 13:04:13 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:13:45 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:16:02 - INFO - Server is running on port: 3030 
+26.1.2023, 13:16:04 - INFO - Server is running on port: 3030 
+26.1.2023, 13:16:26 - INFO - Server is running on port: 3030 
+26.1.2023, 13:16:43 - INFO - Server is running on port: 3030 
+26.1.2023, 13:16:56 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:16:59 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:20:48 - INFO - Server is running on port: 3030 
+26.1.2023, 13:21:19 - INFO - Server is running on port: 3030 
+26.1.2023, 13:23:10 - INFO - Server is running on port: 3030 
+26.1.2023, 13:23:24 - INFO - Server is running on port: 3030 
+26.1.2023, 13:24:21 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:24:58 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:25:03 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:25:37 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:25:37 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:25:40 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:25:51 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:26:47 - INFO - Server is running on port: 3030 
+26.1.2023, 13:27:35 - INFO - Server is running on port: 3030 
