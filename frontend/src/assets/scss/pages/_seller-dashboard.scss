@@ -48,9 +48,7 @@
                     margin: auto;
                 }
             }
-            .row-buyer {
-                   width: 230px; 
-            }
+
             .performance-stats {
                 margin: 26px 0px 0px;
                 padding: 18px 0px 4px;
@@ -65,31 +63,43 @@
                         width: 105px;
                     }
                 }
+
+
+            }
+            .finance {
+                font-family: Macan-Regular;
+                padding-bottom: 12px;
+
             }
 
         }
-
-
-
 
     }
 
     .orders-table {
         width: 70vw;
-        max-width: 936px;
+        // max-width: 936px;
+        max-width:1000px;
         height: fit-content;
         border: 1px solid $clr11;
         background-color: $clr0;
 
+        .row-buyer {
+            width: 220px; 
+     }
+
         th {
             padding: 15px;
             color: $clr4;
+            border-bottom: 1px $clr11 solid;
         }
 
         td {
             margin: auto;
             padding: 20px;
             text-align: left;
+            line-height: 140%;
+            border-bottom: 1px $clr11 solid;
 
             img {
                 border-radius: 100%;

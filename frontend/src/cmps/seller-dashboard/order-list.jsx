@@ -1,3 +1,4 @@
+//TODO generate orders list from query 
 import { useState, useEffect } from 'react'
 
 
@@ -10,13 +11,9 @@ export function OrderList({ orders }) {
     const [openModal, setOpenModal] = useState(false)
     // const [statusValue, setStatusValue] = useState({})
 
-    useEffect(() => {
-        //TODO ADD HERE Orders array generation from ID list
-orders.forEach(element => {
-    
-});
 
-    }, [])
+
+
 
 
     // function toggleStatusModal() {
@@ -58,15 +55,15 @@ orders.forEach(element => {
                     <th>BUYER</th>
                     <th>GIG</th>
                     <th>DUE ON</th>
-                    <th>DELIVERED AT</th>
+                    <th>DELIVERED</th>
                     <th>TOTAL</th>
                     <th>STATUS</th>
                 </tr>
             </thead>
             <tbody>
-                {orders.map((order) => {
+                {orders?.map((order) => {
                     return <tr key={order._id}>
-                        <td className="row-buyer flex space-around">
+                        <td className="row-buyer flex space-between">
                             <img src={order.buyerImg} />
                             <h4>{order.buyer}</h4>
                         </td>

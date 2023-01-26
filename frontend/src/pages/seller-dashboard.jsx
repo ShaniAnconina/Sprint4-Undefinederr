@@ -43,7 +43,7 @@ export function SellerDashboard(){
     <div className='flex space-between'><h1>{ onSellerProfile ? "Manage Orders" : "Manage Purchases"}</h1>
     <button className='filter-btn' onClick={toggleStatusFilter}><p>{statusFilterValue}</p></button>
     </div>
-    <OrderList orders={ onSellerProfile ? loggedInUser.miniOrders : loggedInUser.miniPurchases} />
+    <OrderList orders={ onSellerProfile ? loggedInUser?.miniOrders : loggedInUser?.miniPurchases} />
     </div>
     </div>
 

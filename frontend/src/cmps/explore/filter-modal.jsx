@@ -37,6 +37,7 @@ export function FilterModal({ modalType }) {
         ev?.preventDefault()
         let field = ev.target.name
         console.log(ev.target.name)
+        console.log(ev)
         setFilterByToEdit({...filterBy, [field]:value})
     }
 

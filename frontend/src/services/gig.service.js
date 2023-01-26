@@ -62,6 +62,18 @@ async function query(filterBy) {
     if (filterBy?.isSaved) {
       gigs = gigs.filter((gig) => gig.isSaved === true)
     }
+
+    //Sort by
+    switch (filterBy.sortBy){
+      case 'topRated':
+        gigs.sort((a,b) => b.rate - a.rate)
+        break
+      case 'price':
+        gigs.sort((a,b) => a.price - b.price)
+        break
+        case 'daysToMake':
+        gigs.sort((a,b) => a.daysToMake - b.daysToMake)
+    }
     return gigs
   } catch (err) {
     console.log("could not retrieve gigs from service")
@@ -2794,7 +2806,7 @@ function getEmptyGig() {
 // }
 
 function getDefaultFilter() {
-  return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity, isSaved: false }
+  return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity, isSaved: false, sortBy:'topRated' }
 }
 
 
