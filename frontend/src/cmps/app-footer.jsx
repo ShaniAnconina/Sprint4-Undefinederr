@@ -10,7 +10,7 @@ export function AppFooter() {
     return <section className="footer main-layout">
         <div className="flex space-between">
         <div className="footer-logo-left flex align-center space-around">
-            <NavLink to="/" className='logo before-scroll-txt'>fiverr<span>.</span></NavLink>
+            <NavLink to="/" className='logo before-scroll-txt'>undefinderr<span>&reg;</span></NavLink>
             <p className="coffee-rights">&copy; Fiverr International Ltd. 2023</p>
         </div >
         <div className='footer-logo-right flex align-center space-around'>
