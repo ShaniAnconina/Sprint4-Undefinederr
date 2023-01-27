@@ -245,6 +245,17 @@
 26.1.2023, 23:01:05 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
 27.1.2023, 2:28:24 - INFO - Socket disconnected [id: undefined] 
 27.1.2023, 11:08:59 - INFO - New connected socket [id: UgsA1v86gAbVza4-AAAH] 
+<<<<<<< HEAD
+>>>>>>> 0437cae17114632b0272392cf26cd8e906bebbc0
+27.1.2023, 11:16:10 - DEBUG - Getting Gigs 
+27.1.2023, 11:16:16 - DEBUG - Getting Gigs 
+27.1.2023, 11:16:26 - DEBUG - Getting Gigs 
+27.1.2023, 11:16:31 - DEBUG - Getting Gigs 
+27.1.2023, 11:19:38 - DEBUG - Getting Gigs 
+27.1.2023, 11:19:42 - DEBUG - Getting Gigs 
+27.1.2023, 12:01:59 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 12:03:14 - INFO - New connected socket [id: zLHFx3SPbc3P9exoAAAX] 
+=======
 27.1.2023, 11:19:06 - INFO - Socket disconnected [id: undefined] 
 27.1.2023, 11:19:07 - INFO - New connected socket [id: ClOxC6rFkGofU6RVAAAJ] 
 27.1.2023, 11:19:07 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
@@ -257,3 +268,5 @@
 27.1.2023, 12:14:13 - INFO - Socket disconnected [id: undefined] 
 27.1.2023, 12:14:15 - INFO - New connected socket [id: klB6oOTjs1NLp6zWAAAN] 
 27.1.2023, 12:14:15 - INFO - New connected socket [id: TyL6ksbd4QxI_HKlAAAP] 
+>>>>>>> 3eee32af14e0727ffaca79decc849f6b0db1afa8
+27.1.2023, 12:21:50 - INFO - Socket disconnected [id: undefined] 
