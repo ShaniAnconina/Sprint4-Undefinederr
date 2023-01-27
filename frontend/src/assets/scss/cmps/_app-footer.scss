@@ -1,0 +1,10 @@
+.footer {
+    height: 55px;
+    border-top: 1px solid $clr11;
+    margin-top: 64px;
+    margin-bottom: 24px;
+
+    .footer-logo-left , .footer-logo-right{
+        align-items: flex-end;
+    }
+}

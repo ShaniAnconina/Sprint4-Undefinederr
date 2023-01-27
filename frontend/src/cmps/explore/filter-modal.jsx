@@ -7,11 +7,12 @@ import { DeliveryTimeModal } from "./delivery-time-modal"
 import { ServicesOptionsModal } from "./services-options-modal"
 
 import { setfilter } from "../../store/gig/gig.action.js"
+import { gigService } from "../../services/gig.service"
 
 export function FilterModal({ modalType }) {
 
     const navigate = useNavigate()
-    const {filterBy} = useSelector((storeState)=>storeState.gigModule)
+    const { filterBy } = useSelector((storeState) => storeState.gigModule)
     const [filterByToEdit, setFilterByToEdit] = useState(filterBy)
     let type
 
@@ -22,33 +23,35 @@ export function FilterModal({ modalType }) {
 
     switch (modalType) {
         case 'servicesOptions':
-            type = <ServicesOptionsModal onSubmit={onSubmit}/>
+            type = <ServicesOptionsModal onSubmit={onSubmit} />
             break
         case 'budget':
-            type = <BudgetModal onSubmit={onSubmit}/>
+            type = <BudgetModal onSubmit={onSubmit} />
             break
         case 'deliveryTime':
-            type = <DeliveryTimeModal onSubmit={onSubmit}/>
+            type = <DeliveryTimeModal onSubmit={onSubmit} />
             break
 
         default:
             break
     }
 
-    function onSubmit(ev, value){
+    function onSubmit(ev, value) {
         ev?.preventDefault()
         let field = ev.target.name
-        console.log(ev.target.name)
-        console.log(ev)
-        setFilterByToEdit({...filterBy, [field]:value})
+        setFilterByToEdit({ ...filterBy, [field]: value })
+    }
+
+    function onClearAll() {
+        setFilterByToEdit(gigService.getDefaultFilter())
     }
 
     return (
         <section className="filter-modal">
-        {/* <section onClick={(ev) => ev.stopPropagation()} className="filter-modal"> */}
+            {/* <section onClick={(ev) => ev.stopPropagation()} className="filter-modal"> */}
             {type}
             <div className="filters-footer">
-                <button className="clear" type="button">Clear All</button>
+                <button className="clear" type="button" onClick={onClearAll}>Clear All</button>
                 <button className="apply" form="filters" type="submit">Apply</button>
             </div>
         </section>
