@@ -9,7 +9,7 @@ export function ServicesOptionsModal({ onSubmit }) {
         if (idx > -1) { // only splice array when item is found
             filterByCategories.splice(idx, 1)
         } else filterByCategories.push(value)
-    console.log(filterByCategories)
+        console.log(filterByCategories)
     }
 
     return (
@@ -54,7 +54,6 @@ export function ServicesOptionsModal({ onSubmit }) {
                 <input type="checkbox" id="lifestyle" name="lifestyle" value="Lifestyle" onChange={() => onChange("Lifestyle")}/>
                 <label htmlFor="lifestyle">Lifestyle</label>
             </div>
-
         </form>
     )
 }
