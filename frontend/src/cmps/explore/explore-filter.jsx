@@ -30,17 +30,19 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
         }
     }, [filterByToEdit])
 
-    function toggleFilterModal(type) {
+    function toggleFilterModal(ev, type) {
+        console.log('ev.target:', ev.target)
+        console.log('ev.currentTarget:', ev)
         setModalType(type)
         // elApp.current.addEventListener('click', onCloseModal)
         if (modalType === type) setModalType(null)
     }
+
     function toggleSortModal() {
         // elApp.current.addEventListener('click', onCloseModal)
         if (!sortModal) setSortModal(true)
         else setSortModal(false)
     }
-
 
     function onSelectSort(value) {
         setSortValue(value)
@@ -54,9 +56,9 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
                 {/* <div onClick={(ev) => ev.preventDefault()} ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}> */}
                 <div className="filters-container main-layout">
                     <div className="filters">
-                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={() => toggleFilterModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
-                        <button className='filter-btn' onClick={() => toggleFilterModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                        <button className='filter-btn' onClick={() => toggleFilterModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
+                        <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                        <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
                         {modalType && <FilterModal modalType={modalType} />}
                     </div>
                     {/* <div className="right-filters">
