@@ -78,6 +78,10 @@ export class MultipleItems extends Component {
                     </div>
 
                 </Slider>
+                {/* <div className="slider-btns">
+                    <button className="prev" onClick={this.previous}><GrPrevious size="10px" /></button>
+                    <button className="next" onClick={this.next}><GrNext size="10px" /></button>
+                </div> */}
             </div>
         );
     }

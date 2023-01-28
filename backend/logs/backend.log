@@ -398,3 +398,66 @@
 28.1.2023, 2:40:09 - ERROR - while finding gig user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d3ea45fbb8ef3395785e45)
 28.1.2023, 2:40:09 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d3ea45fbb8ef3395785e45)
 28.1.2023, 2:40:10 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 12:33:39 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 12:33:39 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 12:33:42 - INFO - New connected socket [id: 3qVIA0vZD3a_ueRiAAAF] 
+28.1.2023, 15:07:34 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 15:07:36 - INFO - New connected socket [id: -6nZscuBu9FZuM9sAAAH] 
+28.1.2023, 15:51:51 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 15:51:54 - INFO - New connected socket [id: r24l3pbuxbLWMNhsAAAJ] 
+28.1.2023, 16:22:30 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:22:37 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:39:06 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 16:39:08 - INFO - New connected socket [id: gkIBNrzxYdeKSVkmAAAL] 
+28.1.2023, 16:39:09 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:39:20 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:39:22 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:39:25 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:39:25 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:40:25 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:40:28 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 16:40:30 - INFO - New connected socket [id: ibcVFGdeOEuDfWqzAAAN] 
+28.1.2023, 16:40:30 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:40:45 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:40:55 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:40:58 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:41:33 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:41:34 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:41:43 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:43:50 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:44:00 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:44:13 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:44:20 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:45:05 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:45:05 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:45:13 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:45:21 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:54:05 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:54:16 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 16:58:52 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:10:42 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:11:56 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:12:03 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:12:12 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:13:43 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:13:45 - INFO - New connected socket [id: h2t5Rba1LtfvMTESAAAP] 
+28.1.2023, 17:13:50 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:14:22 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:15:16 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:15:17 - INFO - New connected socket [id: zY10whkeR6yYQyo4AAAR] 
+28.1.2023, 17:15:23 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:15:45 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:15:59 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:23:56 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:23:58 - INFO - New connected socket [id: XDXxWtpbZhgkdyDIAAAT] 
+28.1.2023, 17:24:03 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:24:23 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:25:16 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:25:18 - INFO - New connected socket [id: BQzxbPUt3EMMmUWEAAAV] 
+28.1.2023, 17:25:23 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:25:38 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:25:40 - INFO - New connected socket [id: lRn7ngxSAMmM56FEAAAX] 
+28.1.2023, 17:25:45 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:26:09 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:26:11 - INFO - New connected socket [id: e65rG4ukNJWXmC2mAAAZ] 
+28.1.2023, 17:26:16 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)

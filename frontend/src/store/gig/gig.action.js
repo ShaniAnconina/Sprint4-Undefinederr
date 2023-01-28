@@ -4,6 +4,7 @@ import { store } from '../store.js'
 import { showErrorMsg } from '../../services/event-bus.service.js'
 
 export async function loadGigs(filterBy) {
+    await new Promise(r => setTimeout(r, 5000)); //sleep() for loader test
     try {
         let gigs = await gigService.query(filterBy)
         store.dispatch({ type: SET_GIGS, gigs })
