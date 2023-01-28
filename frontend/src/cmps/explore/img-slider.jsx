@@ -25,7 +25,6 @@ export class SimpleSlider extends Component {
 
     render() {
         const gig = this.props.gig
-        console.log('gig:', gig)
         const settings = {
             arrows: true,
             slidesToShow: 1,

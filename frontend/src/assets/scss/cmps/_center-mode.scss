@@ -1,0 +1,94 @@
+.img-container {
+
+    .slick-slider {
+        button.slick-arrow {
+            z-index: 1;
+            height: 48px;
+            width: 48px;
+            box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+            background-color: $clr0;
+            display: block;
+            border-radius: 100%;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+
+    .mini-img {
+        img {
+            height: 60px;
+            width: 100px;
+            object-fit: cover;
+        }
+    }
+
+    .main {
+        position: relative;
+
+        .slider-btns {
+            pointer-events: none;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            position: absolute;
+            width: 103%;
+            left: -11px;
+            
+            button {
+                // color: #555555;
+                color: #fff;
+                padding: 0;
+                background-color: inherit;
+                border: none;
+                svg{
+                    polyline{
+
+                        stroke: $clr6;
+                    }
+
+                }
+            }
+        }
+
+        ul.slick-dots {
+            bottom: -65px;
+            text-align: left;
+
+            li {
+                width: 100px;
+                height: 60px;
+                opacity: 0.34;
+                margin: 0;
+                margin-right: 5px;
+
+                &.slick-active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        div:focus-visible {
+            outline: inherit;
+
+        }
+
+        .main-img-container img.main-img {
+            height: 430px;
+            object-fit: unset;
+        }
+
+        // img {
+        //     width: 100%;
+
+        //     &:focus-visible {
+        //         outline: inherit;
+        //     }
+        // }
+
+        &:focus-visible {
+            outline: inherit;
+        }
+    }
+}

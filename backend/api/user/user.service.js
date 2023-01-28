@@ -10,7 +10,28 @@ module.exports = {
     getByUsername,
     remove,
     update,
-    add
+    add,
+    updateBayer,
+    updateSeller
+}
+
+async function updateBayer(addedOrder) {
+    try {
+        const collection = await dbService.getCollection('user')
+        await collection.updateOne({ _id: ObjectId(addedOrder.buyer._id) }, { $push: {purchase: addedOrder._id}  })
+    } catch (err) {
+        logger.error(`cannot update user ${addedOrder.buyer._id}`, err)
+        throw err
+    }
+}
+async function updateSeller(addedOrder) {
+    try {
+        const collection = await dbService.getCollection('user')
+        await collection.updateOne({ _id: ObjectId(addedOrder.seller._id) }, { $push: {order: addedOrder._id}  })
+    } catch (err) {
+        logger.error(`cannot update user ${addedOrder.buyer._id}`, err)
+        throw err
+    }
 }
 
 async function query(filterBy = {}) {
@@ -59,7 +80,7 @@ async function getByUsername(username) {
         throw err
     }
 }
-
+// remove('63d453927af96936df68811c')
 async function remove(userId) {
     try {
         const collection = await dbService.getCollection('user')

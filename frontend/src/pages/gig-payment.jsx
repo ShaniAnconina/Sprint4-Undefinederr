@@ -14,6 +14,7 @@ export function GigPayment() {
     const navigate = useNavigate()
     const { gigId } = useParams()
     const packageType = new URLSearchParams(useLocation().search).get('packageType')
+    const features = gigService.getFeatures()
     const [gig, setGig] = useState(null)
     const [order, setOrder] = useState(orderService.getEmptyOrder())
     const { loggedinUser } = useSelector((storeState) => storeState.userModule)
@@ -40,14 +41,13 @@ export function GigPayment() {
             if (!loggedinUser) return openJoinModal()
             const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username }
             const seller = { fullname: gig.owner.fullname, _id: gig.owner._id }
-            const gigToSave = { _id: gigId, title: gig.title, price: gig.price }
+            console.log(gig.owner)
+            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package:packageType }
             order.buyer = buyer
             order.seller = seller
             order.gig = gigToSave
-            const newOrder = await orderService.save(order)
-            console.log('order', order)
+            await orderService.save(order)
             showSuccessMsg('Your order has been sent')
-            //TODO check if we need to add to the buyer some data??!?!@?#
             navigate('/gig') //TODO: need to change the path to the user profile
         } catch (error) {
             showErrorMsg()
@@ -142,13 +142,12 @@ export function GigPayment() {
                         </div>
                         <div className="services">
 
-                            {/* {gig.features.map(feature => <p key={feature.id} className="flex align-center">
+                        {features.map(feature => <p key={feature.id} className="feature flex align-center">
                     {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
                     {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
                     {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
                     <span>{feature.txt}</span>
-                </p>)} */}
-                                        //delete after the demo data
+                </p>)}
                             <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
                             {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
                             {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
