@@ -44,7 +44,7 @@ export function App() {
               <Route element={<GigEdit />} path="/gig/edit" />
               <Route element={<GigPayment />} path="/gig/payment/:gigId" />
               {/* reroute with userID: */}
-              <Route element={<SellerDashboard />} path="/user" />
+              <Route element={<SellerDashboard />} path="/user/:userId" />
             </Routes>
           </main>
 

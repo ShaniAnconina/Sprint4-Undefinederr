@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { NavLink, useLocation } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 
 import { LoginSignUp } from './user/login-signup'
 import { CategoryNav } from './category-nav-bar'
@@ -69,7 +69,7 @@ export function AppHeader({ elApp }) {
                             <span className='icon' title="Lists"><FaRegHeart size="18px" /></span>
                             <p className='orders'>Orders</p>
                             {/* <img className="user-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" /> */}
-                            <img className="user-img" src={loggedinUser.imgUrl} />
+                            <Link to={`/user/${loggedinUser._id}`}> <img className="user-img" src={loggedinUser.imgUrl} /> </Link>
                         </nav>}
                         {!loggedinUser && <nav className="main-nav">
                             <NavLink to="/gig" className='explore'>Explore</NavLink>
