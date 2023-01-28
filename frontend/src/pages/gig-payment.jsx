@@ -9,7 +9,7 @@ import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
 import { BsCheckLg } from "react-icons/bs"
-import { socketService } from "../services/socket.service"
+import { socketService, SOCKET_EMIT_NEW_ORDER } from "../services/socket.service"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -42,14 +42,15 @@ export function GigPayment() {
             if (!loggedinUser) return openJoinModal()
             const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username }
             const seller = { fullname: gig.owner.fullname, _id: gig.owner._id }
-            console.log(gig.owner)
-            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package:packageType }
+            // console.log(gig.owner)
+            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package: packageType }
             order.buyer = buyer
             order.seller = seller
             order.gig = gigToSave
             await orderService.save(order)
 
-            socketService.on('SOCKET_EMIT_ORDER_STATUS', order)
+            socketService.emit(SOCKET_EMIT_NEW_ORDER, order.seller._id)
+            // socketService.on('SOCKET_EMIT_ORDER_STATUS', order.seller._id)
 
             showSuccessMsg('Your order has been sent')
             navigate(`/user/${loggedinUser._id}`) //TODO: need to change the path to the user profile
@@ -146,12 +147,12 @@ export function GigPayment() {
                         </div>
                         <div className="services">
 
-                        {features.map(feature => <p key={feature.id} className="feature flex align-center">
-                    {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
-                    {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
-                    {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
-                    <span>{feature.txt}</span>
-                </p>)}
+                            {features.map(feature => <p key={feature.id} className="feature flex align-center">
+                                {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
+                                {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
+                                {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
+                                <span>{feature.txt}</span>
+                            </p>)}
                             <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
                             {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
                             {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}

@@ -1,6 +1,6 @@
 import { storageService } from "./async-storage.service"
 import { httpService } from "./http.service"
-import { socketService } from "./socket.service"
+import { socketService } from "./socket.service.js"
 
 export const userService = {
     login,
@@ -8,7 +8,6 @@ export const userService = {
     getEmptyCredentials,
     getById,
     logout,
-
 }
 
 async function logout() {
@@ -30,7 +29,6 @@ async function login(userCred) {
     }
     else throw new Error
 }
-
 
 async function signup(userCred) {
     if (!userCred.imgUrl) userCred.imgUrl = 'https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg'
