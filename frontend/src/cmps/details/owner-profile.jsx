@@ -23,18 +23,18 @@ export function OwnerProfile({ gig }) {
                 </p>
                 <p className="respone flex column">
                     Avg. response time
-                    <strong>1 hour</strong> {//TODO: make it randon}} }    }
-                    }
+                    <strong>1 hour</strong>
+                    
                 </p>
                 <p className="member flex column">
                     Member since
-                    <strong>Jun 2019</strong> {//TODO: make it randon}} }    }
-                    }
+                    <strong>Jun 2019</strong> 
+                    
                 </p>
                 <p className="delivery flex column">
                     Last delivery
-                    <strong>2 days</strong>{//TODO: make it randon}} }    }
-                    }
+                    <strong>2 days</strong>
+                    
                 </p>
             </div>
 
