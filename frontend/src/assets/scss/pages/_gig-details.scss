@@ -1,6 +1,7 @@
 .gig-details {
 
     .details-nav {
+        z-index: 1;
         border-bottom: 1px solid $clr11;
         position: sticky;
         top: 0;
@@ -111,12 +112,13 @@
 
             .breadcrumds {
                 padding-bottom: 18px;
-
+                color: $clr12;
+                
                 .open-btn {
                     cursor: pointer;
+                    color: $clr12;
                     font-family: Macan-Regular;
                     font-size: 14px;
-                    color: $clr12;
                     border: none;
                     background-color: inherit;
                     margin: none;
@@ -168,7 +170,7 @@
         }
 
         .img-container {
-            margin-block-end: 16px;
+            margin-block-end: 120px;
             height: 430px;
             width: 100%;
 
@@ -215,12 +217,13 @@
 
             h2 {
                 font-size: 20px;
-                padding-bottom: 25px;
             }
 
             p {
                 padding: 10px;
                 line-height: 1.5rem;
+                white-space: break-spaces;
+                word-break: break-all;
             }
 
         }

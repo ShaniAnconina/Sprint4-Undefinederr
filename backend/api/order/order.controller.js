@@ -1,6 +1,7 @@
 const orderService = require('./order.service.js')
 
 const logger = require('../../services/logger.service')
+const { updateBayer, updateSeller } = require('../user/user.service.js')
 
 async function getOrders(req, res) {
   try {
@@ -29,12 +30,13 @@ async function getOrderById(req, res) {
 }
 
 async function addOrder(req, res) {
-  const {loggedinUser} = req
+  // const {loggedinUser} = req
 
   try {
     const order = req.body
-    order.owner = loggedinUser
     const addedOrder = await orderService.add(order)
+    await updateBayer(addedOrder)
+    await updateSeller(addedOrder)
     
     res.json(addedOrder)
   } catch (err) {
@@ -68,7 +70,7 @@ async function removeOrder(req, res) {
 }
 
 async function addOrderMsg(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
   try {
     const orderId = req.params.id
     const msg = {
@@ -85,10 +87,10 @@ async function addOrderMsg(req, res) {
 }
 
 async function removeOrderMsg(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
   try {
     const orderId = req.params.id
-    const {msgId} = req.params
+    const { msgId } = req.params
 
     const removedId = await orderService.removeOrderMsg(orderId, msgId)
     res.send(removedId)

@@ -10,16 +10,16 @@
 
         & :last-child {
             border: none;
-            border-bottom: 3px solid  $clr1;
+            border-bottom: 3px solid $clr1;
         }
 
         button {
             border: none;
             border-right: 1px solid $clr17;
             background-color: $clr1;
-            border-bottom: 3px solid  $clr1;
+            border-bottom: 3px solid $clr1;
             color: $clr4;
-            flex-grow: 1;
+            width: 33%;
             padding-block: 20px;
             font-size: 16px;
         }
@@ -29,8 +29,6 @@
             color: $clr9;
             border-bottom: 3px solid $clr9;
         }
-
-
     }
 
     article {
@@ -39,7 +37,7 @@
 
         h3 {
             font-size: 16px;
-            padding-block-end: 10px;
+            padding-block-end: 16px;
         }
 
         .price-container {
@@ -48,14 +46,14 @@
 
         .gig-title {
             text-align: left;
-            padding-block-end: 11px;
+            padding-block-end: 16px;
             line-height: 1.4;
             color: $clr5
         }
 
         .additional-info {
             font-size: 14px;
-            margin-block-end: 11px;
+            margin-block-end: 16px;
             font-family: Macan-Bold;
 
             p {

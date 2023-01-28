@@ -14,6 +14,7 @@ import { gigService } from "../services/gig.service"
 import { showErrorMsg } from "../services/event-bus.service"
 import { useSelector } from "react-redux"
 import { Breadcrumds } from "../cmps/breadcrumds"
+import { CenterMode } from "../cmps/details/center-mode"
 
 export function GigDetails({ elApp }) {
     const navigate = useNavigate()
@@ -25,11 +26,22 @@ export function GigDetails({ elApp }) {
         loadGig()
     }, [])
 
+    function _getAvgRate(gig) {
+        let avg
+        let sum = gig.reviews?.reduce(
+            (acc, review) => {
+                acc += review.rate
+                return acc
+            }, 0)
+        avg = sum / gig.reviews?.length
+        gig.rate = avg.toFixed(1)
+    }
+
     async function loadGig() {
         try {
             const gig = await gigService.get(gigId)
             setGig(gig)
-            //TODO:add msg
+            _getAvgRate(gig)
         } catch (err) {
             showErrorMsg()
             navigate('/gig')
@@ -43,24 +55,24 @@ export function GigDetails({ elApp }) {
             <div className="details-nav main-layout full">
                 <div className="flex space-between">
                     <ul className="flex">
-                        <Link activeClass="active" smooth spy to="overview" offset={-50} >
+                        <Link activeClass="active" smooth spy to="overview" offset={-70} >
                             <li>
                                 Overview
                             </li >
                         </Link>
-                        <Link activeClass="active" smooth spy to="gig-description" offset={-50} >
+                        <Link activeClass="active" smooth spy to="gig-description" offset={-70} >
                             <li>
                                 Description
                             </li >
                         </Link>
-                        <Link activeClass="active" smooth spy to="about-the-seller" offset={-50} >
+                        <Link activeClass="active" smooth spy to="about-the-seller" offset={-70} >
                             <li>
                                 About The Seller
 
                             </li >
                         </Link>
                         {gig.reviews.length &&
-                            <Link activeClass="active" smooth spy to="reviews" offset={-50}>
+                            <Link activeClass="active" smooth spy to="reviews" offset={-70}>
                                 <li>
 
                                     Reviews
@@ -92,7 +104,7 @@ export function GigDetails({ elApp }) {
                                 </div>
                             </div>
                             <div className="img-container">
-                                <img className="main-img" src={gig.imgUrl[0]} />
+                                <CenterMode imgUrls={gig.imgUrl} />
                             </div>
                             {gig.reviews.length && <div className="reviews-snippet">
                                 <header className="flex space-between">
@@ -108,6 +120,7 @@ export function GigDetails({ elApp }) {
                         </span>
                         <div id="gig-description" className="about">
                             <h2>About This Gig</h2>
+                            {/* <p>{gig.description}</p> */}
                             <p>{gig.description}</p>
                         </div>
                         <span id="about-the-seller"><OwnerProfile gig={gig} /></span>
