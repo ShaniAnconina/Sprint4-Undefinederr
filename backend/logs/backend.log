@@ -461,3 +461,23 @@
 28.1.2023, 17:26:09 - INFO - Socket disconnected [id: undefined] 
 28.1.2023, 17:26:11 - INFO - New connected socket [id: e65rG4ukNJWXmC2mAAAZ] 
 28.1.2023, 17:26:16 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:41:23 - DEBUG - auth.service - signup with username: ohad, fullname: ohad (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:41:24 - DEBUG - auth.route - new account created: {"username":"ohad","password":"$2b$10$QTG4coEnIu4IojrDrjAhC.G7RTdthbaGfiBDa2W5WJfpKC6ELrDBC","fullname":"ohad","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","_id":"63d542240454abd1cfe05030"} (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:41:24 - DEBUG - auth.service - login with username: ohad (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 17:41:24 - INFO - User signup: | {"_id":"63d542240454abd1cfe05030","username":"ohad","fullname":"ohad","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d248c3ffc84864e2195c61)
+28.1.2023, 19:12:04 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:12:06 - INFO - New connected socket [id: M96bfxPlCZPCJtoHAAAD] 
+28.1.2023, 21:26:51 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 21:26:52 - INFO - New connected socket [id: vWiaF5k2H144LeDOAAAF] 
+28.1.2023, 21:27:11 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 21:27:57 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:13:46 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:17:38 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:17:40 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:21:06 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:23:02 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:23:04 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:23:08 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:23:16 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:23:42 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)
+28.1.2023, 23:25:36 - DEBUG - Getting Gigs (userId: 63d542240454abd1cfe05030)

@@ -1,8 +1,10 @@
 .categories-list-wrap {
     padding-bottom: 95px;
+    position: relative;
 
     button.slick-arrow {
         background-color: $clr3;
+        opacity: 0;
         border-radius: 100%;
         width: 40px;
         height: 40px;
@@ -77,5 +79,42 @@
             // }
         }
 
+    }
+
+    .slider-btns {
+        background-color: $clr0;
+        position:absolute;
+        top: 32%;
+        border: none;
+        border-radius: 100%;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+
+        &::after{
+        content: "";
+    display: inline-block;
+    background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/arrows.a8b0bad.svg) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    background-size: 16px 64px;
+        }
+        
+        &.next-btn {
+            right:-27px;
+
+            &::after{
+                background-position: 0 -48px;
+            }
+        }
+        &.prev-btn {
+            left:-27px;
+            &::after{
+                background-position: 0 -32px;
+            }
+
+        }
     }
 }

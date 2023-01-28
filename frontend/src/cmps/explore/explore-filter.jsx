@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { useLocation,useParams } from 'react-router-dom'
 
 import { FilterModal } from './filter-modal'
 import { setfilter } from "../../store/gig/gig.action.js"
@@ -9,6 +10,7 @@ import { useSelector } from 'react-redux'
 
 export function ExploreFilter({ gigs, filterBy, elApp }) {
     const [modalType, setModalType] = useState(null)
+    const location = useLocation()
     const [sortModal, setSortModal] = useState(false)
     const [filtersClassname, setFiltersClassname] = useState('')
     const [filterByToEdit, setFilterByToEdit] = useState(useSelector((globalStore) => globalStore.gigModule.filterBy))
@@ -19,6 +21,7 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
 
     useEffect(() => {    
         setfilter(filterByToEdit)
+
         // OBSERVER
         const navObserver = new IntersectionObserver(onNavObserved, { rootMargin: "-100px 0px 0px" })
         navObserver.observe(elNav.current)
@@ -31,8 +34,6 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
     }, [filterByToEdit])
 
     function toggleFilterModal(ev, type) {
-        console.log('ev.target:', ev.target)
-        console.log('ev.currentTarget:', ev)
         setModalType(type)
         // elApp.current.addEventListener('click', onCloseModal)
         if (modalType === type) setModalType(null)

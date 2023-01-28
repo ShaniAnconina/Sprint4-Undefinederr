@@ -15,6 +15,9 @@ export function GigIndex({ elApp }) {
     const loggedinUser = useSelector((storeState) => storeState.userModule.loggedinUser)
 
     useEffect(() => {
+        let url = new URL(window.location.href)
+        console.log("URL: ", url)
+        // if (url.searchParams.has('txt')) 
         loadGigs(filterBy)
     }, [filterBy])
 
