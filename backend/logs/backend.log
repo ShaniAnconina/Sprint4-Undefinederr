@@ -137,6 +137,139 @@
 26.1.2023, 13:25:51 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
 26.1.2023, 13:26:47 - INFO - Server is running on port: 3030 
 26.1.2023, 13:27:35 - INFO - Server is running on port: 3030 
+26.1.2023, 13:34:32 - INFO - Server is running on port: 3030 
+26.1.2023, 13:34:43 - DEBUG - auth.service - login with username: admin 
+26.1.2023, 13:34:44 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} 
+26.1.2023, 13:42:34 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 13:42:34 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 15:14:08 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 15:17:11 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 15:17:16 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:26:17 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:26:21 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:47:02 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:56:11 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:57:05 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:57:50 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:58:49 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 19:59:06 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:01:40 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:01:54 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:02:51 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:26:34 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:30:40 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:39:18 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:41:26 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:41:37 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:41:44 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:41:53 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:48:12 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:48:18 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:48:23 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:50:12 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:50:14 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:52:19 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:52:24 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:56:41 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:57:11 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:57:43 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 20:59:34 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 21:12:31 - INFO - Server is running on port: 3030 
+26.1.2023, 22:12:01 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:12:32 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:12:35 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:12:38 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:12:42 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:12:45 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:12:51 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:14:23 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:14:30 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:14:36 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:19:39 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:19:42 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:19:46 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:19:51 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:19:54 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:21:10 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:21:15 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:24:15 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:24:35 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:24:47 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:24:53 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:25:37 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:25:44 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:25:57 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:27:22 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:27:25 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:27:33 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:28:09 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:28:13 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:28:18 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:28:24 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:28:43 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:30:34 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:30:38 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:35:33 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+<<<<<<< HEAD
+26.1.2023, 22:48:58 - DEBUG - Getting Gigs 
+26.1.2023, 23:06:54 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:07:00 - INFO - New connected socket [id: 2Djjr1r4-eaChhgJAAAJ] 
+26.1.2023, 23:07:00 - DEBUG - Getting Gigs 
+26.1.2023, 23:18:27 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:18:32 - INFO - New connected socket [id: -c5ro_UM2gi5LOqGAAAL] 
+26.1.2023, 23:18:32 - DEBUG - Getting Gigs 
+26.1.2023, 23:21:03 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:21:20 - INFO - New connected socket [id: llgVFQ_iHWGIIkvWAAAN] 
+26.1.2023, 23:21:20 - DEBUG - Getting Gigs 
+26.1.2023, 23:22:49 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:22:55 - INFO - New connected socket [id: uiep3VboPM9-FavFAAAP] 
+26.1.2023, 23:22:56 - DEBUG - Getting Gigs 
+26.1.2023, 23:28:41 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:28:46 - INFO - New connected socket [id: aN91WkAwM8NqUvKMAAAR] 
+26.1.2023, 23:30:40 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:30:46 - INFO - New connected socket [id: ZxOVUCgJwcHhfeNIAAAT] 
+26.1.2023, 23:30:47 - DEBUG - Getting Gigs 
+27.1.2023, 0:00:33 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 9:58:09 - INFO - New connected socket [id: o7MdXYXSjp9YhTeHAAAV] 
+=======
+26.1.2023, 22:53:44 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:55:15 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 22:55:17 - INFO - New connected socket [id: rxIkF538OSZbfOD_AAAD] 
+26.1.2023, 22:55:17 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 22:59:11 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 23:00:29 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 23:00:46 - INFO - Socket disconnected [id: undefined] 
+26.1.2023, 23:00:48 - INFO - New connected socket [id: 45PvNF2XpnVfnZPcAAAF] 
+26.1.2023, 23:00:48 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 23:00:56 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+26.1.2023, 23:01:05 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 2:28:24 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 11:08:59 - INFO - New connected socket [id: UgsA1v86gAbVza4-AAAH] 
+<<<<<<< HEAD
+>>>>>>> 0437cae17114632b0272392cf26cd8e906bebbc0
+27.1.2023, 11:16:10 - DEBUG - Getting Gigs 
+27.1.2023, 11:16:16 - DEBUG - Getting Gigs 
+27.1.2023, 11:16:26 - DEBUG - Getting Gigs 
+27.1.2023, 11:16:31 - DEBUG - Getting Gigs 
+27.1.2023, 11:19:38 - DEBUG - Getting Gigs 
+27.1.2023, 11:19:42 - DEBUG - Getting Gigs 
+27.1.2023, 12:01:59 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 12:03:14 - INFO - New connected socket [id: zLHFx3SPbc3P9exoAAAX] 
+=======
+27.1.2023, 11:19:06 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 11:19:07 - INFO - New connected socket [id: ClOxC6rFkGofU6RVAAAJ] 
+27.1.2023, 11:19:07 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 11:19:17 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 11:27:09 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 11:27:12 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 11:27:14 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 11:47:42 - INFO - New connected socket [id: G4eDvAvCPgx7WqLnAAAL] 
+27.1.2023, 12:14:13 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 12:14:13 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 12:14:15 - INFO - New connected socket [id: klB6oOTjs1NLp6zWAAAN] 
+27.1.2023, 12:14:15 - INFO - New connected socket [id: TyL6ksbd4QxI_HKlAAAP] 
+>>>>>>> 3eee32af14e0727ffaca79decc849f6b0db1afa8
+27.1.2023, 12:21:50 - INFO - Socket disconnected [id: undefined] 
 26.1.2023, 13:30:36 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
 26.1.2023, 15:05:29 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
 26.1.2023, 15:06:05 - DEBUG - auth.service - login with username: שגצןמ (userId: 63d248c3ffc84864e2195c61)

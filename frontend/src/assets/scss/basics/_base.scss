@@ -25,6 +25,11 @@ button {
     font-family: Macan-Regular;
 }
 
+input::placeholder {
+    font-family: Macan-Regular;
+
+}
+
 input:focus-visible,
 select:focus-visible {
     outline: none;

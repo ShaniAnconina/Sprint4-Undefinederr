@@ -1,6 +1,6 @@
 import './assets/scss/styles.scss'
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { store } from './store/store'
 import { Provider } from 'react-redux'
@@ -14,11 +14,21 @@ import { UserMsg } from './cmps/user-msg'
 import { GigPayment } from './pages/gig-payment'
 import { GigEdit } from './pages/gig-edit'
 import { SellerDashboard } from './pages/seller-dashboard'
+import { socketService } from './services/socket.service'
+import { showSuccessMsg } from './services/event-bus.service'
 
 
 export function App() {
   const elApp = useRef(null)
-  
+
+  useEffect(() => {
+    // socketService.on('ON_INCOMING_ORDER', () => {
+    socketService.on('msg-text', (data) => {
+      //USER MSG
+      showSuccessMsg(data)
+    })
+  }, [])
+
   return (
     <Provider store={store}>
 
@@ -32,8 +42,8 @@ export function App() {
               <Route element={<GigIndex elApp={elApp} />} path="/gig" />
               <Route element={<GigDetails elApp={elApp} />} path="/gig/:gigId" />
               <Route element={<GigEdit />} path="/gig/edit" />
-              <Route element={<GigPayment  />} path="/gig/payment/:gigId" />
- {/* reroute with userID: */}
+              <Route element={<GigPayment />} path="/gig/payment/:gigId" />
+              {/* reroute with userID: */}
               <Route element={<SellerDashboard />} path="/user" />
             </Routes>
           </main>

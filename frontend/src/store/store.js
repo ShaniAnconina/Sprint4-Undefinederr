@@ -3,13 +3,15 @@ import { gigReducer } from './gig/gig.reducer.js'
 import { userReducer } from './user/user.reducer.js'
 
 
-const middleware = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
+// const middleware = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
+// const middleware = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__() : () => { }
 
 const rootReducer = combineReducers({
     gigModule: gigReducer,
     userModule: userReducer,
 })
 
-export const store = createStore(rootReducer, middleware)
+export const store = createStore(rootReducer)
+// export const store = createStore(rootReducer, middleware)
 
 

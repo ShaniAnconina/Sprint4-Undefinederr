@@ -37,6 +37,7 @@ async function addOrder(req, res) {
     const addedOrder = await orderService.add(order)
     await updateBayer(addedOrder)
     await updateSeller(addedOrder)
+    
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)

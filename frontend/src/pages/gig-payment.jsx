@@ -9,6 +9,7 @@ import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
 import { BsCheckLg } from "react-icons/bs"
+import { socketService } from "../services/socket.service"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -47,6 +48,9 @@ export function GigPayment() {
             order.seller = seller
             order.gig = gigToSave
             await orderService.save(order)
+
+            socketService.on('SOCKET_EMIT_ORDER_STATUS', order)
+
             showSuccessMsg('Your order has been sent')
             navigate('/gig') //TODO: need to change the path to the user profile
         } catch (error) {

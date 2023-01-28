@@ -2,6 +2,10 @@
     background-color: $clr2;
     padding: 20px 0;
 
+    h1 {
+        margin: 0;
+    }
+
     .profile-switch {
         text-align: right;
         cursor: pointer;
@@ -25,7 +29,7 @@
         padding: 20px 0;
 
         .mini-profile {
-            width: 340px;
+            width: 370px;
             height: fit-content;
             border: 1px solid $clr11;
             background-color: $clr0;
@@ -59,35 +63,48 @@
                         width: 105px;
                     }
                 }
+
+
+            }
+            .finance {
+                font-family: Macan-Regular;
+                padding-bottom: 12px;
+
             }
 
         }
-
-
-
 
     }
 
     .orders-table {
         width: 70vw;
-        max-width: 936px;
+        // max-width: 936px;
+        max-width:1000px;
         height: fit-content;
         border: 1px solid $clr11;
         background-color: $clr0;
 
+        .row-buyer {
+            width: 220px; 
+     }
+
         th {
             padding: 15px;
             color: $clr4;
+            border-bottom: 1px $clr11 solid;
         }
 
         td {
             margin: auto;
             padding: 20px;
+            text-align: left;
+            line-height: 140%;
+            border-bottom: 1px $clr11 solid;
 
             img {
                 border-radius: 100%;
-                width: 75px;
-                height: 75px;
+                width: 60px;
+                height: 60px;
             }
 
 
@@ -103,23 +120,20 @@
         .status-modal-cell {
             position: relative;
             width: 133px;
+        }
+        .status-modal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+            background-color: $clr0;
+            box-shadow: 0 12px 18px rgb(0 0 0 / 14%);
+            border: 1px solid #dadbdd;
+            border-radius: 4px;
+            min-width: 100px;
+            min-height: 128px;
+            padding: 12px 24px;
 
-            .status-modal {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 70%;
-                right: 0;
-                z-index: 1;
-                background-color: $clr0;
-                box-shadow: 0 12px 18px rgb(0 0 0 / 14%);
-                border: 1px solid #dadbdd;
-                border-radius: 4px;
-                min-width: 100px;
-                min-height: 128px;
-                padding: 12px 24px;
-
-            }
         }
     }
 }
