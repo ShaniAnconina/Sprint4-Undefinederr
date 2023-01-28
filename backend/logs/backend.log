@@ -398,3 +398,39 @@
 28.1.2023, 2:40:09 - ERROR - while finding gig user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d3ea45fbb8ef3395785e45)
 28.1.2023, 2:40:09 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d3ea45fbb8ef3395785e45)
 28.1.2023, 2:40:10 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 12:32:19 - INFO - Server is running on port: 3030 
+28.1.2023, 12:36:55 - INFO - New connected socket [id: s-x1Uva4FAom0h-pAAAB] 
+28.1.2023, 12:41:40 - DEBUG - Getting Gigs 
+28.1.2023, 12:41:59 - DEBUG - auth.service - login with username: yossi 
+28.1.2023, 12:42:00 - ERROR - Failed to Login Invalid username or password 
+28.1.2023, 12:42:00 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 12:42:01 - INFO - New connected socket [id: aIlNpqixC9g1Jtx_AAAD] 
+28.1.2023, 13:02:07 - DEBUG - Getting Gigs 
+28.1.2023, 13:02:18 - DEBUG - Getting Gigs 
+28.1.2023, 13:02:20 - DEBUG - Getting Gigs 
+28.1.2023, 13:02:21 - DEBUG - Getting Gigs 
+28.1.2023, 16:43:30 - DEBUG - auth.service - login with username: minmax 
+28.1.2023, 16:43:30 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} 
+28.1.2023, 16:43:30 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: aIlNpqixC9g1Jtx_AAAD] 
+28.1.2023, 16:50:41 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 16:51:12 - INFO - New connected socket [id: 7KbOI01pt1x7kxmIAAAF] 
+28.1.2023, 16:52:37 - INFO - New connected socket [id: 4Ce2cn-Es--DaxahAAAH] 
+28.1.2023, 16:52:49 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 16:52:49 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 16:52:49 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 16:52:52 - INFO - New connected socket [id: DC8Lfun9GhFnhoDXAAAJ] 
+28.1.2023, 16:54:50 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 16:54:51 - INFO - New connected socket [id: UTthZMsaQHKIWZ5HAAAL] 
+28.1.2023, 17:25:09 - DEBUG - auth.service - login with username: shani (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 17:25:10 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 17:25:10 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: UTthZMsaQHKIWZ5HAAAL] 
+28.1.2023, 17:26:19 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:26:20 - INFO - New connected socket [id: sI2RaF1kQspWh-fpAAAN] 
+28.1.2023, 17:26:29 - DEBUG - auth.service - login with username: minmax (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 17:26:30 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 17:26:30 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: sI2RaF1kQspWh-fpAAAN] 
+28.1.2023, 17:27:02 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:27:04 - INFO - New connected socket [id: w_-GJZ52JyqoZtVcAAAP] 
+28.1.2023, 17:27:12 - DEBUG - auth.service - login with username: shani (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 17:27:12 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 17:27:12 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: w_-GJZ52JyqoZtVcAAAP] 
