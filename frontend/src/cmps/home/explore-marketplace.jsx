@@ -7,6 +7,7 @@ import photographySVG from '../../assets/img/home/explore-marketplace/photograph
 import programmingSVG from '../../assets/img/home/explore-marketplace/programming.svg'
 import videoAnimationSVG from '../../assets/img/home/explore-marketplace/video-animation.svg'
 import writinTranslationSVG from '../../assets/img/home/explore-marketplace/writing-translation.svg'
+import dataSVG from '../../assets/img/home/explore-marketplace/data.svg'
 
 
 export function ExploreMarketplace() {
@@ -17,35 +18,53 @@ export function ExploreMarketplace() {
         <div className="categories-list">
             <a href="" className='flex column'>
                 <img src={graphicDesignSVG} alt="Graphics & Design" />
-                Graphics & Design
+                <div className='seperate-line'></div>
+                Graphics
             </a>
             <a href="" className='flex column'>
                 <img src={businessSVG} alt="Business" />
+                <div className='seperate-line'></div>
                 Business
             </a>
             <a href="" className='flex column'>
                 <img src={lifestyleSVG} alt="lifestyle" />
+                <div className='seperate-line'></div>
                 Lifestyle
             </a>
             <a href="" className='flex column'>
                 <img src={musicAudioSVG} alt="Music & Audio" />
+                <div className='seperate-line'></div>
                 music & Audio
             </a>
             <a href="" className='flex column'>
                 <img src={digitalMarketingSVG} alt="Digital Marketing" />
+                <div className='seperate-line'></div>
                 Digital Marketing
             </a>
             <a href="" className='flex column'>
                 <img src={writinTranslationSVG} alt="Writing & Translation" />
+                <div className='seperate-line'></div>
                 Writing & Translation
             </a>
             <a href="" className='flex column'>
                 <img src={videoAnimationSVG} alt="Video & Animation" />
+                <div className='seperate-line'></div>
                 Video & Animation
             </a>
             <a href="" className='flex column'>
                 <img src={programmingSVG} alt="Programming & Tech" />
-                Programming & Tech
+                <div className='seperate-line'></div>
+                Programming
+            </a>
+            <a href="" className='flex column'>
+                <img src={photographySVG} alt="Tech" />
+                <div className='seperate-line'></div>
+                Tech
+            </a>
+            <a href="" className='flex column'>
+                <img src={dataSVG} alt="Design" />
+                <div className='seperate-line'></div>
+                Design
             </a>
         </div>
 
