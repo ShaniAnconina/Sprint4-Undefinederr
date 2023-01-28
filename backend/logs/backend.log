@@ -270,3 +270,149 @@
 27.1.2023, 12:14:15 - INFO - New connected socket [id: TyL6ksbd4QxI_HKlAAAP] 
 >>>>>>> 3eee32af14e0727ffaca79decc849f6b0db1afa8
 27.1.2023, 12:21:50 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 12:27:29 - INFO - New connected socket [id: CYsBuGWjAcBebYYSAAAZ] 
+27.1.2023, 12:27:30 - DEBUG - Getting Gigs 
+27.1.2023, 16:38:26 - INFO - Server is running on port: 3030 
+27.1.2023, 16:38:26 - INFO - New connected socket [id: _B3JIejfHkVpqu9KAAAB] 
+27.1.2023, 16:52:09 - INFO - Server is running on port: 3030 
+27.1.2023, 16:52:09 - INFO - New connected socket [id: QKLyUyJH_rLlYzeqAAAB] 
+27.1.2023, 16:52:13 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 16:52:15 - INFO - New connected socket [id: KxKjUXVbc4qiBktVAAAD] 
+27.1.2023, 16:52:15 - DEBUG - Getting Gigs 
+27.1.2023, 16:53:04 - INFO - Server is running on port: 3030 
+27.1.2023, 16:53:04 - INFO - New connected socket [id: hk-pocb6fhj24u15AAAB] 
+27.1.2023, 16:53:12 - INFO - Server is running on port: 3030 
+27.1.2023, 16:53:13 - INFO - New connected socket [id: -CKb-1ZO91H1OcdCAAAB] 
+27.1.2023, 16:58:17 - INFO - New connected socket [id: w8W6OLphN9mCZC_jAAAD] 
+27.1.2023, 16:58:18 - INFO - New connected socket [id: GFA8_ADHisRxaTnwAAAF] 
+27.1.2023, 17:00:03 - INFO - Server is running on port: 3030 
+27.1.2023, 17:00:03 - INFO - New connected socket [id: dvAaYUm6Ht0RWD5NAAAD] 
+27.1.2023, 17:00:03 - INFO - New connected socket [id: Qlm-Y-qWsv2E2EA-AAAE] 
+27.1.2023, 17:00:03 - INFO - New connected socket [id: 0ps6giV_2f2WHoxoAAAF] 
+27.1.2023, 17:00:10 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:00:10 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:00:10 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:00:13 - INFO - New connected socket [id: LnHoxTJTJ3rsUy6fAAAH] 
+27.1.2023, 17:00:13 - DEBUG - Getting Gigs 
+27.1.2023, 17:00:23 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:00:28 - INFO - New connected socket [id: dg116fPBO1XZg4t5AAAJ] 
+27.1.2023, 17:00:28 - DEBUG - Getting Gigs 
+27.1.2023, 17:00:59 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:01:02 - INFO - New connected socket [id: VJ2xP7ZWnHHBAeZjAAAL] 
+27.1.2023, 17:01:03 - DEBUG - Getting Gigs 
+27.1.2023, 17:02:34 - DEBUG - Getting Gigs 
+27.1.2023, 17:02:47 - DEBUG - auth.service - login with username: admin 
+27.1.2023, 17:02:47 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} 
+27.1.2023, 17:02:47 - INFO - Setting socket.userId = 63d248c3ffc84864e2195c61 for socket [id: VJ2xP7ZWnHHBAeZjAAAL] 
+27.1.2023, 17:09:01 - INFO - Server is running on port: 3030 
+27.1.2023, 17:09:01 - INFO - New connected socket [id: fw7rctZfjVbwLmulAAAB] 
+27.1.2023, 17:09:54 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:10:01 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:10:06 - INFO - New connected socket [id: OZMNdCEqwDzTxGQwAAAD] 
+27.1.2023, 17:10:06 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:10:20 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:10:20 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:10:20 - INFO - Setting socket.userId = 63d248c3ffc84864e2195c61 for socket [id: OZMNdCEqwDzTxGQwAAAD] 
+27.1.2023, 17:12:59 - INFO - New connected socket [id: duo46EyvoWRUBIdrAAAF] 
+27.1.2023, 17:13:11 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:13:11 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:13:11 - INFO - Setting socket.userId = 63d248c3ffc84864e2195c61 for socket [id: duo46EyvoWRUBIdrAAAF] 
+27.1.2023, 17:13:30 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:13:31 - INFO - New connected socket [id: m6dd5r-Y4HTK0HYHAAAH] 
+27.1.2023, 17:13:32 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:13:34 - INFO - New connected socket [id: 1gjhmrDXsDild2v2AAAJ] 
+27.1.2023, 17:13:35 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:13 - DEBUG - auth.service - signup with username: shani, fullname: shani (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:13 - DEBUG - auth.route - new account created: {"username":"shani","password":"$2b$10$O5aqoiwLgT8OrlFNBsP6.e31LFlNnplkvIXymswQQEpKx77mg35oy","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","_id":"63d3ea45fbb8ef3395785e45"} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:13 - DEBUG - auth.service - login with username: shani (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:13 - INFO - User signup: | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:14 - DEBUG - auth.service - login with username: admin (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:14:14 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:14:14 - INFO - Setting socket.userId = 63d248c3ffc84864e2195c61 for socket [id: 1gjhmrDXsDild2v2AAAJ] 
+27.1.2023, 17:14:26 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:14:27 - INFO - New connected socket [id: iTbv6bci_LpT2AHOAAAL] 
+27.1.2023, 17:14:28 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:14:30 - INFO - New connected socket [id: 8DgllUDCiDVMIRnCAAAN] 
+27.1.2023, 17:14:31 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:42 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:43 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:43 - DEBUG - auth.service - login with username: shani (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:43 - INFO - Setting socket.userId = 63d248c3ffc84864e2195c61 for socket [id: 8DgllUDCiDVMIRnCAAAN] 
+27.1.2023, 17:14:44 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:14:44 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: iTbv6bci_LpT2AHOAAAL] 
+27.1.2023, 17:15:02 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:15:04 - INFO - New connected socket [id: EmB8lPmMubksFZMRAAAP] 
+27.1.2023, 17:15:04 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:15:09 - DEBUG - auth.service - login with username: admin (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:15:10 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:15:10 - INFO - Setting socket.userId = 63d248c3ffc84864e2195c61 for socket [id: EmB8lPmMubksFZMRAAAP] 
+27.1.2023, 17:16:33 - INFO - Server is running on port: 3030 
+27.1.2023, 17:16:33 - INFO - New connected socket [id: rRbxSp16I0VS0iWuAAAC] 
+27.1.2023, 17:16:33 - INFO - New connected socket [id: mUiIbT9fpcvV6qPtAAAD] 
+27.1.2023, 17:16:37 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:16:39 - INFO - New connected socket [id: hqZee1TiWIL0qtkiAAAF] 
+27.1.2023, 17:16:39 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:17:00 - DEBUG - auth.service - login with username: admin (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:17:00 - INFO - User login:  | {"_id":"63d248c3ffc84864e2195c61","username":"admin","fullname":"admin","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","score":100} (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:26:29 - INFO - Server is running on port: 3030 
+27.1.2023, 17:26:29 - INFO - New connected socket [id: itkPKzAYdj7uEA9uAAAB] 
+27.1.2023, 17:26:34 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:26:38 - INFO - New connected socket [id: MYzUchXD2unCZz8EAAAD] 
+27.1.2023, 17:26:39 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:31:47 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:31:51 - INFO - New connected socket [id: gQ-zksplONGol3dUAAAF] 
+27.1.2023, 17:31:51 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:31:56 - INFO - New connected socket [id: AZGBFbAerXEVByLrAAAH] 
+27.1.2023, 17:32:21 - DEBUG - auth.service - login with username: shani 
+27.1.2023, 17:32:21 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} 
+27.1.2023, 17:33:41 - INFO - Server is running on port: 3030 
+27.1.2023, 17:33:41 - INFO - New connected socket [id: 7De4GFyOGzmcO2MsAAAB] 
+27.1.2023, 17:33:44 - INFO - New connected socket [id: 9xcQFvA80lcSQ_MEAAAD] 
+27.1.2023, 17:33:46 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:33:48 - INFO - New connected socket [id: 6rUNgM4gHVskJEfQAAAF] 
+27.1.2023, 17:33:48 - DEBUG - Getting Gigs (userId: 63d248c3ffc84864e2195c61)
+27.1.2023, 17:33:56 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:33:57 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:33:57 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: 9xcQFvA80lcSQ_MEAAAD] 
+27.1.2023, 17:33:57 - INFO - Broadcasting event: undefined 
+27.1.2023, 17:33:57 - INFO - Broadcast to all excluding user: undefined 
+27.1.2023, 17:35:11 - INFO - Server is running on port: 3030 
+27.1.2023, 17:35:11 - INFO - New connected socket [id: 9QMJ6ygmM7rRoZ04AAAB] 
+27.1.2023, 17:35:12 - INFO - New connected socket [id: q3CzeJzWtZpOKMzLAAAD] 
+27.1.2023, 17:35:14 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:35:17 - INFO - New connected socket [id: -AGJc80LXTzT-ssZAAAF] 
+27.1.2023, 17:35:29 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:35:30 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:35:30 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: -AGJc80LXTzT-ssZAAAF] 
+27.1.2023, 17:36:42 - INFO - Server is running on port: 3030 
+27.1.2023, 17:36:42 - INFO - New connected socket [id: 4JdS-EiwYVaDvt91AAAB] 
+27.1.2023, 17:36:43 - INFO - New connected socket [id: OGRrVQH8FWjSBuBZAAAD] 
+27.1.2023, 17:36:45 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:36:49 - INFO - New connected socket [id: kJzxqqtoj3lYeO7zAAAF] 
+27.1.2023, 17:36:55 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:36:56 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:36:56 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: kJzxqqtoj3lYeO7zAAAF] 
+27.1.2023, 17:38:04 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 17:38:07 - INFO - New connected socket [id: AHEMLE-Rc1brpcFjAAAH] 
+27.1.2023, 17:38:13 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:38:13 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d3ea45fbb8ef3395785e45)
+27.1.2023, 17:38:13 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: AHEMLE-Rc1brpcFjAAAH] 
+27.1.2023, 21:55:50 - INFO - Socket disconnected [id: undefined] 
+27.1.2023, 21:55:50 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 11:04:27 - INFO - New connected socket [id: TIoJJbveEiCDiRvnAAAJ] 
+28.1.2023, 11:04:51 - INFO - New connected socket [id: H53-ZePYnFGo2OvOAAAL] 
+28.1.2023, 12:18:45 - INFO - New connected socket [id: jZD2dJ9w2z6h_CmNAAAN] 
+28.1.2023, 12:18:46 - INFO - New connected socket [id: BWcPCKHNyDFNaGrnAAAP] 
+28.1.2023, 12:22:17 - INFO - Server is running on port: 3030 
+28.1.2023, 12:22:17 - INFO - New connected socket [id: E7d8fY5XWf3ZKTcnAAAC] 
+28.1.2023, 12:22:17 - INFO - New connected socket [id: ZUBauZqVtMTMv7QIAAAD] 
+28.1.2023, 12:22:18 - INFO - New connected socket [id: 2QeF5TUxbPnYkwogAAAG] 
+28.1.2023, 12:22:18 - INFO - New connected socket [id: ABdKtD5tRZofBPquAAAH] 
+28.1.2023, 12:23:03 - INFO - Server is running on port: 3030 
+28.1.2023, 12:23:08 - INFO - New connected socket [id: _1y_4IGF0SdbGIBBAAAB] 
+28.1.2023, 12:23:08 - INFO - New connected socket [id: 7Km6MGoqeMrcTa8dAAAD] 
+28.1.2023, 12:23:22 - INFO - New connected socket [id: unz-Lmm2fhLHcMIVAAAF] 
+28.1.2023, 12:24:39 - INFO - Server is running on port: 3030 
+28.1.2023, 12:24:39 - INFO - New connected socket [id: B-aaxvG60IDWTRlTAAAD] 
+28.1.2023, 12:24:39 - INFO - New connected socket [id: diBPD8fW3GcXrMZdAAAE] 
+28.1.2023, 12:24:39 - INFO - New connected socket [id: fPoQRSV1UAOIPrs4AAAF] 
