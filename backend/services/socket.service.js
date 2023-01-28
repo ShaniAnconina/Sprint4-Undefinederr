@@ -8,50 +8,36 @@ function setupSocketAPI(http) {
             origin: '*',
         }
     })
+
     gIo.on('connection', socket => {
         logger.info(`New connected socket [id: ${socket.id}]`)
+
         socket.on('disconnect', socket => {
             logger.info(`Socket disconnected [id: ${socket.id}]`)
         })
-        // socket.on('login', topic => {
-        //     if (socket.userId === topic) return
-        //     if (socket.myTopic) {
-        //         socket.leave(socket.myTopic)
-        //         logger.info(`Socket is leaving topic ${socket.myTopic} [id: ${socket.id}]`)
-        //     }
-        //     socket.join(topic)
-        //     socket.myTopic = topic
-        // })
-        // socket.on('chat-send-msg', userId => {
-        //     logger.info(`New chat msg from socket [id: ${socket.id}], emitting to topic ${socket.myTopic}`)
-        //     // emits to all sockets:
-        //     // gIo.emit('chat addMsg', msg)
-        //     // emits only to sockets in the same room
-        //     gIo.to(userId).emit('chat-add-msg', msg)
-        // })
-        // socket.on('user-watch', userId => {
-        //     logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
-        //     socket.join('watching:' + userId)
 
-        // })
-        socket.on('new-order', sellerId => {
-            console.log(':lllllllllllll')
-            // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
-            // socket.join('watching:' + userId)
-            emitToUser({ type: 'ON_INCOMING_ORDER', data: 'New order has been accepted', userId: sellerId })
-            // gIo.to(socket.sellerId).emit('ON_INCOMING_ORDER', 'New order has been accepted')
-            socket.emit('new-order', sellerId)
-        })
+
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
-            gIo.emit('msg-text', 'hollllleee')
+            gIo.emit('first-event', `This is my first test ${socket.userId}`) //
         })
+
         socket.on('unset-user-socket', () => {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
             delete socket.userId
         })
 
+        socket.on('new-order', sellerId => {
+            console.log('gIo:', gIo.sockets)
+            _getUserSocket(sellerId)
+            // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
+            // socket.join('watching:' + userId)
+            gIo.to(_getUserSocket(sellerId)).emit('ON_INCOMING_ORDER', 'You have a new order!')
+            // emitToUser({ type: 'ON_INCOMING_ORDER', data: 'New order has been accepted', userId: sellerId })
+            // gIo.to(socket.sellerId).emit('ON_INCOMING_ORDER', 'New order has been accepted')
+            // socket.emit('new-order', sellerId)
+        })
     })
 }
 
@@ -63,35 +49,12 @@ function emitTo({ type, data, label }) {
 async function emitToUser({ type, data, userId }) {
     userId = userId.toString()
     const socket = await _getUserSocket(userId)
-    console.log('socket:', socket)
+
     if (socket) {
         logger.info(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
         socket.emit(type, data)
     } else {
         logger.info(`No active socket for user: ${userId}`)
-        _printSockets()
-    }
-}
-
-// If possible, send to all sockets BUT not the current socket 
-// Optionally, broadcast to a room / to all
-async function broadcast({ type, data, room = null, userId }) {
-    userId = userId.toString()
-
-    logger.info(`Broadcasting event: ${type}`)
-    const excludedSocket = await _getUserSocket(userId)
-    if (room && excludedSocket) {
-        logger.info(`Broadcast to room ${room} excluding user: ${userId}`)
-        excludedSocket.broadcast.to(room).emit(type, data)
-    } else if (excludedSocket) {
-        logger.info(`Broadcast to all excluding user: ${userId}`)
-        excludedSocket.broadcast.emit(type, data)
-    } else if (room) {
-        logger.info(`Emit to room: ${room}`)
-        gIo.to(room).emit(type, data)
-    } else {
-        logger.info(`Emit to all`)
-        gIo.emit(type, data)
     }
 }
 
@@ -107,23 +70,7 @@ async function _getAllSockets() {
     return sockets
 }
 
-async function _printSockets() {
-    const sockets = await _getAllSockets()
-    console.log(`Sockets: (count: ${sockets.length}):`)
-    sockets.forEach(_printSocket)
-}
-function _printSocket(socket) {
-    console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`)
-}
-
 module.exports = {
-    // set up the sockets service and define the API
     setupSocketAPI,
-    // emit to everyone / everyone in a specific room (label)
-    emitTo,
-    // emit to a specific user (if currently active in system)
     emitToUser,
-    // Send to all sockets BUT not the current socket - if found
-    // (otherwise broadcast to a room / to all)
-    broadcast,
 }

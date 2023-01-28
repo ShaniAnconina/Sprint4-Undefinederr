@@ -627,3 +627,218 @@
 28.1.2023, 17:41:31 - INFO - Server is running on port: 3030 
 28.1.2023, 17:41:32 - INFO - New connected socket [id: VTevOA40HVWtxZ6UAAAB] 
 28.1.2023, 17:41:32 - INFO - New connected socket [id: 8AonDRXlG-mX-vRaAAAD] 
+28.1.2023, 17:41:53 - INFO - New connected socket [id: Jne5-0cujM8F0_TcAAAG] 
+28.1.2023, 17:41:53 - INFO - New connected socket [id: mmngUKe0ui5A-I9qAAAH] 
+28.1.2023, 17:42:02 - INFO - New connected socket [id: xEJ6LG5nnnfHhFVJAAAJ] 
+28.1.2023, 17:42:03 - INFO - New connected socket [id: _pitkbJDmcQfTIjdAAAL] 
+28.1.2023, 17:42:13 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 17:42:14 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 17:43:23 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:43:23 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 17:43:26 - INFO - New connected socket [id: hQ9ZADvAZBH15GFwAAAN] 
+28.1.2023, 17:43:34 - DEBUG - auth.service - login with username: shani (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 17:43:34 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 17:43:34 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: hQ9ZADvAZBH15GFwAAAN] 
+28.1.2023, 19:13:54 - INFO - Server is running on port: 3030 
+28.1.2023, 19:13:54 - INFO - New connected socket [id: p80x08d16ZgulPCfAAAC] 
+28.1.2023, 19:13:54 - INFO - New connected socket [id: aOAvs0Cw5SSQpZhuAAAD] 
+28.1.2023, 19:13:55 - INFO - New connected socket [id: JBG39JafSwhLZko_AAAG] 
+28.1.2023, 19:13:56 - INFO - New connected socket [id: 98j2t69luVdWH-GzAAAH] 
+28.1.2023, 19:13:56 - INFO - New connected socket [id: GwhWD8eBxjS-5wJqAAAJ] 
+28.1.2023, 19:16:47 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:16:47 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:16:48 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:16:52 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:16:52 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:16:53 - INFO - New connected socket [id: 8JpKM7tGHUK4yKR_AAAM] 
+28.1.2023, 19:16:55 - INFO - New connected socket [id: o0G1LDGc4b0ZyYcCAAAN] 
+28.1.2023, 19:16:59 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:17:00 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 19:17:01 - INFO - New connected socket [id: NsFO0LRFJVyFZTQKAAAP] 
+28.1.2023, 19:18:22 - INFO - Server is running on port: 3030 
+28.1.2023, 19:18:22 - INFO - New connected socket [id: zTNaG6brcyQv6B2bAAAB] 
+28.1.2023, 19:18:22 - INFO - New connected socket [id: iScZV72EGFYjO2fRAAAD] 
+28.1.2023, 19:18:26 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 19:18:29 - INFO - New connected socket [id: _iEHnIyRM9lPt1-YAAAF] 
+28.1.2023, 19:18:35 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 19:18:46 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 19:18:46 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 19:18:46 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: _iEHnIyRM9lPt1-YAAAF] 
+28.1.2023, 22:47:31 - INFO - Server is running on port: 3030 
+28.1.2023, 22:47:31 - INFO - New connected socket [id: ChKu1O6vOWniDDy6AAAB] 
+28.1.2023, 22:47:35 - INFO - New connected socket [id: B5eDZNjyCoSvo52nAAAD] 
+28.1.2023, 22:47:36 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 22:47:38 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 22:47:45 - INFO - New connected socket [id: 9k1vmtXWA3Wk5mtrAAAG] 
+28.1.2023, 22:47:45 - INFO - New connected socket [id: 7Zl_CcLgaSAwhXBXAAAH] 
+28.1.2023, 22:47:50 - DEBUG - Getting Gigs (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:48:11 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:48:11 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d57e7eec6631c6f516d025","63d57f74da346cff354d6648","63d457385f294e2ec571560c"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:48:11 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: 9k1vmtXWA3Wk5mtrAAAG] 
+28.1.2023, 22:48:23 - DEBUG - auth.service - login with username: minmax (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:48:23 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:48:23 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: 7Zl_CcLgaSAwhXBXAAAH] 
+28.1.2023, 22:51:24 - INFO - Server is running on port: 3030 
+28.1.2023, 22:51:24 - INFO - New connected socket [id: -dBHbYRIATWlkzBaAAAC] 
+28.1.2023, 22:51:24 - INFO - New connected socket [id: b2nqHY9X6IQbUDSEAAAD] 
+28.1.2023, 22:52:43 - INFO - Server is running on port: 3030 
+28.1.2023, 22:52:44 - INFO - New connected socket [id: DUOFr0lF6UGbHeQqAAAB] 
+28.1.2023, 22:52:46 - INFO - New connected socket [id: aXb1Jw_LHF-kP1fsAAAD] 
+28.1.2023, 22:53:24 - INFO - New connected socket [id: 6WcjoylDf0us4wkiAAAF] 
+28.1.2023, 22:53:25 - INFO - New connected socket [id: qaOtMhDaqrTkl5LhAAAH] 
+28.1.2023, 22:53:56 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 22:53:56 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 22:54:00 - INFO - New connected socket [id: sz0979Vjt49EKGa3AAAJ] 
+28.1.2023, 22:54:06 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:54:07 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d57e7eec6631c6f516d025","63d57f74da346cff354d6648","63d457385f294e2ec571560c","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:54:07 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: sz0979Vjt49EKGa3AAAJ] 
+28.1.2023, 22:54:49 - INFO - Server is running on port: 3030 
+28.1.2023, 22:54:49 - INFO - New connected socket [id: W-zGFAgiDo01RzsiAAAC] 
+28.1.2023, 22:54:49 - INFO - New connected socket [id: NJVq_qr73nxnyJxtAAAD] 
+28.1.2023, 22:54:49 - INFO - New connected socket [id: nn6rq3OF1HfvzLL1AAAF] 
+28.1.2023, 22:55:17 - INFO - Server is running on port: 3030 
+28.1.2023, 22:55:17 - INFO - New connected socket [id: EliivIzfkEUA1gZLAAAC] 
+28.1.2023, 22:55:17 - INFO - New connected socket [id: hBWrueYXbkA5SbpJAAAD] 
+28.1.2023, 22:55:18 - INFO - New connected socket [id: VELiyNJkZ5mZ7L_rAAAF] 
+28.1.2023, 22:55:27 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 22:55:29 - INFO - New connected socket [id: Eqmmp6EdZ1C8x8HEAAAH] 
+28.1.2023, 22:55:35 - INFO - New connected socket [id: Xt_srcwenIdAoWuAAAAK] 
+28.1.2023, 22:55:35 - INFO - New connected socket [id: jw_ah1b3SugBBPNQAAAL] 
+28.1.2023, 22:55:35 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 22:55:39 - INFO - New connected socket [id: RA0ZIfFfXgp8s1tdAAAN] 
+28.1.2023, 22:55:46 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:55:46 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d57e7eec6631c6f516d025","63d57f74da346cff354d6648","63d457385f294e2ec571560c","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 22:55:46 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: RA0ZIfFfXgp8s1tdAAAN] 
+28.1.2023, 22:56:17 - INFO - Server is running on port: 3030 
+28.1.2023, 22:56:17 - INFO - New connected socket [id: CbeDAFxg2JdNlqc8AAAE] 
+28.1.2023, 22:56:17 - INFO - New connected socket [id: LvkZsbyEyLGEbJZMAAAF] 
+28.1.2023, 22:56:17 - INFO - New connected socket [id: N416C1LNR2Mu70nuAAAG] 
+28.1.2023, 22:56:17 - INFO - New connected socket [id: hptiSJ5JbXPYds8zAAAH] 
+28.1.2023, 22:56:17 - INFO - New connected socket [id: qh05jHUnhoYSwOUjAAAJ] 
+28.1.2023, 22:56:26 - INFO - Server is running on port: 3030 
+28.1.2023, 22:56:26 - INFO - New connected socket [id: 1OmyOQOZG9ygiPdlAAAB] 
+28.1.2023, 22:56:26 - INFO - New connected socket [id: hF7TbyZjW3DubzaSAAAG] 
+28.1.2023, 22:56:26 - INFO - New connected socket [id: z4Zg05kSmd0fbDBYAAAH] 
+28.1.2023, 22:56:26 - INFO - New connected socket [id: YASNJ_cvQHek6lrPAAAI] 
+28.1.2023, 22:56:26 - INFO - New connected socket [id: I_ooOos5W8mZagdjAAAJ] 
+28.1.2023, 23:03:15 - INFO - Server is running on port: 3030 
+28.1.2023, 23:03:15 - INFO - New connected socket [id: BaFvM-banuyRif-AAAAB] 
+28.1.2023, 23:03:16 - INFO - New connected socket [id: XutJlRSl7bYG5ee2AAAE] 
+28.1.2023, 23:03:16 - INFO - New connected socket [id: xDiTNK9nhWpp8iS2AAAF] 
+28.1.2023, 23:03:19 - INFO - New connected socket [id: luIEXnYzX3KAcxe6AAAI] 
+28.1.2023, 23:03:19 - INFO - New connected socket [id: Xpz3DQClT-Nv65ApAAAJ] 
+28.1.2023, 23:03:23 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 23:03:23 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 23:03:23 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 23:03:23 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 23:03:26 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 23:03:30 - INFO - New connected socket [id: y9UG4bGsVqE5UCfmAAAL] 
+28.1.2023, 23:03:34 - INFO - New connected socket [id: r49uwBX43XVDCY6WAAAN] 
+28.1.2023, 23:03:39 - DEBUG - auth.service - login with username: minmax (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 23:03:39 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187","63d58c072fda4797ee599123"]} (userId: 63d453c95f294e2ec57155eb)
+28.1.2023, 23:03:39 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: y9UG4bGsVqE5UCfmAAAL] 
+28.1.2023, 23:03:47 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 23:03:47 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d57e7eec6631c6f516d025","63d57f74da346cff354d6648","63d457385f294e2ec571560c","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187","63d58c072fda4797ee599123"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 23:03:47 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: r49uwBX43XVDCY6WAAAN] 
+28.1.2023, 23:05:14 - INFO - Server is running on port: 3030 
+28.1.2023, 23:05:14 - INFO - New connected socket [id: al_aXBm8fuULGGsOAAAC] 
+28.1.2023, 23:05:14 - INFO - New connected socket [id: WKa8sVsDyquXxbmhAAAD] 
+28.1.2023, 23:07:55 - INFO - Server is running on port: 3030 
+28.1.2023, 23:07:55 - INFO - New connected socket [id: gqLYml3k0sA3r07UAAAB] 
+28.1.2023, 23:07:56 - INFO - New connected socket [id: eIlb95I9Pw3jCqc_AAAD] 
+28.1.2023, 23:08:57 - INFO - Server is running on port: 3030 
+28.1.2023, 23:08:57 - INFO - New connected socket [id: xdD0xYIqJ3Vi4rJkAAAC] 
+28.1.2023, 23:08:57 - INFO - New connected socket [id: 4ooesmLKebe-DSHmAAAD] 
+28.1.2023, 23:09:04 - INFO - Server is running on port: 3030 
+28.1.2023, 23:09:04 - INFO - New connected socket [id: vQ8SJO8z7IVBynObAAAB] 
+28.1.2023, 23:09:04 - INFO - New connected socket [id: l0amoa6jbgoSGbQnAAAD] 
+28.1.2023, 23:09:18 - INFO - Server is running on port: 3030 
+28.1.2023, 23:09:19 - INFO - New connected socket [id: 2PMlJgd2S9-NdSEHAAAC] 
+28.1.2023, 23:09:19 - INFO - New connected socket [id: bnTDt-aiLxVc5_4WAAAD] 
+28.1.2023, 23:11:09 - INFO - Server is running on port: 3030 
+28.1.2023, 23:11:10 - INFO - New connected socket [id: 0WH4Nn0ZE_Zvr4VRAAAB] 
+28.1.2023, 23:11:10 - INFO - New connected socket [id: j161TIDkDiyHlC8BAAAD] 
+28.1.2023, 23:16:26 - INFO - Server is running on port: 3030 
+28.1.2023, 23:16:27 - INFO - New connected socket [id: upyz0q_PCFr4G98rAAAB] 
+28.1.2023, 23:16:36 - INFO - New connected socket [id: cKfVOMeZT-GSWojnAAAD] 
+28.1.2023, 23:17:28 - INFO - Server is running on port: 3030 
+28.1.2023, 23:17:29 - INFO - New connected socket [id: mLwpyyh7O8w4Gv6mAAAB] 
+28.1.2023, 23:17:29 - INFO - New connected socket [id: 4jU3HQFr0AZahLsaAAAD] 
+28.1.2023, 23:19:03 - INFO - Socket disconnected [id: undefined] 
+28.1.2023, 23:19:06 - INFO - New connected socket [id: FxtMVI2Rh_Sa4ADpAAAF] 
+28.1.2023, 23:19:15 - DEBUG - auth.service - login with username: shani (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 23:19:16 - INFO - User login:  | {"_id":"63d3ea45fbb8ef3395785e45","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d4601db649dfba9f9386e0","63d46058c9a0c23211f3f8eb","63d460b26671a7d4d89c0248","63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5161c87b44d637538b3f8","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d57e7eec6631c6f516d025","63d57f74da346cff354d6648","63d457385f294e2ec571560c","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187","63d58c072fda4797ee599123","63d58e14d8152a5e16405464","63d58eaedb55c559dd0b0965","63d58ef3fab675fdd03315d6","63d58f025a5139a3859595a4","63d58f9f2b707e9eba1cdfe6","63d590c54da1f691c06cbd59","63d59107e3386f651152b807","63d59122e3386f651152b808"]} (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 23:19:16 - INFO - Setting socket.userId = 63d3ea45fbb8ef3395785e45 for socket [id: FxtMVI2Rh_Sa4ADpAAAF] 
+28.1.2023, 23:25:47 - INFO - Server is running on port: 3030 
+28.1.2023, 23:25:47 - INFO - New connected socket [id: f4VdCUSx3Cpr57E1AAAB] 
+28.1.2023, 23:25:47 - INFO - New connected socket [id: DXO-nw6VXXYgCQcMAAAD] 
+28.1.2023, 23:25:57 - INFO - Server is running on port: 3030 
+28.1.2023, 23:25:57 - INFO - New connected socket [id: 53wD-fa-Fefk1JZCAAAC] 
+28.1.2023, 23:25:57 - INFO - New connected socket [id: YzM2BU02tbibiOWmAAAD] 
+28.1.2023, 23:27:10 - INFO - Server is running on port: 3030 
+28.1.2023, 23:27:10 - INFO - New connected socket [id: -zxBK-oV5sRQsccTAAAB] 
+28.1.2023, 23:27:10 - INFO - New connected socket [id: vbYBEs0Oi-Xw8zYMAAAD] 
+28.1.2023, 23:30:03 - INFO - Server is running on port: 3030 
+28.1.2023, 23:30:03 - INFO - New connected socket [id: cqMn7hsV7XcSGzEIAAAB] 
+28.1.2023, 23:30:03 - INFO - New connected socket [id: HxQrThCV_Mc7VdKyAAAD] 
+28.1.2023, 23:30:15 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d3ea45fbb8ef3395785e45)
+28.1.2023, 23:40:25 - INFO - New connected socket [id: G627U1w_2KdIgW-NAAAF] 
+28.1.2023, 23:40:28 - INFO - New connected socket [id: Xzqq8GnRoALWDqdiAAAH] 
+28.1.2023, 23:42:20 - INFO - New connected socket [id: M9gbrdRx_Bw0coPYAAAJ] 
+28.1.2023, 23:42:21 - INFO - New connected socket [id: P0zWVSLDjMzyOjTVAAAL] 
+28.1.2023, 23:42:39 - INFO - New connected socket [id: E3fGuoMZvBv3PEB4AAAN] 
+28.1.2023, 23:42:40 - INFO - New connected socket [id: OC58OE2okoT5MxCjAAAP] 
+28.1.2023, 23:43:18 - INFO - Server is running on port: 3030 
+28.1.2023, 23:43:18 - INFO - New connected socket [id: tjq35ojHXVfUG1-bAAAE] 
+28.1.2023, 23:43:18 - INFO - New connected socket [id: eOM8UMIyuYMB1Jc-AAAF] 
+28.1.2023, 23:43:18 - INFO - New connected socket [id: 3p0eKtV7ZlpO4rq5AAAG] 
+28.1.2023, 23:43:18 - INFO - New connected socket [id: _6b2MZVRwuWS-1gFAAAH] 
+28.1.2023, 23:43:19 - INFO - New connected socket [id: SplKLDTg5UnZg4WpAAAJ] 
+28.1.2023, 23:43:19 - INFO - New connected socket [id: ZJZMTKEuarl7kmN-AAAN] 
+28.1.2023, 23:43:19 - INFO - New connected socket [id: vuZ7VD9akcNq_SW4AAAO] 
+28.1.2023, 23:43:19 - INFO - New connected socket [id: RdCFDNOaSxWnp0FDAAAP] 
+28.1.2023, 23:43:46 - INFO - Server is running on port: 3030 
+28.1.2023, 23:43:46 - INFO - New connected socket [id: QrSDscpBolxBQqO8AAAH] 
+28.1.2023, 23:43:47 - INFO - New connected socket [id: KI9eCW7oFopGesPOAAAI] 
+28.1.2023, 23:43:47 - INFO - New connected socket [id: 5h0VZruntqSko56aAAAJ] 
+28.1.2023, 23:43:47 - INFO - New connected socket [id: oyLMR0F8F0qyUKGgAAAK] 
+28.1.2023, 23:43:47 - INFO - New connected socket [id: eQ7qLre1yBrC1XpcAAAL] 
+28.1.2023, 23:43:47 - INFO - New connected socket [id: rHGnzphMdziNRbNXAAAM] 
+28.1.2023, 23:43:48 - INFO - New connected socket [id: BNB4Vgx3NAaadT0IAAAN] 
+28.1.2023, 23:43:48 - INFO - New connected socket [id: 69N486iZZEE5GsijAAAP] 
+28.1.2023, 23:45:20 - INFO - Server is running on port: 3030 
+28.1.2023, 23:45:20 - INFO - New connected socket [id: 6vMPQvjmpMtd5lyOAAAE] 
+28.1.2023, 23:45:20 - INFO - New connected socket [id: ctfC1-Y08Tt6_mowAAAF] 
+28.1.2023, 23:45:20 - INFO - New connected socket [id: ihK05DdTt7fSziZSAAAG] 
+28.1.2023, 23:45:20 - INFO - New connected socket [id: imOJpjUJ2cQAd72lAAAJ] 
+28.1.2023, 23:45:21 - INFO - New connected socket [id: ysh7SFHfWwXuvaz0AAAK] 
+28.1.2023, 23:45:21 - INFO - New connected socket [id: NeP97s8CsE-jtgOOAAAL] 
+28.1.2023, 23:45:21 - INFO - New connected socket [id: kRC2ci3wTyNVO9SuAAAO] 
+28.1.2023, 23:45:21 - INFO - New connected socket [id: m9pulprPfJ9J303tAAAP] 
+28.1.2023, 23:45:34 - INFO - Server is running on port: 3030 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: xyp_40G3LTWRrD5ZAAAI] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: K0QiOsZ-il5iz_15AAAJ] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: bSM7NtlL-7qpadyEAAAK] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: ocFdTtmQ4DR1gjdYAAAL] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: e-0fbCGIZ7KOGOYmAAAM] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: q7-JBQFoo14sgEJ2AAAN] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: JLokcOo6i0j3MSjNAAAO] 
+28.1.2023, 23:45:34 - INFO - New connected socket [id: WCrRYSj6wofgvdH1AAAP] 
+28.1.2023, 23:45:49 - INFO - Server is running on port: 3030 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: cJXEA7WB0F6FCa5VAAAI] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: NNw5BcpNLw76-grrAAAJ] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: HmBpps7-YGLslX_qAAAK] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: xL7nM3arQtNkpkdzAAAL] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: 1lp5edNsM68LK0djAAAM] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: shInaXd9VN9YJNaAAAAN] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: nTCpGJJUVKzkChmrAAAO] 
+28.1.2023, 23:45:49 - INFO - New connected socket [id: g0d4-6DBpoKVMpanAAAP] 
+28.1.2023, 23:46:08 - INFO - Server is running on port: 3030 
+28.1.2023, 23:46:08 - INFO - New connected socket [id: gXOna4zGbrUTHRZbAAAE] 
+28.1.2023, 23:46:08 - INFO - New connected socket [id: _fvAkSaPvKRPxH3VAAAF] 
+28.1.2023, 23:46:08 - INFO - New connected socket [id: Z8xS88xQqmmYzciXAAAJ] 
+28.1.2023, 23:46:08 - INFO - New connected socket [id: SOyYBiJze4WprAjtAAAK] 
+28.1.2023, 23:46:08 - INFO - New connected socket [id: 03hwZ9DXPxNdnUanAAAL] 
+28.1.2023, 23:46:09 - INFO - New connected socket [id: 8Fqgiqhw_ROpK5nkAAAM] 
+28.1.2023, 23:46:09 - INFO - New connected socket [id: zKpHtVP3iz6WQe7FAAAN] 
+28.1.2023, 23:46:10 - INFO - New connected socket [id: SSN0yMzUJq07bKgIAAAP] 
