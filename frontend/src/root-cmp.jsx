@@ -15,16 +15,19 @@ import { GigPayment } from './pages/gig-payment'
 import { GigEdit } from './pages/gig-edit'
 import { SellerDashboard } from './pages/seller-dashboard'
 import { socketService } from './services/socket.service'
+import { showSuccessMsg } from './services/event-bus.service'
 
 
 export function App() {
   const elApp = useRef(null)
 
-  // useEffect(() => {
-  //   socketService.on('ON_INCOMING_ORDER', () => {
-  //     //USER MSG
-  //   })
-  // }, [])
+  useEffect(() => {
+    // socketService.on('ON_INCOMING_ORDER', () => {
+    socketService.on('msg-text', (data) => {
+      //USER MSG
+      showSuccessMsg(data)
+    })
+  }, [])
 
   return (
     <Provider store={store}>

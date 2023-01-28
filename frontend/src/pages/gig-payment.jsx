@@ -47,7 +47,9 @@ export function GigPayment() {
             order.gig = gigToSave
             const newOrder = await orderService.save(order)
             console.log('order', order)
-            // socketService.emit('EVENT_ORDER_DONE', { orderId })
+
+            socketService.on('SOCKET_EMIT_ORDER_STATUS', order)
+
             showSuccessMsg('Your order has been sent')
             //TODO check if we need to add to the buyer some data??!?!@?#
             navigate('/gig') //TODO: need to change the path to the user profile
