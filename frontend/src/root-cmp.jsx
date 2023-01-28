@@ -22,10 +22,9 @@ export function App() {
   const elApp = useRef(null)
 
   useEffect(() => {
-    // socketService.on('ON_INCOMING_ORDER', () => {
-    socketService.on('msg-text', (data) => {
-      //USER MSG
-      showSuccessMsg(data)
+    socketService.on('ON_INCOMING_ORDER', (msg) => {
+      showSuccessMsg(msg)
+      console.log('msg:', msg)
     })
   }, [])
 

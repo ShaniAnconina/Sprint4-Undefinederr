@@ -32,13 +32,15 @@ function setupSocketAPI(http) {
         // socket.on('user-watch', userId => {
         //     logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
         //     socket.join('watching:' + userId)
-            
+
         // })
-        socket.on('SOCKET_EMIT_ORDER_STATUS', order => {
+        socket.on('new-order', sellerId => {
+            console.log(':lllllllllllll')
             // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
             // socket.join('watching:' + userId)
-            // gIo.to(socket.userId).emit('ON_INCOMING_ORDER', msg)
-            socketService.emit('SOCKET_EMIT_ORDER_STATUS', order)
+            emitToUser({ type: 'ON_INCOMING_ORDER', data: 'New order has been accepted', userId: sellerId })
+            // gIo.to(socket.sellerId).emit('ON_INCOMING_ORDER', 'New order has been accepted')
+            socket.emit('new-order', sellerId)
         })
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
@@ -61,13 +63,13 @@ function emitTo({ type, data, label }) {
 async function emitToUser({ type, data, userId }) {
     userId = userId.toString()
     const socket = await _getUserSocket(userId)
-
+    console.log('socket:', socket)
     if (socket) {
         logger.info(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
         socket.emit(type, data)
-    }else {
+    } else {
         logger.info(`No active socket for user: ${userId}`)
-        // _printSockets()
+        _printSockets()
     }
 }
 
@@ -75,7 +77,7 @@ async function emitToUser({ type, data, userId }) {
 // Optionally, broadcast to a room / to all
 async function broadcast({ type, data, room = null, userId }) {
     userId = userId.toString()
-    
+
     logger.info(`Broadcasting event: ${type}`)
     const excludedSocket = await _getUserSocket(userId)
     if (room && excludedSocket) {
@@ -118,9 +120,9 @@ module.exports = {
     // set up the sockets service and define the API
     setupSocketAPI,
     // emit to everyone / everyone in a specific room (label)
-    emitTo, 
+    emitTo,
     // emit to a specific user (if currently active in system)
-    emitToUser, 
+    emitToUser,
     // Send to all sockets BUT not the current socket - if found
     // (otherwise broadcast to a room / to all)
     broadcast,

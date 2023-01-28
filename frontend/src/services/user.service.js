@@ -1,6 +1,6 @@
 import { storageService } from "./async-storage.service"
 import { httpService } from "./http.service"
-import { socketService } from "./socket.service"
+import { socketService } from "./socket.service.js"
 
 export const userService = {
     login,

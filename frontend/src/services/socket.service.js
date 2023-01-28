@@ -9,6 +9,7 @@ import { userService } from './user.service'
 // export const SOCKET_EVENT_REVIEW_ADDED = 'review-added'
 // export const SOCKET_EVENT_REVIEW_ABOUT_YOU = 'review-about-you'
 export const SOCKET_EMIT_ORDER_STATUS = 'order-set-status'
+export const SOCKET_EMIT_NEW_ORDER = 'new-order'
 
 const SOCKET_EMIT_LOGIN = 'set-user-socket'
 const SOCKET_EMIT_LOGOUT = 'unset-user-socket'
