@@ -53,7 +53,7 @@ export function GigPayment() {
             // socketService.on('SOCKET_EMIT_ORDER_STATUS', order.seller._id)
 
             showSuccessMsg('Your order has been sent')
-            navigate('/gig') //TODO: need to change the path to the user profile
+            navigate(`/user/${loggedinUser._id}`) //TODO: need to change the path to the user profile
         } catch (error) {
             showErrorMsg()
         }
