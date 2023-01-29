@@ -1453,3 +1453,18 @@
 29.1.2023, 14:26:06 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
 29.1.2023, 14:26:06 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
 29.1.2023, 14:26:06 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: 1pueRIA-Foy8DaXHAAAT] 
+<<<<<<< HEAD
+29.1.2023, 14:48:38 - INFO - Server is running on port: 3030 
+29.1.2023, 14:48:39 - INFO - New connected socket [id: oJgK-4-jeo7x0VjNAAAB] 
+29.1.2023, 14:48:42 - INFO - New connected socket [id: ITJU-7JOSY29UsLJAAAD] 
+29.1.2023, 14:48:44 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 14:48:50 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155eb)
+29.1.2023, 14:48:51 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c","63d66786ab0d3b2d85032273"]} (userId: 63d453c95f294e2ec57155eb)
+29.1.2023, 14:48:51 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: oJgK-4-jeo7x0VjNAAAB] 
+=======
+29.1.2023, 15:20:11 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 15:20:13 - INFO - New connected socket [id: NLP-d-2v_LPhAVbSAAAV] 
+29.1.2023, 15:20:24 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 15:20:24 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c","63d66ba5d093b9666b47cd6d","63d66bbdd093b9666b47cd6e","63d66bc4d093b9666b47cd6f","63d66bd8d093b9666b47cd70","63d66bf4d093b9666b47cd71","63d66c49d093b9666b47cd72","63d66c62d093b9666b47cd73","63d66ce609cba3d249b79508","63d66d1e09cba3d249b79509","63d66d4909cba3d249b7950a","63d66d6809cba3d249b7950b"],"purchase":["63d5bf1dad2e6a5274abc81c","63d66786ab0d3b2d85032273"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 15:20:24 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: NLP-d-2v_LPhAVbSAAAV] 
+>>>>>>> 2cd2dcbd698dfe5e23562efc91494478426fe442

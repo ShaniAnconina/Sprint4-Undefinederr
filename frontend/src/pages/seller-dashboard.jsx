@@ -45,7 +45,7 @@ export function SellerDashboard() {
     if (!user) return <div>Loading...</div>
     return <div className="profile-page-container main-layout">
         <section className="profile-page">
-            <MiniProfile user={user} />
+            <MiniProfile user={user} userType={userType} />
             <div className="main-profile">
                 <div className="profile-header">
                     <div className='nav-container'>
