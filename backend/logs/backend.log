@@ -1382,6 +1382,7 @@
 29.1.2023, 11:37:31 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: Jd8pc0zWOgReviS7AAAH] 
 29.1.2023, 11:39:46 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
 29.1.2023, 11:57:39 - INFO - Socket disconnected [id: undefined] 
+<<<<<<< HEAD
 29.1.2023, 12:08:06 - INFO - Socket disconnected [id: undefined] 
 29.1.2023, 12:14:35 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
 29.1.2023, 12:20:34 - INFO - Socket disconnected [id: undefined] 
@@ -1420,3 +1421,8 @@
 29.1.2023, 14:03:13 - DEBUG - auth.service - login with username: minmax (userId: 63d453c95f294e2ec57155f1)
 29.1.2023, 14:03:14 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187","63d58c072fda4797ee599123","63d58e14d8152a5e16405464","63d58eaedb55c559dd0b0965","63d58ef3fab675fdd03315d6","63d58f025a5139a3859595a4","63d58f9f2b707e9eba1cdfe6","63d590c54da1f691c06cbd59","63d59107e3386f651152b807","63d59122e3386f651152b808","63d593e61646f002d9e609e7","63d63c85b1d67a2062b2c1ac","63d63c9fb1d67a2062b2c1ad","63d63ccab1d67a2062b2c1ae","63d63dbbba5e660d09459b55","63d63dcbba5e660d09459b56","63d63e068b6c2981dc7220c2","63d63e608b6c2981dc7220c3"]} (userId: 63d453c95f294e2ec57155f1)
 29.1.2023, 14:03:14 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: 4pn7CfuVH2VJoBJkAAAV] 
+=======
+29.1.2023, 4:11:19 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 4:13:59 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 11:30:30 - INFO - New connected socket [id: Rt2qh2oGqjAjLNX1AAAD] 
+>>>>>>> c4113b0acd64ae2d09fea7329596b43c4c56dc20
