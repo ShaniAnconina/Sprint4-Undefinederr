@@ -16,7 +16,6 @@ function setupSocketAPI(http) {
             logger.info(`Socket disconnected [id: ${socket.id}]`)
         })
 
-
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
@@ -30,7 +29,6 @@ function setupSocketAPI(http) {
 
         socket.on('new-order', sellerId => {
             console.log('gIo:', gIo.sockets)
-            _getUserSocket(sellerId)
             // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
             // socket.join('watching:' + userId)
             gIo.to(_getUserSocket(sellerId)).emit('ON_INCOMING_ORDER', 'You have a new order!')
