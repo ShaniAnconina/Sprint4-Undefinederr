@@ -44,21 +44,21 @@ export function SellerDashboard() {
 
     if (!user) return <div>Loading...</div>
     return <div className="profile-page-container main-layout">
-        <div className="profile-header flex">
-            {userType === 'seller' && <ul>
-                <li>Orders</li>
-                <li>Gigs</li>
-                <li>Dashboard</li>
-            </ul>}
-            {user.order?.length && <button onClick={toggleUserType}>{userType === 'buyer' ? 'Switch to Seller' : 'Switch to buyer'}</button>}
-        </div>
-        <section className="profile-page flex">
-            <MiniProfile loggedinUser= {user} userType={userType}  />
-
-            <article className="main-profile">
+        <section className="profile-page">
+            <ProfileSidebar user={user} />
+            <div className="main-profile">
+                <div className="profile-header">
+                    <div className='nav-container'>
+                        {userType === 'seller' && <ul>
+                            <li>Dashboard</li>
+                            <li>Orders</li>
+                            <li>Gigs</li>
+                        </ul>}
+                    </div>
+                    {user.order?.length && <button onClick={toggleUserType}>{userType === 'buyer' ? 'Switch to seller' : 'Switch to buyer'}</button>}
+                </div>
                 <DynamicTable setStatusModal={setStatusModal} statusModal={statusModal} type={userType} user={user} />
-            </article>
-
+            </div>
         </section>
     </div >
 }

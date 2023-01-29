@@ -31,9 +31,9 @@ export function DynamicTable({ setStatusModal, statusModal, type, user }) {
             <tbody>
                 {items?.map((item) => {
                     return <tr key={item._id}>
-                        <td className="client flex">
+                        <td className="client">
                             <img src={type === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
-                            <h4>{type === 'buyer' ? item.seller.fullname : item.buyer.fullname}</h4>
+                            <p>{type === 'buyer' ? item.seller.fullname : item.buyer.fullname}</p>
                         </td>
                         <td>{item.gig.title}</td>
                         <td>{item.gig.package}</td>
@@ -46,7 +46,7 @@ export function DynamicTable({ setStatusModal, statusModal, type, user }) {
                         {item.gig.package === 'premium' && <td>US${(item.gig.price * 1.5).toFixed(0)}</td>}
 
                         {type === 'buyer' && <td className={`status-item ${item.status}`}>{item.status}</td>}
-                        {type === 'seller' && <td onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{item.status}</td>}
+                        {type === 'seller' && <td> <button onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{item.status}</button></td>}
                     </tr>
                 })}
                 {statusModal && <StatusModal order={statusModal} setStatusModal={setStatusModal} />}

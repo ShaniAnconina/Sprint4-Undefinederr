@@ -1,143 +1,55 @@
-.seller-dashboard {
+.profile-page-container {
     background-color: $clr2;
-    padding: 20px 0;
+    height: 100vh;
+}
 
-    h1 {
-        margin: 0;
-    }
+.profile-page {
+    display: flex;
 
-    .profile-switch {
-        text-align: right;
-        cursor: pointer;
-    }
+    .main-profile {
+        padding-left: 40px;
+        width: 100%;
 
-    button {
-        color: $clr6;
-        font-size: 14px;
-        line-height: 22px;
-        background-color: $clr0;
-        border: none;
-        margin: 5px;
-        font-weight: 600;
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-block: 20px;
+            height: 50px;
 
-        &:hover {
-            color: $clr9;
-        }
-    }
+            .nav-container ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
 
-    .seller-dashboard-wrapper {
-        padding: 20px 0;
+                li {
+                    margin-right: 20px;
+                    color: $clr5;
+                    cursor: pointer;
+                    border-bottom: 3px solid transparent;
+                    padding-block: 10px;
 
-        .mini-profile {
-            width: 370px;
-            height: fit-content;
-            border: 1px solid $clr11;
-            background-color: $clr0;
-            padding: 1px 20px 5px;
+                    &:hover,
+                    .active {
+                        border-bottom: 3px solid $clr9;
 
-
-            .profile-username {
-                padding-top: 20px;
-
-
-                img {
-                    border-radius: 100%;
-  
-                    width: 60px;
-                    height: 60px;
-                }
-
-                h4 {
-                    margin: auto;
-                    padding: 10px 0;
-                }
-            }
-
-            .performance-stats {
-                margin: 26px 0px 0px;
-                padding: 18px 0px 4px;
-                border-bottom: 1px solid $clr11;
-                border-top: 1px solid $clr11;
-
-                .stat {
-                    font-family: Macan-Regular;
-                    padding-bottom: 12px;
-
-                    .MuiBox-root {
-                        width: 105px;
                     }
                 }
-
-
-            }
-            .finance {
-                font-family: Macan-Regular;
-                padding-bottom: 12px;
-
             }
 
-        }
-
-    }
-
-    .orders-table {
-        width: 70vw;
-        // max-width: 936px;
-        max-width:1000px;
-        height: fit-content;
-        border: 1px solid $clr11;
-        background-color: $clr0;
-
-        .row-buyer {
-            width: 220px; 
-     }
-
-        th {
-            padding: 15px;
-            color: $clr4;
-            border-bottom: 1px $clr11 solid;
-        }
-
-        td {
-            margin: auto;
-            padding: 20px;
-            text-align: left;
-            line-height: 140%;
-            border-bottom: 1px $clr11 solid;
-
-            img {
-                border-radius: 100%;
-                width: 60px;
-                height: 60px;
+            button {
+                height: 40px;
+                border-radius: 4px;
+                border: none;
+                font-weight: 600;
+                font-size: 16px;
+                color: $clr9;
+                background-color: transparent;
+                
+                &:hover {
+                    color: $clr10;
+                }
             }
-
-
-        }
-
-        select {
-            font-size: 16px;
-            line-height: 120%;
-            font-weight: 700;
-            border: none;
-        }
-
-        .status-modal-cell {
-            position: relative;
-            width: 133px;
-        }
-        .status-modal {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            z-index: 1;
-            background-color: $clr0;
-            box-shadow: 0 12px 18px rgb(0 0 0 / 14%);
-            border: 1px solid #dadbdd;
-            border-radius: 4px;
-            min-width: 100px;
-            min-height: 128px;
-            padding: 12px 24px;
-
         }
     }
 }
