@@ -1385,3 +1385,41 @@
 29.1.2023, 4:11:19 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
 29.1.2023, 4:13:59 - INFO - Socket disconnected [id: undefined] 
 29.1.2023, 11:30:30 - INFO - New connected socket [id: Rt2qh2oGqjAjLNX1AAAD] 
+29.1.2023, 12:14:32 - DEBUG - auth.service - login with username: ohad (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 12:14:33 - INFO - User login:  | {"_id":"63d542240454abd1cfe05030","username":"ohad","fullname":"ohad","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 12:14:33 - INFO - Setting socket.userId = 63d542240454abd1cfe05030 for socket [id: lNKAXeyWEDTmJwp3AAAB] 
+29.1.2023, 12:15:08 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 12:15:10 - INFO - New connected socket [id: FR-G_8idrxCEiSn_AAAD] 
+29.1.2023, 12:15:26 - DEBUG - auth.service - login with username: ohad (userId: 63d542240454abd1cfe05030)
+29.1.2023, 12:15:26 - INFO - User login:  | {"_id":"63d542240454abd1cfe05030","username":"ohad","fullname":"ohad","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} (userId: 63d542240454abd1cfe05030)
+29.1.2023, 12:15:26 - INFO - Setting socket.userId = 63d542240454abd1cfe05030 for socket [id: FR-G_8idrxCEiSn_AAAD] 
+29.1.2023, 12:20:42 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 12:20:44 - INFO - New connected socket [id: ubUccM1FUgSB0MdSAAAF] 
+29.1.2023, 12:20:56 - DEBUG - auth.service - login with username: tami (userId: 63d542240454abd1cfe05030)
+29.1.2023, 12:20:56 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d542240454abd1cfe05030)
+29.1.2023, 12:20:56 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: ubUccM1FUgSB0MdSAAAF] 
+29.1.2023, 12:38:04 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 12:38:06 - INFO - New connected socket [id: NdMeheamn-5mct85AAAH] 
+29.1.2023, 12:38:15 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:38:15 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:38:15 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: NdMeheamn-5mct85AAAH] 
+29.1.2023, 12:42:54 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 12:42:56 - INFO - New connected socket [id: tuMW6eaPHEbKnNiGAAAJ] 
+29.1.2023, 12:43:08 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:43:08 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:43:08 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: tuMW6eaPHEbKnNiGAAAJ] 
+29.1.2023, 12:44:22 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 12:44:24 - INFO - New connected socket [id: UcA6QrmhhqYNtMZZAAAL] 
+29.1.2023, 12:44:34 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:44:34 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:44:34 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: UcA6QrmhhqYNtMZZAAAL] 
+29.1.2023, 12:45:54 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 12:45:56 - INFO - New connected socket [id: -SLPupxlAjh7RvQNAAAN] 
+29.1.2023, 12:46:08 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:46:08 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 12:46:08 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: -SLPupxlAjh7RvQNAAAN] 
+29.1.2023, 13:44:35 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 13:44:38 - INFO - New connected socket [id: e51LP_GOxE-g7E_zAAAP] 
+29.1.2023, 13:49:27 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 13:49:27 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 13:49:27 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: e51LP_GOxE-g7E_zAAAP] 
