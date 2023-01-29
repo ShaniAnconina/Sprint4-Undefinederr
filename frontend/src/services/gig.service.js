@@ -29,8 +29,12 @@ function getFeatures() {
 }
 
 async function query(filterBy) {
+  const queryParams = 
+  `?txt=${filterBy.txt}&tags=${filterBy.tags}&budget_min=${filterBy.budget.min}&budget_max=${filterBy.budget.max}&daysToMake=${filterBy.daysToMake}&isSaved=${filterBy.isSaved}&sortBy=${filterBy.sortBy}`
+  console.log(`requiring : ${BASE_URL + queryParams}`)
+
   try {
-    let gigs = await httpService.get(BASE_URL)
+    let gigs = await httpService.get(BASE_URL + queryParams)
     // let gigs = await storageService.query(STORAGE_KEY)
 
     gigs = getAvgRate(gigs)

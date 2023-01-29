@@ -7,6 +7,7 @@ import { loadGigs, saveGig } from "../store/gig/gig.action"
 
 import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
+import { Loader } from '../cmps/home/loader.jsx';
 
 export function GigIndex({ elApp }) {
     const gigs = useSelector((storeState) => storeState.gigModule.gigs)
@@ -29,12 +30,14 @@ export function GigIndex({ elApp }) {
             showErrorMsg()
         }
     }
-
+// if (gigs.length === 0) return <Loader />
     return (
         <section className="gig-index main-layout">
             {!filterBy.tags.length && <h1>All</h1>}
             {filterBy.tags.length && <h1>{filterBy.tags[0].replace('and', '&')}</h1>}
             <ExploreFilter gigs={gigs} filterBy={filterBy} elApp={elApp} />
+            {gigs.length === 0 && <Loader />}
+            {/* {<Loader />} */}
             <GigList gigs={gigs} onAddToWishlist={onAddToWishlist} />
         </section>
     )

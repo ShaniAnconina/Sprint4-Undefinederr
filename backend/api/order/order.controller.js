@@ -2,6 +2,7 @@ const orderService = require('./order.service.js')
 
 const logger = require('../../services/logger.service')
 const { updateBayer, updateSeller } = require('../user/user.service.js')
+const { emitToUser } = require('../../services/socket.service.js')
 
 async function getOrders(req, res) {
   try {
@@ -37,7 +38,7 @@ async function addOrder(req, res) {
     const addedOrder = await orderService.add(order)
     await updateBayer(addedOrder)
     await updateSeller(addedOrder)
-    
+    emitToUser({ type:'ON_INCOMING_ORDER', data:'You have a new order!', userId:addedOrder.seller._id }) 
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)

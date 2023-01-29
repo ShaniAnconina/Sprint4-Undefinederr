@@ -96,7 +96,7 @@ async function getByUsername(username) {
         throw err
     }
 }
-// remove('63d248c3ffc84864e2195c61')
+
 async function remove(userId) {
     try {
         const collection = await dbService.getCollection('user')
@@ -109,7 +109,6 @@ async function remove(userId) {
 
 async function update(user) {
     try {
-        // peek only updatable properties
         const userToSave = {
             _id: ObjectId(user._id),
             fullname: user.fullname,
@@ -126,7 +125,6 @@ async function update(user) {
 
 async function add(user) {
     try {
-        // peek only updatable fields!
         const userToAdd = {
             username: user.username,
             password: user.password,

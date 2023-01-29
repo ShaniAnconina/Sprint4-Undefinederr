@@ -9,7 +9,7 @@ import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
 
 import { BsCheckLg } from "react-icons/bs"
-import { socketService } from "../services/socket.service"
+import { socketService, SOCKET_EMIT_NEW_ORDER } from "../services/socket.service"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -48,7 +48,8 @@ export function GigPayment() {
             order.gig = gigToSave
             await orderService.save(order)
 
-            socketService.on('SOCKET_EMIT_ORDER_STATUS', order)
+            socketService.emit(SOCKET_EMIT_NEW_ORDER, order.seller._id)
+            // socketService.on('SOCKET_EMIT_ORDER_STATUS', order.seller._id)
 
             showSuccessMsg('Your order has been sent')
             navigate(`/user/${loggedinUser._id}`) //TODO: need to change the path to the user profile
@@ -151,6 +152,10 @@ export function GigPayment() {
                                 {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
                                 <span>{feature.txt}</span>
                             </p>)}
+<<<<<<< HEAD
+=======
+                            <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
+>>>>>>> fbfd8bf650c7b502a67e5bfd9f9289ffab8ed016
                             {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
                             {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
                             {packageType === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>Unlimited Revisions</span></p>}
