@@ -152,10 +152,7 @@ export function GigPayment() {
                                 {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
                                 <span>{feature.txt}</span>
                             </p>)}
-<<<<<<< HEAD
-=======
                             <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
->>>>>>> fbfd8bf650c7b502a67e5bfd9f9289ffab8ed016
                             {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
                             {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
                             {packageType === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>Unlimited Revisions</span></p>}
