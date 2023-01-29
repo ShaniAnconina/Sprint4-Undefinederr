@@ -1,3 +1,4 @@
+//This filter file is used for modals in gig page
 import { useEffect, useState } from "react"
 import { useSelector } from 'react-redux'
 import { useNavigate } from "react-router-dom"
@@ -9,7 +10,7 @@ import { ServicesOptionsModal } from "./services-options-modal"
 import { setfilter } from "../../store/gig/gig.action.js"
 import { gigService } from "../../services/gig.service"
 
-export function FilterModal({ modalType }) {
+export function FilterModal({ modalType, toggleFilterModal }) {
 
     const navigate = useNavigate()
     const { filterBy } = useSelector((storeState) => storeState.gigModule)
@@ -40,10 +41,12 @@ export function FilterModal({ modalType }) {
         ev?.preventDefault()
         let field = ev.target.name
         setFilterByToEdit({ ...filterBy, [field]: value })
+        toggleFilterModal()
     }
 
     function onClearAll() {
         setFilterByToEdit(gigService.getDefaultFilter())
+        toggleFilterModal()
     }
 
     return (

@@ -18,16 +18,18 @@ module.exports = {
 async function updateBayer(addedOrder) {
     try {
         const collection = await dbService.getCollection('user')
-        await collection.updateOne({ _id: ObjectId(addedOrder.buyer._id) }, { $push: {purchase: addedOrder._id}  })
+        await collection.updateOne({ _id: ObjectId(addedOrder.buyer._id) }, { $push: { purchase: ObjectId(addedOrder._id) } })
+
     } catch (err) {
         logger.error(`cannot update user ${addedOrder.buyer._id}`, err)
         throw err
     }
 }
+
 async function updateSeller(addedOrder) {
     try {
         const collection = await dbService.getCollection('user')
-        await collection.updateOne({ _id: ObjectId(addedOrder.seller._id) }, { $push: {order: addedOrder._id}  })
+        await collection.updateOne({ _id: ObjectId(addedOrder.seller._id) }, { $push: { order: ObjectId(addedOrder._id) } })
     } catch (err) {
         logger.error(`cannot update user ${addedOrder.buyer._id}`, err)
         throw err
@@ -54,10 +56,30 @@ async function query(filterBy = {}) {
 async function getById(userId) {
     try {
         const collection = await dbService.getCollection('user')
-        const user = await collection.findOne({ _id: ObjectId(userId) })
-        delete user.password
-
-        return user
+        let user = await collection.aggregate([
+            {
+                $match: { _id: ObjectId(userId) }
+            },
+            {
+                $lookup:
+                {
+                    localField: 'purchase',
+                    from: 'order',
+                    foreignField: '_id',
+                    as: 'purchases'
+                }
+            },
+            {
+                $lookup:
+                {
+                    localField: 'order',
+                    from: 'order',
+                    foreignField: '_id',
+                    as: 'orders'
+                }
+            },
+        ]).toArray()
+        return user[0]
     } catch (err) {
         logger.error(`while finding user by id: ${userId}`, err)
         throw err

@@ -1,5 +1,6 @@
+//this file is used in home / text filter //SEARCH PARAMS ARE USEED HERE
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate} from "react-router-dom"
 
 import { CgSearch } from "react-icons/cg"
 
@@ -13,7 +14,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false
     useEffect(() => {
         if (filterByToEdit.tags.length === 0) return
         setfilter(filterByToEdit)
-        navigate('/gig')
+        // navigate('/gig')
     }, [filterByToEdit])
 
     function onChange({ target }) {
@@ -24,7 +25,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false
     function onFilterSubmit(ev) {
         ev?.preventDefault()
         setfilter(filterByToEdit)
-        navigate('/gig')
+        navigate({pathname:'/gig',search: `?txt=${filterByToEdit.txt}`})
     }
 
     return <form className='filter-form' onSubmit={onFilterSubmit}>

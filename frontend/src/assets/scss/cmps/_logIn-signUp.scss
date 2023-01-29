@@ -1,4 +1,5 @@
 .logIn-signUp-screen {
+    z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +11,7 @@
 
 
     .logIn-signUp-container {
+        z-index: 4;
         min-width: 400px;
         background-color: $clr0;
         padding: 24px 36px;
