@@ -1,3 +1,4 @@
+//filter used for modal and sort in gig page
 import { useEffect, useRef, useState } from 'react'
 import { useLocation,useParams } from 'react-router-dom'
 
@@ -60,7 +61,7 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
                         {filterBy.tags.length === 0 && <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
                         <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
                         <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
-                        {modalType && <FilterModal modalType={modalType} />}
+                        {modalType && <FilterModal modalType={modalType} toggleFilterModal={toggleFilterModal} />}
                     </div>
                     {/* <div className="right-filters">
                     <SwitchBtn />

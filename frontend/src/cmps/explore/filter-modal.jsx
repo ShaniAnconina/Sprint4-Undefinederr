@@ -10,7 +10,7 @@ import { ServicesOptionsModal } from "./services-options-modal"
 import { setfilter } from "../../store/gig/gig.action.js"
 import { gigService } from "../../services/gig.service"
 
-export function FilterModal({ modalType }) {
+export function FilterModal({ modalType, toggleFilterModal }) {
 
     const navigate = useNavigate()
     const { filterBy } = useSelector((storeState) => storeState.gigModule)
@@ -41,10 +41,12 @@ export function FilterModal({ modalType }) {
         ev?.preventDefault()
         let field = ev.target.name
         setFilterByToEdit({ ...filterBy, [field]: value })
+        toggleFilterModal()
     }
 
     function onClearAll() {
         setFilterByToEdit(gigService.getDefaultFilter())
+        toggleFilterModal()
     }
 
     return (

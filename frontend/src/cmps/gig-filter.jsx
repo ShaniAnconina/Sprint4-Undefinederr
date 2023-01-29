@@ -1,6 +1,6 @@
-//this file is used in home / text filter
+//this file is used in home / text filter //SEARCH PARAMS ARE USEED HERE
 import { useEffect, useState } from "react"
-import { useNavigate,useParams,useSearchParams } from "react-router-dom"
+import { useNavigate} from "react-router-dom"
 
 import { CgSearch } from "react-icons/cg"
 
@@ -9,7 +9,6 @@ import { gigService } from "../services/gig.service.js"
 
 export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false }) {
     const navigate = useNavigate()
-    const [searchParams, setSearchParams] = useState(null)
     const [filterByToEdit, setFilterByToEdit] = useState(gigService.getDefaultFilter())
 
     useEffect(() => {
@@ -26,8 +25,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false
     function onFilterSubmit(ev) {
         ev?.preventDefault()
         setfilter(filterByToEdit)
-        setSearchParams({txt: filterByToEdit.txt,tags:filterByToEdit.tags,budget_min:filterByToEdit.budget.min,budget_max:filterByToEdit.budget.max,daysToMake:filterByToEdit.daysToMake,isSaved:filterByToEdit.isSaved,sortBy:filterByToEdit.sortBy})
-        navigate({pathname:'/gig',search:  `?txt=${filterByToEdit.txt}&tags=${filterByToEdit.tags}&budget_min=${filterByToEdit.budget.min}&budget_max=${filterByToEdit.budget.max}&daysToMake=${filterByToEdit.daysToMake}&isSaved=${filterByToEdit.isSaved}&sortBy=${filterByToEdit.sortBy}`})
+        navigate({pathname:'/gig',search: `?txt=${filterByToEdit.txt}`})
     }
 
     return <form className='filter-form' onSubmit={onFilterSubmit}>
