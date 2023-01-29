@@ -1,8 +1,8 @@
 .mini-profile {
-    width: 370px;
+    width: 390px;
     height: fit-content;
     margin-top: 35px;
-    border: 1px solid $clr11;
+    border: 1px solid $clr3;
     background-color: $clr0;
     padding: 1px 20px 5px;
 
@@ -15,16 +15,25 @@
             border-radius: 100%;
             // align-self: center;
             padding-bottom: 10px;
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
         }
 
         h4 {
             margin: auto;
         }
-        h6 {
-            margin: 20px 0;
+        h5 {
+            margin: 13px 0;
+            line-height: 140%;
+            color: orange;
+            font-size:16px;
         }
+    }
+    .member-since {
+        margin: 13px 0;
+        list-style: 140%;
+        color: $clr3;
+        font-size: 16px;
     }
 
     .performance-stats {
