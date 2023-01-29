@@ -1345,3 +1345,14 @@
 29.1.2023, 9:24:40 - INFO - User login:  | {"_id":"63d5ae2d8204a2cc30a3268f","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d5ba1afcccf292b83edce5","63d5ae3b8204a2cc30a32690","63d5b6af8204a2cc30a32691","63d5b8ecf0f37c656e4e54d9","63d5b92366b16904cb5b4c55","63d5b94915bb8af8c25e011c","63d5b99ac2cfc56879f65e32","63d5b9b5c2cfc56879f65e33"]} (userId: 63d453c95f294e2ec57155eb)
 29.1.2023, 9:24:40 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: XToUs9T2HfaM46IAAAAN] 
 29.1.2023, 9:26:49 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 11:20:44 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 11:21:14 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 11:54:00 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 12:01:59 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 12:02:14 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+29.1.2023, 12:19:25 - INFO - Server is running on port: 3030 
+29.1.2023, 12:19:27 - INFO - New connected socket [id: G2I8Z829LHe96sthAAAC] 
+29.1.2023, 12:19:27 - INFO - New connected socket [id: 1rgK_T5aOL3UK1r9AAAD] 
+29.1.2023, 14:20:49 - INFO - Server is running on port: 3030 
+29.1.2023, 14:20:52 - INFO - New connected socket [id: zCxJzA7lay1chG0uAAAB] 
+29.1.2023, 14:20:53 - INFO - New connected socket [id: Xd4IAB3tfH6pMnZPAAAD] 
