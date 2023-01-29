@@ -27,9 +27,9 @@ export function App() {
       console.log('msg:', msg)
     })
 
-    socketService.on('ON_INCOMING_ORDER', (msg) => {
-      showSuccessMsg(msg)
-      console.log('msg:', msg)
+    socketService.on('ON_INCOMING_ORDER', () => {
+      showSuccessMsg('You have a new order!')
+      console.log('msg:')
     })
   }, [])
 

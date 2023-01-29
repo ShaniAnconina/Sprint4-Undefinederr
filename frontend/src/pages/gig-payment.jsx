@@ -48,7 +48,7 @@ export function GigPayment() {
             order.gig = gigToSave
             await orderService.save(order)
 
-            socketService.emit(SOCKET_EMIT_NEW_ORDER, order.seller._id)
+            // socketService.emit(SOCKET_EMIT_NEW_ORDER, order.seller._id) 
             // socketService.on('SOCKET_EMIT_ORDER_STATUS', order.seller._id)
 
             showSuccessMsg('Your order has been sent')
