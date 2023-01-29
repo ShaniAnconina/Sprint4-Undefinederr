@@ -40,10 +40,9 @@ export function GigPayment() {
     async function onConfirm() {
         try {
             if (!loggedinUser) return openJoinModal()
-            const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username }
-            const seller = { fullname: gig.owner.fullname, _id: gig.owner._id }
-            // console.log(gig.owner)
-            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package: packageType }
+            const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username, imgUrl: loggedinUser.imgUrl }
+            const seller = { fullname: gig.owner.fullname, _id: gig.owner._id, imgUrl: gig.owner.imgUrl }
+            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package: packageType, daysToMake: gig.daysToMake }
             order.buyer = buyer
             order.seller = seller
             order.gig = gigToSave
