@@ -100,7 +100,7 @@ export function MiniProfile({ user, userType }) {
                 <p>{utilService.getRandomIntInclusive(5, 20)} jobs</p>
             </div>
 
-            <div className="finance stat flex space-between">
+            <div className="total-earnings finance stat flex space-between">
                 Total Earnings
                 <p>US${utilService.getRandomIntInclusive(500, 3000)}</p>
             </div>
