@@ -26,8 +26,13 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
     async function onSubmit(ev) {
         ev.preventDefault()
         try {
-            const func = isLogin ? login : signup
-            await func(credentials)
+            // const func = isLogin ? login : signup
+            // await func(credentials)
+            if (isLogin){
+                login(credentials)
+            } else{
+                signup(credentials)
+            }
             //TODO:msg
         } catch (err) {
             showErrorMsg()
