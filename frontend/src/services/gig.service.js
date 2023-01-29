@@ -24,7 +24,6 @@ function getFeatures() {
     { id: 102, txt: 'Review & edit' },
     { id: 103, txt: 'Off-page strategy' },
     { id: 104, txt: 'Episode summary' },
-    { id: 105, txt: 'Episode summary' }
   ]
 }
 
