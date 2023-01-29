@@ -9,7 +9,7 @@ export function ReviewPreview({ review }) {
             <span>
                 <p className="fullname bold">{review.fullname}</p>
                 <p className="country">{review.country}</p>
-                {//TODO: add the flag eor the review} 
+                {//TODO: add the flag for the review} 
                 }
             </span>
 
@@ -19,7 +19,6 @@ export function ReviewPreview({ review }) {
                 <p className="separator">|</p>
                 <span className="time">{review.reviewedAt}</span>
             </span>
-
             <p className="txt">{review.review}</p>
         </div>
 

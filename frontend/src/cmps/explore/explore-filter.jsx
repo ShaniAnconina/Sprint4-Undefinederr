@@ -35,6 +35,7 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
     }, [filterByToEdit])
 
     function toggleFilterModal(ev, type) {
+
         setModalType(type)
         elApp.current.addEventListener('click', onCloseFilterModal)
         if (modalType === type) setModalType(null)
@@ -48,12 +49,12 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
 
     function onCloseFilterModal() {
         setModalType(null)
-        elApp.current.removeEventListener('click')
+        elApp.current.removeEventListener('click',onCloseFilterModal)
     }
 
     function onCloseSortModal() {
         setSortModal(false)
-        elApp.current.removeEventListener('click')
+        elApp.current.removeEventListener('click',onCloseSortModal)
     }
 
     function onSelectSort(value) {
@@ -64,8 +65,8 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
 
     return (
         <>
-            <div ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}>
-                {/* <div onClick={(ev) => ev.preventDefault()} ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}> */}
+            {/* <div ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}> */}
+                <div onClick={(ev) => { console.log('sadas');ev.stopPropagation()}} ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}>
                 <div className="filters-container main-layout">
                     <div className="filters">
                         {filterBy.tags.length === 0 && <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
