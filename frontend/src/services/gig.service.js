@@ -28,7 +28,9 @@ function getFeatures() {
 }
 
 async function query(filterBy) {
-console.log("querying with filters: ", filterBy)
+console.log("querying with filters: ", filterBy) //for filter testing
+// await new Promise(r => setTimeout(r, 5000)); //sleep 5 seconds for loader testing
+
   try {
     let gigs = await httpService.get(BASE_URL)
     // let gigs = await storageService.query(STORAGE_KEY)

@@ -1,8 +1,13 @@
+import { useOutletContext } from "react-router-dom";
 import { StatusModal } from "./status-modal"
 
-export function DynamicTable({ setStatusModal, statusModal, type, user }) {
+
+export function DynamicTable() {
+    const [setStatusModal, statusModal, userType, user] = useOutletContext()
+
+
     let items
-    switch (type) {
+    switch (userType) {
         case 'buyer':
             items = user.purchases
             break
@@ -19,8 +24,8 @@ export function DynamicTable({ setStatusModal, statusModal, type, user }) {
         <table>
             <thead>
                 <tr>
-                    {type === 'buyer' && <th>Seller</th>}
-                    {type === 'seller' && <th>Buyer</th>}
+                    {userType === 'buyer' && <th>Seller</th>}
+                    {userType === 'seller' && <th>Buyer</th>}
                     <th>Gig</th>
                     <th>Package</th>
                     <th>Days to make</th>
@@ -32,8 +37,8 @@ export function DynamicTable({ setStatusModal, statusModal, type, user }) {
                 {items?.map((item) => {
                     return <tr key={item._id}>
                         <td className="client">
-                            <img src={type === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
-                            <p>{type === 'buyer' ? item.seller.fullname : item.buyer.fullname}</p>
+                            <img src={userType === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
+                            <p>{userType === 'buyer' ? item.seller.fullname : item.buyer.fullname}</p>
                         </td>
                         <td className="gig-title">{item.gig.title}</td>
                         <td>{item.gig.package}</td>
@@ -45,8 +50,8 @@ export function DynamicTable({ setStatusModal, statusModal, type, user }) {
                         {item.gig.package === 'standard' && <td>US${(item.gig.price * 1.1).toFixed(0)}</td>}
                         {item.gig.package === 'premium' && <td>US${(item.gig.price * 1.5).toFixed(0)}</td>}
 
-                        {type === 'buyer' && <td className={`status-item ${item.status}`}>{item.status}</td>}
-                        {type === 'seller' && <td> <button onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{item.status}</button></td>}
+                        {userType === 'buyer' && <td className={`status-item ${item.status}`}>{item.status}</td>}
+                        {userType === 'seller' && <td> <button onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{item.status}</button></td>}
                     </tr>
                 })}
                 {statusModal && <StatusModal order={statusModal} setStatusModal={setStatusModal} />}

@@ -19,7 +19,7 @@ export function FilterModal({ setModalType, modalType, toggleFilterModal }) {
 
     useEffect(() => {
         setfilter(filterByToEdit)
-        navigate('/gig')
+        // navigate('/gig')
     }, [filterByToEdit])
 
     switch (modalType) {
@@ -39,6 +39,7 @@ export function FilterModal({ setModalType, modalType, toggleFilterModal }) {
 
     function onSubmit(ev, value) {
         ev?.preventDefault()
+        console.log(`submitted ${ev.target.name} with ${value}`)
         let field = ev.target.name
         setFilterByToEdit({ ...filterBy, [field]: value })
         toggleFilterModal()

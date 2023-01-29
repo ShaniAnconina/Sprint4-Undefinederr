@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { useNavigate, useParams } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
 import { MiniProfile } from '../cmps/user-profile/mini-profile.jsx'
@@ -33,11 +33,13 @@ export function UserProfile() {
             navigate('/')
         }
     }
-    function toggleUserType() {
+    function toggleUserType(ev) {
+        // console.log(ev.target.getBoundingClientRect())
         setUserType(prev => {
             if (prev === 'buyer') return 'seller'
             else return 'buyer'
         })
+        
         setStatusModal(null)
     }
 
@@ -48,15 +50,18 @@ export function UserProfile() {
             <div className="main-profile">
                 <div className="profile-header">
                     <div className='nav-container'>
+
                         {userType === 'seller' && <ul>
-                            <li>Dashboard</li>
-                            <li>Orders</li>
-                            <li>Gigs</li>
+                           <NavLink to={'/user/:userId'}><li>Orders</li></NavLink>
+                           <NavLink to={'/user/:userId/dashboard'}><li>Dashboard</li></NavLink>
+                           <NavLink to={'/user/:userId/gigs'}><li>Gigs</li></NavLink>
                         </ul>}
                     </div>
-                    {user.order?.length && <button onClick={toggleUserType}>{userType === 'buyer' ? 'Switch to seller' : 'Switch to buyer'}</button>}
+                    {user.order?.length && <button onClick={(ev)=>toggleUserType(ev)}>{userType === 'buyer' ? 'Switch to seller' : 'Switch to buyer'}</button>}
                 </div>
-                <DynamicTable setStatusModal={setStatusModal} statusModal={statusModal} type={userType} user={user} />
+
+                <Outlet context={[setStatusModal, statusModal, userType, user]} />
+
             </div>
         </section>
     </div >
