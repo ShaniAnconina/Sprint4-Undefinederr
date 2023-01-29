@@ -28,10 +28,7 @@ function getFeatures() {
 }
 
 async function query(filterBy) {
-  // const queryParams = 
-  // `?txt=${filterBy.txt}&tags=${filterBy.tags}&budget_min=${filterBy.budget.min}&budget_max=${filterBy.budget.max}&daysToMake=${filterBy.daysToMake}&isSaved=${filterBy.isSaved}&sortBy=${filterBy.sortBy}`
-  // console.log(`requiring : ${BASE_URL + queryParams}`)
-
+console.log("querying with filters: ", filterBy)
   try {
     let gigs = await httpService.get(BASE_URL)
     // let gigs = await storageService.query(STORAGE_KEY)
@@ -43,7 +40,7 @@ async function query(filterBy) {
     //filter by free text
     if (filterBy?.txt) {
       const regex = new RegExp(filterBy.txt, "ig")
-      gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description))
+      gigs = gigs.filter((gig) => regex.test(gig.title) || regex.test(gig.description) || gig.tags.some((tag) => regex.test(tag)))
     }
 
     //filter by tags
