@@ -8,7 +8,7 @@ import { loadGigs, saveGig } from "../store/gig/gig.action"
 
 import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
-import { Loader } from '../cmps/home/loader.jsx';
+// import { Loader } from '../cmps/home/loader.jsx';
 
 export function GigIndex({ elApp }) {
     const gigs = useSelector((storeState) => storeState.gigModule.gigs)

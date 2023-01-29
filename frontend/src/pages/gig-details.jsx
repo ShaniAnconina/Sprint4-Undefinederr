@@ -120,7 +120,6 @@ export function GigDetails({ elApp }) {
                         </span>
                         <div id="gig-description" className="about">
                             <h2>About This Gig</h2>
-                            {/* <p>{gig.description}</p> */}
                             <p>{gig.description}</p>
                         </div>
                         <span id="about-the-seller"><OwnerProfile gig={gig} /></span>
