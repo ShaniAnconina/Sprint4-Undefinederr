@@ -40,10 +40,9 @@ export function GigPayment() {
     async function onConfirm() {
         try {
             if (!loggedinUser) return openJoinModal()
-            const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username }
-            const seller = { fullname: gig.owner.fullname, _id: gig.owner._id }
-            console.log(gig.owner)
-            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package:packageType }
+            const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username, imgUrl: loggedinUser.imgUrl }
+            const seller = { fullname: gig.owner.fullname, _id: gig.owner._id, imgUrl: gig.owner.imgUrl }
+            const gigToSave = { _id: gigId, title: gig.title, price: gig.price, package: packageType, daysToMake: gig.daysToMake }
             order.buyer = buyer
             order.seller = seller
             order.gig = gigToSave
@@ -146,13 +145,12 @@ export function GigPayment() {
                         </div>
                         <div className="services">
 
-                        {features.map(feature => <p key={feature.id} className="feature flex align-center">
-                    {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
-                    {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
-                    {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
-                    <span>{feature.txt}</span>
-                </p>)}
-                            <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
+                            {features.map(feature => <p key={feature.id} className="feature flex align-center">
+                                {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
+                                {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
+                                {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
+                                <span>{feature.txt}</span>
+                            </p>)}
                             {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
                             {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
                             {packageType === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>Unlimited Revisions</span></p>}
