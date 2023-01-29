@@ -1,13 +1,22 @@
-// import {DoubbleBoubble} from '../../assets/loader/react-spinner-animated'
-// import {DoubleBubble} from 'react-spinner-animated'
+import { loader } from '../../assets/loader/loader.gif' 
 
 
 export function Loader() {
-    return (
-        <span></span>
-        // <div className="loader">
-        //     <img src="../../assets/img/home/loader.svg" alt="" />
-        // </div>
-        // <DoubleBubble />
+function inTime(){
+    return <div class="loadingio-spinner-spin-z5r3fl0qh6"><div class="ldio-tmioj0xomke">
+<div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
+</div></div>
+}
+function outTime(){
+    return <div className='flex column'><div class="loadingio-spinner-spin-z5r3fl0qh6"><div class="ldio-tmioj0xomke">
+<div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div>
+</div>
+<p>Something went wrong :\</p>
+</div>
+</div>
+}
+
+    return( 
+inTime()
     )
 }
