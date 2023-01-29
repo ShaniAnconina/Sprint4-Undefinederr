@@ -1,17 +1,14 @@
-//filter used for modal and sort in gig page
 import { useEffect, useRef, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 import { FilterModal } from './filter-modal'
 import { setfilter } from "../../store/gig/gig.action.js"
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
-import { useSelector } from 'react-redux'
 
-export function ExploreFilter({ gigs, filterBy, elApp }) {
+export function ExploreFilter({ gigs, filterBy }) {
     const [modalType, setModalType] = useState(null)
-    const location = useLocation()
     const [sortModal, setSortModal] = useState(false)
     const [filtersClassname, setFiltersClassname] = useState('')
     const [filterByToEdit, setFilterByToEdit] = useState(useSelector((globalStore) => globalStore.gigModule.filterBy))
@@ -34,27 +31,14 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
         }
     }, [filterByToEdit])
 
-    function toggleFilterModal(ev, type) {
-
+    function toggleFilterModal(type) {
         setModalType(type)
-        elApp.current.addEventListener('click', onCloseFilterModal)
         if (modalType === type) setModalType(null)
     }
 
     function toggleSortModal() {
-        elApp.current.addEventListener('click', onCloseSortModal)
         if (!sortModal) setSortModal(true)
         else setSortModal(false)
-    }
-
-    function onCloseFilterModal() {
-        setModalType(null)
-        elApp.current.removeEventListener('click',onCloseFilterModal)
-    }
-
-    function onCloseSortModal() {
-        setSortModal(false)
-        elApp.current.removeEventListener('click',onCloseSortModal)
     }
 
     function onSelectSort(value) {
@@ -65,19 +49,14 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
 
     return (
         <>
-            {/* <div ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}> */}
-                <div onClick={(ev) => { console.log('sadas');ev.stopPropagation()}} ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}>
+            <div ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}>
                 <div className="filters-container main-layout">
                     <div className="filters">
-                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
-                        <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                        <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
-                        {modalType && <FilterModal modalType={modalType} toggleFilterModal={toggleFilterModal} />}
+                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={() => toggleFilterModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
+                        <button className='filter-btn' onClick={() => toggleFilterModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                        <button className='filter-btn' onClick={() => toggleFilterModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                        {modalType && <FilterModal modalType={modalType} toggleFilterModal={toggleFilterModal} setModalType={setModalType} />}
                     </div>
-                    {/* <div className="right-filters">
-                    <SwitchBtn />
-                    <p>Pro services</p>
-                </div> */}
                 </div>
             </div>
 
@@ -85,11 +64,13 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
                 <div className='count'>{gigs.length} services available</div>
                 <div className='sort-by'>
                     <p>Sort By <button onClick={toggleSortModal}><p>{sortOptions[sortvalue]}</p><MdKeyboardArrowDown /></button></p>
-                    {sortModal && <div className='sort-modal'>
-                        {sortvalue !== 'topRated' && <button onClick={() => onSelectSort("topRated")}>Top Rated</button>}
-                        {sortvalue !== 'price' && <button onClick={() => onSelectSort("price")}>Best Price</button>}
-                        {sortvalue !== 'daysToMake' && <button onClick={() => onSelectSort("daysToMake")}>Delivery Time</button>}
-                    </div>}
+                    {sortModal && <> <div onClick={() => setSortModal(false)} className="screen-modal"></div>
+                        <div className='sort-modal'>
+                            {sortvalue !== 'topRated' && <button onClick={() => onSelectSort("topRated")}>Top Rated</button>}
+                            {sortvalue !== 'price' && <button onClick={() => onSelectSort("price")}>Best Price</button>}
+                            {sortvalue !== 'daysToMake' && <button onClick={() => onSelectSort("daysToMake")}>Delivery Time</button>}
+                        </div>
+                    </>}
                 </div>
             </div>
         </>

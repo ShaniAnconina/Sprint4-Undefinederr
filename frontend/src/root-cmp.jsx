@@ -13,7 +13,7 @@ import { GigDetails } from './pages/gig-details'
 import { UserMsg } from './cmps/user-msg'
 import { GigPayment } from './pages/gig-payment'
 import { GigEdit } from './pages/gig-edit'
-import { SellerDashboard } from './pages/seller-dashboard'
+import { UserProfile } from './pages/user-profile'
 import { socketService } from './services/socket.service'
 import { showSuccessMsg } from './services/event-bus.service'
 
@@ -24,12 +24,10 @@ export function App() {
   useEffect(() => {
     socketService.on('first-event', (msg)=> {
       showSuccessMsg(msg)
-      console.log('msg:', msg)
     })
 
     socketService.on('ON_INCOMING_ORDER', () => {
       showSuccessMsg('You have a new order!')
-      console.log('msg:')
     })
   }, [])
 
@@ -43,16 +41,15 @@ export function App() {
           <main className="full">
             <Routes>
               <Route element={<HomePage />} path="/" />
-              <Route element={<GigIndex elApp={elApp} />} path="/gig" />
+              <Route element={<GigIndex />} path="/gig" />
               <Route element={<GigDetails elApp={elApp} />} path="/gig/:gigId" />
               <Route element={<GigEdit />} path="/gig/edit" />
               <Route element={<GigPayment />} path="/gig/payment/:gigId" />
-              {/* reroute with userID: */}
-              <Route element={<SellerDashboard />} path="/user/:userId" />
+              <Route element={<UserProfile />} path="/user/:userId" />
             </Routes>
           </main>
 
-          {/* <AppFooter /> */}
+          <AppFooter />
           <UserMsg />
         </section>
       </Router>

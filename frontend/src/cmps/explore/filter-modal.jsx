@@ -10,7 +10,7 @@ import { ServicesOptionsModal } from "./services-options-modal"
 import { setfilter } from "../../store/gig/gig.action.js"
 import { gigService } from "../../services/gig.service"
 
-export function FilterModal({ modalType, toggleFilterModal }) {
+export function FilterModal({ setModalType, modalType, toggleFilterModal }) {
 
     const navigate = useNavigate()
     const { filterBy } = useSelector((storeState) => storeState.gigModule)
@@ -49,7 +49,8 @@ export function FilterModal({ modalType, toggleFilterModal }) {
         toggleFilterModal()
     }
 
-    return (
+    return (<>
+        <div onClick={() => setModalType(null)} className="screen-modal"></div>
         <section className="filter-modal">
             {/* <section onClick={(ev) => ev.stopPropagation()} className="filter-modal"> */}
             {type}
@@ -58,5 +59,6 @@ export function FilterModal({ modalType, toggleFilterModal }) {
                 <button className="apply" form="filters" type="submit">Apply</button>
             </div>
         </section>
+    </>
     )
 }

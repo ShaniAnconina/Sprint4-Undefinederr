@@ -108,7 +108,7 @@ export function GigPayment() {
                             <input type="text"
                                 id="first-name"
                                 className="first-name"
-                                value="Puki"
+                                value="Israel"
                                 onChange={handelChange}
                             />
                         </div>
@@ -117,7 +117,7 @@ export function GigPayment() {
                             <input type="text"
                                 id="last-name"
                                 className="last-name"
-                                value="Pukauv"
+                                value="Israeli"
                                 onChange={handelChange}
                             />
                         </div>
@@ -152,7 +152,6 @@ export function GigPayment() {
                                 {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
                                 <span>{feature.txt}</span>
                             </p>)}
-                            <p className="flex align-center"><BsCheckLg color="#1dbf73" /><span>Lorem ipsum</span></p>
                             {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
                             {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
                             {packageType === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>Unlimited Revisions</span></p>}
