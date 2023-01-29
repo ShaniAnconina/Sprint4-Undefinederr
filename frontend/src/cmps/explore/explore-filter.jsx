@@ -1,6 +1,6 @@
 //filter used for modal and sort in gig page
 import { useEffect, useRef, useState } from 'react'
-import { useLocation,useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 
 import { FilterModal } from './filter-modal'
 import { setfilter } from "../../store/gig/gig.action.js"
@@ -20,7 +20,7 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
 
     const sortOptions = { 'topRated': 'Top Rated', 'price': 'Best Price', 'daysToMake': 'Delivery Time' } //used for the system / UI syntax tranlation
 
-    useEffect(() => {    
+    useEffect(() => {
         setfilter(filterByToEdit)
 
         // OBSERVER
@@ -36,19 +36,29 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
 
     function toggleFilterModal(ev, type) {
         setModalType(type)
-        // elApp.current.addEventListener('click', onCloseModal)
+        elApp.current.addEventListener('click', onCloseFilterModal)
         if (modalType === type) setModalType(null)
     }
 
     function toggleSortModal() {
-        // elApp.current.addEventListener('click', onCloseModal)
+        elApp.current.addEventListener('click', onCloseSortModal)
         if (!sortModal) setSortModal(true)
         else setSortModal(false)
     }
 
+    function onCloseFilterModal() {
+        setModalType(null)
+        elApp.current.removeEventListener('click')
+    }
+
+    function onCloseSortModal() {
+        setSortModal(false)
+        elApp.current.removeEventListener('click')
+    }
+
     function onSelectSort(value) {
         setSortValue(value)
-        setFilterByToEdit((prevFilter) => { return {...prevFilter, sortBy:value} })
+        setFilterByToEdit((prevFilter) => { return { ...prevFilter, sortBy: value } })
         toggleSortModal()
     }
 
@@ -75,9 +85,9 @@ export function ExploreFilter({ gigs, filterBy, elApp }) {
                 <div className='sort-by'>
                     <p>Sort By <button onClick={toggleSortModal}><p>{sortOptions[sortvalue]}</p><MdKeyboardArrowDown /></button></p>
                     {sortModal && <div className='sort-modal'>
-                        {sortvalue !== 'topRated' && <button onClick={()=> onSelectSort("topRated")}>Top Rated</button>}
-                        {sortvalue !== 'price' && <button onClick={()=> onSelectSort("price")}>Best Price</button>}
-                        {sortvalue !== 'daysToMake' && <button onClick={()=> onSelectSort("daysToMake")}>Delivery Time</button>}
+                        {sortvalue !== 'topRated' && <button onClick={() => onSelectSort("topRated")}>Top Rated</button>}
+                        {sortvalue !== 'price' && <button onClick={() => onSelectSort("price")}>Best Price</button>}
+                        {sortvalue !== 'daysToMake' && <button onClick={() => onSelectSort("daysToMake")}>Delivery Time</button>}
                     </div>}
                 </div>
             </div>
