@@ -12,8 +12,6 @@ export function SellerDashboard() {
     const [statusModal, setStatusModal] = useState(null)
 
     const loggedInUser = useSelector((globalStore) => globalStore.userModule.loggedinUser)
-    // const [onSellerProfile, setOnSellerProfile] = useState(false)
-    // const [statusFilterValue, setStatusFilterValue] = useState("All")
     const [userType, setUserType] = useState("buyer")
     const [user, setUser] = useState(null)
     const { userId } = useParams()
@@ -35,16 +33,6 @@ export function SellerDashboard() {
             navigate('/')
         }
     }
-
-    // function toggleSellerProfile() {
-    //     setOnSellerProfile((prev) => !prev)
-    // }
-
-    // function toggleStatusFilter() {
-    //     if (statusFilterValue === "All") setStatusFilterValue("Active")
-    //     else setStatusFilterValue("All")
-    // }
-
     function toggleUserType() {
         setUserType(prev => {
             if (prev === 'buyer') return 'seller'
@@ -65,32 +53,11 @@ export function SellerDashboard() {
         </div>
         <section className="profile-page flex">
             <ProfileSidebar user={user} />
-            
+
             <article className="main-profile">
                 <DynamicTable setStatusModal={setStatusModal} statusModal={statusModal} type={userType} user={user} />
             </article>
 
         </section>
     </div >
-
-    // return <section className="seller-dashboard main-layout full">
-
-
-    //     <SellerHeader/>
-    //     <a className="profile-switch" onClick={toggleSellerProfile}>Switch to {onSellerProfile ? "Buyer" : "Seller"} profile</a>
-    //     <div className='seller-dashboard-wrapper flex space-between'>
-    //         <div>
-    //             <MiniProfile loggedinUser={loggedInUser} onSellerProfile={onSellerProfile} />
-    //            //* <InboxPreview/>//
-    //         </div>
-    //         <div>
-    //             <div className='flex space-between'><h1>{onSellerProfile ? "Manage Orders" : "Manage Purchases"}</h1>
-    //                 <button className='filter-btn' onClick={toggleStatusFilter}><p>{statusFilterValue}</p></button>
-    //             </div>
-    //             <OrderList orders={onSellerProfile ? loggedInUser?.miniOrders : loggedInUser?.miniPurchases} />
-    //         </div>
-    //     </div>
-
-
-    // </section>
 }
