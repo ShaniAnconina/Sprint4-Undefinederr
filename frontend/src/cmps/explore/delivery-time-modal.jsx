@@ -1,11 +1,11 @@
-import { useRef } from "react";
+import { useRef } from "react"
 
 export function DeliveryTimeModal({onSubmit}) {
 
 const currSelect = useRef()
 
     function onChangeValue(event) {
-        console.log('stop');
+        console.log('stop')
         event.stopPropagation()
         currSelect.current = event.target.value
       }
