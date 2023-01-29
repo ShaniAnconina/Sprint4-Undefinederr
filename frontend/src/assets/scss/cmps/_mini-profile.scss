@@ -1,0 +1,52 @@
+.mini-profile {
+    width: 370px;
+    height: fit-content;
+    border: 1px solid $clr11;
+    background-color: $clr0;
+    padding: 1px 20px 5px;
+
+    .profile-username {
+        padding-top: 20px;
+        font-family: Macan-Regular;
+        font-size: 26px;
+
+        img {
+            border-radius: 100%;
+            // align-self: center;
+            padding-bottom: 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        h4 {
+            margin: auto;
+        }
+        h6 {
+            margin: 20px 0;
+        }
+    }
+
+    .performance-stats {
+        margin: 26px 0px 0px;
+        padding: 18px 0px 4px;
+        border-bottom: 1px solid $clr11;
+        border-top: 1px solid $clr11;
+
+        .stat {
+            font-family: Macan-Regular;
+            padding-bottom: 12px;
+
+            .MuiBox-root {
+                width: 105px;
+            }
+        }
+
+
+    }
+    .finance {
+        font-family: Macan-Regular;
+        padding: 12px 0;
+    }
+
+}
+

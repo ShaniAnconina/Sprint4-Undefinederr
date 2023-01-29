@@ -3,7 +3,8 @@ import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
-import { ProfileSidebar } from '../cmps/seller-dashboard/profile-sidebar.jsx'
+// import { ProfileSidebar } from '../cmps/seller-dashboard/profile-sidebar.jsx'
+import { MiniProfile } from '../cmps/seller-dashboard/mini-profile.jsx'
 import { DynamicTable } from '../cmps/seller-dashboard/dynamic-table.jsx'
 
 
@@ -43,21 +44,21 @@ export function SellerDashboard() {
 
     if (!user) return <div>Loading...</div>
     return <div className="profile-page-container main-layout">
-        <div className="profile-header flex">
-            {userType === 'seller' && <ul>
-                <li>Orders</li>
-                <li>Gigs</li>
-                <li>Dashboard</li>
-            </ul>}
-            {user.order?.length && <button onClick={toggleUserType}>{userType === 'buyer' ? 'Switch to Seller' : 'Switch to buyer'}</button>}
-        </div>
-        <section className="profile-page flex">
+        <section className="profile-page">
             <ProfileSidebar user={user} />
-
-            <article className="main-profile">
+            <div className="main-profile">
+                <div className="profile-header">
+                    <div className='nav-container'>
+                        {userType === 'seller' && <ul>
+                            <li>Dashboard</li>
+                            <li>Orders</li>
+                            <li>Gigs</li>
+                        </ul>}
+                    </div>
+                    {user.order?.length && <button onClick={toggleUserType}>{userType === 'buyer' ? 'Switch to seller' : 'Switch to buyer'}</button>}
+                </div>
                 <DynamicTable setStatusModal={setStatusModal} statusModal={statusModal} type={userType} user={user} />
-            </article>
-
+            </div>
         </section>
     </div >
 }
