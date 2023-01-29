@@ -1443,3 +1443,13 @@
 29.1.2023, 14:22:05 - INFO - Server is running on port: 3030 
 29.1.2023, 14:22:17 - INFO - New connected socket [id: 9ixG2nfrkAjze3jHAAAC] 
 29.1.2023, 14:22:17 - INFO - New connected socket [id: atZ2M7tuLNd-4Ct2AAAD] 
+29.1.2023, 14:22:57 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 14:23:00 - INFO - New connected socket [id: rHex5K92ZMCc4z1eAAAR] 
+29.1.2023, 14:23:11 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 14:23:11 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 14:23:11 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: rHex5K92ZMCc4z1eAAAR] 
+29.1.2023, 14:25:54 - INFO - Socket disconnected [id: undefined] 
+29.1.2023, 14:25:56 - INFO - New connected socket [id: 1pueRIA-Foy8DaXHAAAT] 
+29.1.2023, 14:26:06 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 14:26:06 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c"],"purchase":["63d5bf1dad2e6a5274abc81c"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 14:26:06 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: 1pueRIA-Foy8DaXHAAAT] 

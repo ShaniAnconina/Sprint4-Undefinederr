@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 
 
-export function MiniProfile({ loggedinUser, userType }) {
+export function MiniProfile({ user, userType }) {
 
 
 const sellerLevels =["Top Rated Seller"]
@@ -58,9 +58,9 @@ const sellerLevels =["Top Rated Seller"]
 
     return <section className="mini-profile">
         <div className={userType==='seller'? "profile-username flex space-around" : "profile-username flex column align-center"}>
-            <img src={loggedinUser.imgUrl} />
+            <img src={user.imgUrl} />
             <div className='flex column'>
-                <h4>{loggedinUser.fullname}</h4>
+                <h4>{user.fullname}</h4>
                 {userType==='seller'}
                 <h6>Member since <br/>{utilService.getRandomIntInclusive(1,12)}/{utilService.getRandomIntInclusive(2008,2019)}</h6></div>
         </div>
