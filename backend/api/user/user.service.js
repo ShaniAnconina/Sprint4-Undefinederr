@@ -57,12 +57,6 @@ async function getById(userId) {
         const user = await collection.findOne({ _id: ObjectId(userId) })
         delete user.password
 
-        // user.givenOrders = await orderService.query({ byUserId: ObjectId(user._id) })
-        // user.givenOrders = user.givenOrders.map(order => {
-        //     delete order.byUser
-        //     return order
-        // })
-
         return user
     } catch (err) {
         logger.error(`while finding user by id: ${userId}`, err)
@@ -80,7 +74,7 @@ async function getByUsername(username) {
         throw err
     }
 }
-// remove('63d453927af96936df68811c')
+
 async function remove(userId) {
     try {
         const collection = await dbService.getCollection('user')
@@ -93,7 +87,6 @@ async function remove(userId) {
 
 async function update(user) {
     try {
-        // peek only updatable properties
         const userToSave = {
             _id: ObjectId(user._id),
             fullname: user.fullname,
@@ -110,7 +103,6 @@ async function update(user) {
 
 async function add(user) {
     try {
-        // peek only updatable fields!
         const userToAdd = {
             username: user.username,
             password: user.password,
