@@ -3,12 +3,11 @@ import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
-// import { ProfileSidebar } from '../cmps/seller-dashboard/profile-sidebar.jsx'
-import { MiniProfile } from '../cmps/seller-dashboard/mini-profile.jsx'
-import { DynamicTable } from '../cmps/seller-dashboard/dynamic-table.jsx'
+import { MiniProfile } from '../cmps/user-profile/mini-profile.jsx'
+import { DynamicTable } from '../cmps/user-profile/dynamic-table.jsx'
 
 
-export function SellerDashboard() {
+export function UserProfile() {
     const navigate = useNavigate()
     const [statusModal, setStatusModal] = useState(null)
 

@@ -14,7 +14,6 @@ export function HomePage(){
             <HomePopularServices/>
             <SellingProposition/>
             <ExploreMarketplace/>
-            <AppFooter/>
         </section>
     )
 }

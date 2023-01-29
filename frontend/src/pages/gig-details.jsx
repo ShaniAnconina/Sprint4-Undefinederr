@@ -106,17 +106,22 @@ export function GigDetails({ elApp }) {
                             <div className="img-container">
                                 <CenterMode imgUrls={gig.imgUrl} />
                             </div>
-                            {gig.reviews.length && <div className="reviews-snippet">
-                                <header className="flex space-between">
-                                    <h2>What people loved about this seller</h2>
-                                    <Link smooth spy to="reviews" offset={-50}>
-                                        <button className='open-btn'>See all reviews</button>
-                                    </Link>
-                                </header>
-                                <div className="reviews-carousel">
-                                    {/* //TODO: reviews-carousel!!! */}
+
+                            {/* {gig.reviews.length && */}
+                            {false &&
+                                <div className="reviews-snippet">
+                                    <header className="flex space-between">
+                                        <h2>What people loved about this seller</h2>
+                                        <Link smooth spy to="reviews" offset={-50}>
+                                            <button className='open-btn'>See all reviews</button>
+                                        </Link>
+                                    </header>
+                                    <div className="reviews-carousel">
+                                        {/* //TODO: reviews-carousel!!! */}
+                                    </div>
                                 </div>
-                            </div>}
+                            }
+
                         </span>
                         <div id="gig-description" className="about">
                             <h2>About This Gig</h2>
