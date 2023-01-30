@@ -11,7 +11,6 @@ import { setfilter } from "../../store/gig/gig.action.js"
 import { gigService } from "../../services/gig.service"
 
 export function FilterModal({ setModalType, modalType, modalLocation, toggleFilterModal }) {
-export function FilterModal({ setModalType, modalType, toggleFilterModal}) {
 
     const navigate = useNavigate()
     const { filterBy } = useSelector((storeState) => storeState.gigModule)
@@ -43,13 +42,12 @@ export function FilterModal({ setModalType, modalType, toggleFilterModal}) {
         ev?.preventDefault()
         let field = ev.target.name
        setFilterByToEdit({ ...filterBy, [field]: value })
-
-        // toggleFilterModal()
+        toggleFilterModal()
     }
 
     function onClearAll() {
         setFilterByToEdit(gigService.getDefaultFilter())
-        // toggleFilterModal()
+        toggleFilterModal()
     }
 
     return (<>

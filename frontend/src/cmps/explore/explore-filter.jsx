@@ -32,9 +32,9 @@ export function ExploreFilter({ gigs, filterBy }) {
         }
     }, [filterByToEdit])
 
-    useEffect(() => {
-        toggleFilterModal()
-    },[filterByToEdit])
+    // useEffect(() => {
+    //     toggleFilterModal()
+    // },[filterByToEdit])
 
     function toggleFilterModal(ev, type) {
         if (modalType === type) setModalType(null)
