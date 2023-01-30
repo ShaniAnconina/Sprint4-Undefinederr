@@ -1556,3 +1556,108 @@
 30.1.2023, 12:22:14 - INFO - Server is running on port: 3030 
 30.1.2023, 12:22:14 - INFO - New connected socket [id: 43jDbuW_OsSzLx11AAAC] 
 30.1.2023, 12:22:14 - INFO - New connected socket [id: A4zBLKDXs9AwmPvTAAAD] 
+30.1.2023, 13:22:46 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:26:52 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:26:52 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:27:38 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:27:38 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:33:30 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:35:01 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:37:03 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:37:26 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 13:37:26 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 13:37:28 - INFO - New connected socket [id: Oxii1YOFTxII3aapAAAF] 
+30.1.2023, 13:37:28 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:38:08 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:38:09 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:38:12 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:46:39 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 13:46:41 - INFO - New connected socket [id: Yd9FgSaaXhzV9BjDAAAH] 
+30.1.2023, 13:46:41 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:52:25 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:52:25 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:27:30 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:29:21 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:29:21 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155f1","fullname":"tamar","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/1fe02234f0b300905f098d1c2eef2599-1621414093019/30dd09bd-748a-49c0-b3bc-ee3071bdfadb.jpg","username":"tami","order":["63d5ba1afcccf292b83edce5","63d57e7eec6631c6f516d025","63d457385f294e2ec571560c","63d66ba5d093b9666b47cd6d","63d66bbdd093b9666b47cd6e","63d66bc4d093b9666b47cd6f","63d66bd8d093b9666b47cd70","63d66bf4d093b9666b47cd71","63d66c49d093b9666b47cd72","63d66c62d093b9666b47cd73","63d66ce609cba3d249b79508","63d66d1e09cba3d249b79509","63d66d4909cba3d249b7950a","63d66d6809cba3d249b7950b","63d6f3da95c77895d08a2ab8","63d6f3fa95c77895d08a2ab9","63d6f4d995c77895d08a2aba","63d6f4f695c77895d08a2abb","63d6f50f95c77895d08a2abc","63d6f89495c77895d08a2abd","63d77d3a37a4e293696c4725"],"purchase":["63d5bf1dad2e6a5274abc81c","63d66786ab0d3b2d85032273","63d78c5037a4e293696c4726"]} (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:29:21 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: Yd9FgSaaXhzV9BjDAAAH] 
+30.1.2023, 14:51:57 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:58:19 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:58:26 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:11:41 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:27:58 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:28:02 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:34:37 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:35:58 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:41:05 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:41:08 - INFO - New connected socket [id: XfVSTpmsdd6Cv8eQAAAJ] 
+30.1.2023, 15:41:08 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:41:08 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: XfVSTpmsdd6Cv8eQAAAJ] 
+30.1.2023, 15:46:51 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:46:53 - INFO - New connected socket [id: FkmSyiZMPYQOa9XOAAAL] 
+30.1.2023, 15:46:54 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:46:54 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: FkmSyiZMPYQOa9XOAAAL] 
+30.1.2023, 15:47:54 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:47:56 - INFO - New connected socket [id: qnyEjHfJGze-meaUAAAN] 
+30.1.2023, 15:47:57 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:47:57 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: qnyEjHfJGze-meaUAAAN] 
+30.1.2023, 15:48:52 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:48:55 - INFO - New connected socket [id: gEoWaM8wT51LZNgHAAAP] 
+30.1.2023, 15:48:55 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:48:55 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: gEoWaM8wT51LZNgHAAAP] 
+30.1.2023, 15:49:01 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:54:56 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:57:44 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:57:47 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:57:48 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:58:01 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:59:04 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:00:11 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:01:28 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:21:58 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:22:01 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:22:03 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:22:05 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:55:38 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:59:10 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:59:12 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:59:14 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:59:16 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 16:59:18 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:00:48 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:01:35 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:06:31 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:06:37 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:10:29 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:10:45 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:14:10 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 17:14:11 - INFO - New connected socket [id: 3ammZ8X2V48bZHAjAAAR] 
+30.1.2023, 17:14:11 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:14:11 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: 3ammZ8X2V48bZHAjAAAR] 
+30.1.2023, 17:14:20 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:14:22 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:14:25 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:15:24 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:15:27 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:15:29 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:16:43 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:16:45 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:16:47 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:17:37 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 17:17:39 - INFO - New connected socket [id: cT4yBR6XxZfyDNseAAAT] 
+30.1.2023, 17:17:39 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:17:39 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: cT4yBR6XxZfyDNseAAAT] 
+30.1.2023, 17:17:53 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:17:57 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:18:10 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:18:17 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:18:32 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:18:39 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:19:52 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:19:55 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:23:41 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:23:45 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:23:50 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:23:53 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:26:31 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:27:49 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 17:27:53 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)

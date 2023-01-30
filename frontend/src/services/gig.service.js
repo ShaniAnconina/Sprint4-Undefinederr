@@ -57,6 +57,7 @@ console.log("querying with filters: ", filterBy) //for filter testing
 
     //filter by time range
     if (filterBy?.daysToMake) {
+      if (filterBy.daysToMake < Infinity) console.log("in gig service, filter by daystomake")
       gigs = gigs.filter((gig) => gig.daysToMake <= filterBy.daysToMake)
     }
 
