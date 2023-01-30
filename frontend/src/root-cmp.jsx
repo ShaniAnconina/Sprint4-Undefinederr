@@ -50,7 +50,7 @@ export function App() {
               <Route element={<GigPayment />} path="/gig/payment/:gigId" />
 
               <Route element={<UserProfile />} path="/user/:userId">
-                <Route element={<DynamicTable />} path="/user/:userId" />
+                <Route element={<DynamicTable />} path="/user/:userId/order" />
                 <Route element={<DashBoard />} path="/user/:userId/dashboard" />
                 <Route element={<Gigs />} path="/user/:userId/gigs" />
               </Route>

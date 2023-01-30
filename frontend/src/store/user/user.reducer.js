@@ -1,7 +1,10 @@
+import { userService } from "../../services/user.service"
+
+
 export const SET_USER = 'SET_USER'
 
 const initialState = {
-    loggedinUser: null //place back after profile dev
+    loggedinUser: userService.getLoggedinUser()
 }
 
 
