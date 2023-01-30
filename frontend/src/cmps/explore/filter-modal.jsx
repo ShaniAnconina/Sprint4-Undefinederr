@@ -18,8 +18,9 @@ export function FilterModal({ setModalType, modalType, toggleFilterModal }) {
     let type
 
     useEffect(() => {
+        console.log("got to use effect of filter modal")
         setfilter(filterByToEdit)
-        // navigate('/gig')
+        navigate('/gig')
     }, [filterByToEdit])
 
     switch (modalType) {
