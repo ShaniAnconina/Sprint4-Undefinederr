@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ff96a36.css",
+    "main.js": "/static/js/main.2bf2adfe.js",
+    "static/media/macan-light.ttf": "/static/media/macan-light.75c0fb9306a207ee180f.ttf",
+    "static/media/macan-semibold.ttf": "/static/media/macan-semibold.963c2ffd2841fcd6384c.ttf",
+    "static/media/macan-regular.ttf": "/static/media/macan-regular.66dd5df91136e01173f7.ttf",
+    "static/media/macan-bold.ttf": "/static/media/macan-bold.29c28b1d0173728738dc.ttf",
+    "static/media/loader.gif": "/static/media/loader.38592cf1b5bb7528409a.gif",
+    "static/media/DomaineDispNar-RegularItalic.otf": "/static/media/DomaineDispNar-RegularItalic.e4b92af180032240b942.otf",
+    "static/media/HelveticaNeue-Medium.ttf": "/static/media/HelveticaNeue-Medium.64ab5024acf8e1619abc.ttf",
+    "static/media/business.svg": "/static/media/business.fabc3a7adb7dbd421fd4ce97fba02fd4.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/data.svg": "/static/media/data.855fe95339ae1a6c45305f3ee7f411ba.svg",
+    "static/media/music-audio.svg": "/static/media/music-audio.ede4c901ce6aa10ec7766daf18cbd2e4.svg",
+    "static/media/photography.svg": "/static/media/photography.0cf5a3f461a4dea634550ea1312ef380.svg",
+    "static/media/graphics-design.svg": "/static/media/graphics-design.91dfe44b284b4804f627e836832a521c.svg",
+    "static/media/writing-translation.svg": "/static/media/writing-translation.a787f2fbd210a1cd1bf2962c252c1013.svg",
+    "static/media/lifestyle.svg": "/static/media/lifestyle.112b3486a64f63e20027ede2ce43108f.svg",
+    "static/media/video-animation.svg": "/static/media/video-animation.1356999deae86b599ee3fcf37fb15caf.svg",
+    "static/media/programming.svg": "/static/media/programming.6ee5a90126f5bd6bb1a83b2465df5556.svg",
+    "static/media/digital-marketing.svg": "/static/media/digital-marketing.a3e97948e61e165ed4e6538d60ee7efb.svg",
+    "index.html": "/index.html",
+    "main.8ff96a36.css.map": "/static/css/main.8ff96a36.css.map",
+    "main.2bf2adfe.js.map": "/static/js/main.2bf2adfe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ff96a36.css",
+    "static/js/main.2bf2adfe.js"
+  ]
+}

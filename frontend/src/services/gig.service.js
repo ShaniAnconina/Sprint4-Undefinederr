@@ -15,8 +15,11 @@ export const gigService = {
   getDefaultFilter,
   getEmptyGig,
   addToWishlist,
-  getFeatures
+  getFeatures,
+  getGigsByUser
 }
+
+
 
 function getFeatures() {
   return [
@@ -28,8 +31,8 @@ function getFeatures() {
 }
 
 async function query(filterBy) {
-console.log("querying with filters: ", filterBy) //for filter testing
-// await new Promise(r => setTimeout(r, 5000)); //sleep 5 seconds for loader testing
+  console.log("querying with filters: ", filterBy) //for filter testing
+  // await new Promise(r => setTimeout(r, 5000)); //sleep 5 seconds for loader testing
 
   try {
     let gigs = await httpService.get(BASE_URL)
@@ -67,15 +70,15 @@ console.log("querying with filters: ", filterBy) //for filter testing
     }
 
     //Sort by
-    switch (filterBy.sortBy){
+    switch (filterBy.sortBy) {
       case 'topRated':
-        gigs.sort((a,b) => b.rate - a.rate)
+        gigs.sort((a, b) => b.rate - a.rate)
         break
       case 'price':
-        gigs.sort((a,b) => a.price - b.price)
+        gigs.sort((a, b) => a.price - b.price)
         break
-        case 'daysToMake':
-        gigs.sort((a,b) => a.daysToMake - b.daysToMake)
+      case 'daysToMake':
+        gigs.sort((a, b) => a.daysToMake - b.daysToMake)
     }
     return gigs
   } catch (err) {
@@ -87,6 +90,10 @@ console.log("querying with filters: ", filterBy) //for filter testing
 function get(gigId) {
   // return storageService.get(STORAGE_KEY, gigId)
   return httpService.get(BASE_URL + gigId)
+}
+
+function getGigsByUser(userId) {
+  return httpService.get(`${BASE_URL}by/` + userId.toString())
 }
 
 function save(gig) {
@@ -139,5 +146,5 @@ function getEmptyGig() {
 
 
 function getDefaultFilter() {
-  return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity, isSaved: false, sortBy:'topRated' }
+  return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity, isSaved: false, sortBy: 'topRated' }
 }
