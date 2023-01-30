@@ -1,0 +1,15 @@
+.gigs {
+    h3 {
+        padding-block: 10px;
+        height: 70px;
+    }
+
+    .price.basic-price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        span{
+            padding: 0;
+        }
+    }
+}

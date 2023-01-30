@@ -1,15 +1,19 @@
 .mini-profile {
-    width: 390px;
-    height: fit-content;
-    margin-top: 35px;
-    border: 1px solid $clr17;
-    background-color: $clr0;
-    padding: 1px 20px 5px;
+    display: none;
 
-    .profile-username {
-        padding-top: 20px;
-        font-family: Macan-Regular;
-        font-size: 26px;
+    @media (min-width: 700px) {
+        display: block;
+        width: 390px;
+        height: fit-content;
+        margin-top: 35px;
+        border: 1px solid $clr17;
+        background-color: $clr0;
+        padding: 1px 20px 5px;
+
+        .profile-username {
+            padding-top: 20px;
+            font-family: Macan-Regular;
+            font-size: 26px;
 
         img {
             border-radius: 100%;
@@ -28,40 +32,42 @@
             color: orange;
             font-size:16px;
         }
-    }
-    .member-since {
-        margin: 13px 0;
-        list-style: 140%;
-        color: $clr3;
-        font-size: 16px;
-    }
 
-    .performance-stats {
-        margin: 26px 0px 0px;
-        padding: 18px 0px 4px;
-        border-bottom: 1px solid $clr11;
-        border-top: 1px solid $clr11;
-
-        .stat {
-            font-family: Macan-Regular;
-            padding-bottom: 12px;
-
-            .MuiBox-root {
-                width: 105px;
-            }
+        .member-since {
+            margin: 13px 0;
+            list-style: 140%;
+            color: $clr3;
+            font-size: 16px;
         }
 
+        .performance-stats {
+            margin: 26px 0px 0px;
+            padding: 18px 0px 4px;
+            border-bottom: 1px solid $clr11;
+            border-top: 1px solid $clr11;
+
+            .stat {
+                font-family: Macan-Regular;
+                padding-bottom: 12px;
+
+                .MuiBox-root {
+                    width: 105px;
+                }
+            }
+
+
+        }
+
+        .finance {
+            font-family: Macan-Regular;
+            padding: 12px 0;
+        }
+
+        .total-earnings {
+            border-top: 1px solid $clr11;
+            padding-top: 15px;
+            font-weight: 600;
+        }
 
     }
-    .finance {
-        font-family: Macan-Regular;
-        padding: 12px 0;
-    }
-    .total-earnings {
-        border-top: 1px solid $clr11;
-        padding-top: 15px;
-        font-weight: 600;
-    }
-
 }
-
