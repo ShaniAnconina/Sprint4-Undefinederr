@@ -30,7 +30,8 @@
             }
 
             button.status-item,
-            div.status-item {
+            p.status-item {
+                height: 38px;
                 margin-block: 5px;
                 border-radius: 4px;
                 border: none;
@@ -55,10 +56,10 @@
                 &.rejected {
                     background-color: rgb(220, 78, 78);
                 }
+            }
 
-                &:hover {
-                    opacity: 0.7;
-                }
+            button.status-item:hover {
+                opacity: 0.7;
             }
         }
     }

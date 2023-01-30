@@ -1,10 +1,15 @@
 .gig-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    grid-template-columns: 340px;
     min-height: 370px;
     grid-gap: 32px;
     place-items: center;
     padding-left: 0;
     margin-top: 15px;
+
+    @media (min-width: 700px) {
+        grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+
+    }
 }

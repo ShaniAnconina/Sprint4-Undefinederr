@@ -19,22 +19,15 @@ import { showSuccessMsg } from './services/event-bus.service'
 import { DynamicTable } from './cmps/user-profile/dynamic-table'
 import { DashBoard } from './cmps/user-profile/dash-board'
 import { Gigs } from './cmps/user-profile/gigs'
+import { MobileFooter } from './cmps/mobile-footer'
 
 
 export function App() {
   const elApp = useRef(null)
 
   useEffect(() => {
-    // socketService.on('first-event', (msg) => {
-    //   showSuccessMsg(msg)
-    // })
-
-    socketService.on('ON_INCOMING_ORDER', () => {
+    socketService.on('on-incoming-order', () => {
       showSuccessMsg('You have a new order!')
-    })
-
-    socketService.on('on-change-status-order', () => {
-      showSuccessMsg('Your order status updated!')
     })
   }, [])
 
@@ -64,6 +57,7 @@ export function App() {
           </main>
 
           <AppFooter />
+          <MobileFooter />
           <UserMsg />
         </section>
       </Router>

@@ -6,7 +6,7 @@
 /* Setup */
 @import 'setup/typography';
 @import 'setup/variables';
-// @import 'setup/mixins';
+@import 'setup/mixins';
 // @import 'setup/functions';
 
 /* Pages */
@@ -20,7 +20,7 @@
 /* Cmps */
 @import 'cmps/app-header';
 @import 'cmps/gig-list';
-@import 'cmps/gig-privew';
+@import 'cmps/gig-preview';
 @import 'cmps/user-msg';
 @import 'cmps/home-hero';
 @import 'cmps/app-header';
@@ -44,3 +44,5 @@
 @import 'cmps/dynamic-table'; 
 @import 'cmps/mini-profile'; 
 @import 'cmps/status-modal'; 
+@import 'cmps/mobile-footer'; 
+@import 'cmps/gigs'; 

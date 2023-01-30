@@ -19,22 +19,12 @@ function setupSocketAPI(http) {
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
-            // gIo.emit('first-event', `This is my first test ${socket.userId}`) //
         })
 
         socket.on('unset-user-socket', () => {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
             delete socket.userId
         })
-
-        // socket.on('new-order', sellerId => {
-        //     // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
-        //     // socket.join('watching:' + userId)
-        //     gIo.to(_getUserSocket(sellerId)).emit('ON_INCOMING_ORDER', 'You have a new order!')
-        //     // emitToUser({ type: 'ON_INCOMING_ORDER', data: 'New order has been accepted', userId: sellerId })
-        //     // gIo.to(socket.sellerId).emit('ON_INCOMING_ORDER', 'New order has been accepted')
-        //     // socket.emit('new-order', sellerId)
-        // })
     })
 }
 
