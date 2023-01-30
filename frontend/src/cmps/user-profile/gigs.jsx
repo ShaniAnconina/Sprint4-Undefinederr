@@ -27,7 +27,7 @@ export function Gigs() {
     return <section className="gigs">
         <section className="gig-list">
             {gigs.map(gig =>
-                <Link to={`/gig/${gig._id}`} className="gig-preview">
+                <Link to={`/gig/${gig._id}`} className="gig-preview" key={gig._id}>
                     <SimpleSlider gig={gig} />
                     <div className="user">
                         <img className="user-img" src={gig.owner.imgUrl} />
