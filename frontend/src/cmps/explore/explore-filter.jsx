@@ -10,6 +10,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 export function ExploreFilter({ gigs, filterBy }) {
     const [modalType, setModalType] = useState(null)
     const [sortModal, setSortModal] = useState(false)
+    const [modalLocation, setModalLocation] = useState(0)
     const [filtersClassname, setFiltersClassname] = useState('')
     const [filterByToEdit, setFilterByToEdit] = useState(useSelector((globalStore) => globalStore.gigModule.filterBy))
     const [sortvalue, setSortValue] = useState('topRated')
@@ -31,9 +32,13 @@ export function ExploreFilter({ gigs, filterBy }) {
         }
     }, [filterByToEdit])
 
-    function toggleFilterModal(type) {
-        setModalType(type)
+    function toggleFilterModal(ev, type) {
         if (modalType === type) setModalType(null)
+        else {
+            setModalType(type)
+            const left = ev.currentTarget.offsetLeft
+            setModalLocation(left)
+        }
     }
 
     function toggleSortModal() {
@@ -52,10 +57,10 @@ export function ExploreFilter({ gigs, filterBy }) {
             <div ref={elNav} className={`explore-filter main-layout full ${filtersClassname}`}>
                 <div className="filters-container main-layout">
                     <div className="filters">
-                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={() => toggleFilterModal('servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
-                        <button className='filter-btn' onClick={() => toggleFilterModal('budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
-                        <button className='filter-btn' onClick={() => toggleFilterModal('deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
-                        {modalType && <FilterModal modalType={modalType} toggleFilterModal={toggleFilterModal} setModalType={setModalType} />}
+                        {filterBy.tags.length === 0 && <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
+                        <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
+                        <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
+                        {modalType && <FilterModal modalType={modalType} modalLocation={modalLocation} toggleFilterModal={toggleFilterModal} setModalType={setModalType} />}
                     </div>
                 </div>
             </div>

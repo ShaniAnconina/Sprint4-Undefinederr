@@ -27,16 +27,14 @@ function setupSocketAPI(http) {
             delete socket.userId
         })
 
-        socket.on('new-order', sellerId => {
-            console.log('gIo:', gIo.sockets)
-            
-            // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
-            // socket.join('watching:' + userId)
-            gIo.to(_getUserSocket(sellerId)).emit('ON_INCOMING_ORDER', 'You have a new order!')
-            // emitToUser({ type: 'ON_INCOMING_ORDER', data: 'New order has been accepted', userId: sellerId })
-            // gIo.to(socket.sellerId).emit('ON_INCOMING_ORDER', 'New order has been accepted')
-            // socket.emit('new-order', sellerId)
-        })
+        // socket.on('new-order', sellerId => {
+        //     // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
+        //     // socket.join('watching:' + userId)
+        //     gIo.to(_getUserSocket(sellerId)).emit('ON_INCOMING_ORDER', 'You have a new order!')
+        //     // emitToUser({ type: 'ON_INCOMING_ORDER', data: 'New order has been accepted', userId: sellerId })
+        //     // gIo.to(socket.sellerId).emit('ON_INCOMING_ORDER', 'New order has been accepted')
+        //     // socket.emit('new-order', sellerId)
+        // })
     })
 }
 

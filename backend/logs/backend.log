@@ -1556,3 +1556,126 @@
 30.1.2023, 12:22:14 - INFO - Server is running on port: 3030 
 30.1.2023, 12:22:14 - INFO - New connected socket [id: 43jDbuW_OsSzLx11AAAC] 
 30.1.2023, 12:22:14 - INFO - New connected socket [id: A4zBLKDXs9AwmPvTAAAD] 
+30.1.2023, 12:38:37 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 12:38:39 - INFO - New connected socket [id: VYPaAi8jFnTR1kEqAAAR] 
+30.1.2023, 12:38:40 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: VYPaAi8jFnTR1kEqAAAR] 
+30.1.2023, 12:55:21 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 13:39:02 - INFO - Server is running on port: 3030 
+30.1.2023, 13:39:03 - INFO - New connected socket [id: Rm62zmnVfbdFVF-gAAAB] 
+30.1.2023, 13:39:03 - INFO - New connected socket [id: KlOccLCPg-Gu1acdAAAF] 
+30.1.2023, 13:39:03 - INFO - New connected socket [id: i6EqnTRrVVYC0VqMAAAG] 
+30.1.2023, 13:39:03 - INFO - New connected socket [id: UjzKHGO7w2pCLpymAAAH] 
+30.1.2023, 13:39:21 - INFO - New connected socket [id: He4TH-dlfRw9j0FaAAAJ] 
+30.1.2023, 13:39:21 - DEBUG - Getting Gigs 
+30.1.2023, 13:39:27 - DEBUG - auth.service - login with username: shani 
+30.1.2023, 13:39:28 - INFO - User login:  | {"_id":"63d5ae2d8204a2cc30a3268f","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d5ba1afcccf292b83edce5","63d5ae3b8204a2cc30a32690","63d5b6af8204a2cc30a32691","63d5b8ecf0f37c656e4e54d9","63d5b92366b16904cb5b4c55","63d5b94915bb8af8c25e011c","63d5b99ac2cfc56879f65e32","63d5b9b5c2cfc56879f65e33","63d63c85b1d67a2062b2c1ac","63d63c9fb1d67a2062b2c1ad","63d63ccab1d67a2062b2c1ae","63d63dbbba5e660d09459b55","63d63dcbba5e660d09459b56","63d63e068b6c2981dc7220c2","63d63e608b6c2981dc7220c3","63d66ba5d093b9666b47cd6d","63d66bbdd093b9666b47cd6e","63d66bc4d093b9666b47cd6f","63d66bd8d093b9666b47cd70","63d66bf4d093b9666b47cd71","63d66c49d093b9666b47cd72","63d66c62d093b9666b47cd73","63d66ce609cba3d249b79508","63d66d1e09cba3d249b79509","63d66d4909cba3d249b7950a","63d66d6809cba3d249b7950b"]} 
+30.1.2023, 13:39:28 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: He4TH-dlfRw9j0FaAAAJ] 
+30.1.2023, 13:39:37 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:25:21 - INFO - Server is running on port: 3030 
+30.1.2023, 15:25:22 - INFO - New connected socket [id: 2hd38V7m4orXCXdVAAAB] 
+30.1.2023, 15:25:23 - INFO - New connected socket [id: 6uCn3rSAyBNjUMgYAAAF] 
+30.1.2023, 15:25:23 - INFO - New connected socket [id: kr-P8d2-mYNBL84KAAAH] 
+30.1.2023, 15:25:23 - INFO - New connected socket [id: jd6ECWBi4M6UkedCAAAI] 
+30.1.2023, 15:25:23 - INFO - New connected socket [id: oaxrFBRNjNIhUwDFAAAJ] 
+30.1.2023, 15:25:27 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:25:48 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:25:50 - INFO - New connected socket [id: aK3dnZvxFOPztHBhAAAL] 
+30.1.2023, 15:25:51 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:25:51 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: aK3dnZvxFOPztHBhAAAL] 
+30.1.2023, 15:26:12 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:26:12 - INFO - New connected socket [id: CG7zcOoRtE6-IurIAAAN] 
+30.1.2023, 15:26:12 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: CG7zcOoRtE6-IurIAAAN] 
+30.1.2023, 15:26:13 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:26:20 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:26:36 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:26:37 - INFO - New connected socket [id: 0tTp_EGZtV4CX5GLAAAP] 
+30.1.2023, 15:26:37 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:26:37 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: 0tTp_EGZtV4CX5GLAAAP] 
+30.1.2023, 15:26:49 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:28:21 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:28:25 - INFO - New connected socket [id: AhIDsrKCaxR6JrBpAAAR] 
+30.1.2023, 15:28:26 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: AhIDsrKCaxR6JrBpAAAR] 
+30.1.2023, 15:36:37 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:36:53 - INFO - New connected socket [id: r_UND4j_63R1zpxgAAAT] 
+30.1.2023, 15:36:53 - DEBUG - Getting Gigs 
+30.1.2023, 15:37:03 - DEBUG - auth.service - login with username: shani 
+30.1.2023, 15:37:03 - INFO - User login:  | {"_id":"63d5ae2d8204a2cc30a3268f","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d5ba1afcccf292b83edce5","63d5ae3b8204a2cc30a32690","63d5b6af8204a2cc30a32691","63d5b8ecf0f37c656e4e54d9","63d5b92366b16904cb5b4c55","63d5b94915bb8af8c25e011c","63d5b99ac2cfc56879f65e32","63d5b9b5c2cfc56879f65e33","63d63c85b1d67a2062b2c1ac","63d63c9fb1d67a2062b2c1ad","63d63ccab1d67a2062b2c1ae","63d63dbbba5e660d09459b55","63d63dcbba5e660d09459b56","63d63e068b6c2981dc7220c2","63d63e608b6c2981dc7220c3","63d66ba5d093b9666b47cd6d","63d66bbdd093b9666b47cd6e","63d66bc4d093b9666b47cd6f","63d66bd8d093b9666b47cd70","63d66bf4d093b9666b47cd71","63d66c49d093b9666b47cd72","63d66c62d093b9666b47cd73","63d66ce609cba3d249b79508","63d66d1e09cba3d249b79509","63d66d4909cba3d249b7950a","63d66d6809cba3d249b7950b","63d7ac78c6ebcc10f03eda5c","63d7c5997ea43dd1035438f6"]} 
+30.1.2023, 15:37:03 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: r_UND4j_63R1zpxgAAAT] 
+30.1.2023, 15:37:11 - INFO - New connected socket [id: HHmbOQZe2cn-M2mIAAAV] 
+30.1.2023, 15:37:16 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:38:13 - INFO - Server is running on port: 3030 
+30.1.2023, 15:38:13 - INFO - New connected socket [id: cAWqET5WFR2cYthqAAAC] 
+30.1.2023, 15:38:13 - INFO - New connected socket [id: UJs2p6bCH6A3OVvCAAAH] 
+30.1.2023, 15:38:13 - INFO - New connected socket [id: PP9SKnS-u1n8KbwlAAAI] 
+30.1.2023, 15:38:13 - INFO - New connected socket [id: ZI9Tr33Ma49_CmxqAAAJ] 
+30.1.2023, 15:38:13 - INFO - New connected socket [id: FGz_A6VGswk-T8JdAAAK] 
+30.1.2023, 15:38:14 - INFO - New connected socket [id: 01rO2_bjx5qRILu5AAAL] 
+30.1.2023, 15:38:17 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:38:24 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:39:24 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:39:29 - INFO - New connected socket [id: vW9nGUQT1Rv2TT0HAAAN] 
+30.1.2023, 15:39:30 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: vW9nGUQT1Rv2TT0HAAAN] 
+30.1.2023, 15:39:31 - INFO - Emiting event: ON_INCOMING_ORDER to user: 63d453c95f294e2ec57155eb socket [id: vW9nGUQT1Rv2TT0HAAAN] (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:42:40 - INFO - Server is running on port: 3030 
+30.1.2023, 15:42:40 - INFO - New connected socket [id: 7ysrKsv70ZMfI7wHAAAB] 
+30.1.2023, 15:42:40 - INFO - New connected socket [id: BW0-UerbkwDNTEK-AAAD] 
+30.1.2023, 15:42:41 - INFO - New connected socket [id: MfytKHwrBUDFOXEaAAAG] 
+30.1.2023, 15:42:41 - INFO - New connected socket [id: rYUAyHV_8zCfseDzAAAI] 
+30.1.2023, 15:42:41 - INFO - New connected socket [id: BwvVlmBPzzdFsCz3AAAJ] 
+30.1.2023, 15:42:42 - INFO - New connected socket [id: 2P_JZORnxA-VI6wbAAAL] 
+30.1.2023, 15:42:50 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:42:50 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:42:50 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:42:54 - INFO - New connected socket [id: lRZ9PKjCexTRUiCUAAAN] 
+30.1.2023, 15:42:55 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:43:00 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:43:06 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:43:12 - INFO - New connected socket [id: IvBkEVUwz46HCXjQAAAP] 
+30.1.2023, 15:43:13 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:43:20 - INFO - Server is running on port: 3030 
+30.1.2023, 15:43:20 - INFO - New connected socket [id: q5nn83rHaZoydhRUAAAC] 
+30.1.2023, 15:43:21 - INFO - New connected socket [id: VZEZJt_gmW06q01xAAAE] 
+30.1.2023, 15:43:21 - INFO - New connected socket [id: 2cQPkmcxUJjhzuruAAAF] 
+30.1.2023, 15:43:21 - INFO - New connected socket [id: FzMWKsilS9k9kkP7AAAH] 
+30.1.2023, 15:43:47 - INFO - Server is running on port: 3030 
+30.1.2023, 15:43:48 - INFO - New connected socket [id: XinjEX-he-luwaGOAAAC] 
+30.1.2023, 15:43:48 - INFO - New connected socket [id: 6q7LLDDNsasPBjURAAAD] 
+30.1.2023, 15:43:48 - INFO - New connected socket [id: EUHFFbaCL17XIU3rAAAG] 
+30.1.2023, 15:43:48 - INFO - New connected socket [id: 0RMF5I4eFQGbfVWnAAAH] 
+30.1.2023, 15:43:48 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:43:51 - INFO - New connected socket [id: 0pEtbZ3S6dTmk4dYAAAJ] 
+30.1.2023, 15:43:52 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:43:58 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:44:45 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:44:45 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:44:48 - INFO - New connected socket [id: tUG8y1pdTcjRRdutAAAM] 
+30.1.2023, 15:44:49 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: tUG8y1pdTcjRRdutAAAM] 
+30.1.2023, 15:44:50 - INFO - New connected socket [id: iVK0ZpC7KDrflEh7AAAN] 
+30.1.2023, 15:44:51 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:44:56 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 15:45:31 - DEBUG - auth.service - login with username: minmax (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:45:31 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187","63d58c072fda4797ee599123","63d58e14d8152a5e16405464","63d58eaedb55c559dd0b0965","63d58ef3fab675fdd03315d6","63d58f025a5139a3859595a4","63d58f9f2b707e9eba1cdfe6","63d590c54da1f691c06cbd59","63d59107e3386f651152b807","63d59122e3386f651152b808","63d593e61646f002d9e609e7","63d63c85b1d67a2062b2c1ac","63d63c9fb1d67a2062b2c1ad","63d63ccab1d67a2062b2c1ae","63d63dbbba5e660d09459b55","63d63dcbba5e660d09459b56","63d63e068b6c2981dc7220c2","63d63e608b6c2981dc7220c3","63d7ac78c6ebcc10f03eda5c","63d7c5997ea43dd1035438f6","63d7c80c7ea43dd1035438f7","63d7c84973aa8be37441b0e6","63d7c85073aa8be37441b0e7","63d7c88ac890f5eaa10c9fd2","63d7c89273aa8be37441b0e8","63d7c893c890f5eaa10c9fd3","63d7c897c890f5eaa10c9fd4","63d7c964c092501a9c892c06","63d7c99e96d5d6b2b30d34a2","63d7c9d796d5d6b2b30d34a3"],"purchase":["63d683e28de6cf6d3cefc6f5","63d6f3da95c77895d08a2ab8","63d6f3fa95c77895d08a2ab9","63d6f4d995c77895d08a2aba","63d6f4f695c77895d08a2abb","63d6f50f95c77895d08a2abc","63d6f89495c77895d08a2abd","63d77d3a37a4e293696c4725","63d7c5dcf98cb846ed040b35","63d7c856de2cac932644a34a","63d7c867c890f5eaa10c9fd0","63d7c87bc890f5eaa10c9fd1"]} (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:45:31 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: iVK0ZpC7KDrflEh7AAAN] 
+30.1.2023, 15:45:47 - INFO - Server is running on port: 3030 
+30.1.2023, 15:45:47 - INFO - New connected socket [id: 0EuRDvpcnd6Az45AAAAD] 
+30.1.2023, 15:45:47 - INFO - New connected socket [id: nJHNgaJq4ZFrbOg2AAAF] 
+30.1.2023, 15:45:47 - INFO - New connected socket [id: HkCY9JpJD0l06P-JAAAG] 
+30.1.2023, 15:45:47 - INFO - New connected socket [id: A46CO1YV55pTlqsdAAAH] 
+30.1.2023, 15:45:48 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:45:49 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:45:53 - INFO - New connected socket [id: quAX-YREkbyzEb4qAAAK] 
+30.1.2023, 15:45:54 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:45:54 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: quAX-YREkbyzEb4qAAAK] 
+30.1.2023, 15:45:55 - INFO - New connected socket [id: aDaKCAU9TV-xkPSPAAAL] 
+30.1.2023, 15:45:56 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: aDaKCAU9TV-xkPSPAAAL] 
+30.1.2023, 15:46:02 - INFO - Emiting event: ON_INCOMING_ORDER to user: 63d453c95f294e2ec57155eb socket [id: quAX-YREkbyzEb4qAAAK] (userId: 63d5ae2d8204a2cc30a3268f)
+30.1.2023, 16:10:47 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:16:21 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:16:26 - INFO - New connected socket [id: 2HQtHExCXbrwK26OAAAN] 
+30.1.2023, 16:16:27 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 16:16:27 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: 2HQtHExCXbrwK26OAAAN] 
+30.1.2023, 16:26:12 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:26:17 - INFO - New connected socket [id: lKVtmoQpXXo7ExREAAAP] 
+30.1.2023, 16:26:18 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 16:26:18 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: lKVtmoQpXXo7ExREAAAP] 
+30.1.2023, 16:26:47 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
