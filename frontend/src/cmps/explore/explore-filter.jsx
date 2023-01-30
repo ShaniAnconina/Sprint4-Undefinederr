@@ -32,11 +32,9 @@ export function ExploreFilter({ gigs, filterBy }) {
         }
     }, [filterByToEdit])
 
-    useEffect(() => {
-        toggleFilterModal()
-    },[filterByToEdit])
 
     function toggleFilterModal(ev, type) {
+        setModalType(type)
         if (modalType === type) setModalType(null)
         else {
             setModalType(type)
@@ -64,7 +62,7 @@ export function ExploreFilter({ gigs, filterBy }) {
                         {filterBy.tags.length === 0 && <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'servicesOptions')}><div><p>Service Options</p><MdKeyboardArrowDown /></div></button>}
                         <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'budget')}><div><p>Budget</p><MdKeyboardArrowDown /></div></button>
                         <button className='filter-btn' onClick={(ev) => toggleFilterModal(ev, 'deliveryTime')}><div><p>Delivery Time</p><MdKeyboardArrowDown /></div></button>
-                        {modalType && <FilterModal modalType={modalType} modalLocation={modalLocation} toggleFilterModal={toggleFilterModal} setModalType={setModalType} />}
+                        {modalType && <FilterModal modalType={modalType} modalLocation={modalLocation} toggleFilterModal={toggleFilterModal} setModalType={setModalType} setfilter={setfilter} setFilterByToEdit={setFilterByToEdit}/>}
                     </div>
                 </div>
             </div>

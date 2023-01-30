@@ -10,19 +10,18 @@ import { ServicesOptionsModal } from "./services-options-modal"
 import { setfilter } from "../../store/gig/gig.action.js"
 import { gigService } from "../../services/gig.service"
 
-export function FilterModal({ setModalType, modalType, modalLocation, toggleFilterModal }) {
-export function FilterModal({ setModalType, modalType, toggleFilterModal}) {
+export function FilterModal({ setModalType, modalType, modalLocation, toggleFilterModal, setfilter, setFilterByToEdit }) {
 
     const navigate = useNavigate()
     const { filterBy } = useSelector((storeState) => storeState.gigModule)
-    const [filterByToEdit, setFilterByToEdit] = useState(filterBy)
+    // const [filterByToEdit, setFilterByToEdit] = useState(filterBy)
     let type
 
     useEffect(() => {
-        setfilter(filterByToEdit)
+        // setfilter(filterByToEdit)
 
         // navigate('/gig')
-    }, [filterByToEdit])
+    }, [])
 
     switch (modalType) {
         case 'servicesOptions':
@@ -42,14 +41,15 @@ export function FilterModal({ setModalType, modalType, toggleFilterModal}) {
     function onSubmit(ev, value) {
         ev?.preventDefault()
         let field = ev.target.name
-       setFilterByToEdit({ ...filterBy, [field]: value })
+        console.log(`on filter modal, received ${ev.target.name} with the value ${value}`)
+        setFilterByToEdit({ ...filterBy, [field]: value })
 
-        // toggleFilterModal()
+        toggleFilterModal(ev)
     }
 
-    function onClearAll() {
+    function onClearAll(ev) {
         setFilterByToEdit(gigService.getDefaultFilter())
-        // toggleFilterModal()
+        toggleFilterModal(ev)
     }
 
     return (<>

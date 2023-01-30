@@ -5,7 +5,8 @@ export const utilService = {
     debounce,
     randomPastTime,
     saveToStorage,
-    loadFromStorage
+    loadFromStorage,
+    getPercentage
 }
 
 function makeId(length = 6) {
@@ -17,6 +18,10 @@ function makeId(length = 6) {
     }
 
     return txt
+}
+
+function getPercentage(part,total){
+return part/total * 100
 }
 
 function makeLorem(size = 100) {
