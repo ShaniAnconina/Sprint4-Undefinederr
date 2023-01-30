@@ -31,10 +31,13 @@ export class MultipleItems extends Component {
         return (
             <div className='categories-list-wrap main-layout'>
                 <Slider ref={c => (this.slider = c)} {...settings}>
-                {/* <Slider {...settings}> */}
-                    <div className="img-container">
-                        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/f27bec553efc12cc60baed89b8f2223e-1674661140708/ai-artists-2x.png" alt="" />
-                        <p>Add talent to AI<br /><span>AI Artists</span></p>
+                    {/* <Slider {...settings}> */}
+                    <div>
+
+                        <div className="img-container">
+                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/f27bec553efc12cc60baed89b8f2223e-1674661140708/ai-artists-2x.png" alt="" />
+                            <p>Add talent to AI<br /><span>AI Artists</span></p>
+                        </div>
                     </div>
                     <div className="img-container">
                         <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_305,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/logo-design-2x.png" alt="" />
@@ -78,10 +81,10 @@ export class MultipleItems extends Component {
                     </div>
 
                 </Slider>
-                    {/* <button className="slider-btns prev-btn" onClick={this.previous}><GrPrevious size="10px" /></button>
+                {/* <button className="slider-btns prev-btn" onClick={this.previous}><GrPrevious size="10px" /></button>
                     <button className="slider-btns next-btn" onClick={this.next}><GrNext size="10px" /></button> */}
-                    <button className="slider-btns prev-btn" onClick={this.previous}></button>
-                    <button className="slider-btns next-btn" onClick={this.next}></button>
+                <button className="slider-btns prev-btn" onClick={this.previous}></button>
+                <button className="slider-btns next-btn" onClick={this.next}></button>
             </div>
         );
     }
