@@ -52,7 +52,7 @@ export function DynamicTable() {
                         {item.gig.package === 'standard' && <td>US${(item.gig.price * 1.1).toFixed(0)}</td>}
                         {item.gig.package === 'premium' && <td>US${(item.gig.price * 1.5).toFixed(0)}</td>}
 
-                        {viewType === 'buyer' && <td className={`status-item ${item.status}`}>{item.status}</td>}
+                        {viewType === 'buyer' && <td><div className={`status-item ${item.status}`}>{item.status}</div></td>}
                         {viewType === 'seller' && <td> <button onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{item.status}</button></td>}
                     </tr>
                 })}
