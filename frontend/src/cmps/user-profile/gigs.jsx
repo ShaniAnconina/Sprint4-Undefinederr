@@ -29,18 +29,19 @@ export function Gigs() {
             {gigs.map(gig =>
                 <Link to={`/gig/${gig._id}`} className="gig-preview">
                     <SimpleSlider gig={gig} />
-                    <div className="user">
-                        <img className="user-img" src={gig.owner.imgUrl} />
-                        <div className="user-info">
-                            <p className="username">{gig.owner.fullname}</p>
-                            <p className={gig.owner.level === 'Top Rated Seller' ? 'level top' : 'level'}>{gig.owner.level}</p>
-                        </div>
-                    </div>
                     <h3>{gig.title}</h3>
                     <div className="card-footer">
-                        <div className="price">
-                            <p>STARTING AT</p>
+                        <div className="price basic-price">
+                            <p>BASIC</p>
                             <span>US${gig.price}</span>
+                        </div>
+                        <div className="price basic-price">
+                            <p>STANDARD</p>
+                            <span>US${(gig.price*1.1).toFixed(0)}</span>
+                        </div>
+                        <div className="price basic-price">
+                            <p>PREMIUM</p>
+                            <span>US${(gig.price*1.5).toFixed(0)}</span>
                         </div>
                     </div>
                 </Link>

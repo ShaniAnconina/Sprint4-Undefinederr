@@ -9,6 +9,7 @@
     text-decoration: none;
     cursor: pointer;
     width: 100%;
+    background-color: $clr0;
 
     &:hover h3 {
         color: $clr9;
@@ -59,10 +60,6 @@
         overflow: hidden;
         padding: 0 12px 8px;
         margin-top: 5px;
-
-        // &:hover h3 {
-        //     color: $clr9;
-        // }
     }
 
     .rate {

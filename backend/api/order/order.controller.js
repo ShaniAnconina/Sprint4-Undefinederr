@@ -37,7 +37,7 @@ async function addOrder(req, res) {
     let { _id } = addedOrder.seller
     await updateBayer(addedOrder)
     await updateSeller(addedOrder)
-    emitToUser({ type: 'ON_INCOMING_ORDER', userId: _id })
+    emitToUser({ type: 'on-incoming-order', data: addedOrder, userId: _id })
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)

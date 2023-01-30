@@ -56,6 +56,7 @@ export function AppHeader({ elApp }) {
     return (
         <>
             <div ref={elHeader}></div>
+            <NavLink to="/" className='moblie-header logo'>undefinederr<span>.</span></NavLink>
             <header className={`app-header full ${stickyClassname} ${homeClassname} ${categoryNavClassname} `}>
                 <div className="header-container main-layout">
                     <div className="top-header">
@@ -68,7 +69,6 @@ export function AppHeader({ elApp }) {
                             <span className='icon' title="Messages"><BiEnvelope size="22px" /></span>
                             <span className='icon' title="Lists"><FaRegHeart size="18px" /></span>
                             <p className='orders'>Orders</p>
-                            {/* <img className="user-img" src="https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg" /> */}
                             <Link to={`/user/${loggedinUser._id}/order`}> <img className="user-img" src={loggedinUser.imgUrl} /> </Link>
                         </nav>}
                         {!loggedinUser && <nav className="main-nav">

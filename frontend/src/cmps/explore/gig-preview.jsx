@@ -15,7 +15,7 @@ export function GigPreview({ gig, onAddToWishlist }) {
             <div className="user">
                 <img className="user-img" src={gig.owner.imgUrl} />
                 <div className="user-info">
-                    <p className="username">{gig.owner.fullname}</p>
+                    <p className="username">{gig.owner.username}</p>
                     <p className={gig.owner.level === 'Top Rated Seller' ? 'level top' : 'level'}>{gig.owner.level}</p>
                 </div>
             </div>
