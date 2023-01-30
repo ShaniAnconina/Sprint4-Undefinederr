@@ -20,6 +20,13 @@
             padding: 20px 15px;
             min-width: 135px;
 
+            &.gig-title p {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 400px;
+                overflow: hidden;
+            }
+
             button.status-item {
                 margin-block: 5px;
                 border-radius: 4px;

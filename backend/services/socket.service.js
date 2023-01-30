@@ -29,6 +29,7 @@ function setupSocketAPI(http) {
 
         socket.on('new-order', sellerId => {
             console.log('gIo:', gIo.sockets)
+            
             // logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
             // socket.join('watching:' + userId)
             gIo.to(_getUserSocket(sellerId)).emit('ON_INCOMING_ORDER', 'You have a new order!')
