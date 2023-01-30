@@ -31,15 +31,13 @@ async function getOrderById(req, res) {
 }
 
 async function addOrder(req, res) {
-  // const {loggedinUser} = req
-
   try {
     const order = req.body
     const addedOrder = await orderService.add(order)
-    let {_id} = addedOrder.seller
+    let { _id } = addedOrder.seller
     await updateBayer(addedOrder)
     await updateSeller(addedOrder)
-    emitToUser({ type:'ON_INCOMING_ORDER', userId:_id }) 
+    emitToUser({ type: 'ON_INCOMING_ORDER', userId: _id })
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)

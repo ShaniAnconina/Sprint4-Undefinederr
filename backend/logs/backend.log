@@ -1556,3 +1556,235 @@
 30.1.2023, 12:22:14 - INFO - Server is running on port: 3030 
 30.1.2023, 12:22:14 - INFO - New connected socket [id: 43jDbuW_OsSzLx11AAAC] 
 30.1.2023, 12:22:14 - INFO - New connected socket [id: A4zBLKDXs9AwmPvTAAAD] 
+30.1.2023, 12:24:07 - INFO - Server is running on port: 3030 
+30.1.2023, 12:24:09 - INFO - New connected socket [id: r2H-fr9e5sDdAhu1AAAB] 
+30.1.2023, 12:24:21 - INFO - New connected socket [id: n4mGpqAEx2NBrgRKAAAD] 
+30.1.2023, 12:24:22 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: n4mGpqAEx2NBrgRKAAAD] 
+30.1.2023, 12:26:43 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 12:26:43 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 12:26:48 - INFO - New connected socket [id: ClrcWkkTOuUxAKpgAAAF] 
+30.1.2023, 12:26:49 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: ClrcWkkTOuUxAKpgAAAF] 
+30.1.2023, 12:27:21 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 12:27:24 - INFO - New connected socket [id: u7LgUIGAd8__u8vKAAAH] 
+30.1.2023, 12:27:25 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: u7LgUIGAd8__u8vKAAAH] 
+30.1.2023, 13:00:08 - INFO - Server is running on port: 3030 
+30.1.2023, 13:00:08 - INFO - New connected socket [id: 6p8Wuxc_nT202M4SAAAB] 
+30.1.2023, 13:00:33 - INFO - Server is running on port: 3030 
+30.1.2023, 13:00:33 - INFO - New connected socket [id: H1mfTn9ozIz40ctkAAAB] 
+30.1.2023, 13:00:37 - INFO - Server is running on port: 3030 
+30.1.2023, 13:00:38 - INFO - New connected socket [id: sGqaVCg6nlL9RZuAAAAB] 
+30.1.2023, 13:00:57 - INFO - Server is running on port: 3030 
+30.1.2023, 13:00:58 - INFO - New connected socket [id: DlPONbD7eCzD6mAtAAAB] 
+30.1.2023, 13:03:10 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:03:10 - ERROR - while finding gig byUser63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:03:51 - INFO - Server is running on port: 3030 
+30.1.2023, 13:03:51 - INFO - New connected socket [id: GBQyZNtzu8M3ApL1AAAB] 
+30.1.2023, 13:03:58 - ERROR - while finding gig byUser63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:03:58 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:04:32 - INFO - Server is running on port: 3030 
+30.1.2023, 13:04:32 - INFO - New connected socket [id: TQ3i2RxeFL0aNOJAAAAB] 
+30.1.2023, 13:04:38 - ERROR - while finding gig byUser63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:04:38 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:05:31 - INFO - Server is running on port: 3030 
+30.1.2023, 13:05:31 - INFO - New connected socket [id: TyrqkXAUydTj35eHAAAB] 
+30.1.2023, 13:06:27 - INFO - Server is running on port: 3030 
+30.1.2023, 13:06:27 - INFO - New connected socket [id: uL9c4lZxgnDxWIeqAAAB] 
+30.1.2023, 13:06:37 - ERROR - while finding gig byUser63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:06:37 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:07:00 - INFO - Server is running on port: 3030 
+30.1.2023, 13:07:00 - INFO - New connected socket [id: xyZjDnRbCH1zN3MEAAAB] 
+30.1.2023, 13:07:05 - ERROR - while finding gig byUser63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:07:05 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:07:30 - INFO - Server is running on port: 3030 
+30.1.2023, 13:07:30 - INFO - New connected socket [id: 5mCkwAjP03SfKlQbAAAB] 
+30.1.2023, 13:07:35 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:09:18 - INFO - Server is running on port: 3030 
+30.1.2023, 13:09:18 - INFO - New connected socket [id: dyp5YQEoD2rDLIKGAAAB] 
+30.1.2023, 13:09:27 - ERROR - while finding gig byUser63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:09:27 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:11:34 - INFO - Server is running on port: 3030 
+30.1.2023, 13:11:35 - INFO - New connected socket [id: Vs1ennMirack-SFCAAAB] 
+30.1.2023, 13:11:46 - INFO - Server is running on port: 3030 
+30.1.2023, 13:11:47 - INFO - New connected socket [id: 605IFFwp4-LDPrF7AAAB] 
+30.1.2023, 13:12:19 - INFO - Server is running on port: 3030 
+30.1.2023, 13:12:20 - INFO - New connected socket [id: KMxGkn2Xl6eh9hzFAAAB] 
+30.1.2023, 13:13:40 - INFO - Server is running on port: 3030 
+30.1.2023, 13:13:40 - INFO - New connected socket [id: 72ML_X4-cVQjuPqXAAAB] 
+30.1.2023, 13:13:54 - INFO - Server is running on port: 3030 
+30.1.2023, 13:13:55 - INFO - New connected socket [id: fCHjAJ_d_TkuEe0VAAAB] 
+30.1.2023, 13:13:58 - ERROR - while finding gig by63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:13:58 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:14:37 - INFO - Server is running on port: 3030 
+30.1.2023, 13:14:37 - INFO - New connected socket [id: Lonfzr7VTAwmzEdPAAAB] 
+30.1.2023, 13:14:49 - INFO - Server is running on port: 3030 
+30.1.2023, 13:14:49 - INFO - New connected socket [id: cDtSGAgq6FxLRzoZAAAB] 
+30.1.2023, 13:14:54 - ERROR - while finding gig by63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:14:54 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:18:21 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:18:21 - ERROR - while finding gig by63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:18:41 - ERROR - while finding gig by63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:18:41 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:19:22 - ERROR - while finding gig by63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:19:22 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:21:49 - ERROR - while finding gig by | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+30.1.2023, 13:21:49 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+30.1.2023, 13:22:26 - INFO - Server is running on port: 3030 
+30.1.2023, 13:22:27 - INFO - New connected socket [id: VYJFWoB4lGUdgPeOAAAB] 
+30.1.2023, 13:22:36 - ERROR - while finding gig by | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+30.1.2023, 13:22:36 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+30.1.2023, 13:23:34 - INFO - Server is running on port: 3030 
+30.1.2023, 13:23:35 - INFO - New connected socket [id: TXLy__uxFbqc_6orAAAB] 
+30.1.2023, 13:25:19 - ERROR - while finding gig by63d453c95f294e2ec57155f1 | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:25:19 - ERROR - Failed to get gig | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:26:51 - INFO - Server is running on port: 3030 
+30.1.2023, 13:26:52 - INFO - New connected socket [id: UBiLnJ0TAjzN2IijAAAB] 
+30.1.2023, 13:41:29 - INFO - Server is running on port: 3030 
+30.1.2023, 13:41:30 - INFO - Server is running on port: 3030 
+30.1.2023, 13:41:30 - INFO - New connected socket [id: 6YH_R5EAopw0csJVAAAB] 
+30.1.2023, 13:44:26 - INFO - Server is running on port: 3030 
+30.1.2023, 13:44:28 - INFO - New connected socket [id: _qkHxZzhe0ofTqMPAAAB] 
+30.1.2023, 13:44:37 - INFO - Server is running on port: 3030 
+30.1.2023, 13:44:39 - INFO - New connected socket [id: kGsNqZpLoq4qpM2yAAAB] 
+30.1.2023, 13:45:17 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 13:46:23 - INFO - Server is running on port: 3030 
+30.1.2023, 13:46:24 - INFO - New connected socket [id: YO1U7E6GphxCep_8AAAB] 
+30.1.2023, 13:47:59 - INFO - Server is running on port: 3030 
+30.1.2023, 13:47:59 - INFO - New connected socket [id: p9sX1ne_SRiT43QNAAAB] 
+30.1.2023, 13:48:18 - INFO - Server is running on port: 3030 
+30.1.2023, 13:48:19 - INFO - New connected socket [id: 64GuC67nXrLzo0-rAAAB] 
+30.1.2023, 13:48:43 - INFO - Server is running on port: 3030 
+30.1.2023, 13:48:44 - INFO - New connected socket [id: bU-8FFRhmgvMgcSHAAAB] 
+30.1.2023, 13:48:47 - INFO - Server is running on port: 3030 
+30.1.2023, 13:48:48 - INFO - New connected socket [id: q_zFS46XjwGLAV2LAAAB] 
+30.1.2023, 13:48:56 - INFO - Server is running on port: 3030 
+30.1.2023, 13:48:56 - INFO - New connected socket [id: hjYe2puK2sJ6YP7JAAAB] 
+30.1.2023, 13:49:00 - ERROR - Failed to get gig | ReferenceError: gigId is not defined 
+30.1.2023, 13:49:50 - INFO - Server is running on port: 3030 
+30.1.2023, 13:49:51 - INFO - New connected socket [id: PbekAtepmq0zBWeCAAAB] 
+30.1.2023, 13:50:17 - INFO - Server is running on port: 3030 
+30.1.2023, 13:50:17 - INFO - New connected socket [id: 2RXtpN5Lq_q0jxEzAAAB] 
+30.1.2023, 13:50:27 - INFO - Server is running on port: 3030 
+30.1.2023, 13:50:28 - INFO - New connected socket [id: Elj5VJX5dP4E_oUQAAAB] 
+30.1.2023, 13:54:15 - INFO - Server is running on port: 3030 
+30.1.2023, 13:54:16 - INFO - New connected socket [id: 7mwQ_Iwm3e_VGkQjAAAB] 
+30.1.2023, 13:55:00 - INFO - Server is running on port: 3030 
+30.1.2023, 13:55:01 - INFO - New connected socket [id: kywhmJOAzMRnlZ-GAAAB] 
+30.1.2023, 13:57:41 - INFO - Server is running on port: 3030 
+30.1.2023, 13:57:42 - INFO - New connected socket [id: iUlgvDjmclCSpK4GAAAB] 
+30.1.2023, 13:57:50 - ERROR - Failed to get gigs | ReferenceError: leo is not defined 
+30.1.2023, 13:57:50 - ERROR - while finding gigs by user id  63d453c95f294e2ec57155f1 | ReferenceError: leo is not defined 
+30.1.2023, 13:58:01 - INFO - Server is running on port: 3030 
+30.1.2023, 13:58:02 - INFO - New connected socket [id: xxYbNqTF-P1nq2HTAAAB] 
+30.1.2023, 13:58:30 - INFO - Server is running on port: 3030 
+30.1.2023, 13:58:31 - INFO - New connected socket [id: TWEmR7-0vKHqkmYeAAAB] 
+30.1.2023, 13:58:39 - INFO - Server is running on port: 3030 
+30.1.2023, 13:58:41 - INFO - New connected socket [id: _eDWh3SUJPb8qJb-AAAB] 
+30.1.2023, 14:01:28 - INFO - Server is running on port: 3030 
+30.1.2023, 14:01:29 - INFO - New connected socket [id: mn01xB9AqtD2PXtpAAAB] 
+30.1.2023, 14:01:34 - ERROR - Failed to get gigs | TypeError: res is not a function 
+30.1.2023, 14:01:37 - ERROR - Failed to get gigs | TypeError: res is not a function 
+30.1.2023, 14:01:48 - INFO - Server is running on port: 3030 
+30.1.2023, 14:01:49 - INFO - New connected socket [id: IRtKT5CieSL6akNtAAAB] 
+30.1.2023, 14:01:56 - ERROR - Failed to get gigs | TypeError: res is not a function 
+30.1.2023, 14:02:16 - INFO - Server is running on port: 3030 
+30.1.2023, 14:02:16 - INFO - New connected socket [id: LRHc2yEpTztcC34OAAAB] 
+30.1.2023, 14:04:12 - INFO - Server is running on port: 3030 
+30.1.2023, 14:04:13 - INFO - New connected socket [id: VuFcpyuhRv9wIcJhAAAB] 
+30.1.2023, 14:04:24 - INFO - Server is running on port: 3030 
+30.1.2023, 14:04:25 - INFO - New connected socket [id: Gh-b7WAXz1OIIr-6AAAB] 
+30.1.2023, 14:07:27 - INFO - Server is running on port: 3030 
+30.1.2023, 14:07:27 - INFO - New connected socket [id: kXUl4ucZx_1itJdtAAAB] 
+30.1.2023, 14:08:17 - INFO - Server is running on port: 3030 
+30.1.2023, 14:08:17 - INFO - New connected socket [id: lGlMuGSI1kSNR2Y8AAAB] 
+30.1.2023, 14:31:27 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 14:41:24 - INFO - New connected socket [id: IBID75GFgz9M_9-KAAAD] 
+30.1.2023, 14:41:24 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: IBID75GFgz9M_9-KAAAD] 
+30.1.2023, 14:41:35 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:39 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:42 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:49 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:51 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:52 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:54 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:56 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:41:57 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:42:00 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:42:05 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:42:13 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:43:05 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:43:19 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:49:00 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 14:53:50 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:00:13 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:00:19 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:00:28 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:27:15 - INFO - New connected socket [id: FNYtunTOQg8LcTd3AAAF] 
+30.1.2023, 15:27:15 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:27:30 - DEBUG - auth.service - login with username: minmax (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:27:30 - INFO - User login:  | {"_id":"63d453c95f294e2ec57155eb","fullname":"max","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/aeb50869a3c9aa4f4d01a4a5076780d8-1597753670171/66b99c65-4308-4b81-a088-b0610d5d75b6.jpg","username":"minmax","order":["63d511b2338b0395a2f4dda8","63d511c2338b0395a2f4dda9","63d5123bb190986edea01722","63d51251b190986edea01723","63d512d4f8b2df220a73fdbb","63d512f3b981e7a0b2cb0f41","63d51338818ffd209eab586e","63d5135c40dbef2eb404ae34","63d5139c98d8bba4f0043536","63d513b498d8bba4f0043537","63d513fc87b44d637538b3f7","63d5162587b44d637538b3f9","63d5169687b44d637538b3fa","63d516b887b44d637538b3fb","63d5172987b44d637538b3fc","63d5176907e006374e421123","63d517adbb5e53d772b5a2cb","63d5180a8900ec6abcaac0be","63d5185917f508874d107534","63d5187ffa8181d7c8233325","63d518c3fa8181d7c8233326","63d518d6fa8181d7c8233327","63d519c2fa8181d7c8233328","63d58a2c126794b1bf673627","63d58ad6078187b72480220e","63d58b20a87527c48773a63b","63d58b45a87527c48773a63c","63d58ba0c1d8ad346f013187","63d58c072fda4797ee599123","63d58e14d8152a5e16405464","63d58eaedb55c559dd0b0965","63d58ef3fab675fdd03315d6","63d58f025a5139a3859595a4","63d58f9f2b707e9eba1cdfe6","63d590c54da1f691c06cbd59","63d59107e3386f651152b807","63d59122e3386f651152b808","63d593e61646f002d9e609e7","63d63c85b1d67a2062b2c1ac","63d63c9fb1d67a2062b2c1ad","63d63ccab1d67a2062b2c1ae","63d63dbbba5e660d09459b55","63d63dcbba5e660d09459b56","63d63e068b6c2981dc7220c2","63d63e608b6c2981dc7220c3","63d7ac78c6ebcc10f03eda5c","63d7c5997ea43dd1035438f6"],"purchase":["63d683e28de6cf6d3cefc6f5","63d6f3da95c77895d08a2ab8","63d6f3fa95c77895d08a2ab9","63d6f4d995c77895d08a2aba","63d6f4f695c77895d08a2abb","63d6f50f95c77895d08a2abc","63d6f89495c77895d08a2abd","63d77d3a37a4e293696c4725"]} (userId: 63d453c95f294e2ec57155f1)
+30.1.2023, 15:27:30 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: FNYtunTOQg8LcTd3AAAF] 
+30.1.2023, 15:27:56 - INFO - Emiting event: ON_INCOMING_ORDER to user: 63d453c95f294e2ec57155f1 socket [id: IBID75GFgz9M_9-KAAAD] (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:37:51 - INFO - Server is running on port: 3030 
+30.1.2023, 15:37:52 - INFO - New connected socket [id: CEt7W-1MMGOEAKqDAAAC] 
+30.1.2023, 15:37:52 - INFO - New connected socket [id: ShFXq1NxW1SHenMzAAAD] 
+30.1.2023, 15:38:30 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:38:40 - INFO - Server is running on port: 3030 
+30.1.2023, 15:38:40 - INFO - New connected socket [id: gfIPsjIvHl26gv_KAAAB] 
+30.1.2023, 15:38:41 - INFO - New connected socket [id: 89St1X-3GKi1BW9xAAAD] 
+30.1.2023, 15:38:47 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:38:51 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:38:52 - INFO - New connected socket [id: mHdimOcukkxLnkplAAAF] 
+30.1.2023, 15:38:53 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: mHdimOcukkxLnkplAAAF] 
+30.1.2023, 15:39:07 - INFO - Emiting event: ON_INCOMING_ORDER to user: 63d453c95f294e2ec57155f1 socket [id: mHdimOcukkxLnkplAAAF] (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:39:14 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:39:22 - INFO - No active socket for user: 63d453c95f294e2ec57155eb (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:39:26 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 15:39:27 - INFO - New connected socket [id: QUbnZZN2vIBe5MvXAAAH] 
+30.1.2023, 15:39:27 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: QUbnZZN2vIBe5MvXAAAH] 
+30.1.2023, 15:39:31 - INFO - Emiting event: ON_INCOMING_ORDER to user: 63d453c95f294e2ec57155eb socket [id: QUbnZZN2vIBe5MvXAAAH] (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:39:35 - INFO - Emiting event: ON_INCOMING_ORDER to user: 63d453c95f294e2ec57155eb socket [id: QUbnZZN2vIBe5MvXAAAH] (userId: 63d453c95f294e2ec57155eb)
+30.1.2023, 15:40:33 - INFO - Server is running on port: 3030 
+30.1.2023, 15:40:34 - INFO - New connected socket [id: SrfKF9VeWNQUb6P2AAAB] 
+30.1.2023, 15:40:34 - INFO - New connected socket [id: XeR1e2W6ohzfsLOoAAAD] 
+30.1.2023, 15:41:28 - INFO - Server is running on port: 3030 
+30.1.2023, 15:41:29 - INFO - New connected socket [id: 4WfVB7ekbm8hHjkGAAAB] 
+30.1.2023, 15:41:29 - INFO - New connected socket [id: 5g38uh9qb3IGd2Q9AAAD] 
+30.1.2023, 15:46:41 - INFO - Server is running on port: 3030 
+30.1.2023, 15:46:41 - INFO - New connected socket [id: YdocevjBBQs7FDmKAAAB] 
+30.1.2023, 15:46:42 - INFO - New connected socket [id: 0mIoxoU2XRoyncsBAAAD] 
+30.1.2023, 15:53:57 - INFO - Server is running on port: 3030 
+30.1.2023, 15:53:57 - INFO - New connected socket [id: XdiuJdF4u92ZGLgnAAAB] 
+30.1.2023, 15:53:57 - INFO - New connected socket [id: B31Ps8pWqAp7eRRIAAAD] 
+30.1.2023, 15:54:30 - INFO - Server is running on port: 3030 
+30.1.2023, 15:54:30 - INFO - New connected socket [id: 7JkzdeR_GSLmRpS2AAAC] 
+30.1.2023, 15:54:30 - INFO - New connected socket [id: qChMT45aLvsGQLXfAAAD] 
+30.1.2023, 15:54:45 - INFO - Server is running on port: 3030 
+30.1.2023, 15:54:45 - INFO - New connected socket [id: 143b0sPwYi_2_qyrAAAC] 
+30.1.2023, 15:54:45 - INFO - New connected socket [id: 37Ml5iDYiDQmFGv_AAAD] 
+30.1.2023, 15:55:11 - INFO - Server is running on port: 3030 
+30.1.2023, 15:55:11 - INFO - New connected socket [id: k5wTj048Ey7gixraAAAC] 
+30.1.2023, 15:55:11 - INFO - New connected socket [id: HB0Xq6Ozzxz6VPGWAAAD] 
+30.1.2023, 15:58:35 - INFO - Server is running on port: 3030 
+30.1.2023, 15:58:36 - INFO - New connected socket [id: -tvRSURQz0Ey7yNxAAAC] 
+30.1.2023, 15:58:36 - INFO - New connected socket [id: YtHf6_HERNV9Y9iVAAAD] 
+30.1.2023, 15:59:36 - INFO - Server is running on port: 3030 
+30.1.2023, 15:59:37 - INFO - New connected socket [id: XneT15jIHJhYX488AAAC] 
+30.1.2023, 15:59:37 - INFO - New connected socket [id: AswTn5YQbp9oo_XJAAAD] 
+30.1.2023, 16:00:03 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:00:41 - INFO - Server is running on port: 3030 
+30.1.2023, 16:00:42 - INFO - New connected socket [id: GgK9d5x1I9pAHtlPAAAB] 
+30.1.2023, 16:01:26 - INFO - Server is running on port: 3030 
+30.1.2023, 16:01:27 - INFO - New connected socket [id: rirT41yDZ4w_VvL1AAAB] 
+30.1.2023, 16:02:39 - INFO - Server is running on port: 3030 
+30.1.2023, 16:02:40 - INFO - New connected socket [id: _-5aH_UMe9eDhEmMAAAB] 
+30.1.2023, 16:02:47 - INFO - New connected socket [id: _RcXnzdzOI29u3k0AAAD] 
+30.1.2023, 16:03:07 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:03:08 - INFO - New connected socket [id: 60Op6qrgnrgdMcifAAAF] 
+30.1.2023, 16:03:08 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: 60Op6qrgnrgdMcifAAAF] 
+30.1.2023, 16:03:32 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:30:53 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:30:58 - INFO - New connected socket [id: ZAhHuaLkiKELU51FAAAH] 
+30.1.2023, 16:30:59 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: ZAhHuaLkiKELU51FAAAH] 
+30.1.2023, 16:31:35 - INFO - Socket disconnected [id: undefined] 
+30.1.2023, 16:31:39 - INFO - New connected socket [id: LEvjFQ0dK574kXZDAAAJ] 
+30.1.2023, 16:31:39 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: LEvjFQ0dK574kXZDAAAJ] 

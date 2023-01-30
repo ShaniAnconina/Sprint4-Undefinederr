@@ -19,6 +19,7 @@ async function getGigs(req, res) {
 async function getGigById(req, res) {
   try {
     const gigId = req.params.id
+    console.log('gigigig:::',gigId);
     const gig = await gigService.getById(gigId)
     res.json(gig)
   } catch (err) {
@@ -27,8 +28,19 @@ async function getGigById(req, res) {
   }
 }
 
+async function getGigsByUserId(req, res) {
+  try {
+    const {userId} = req.params
+    const gigs = await gigService.getByUserId(userId)
+    res.json(gigs)
+  } catch (err) {
+    logger.error('Failed to get gigs', err)
+    res.status(500).send({ err: 'Failed to get gigs' })
+  }
+}
+
 async function addGig(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
 
   try {
     const gig = req.body
@@ -66,7 +78,7 @@ async function removeGig(req, res) {
 }
 
 async function addGigMsg(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
   try {
     const gigId = req.params.id
     const msg = {
@@ -83,10 +95,10 @@ async function addGigMsg(req, res) {
 }
 
 async function removeGigMsg(req, res) {
-  const {loggedinUser} = req
+  const { loggedinUser } = req
   try {
     const gigId = req.params.id
-    const {msgId} = req.params
+    const { msgId } = req.params
 
     const removedId = await gigService.removeGigMsg(gigId, msgId)
     res.send(removedId)
@@ -104,5 +116,6 @@ module.exports = {
   updateGig,
   removeGig,
   addGigMsg,
-  removeGigMsg
+  removeGigMsg,
+  getGigsByUserId
 }

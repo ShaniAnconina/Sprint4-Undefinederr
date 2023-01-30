@@ -15,6 +15,18 @@ async function query() {
     }
 }
 
+async function getByUserId(userId) {
+    try {
+        const collection = await dbService.getCollection('gig')
+        const gigs = collection.find({ "owner._id": userId }).toArray() //need to change to objectId and the gig.owner in atlas to objectId
+        return gigs
+    } catch (err) {
+        logger.error(`while finding gigs by user id  ${userId}`, err)
+        throw err
+    }
+
+}
+
 async function getById(gigId) {
     try {
         const collection = await dbService.getCollection('gig')
@@ -66,4 +78,5 @@ module.exports = {
     getById,
     add,
     update,
+    getByUserId
 }
