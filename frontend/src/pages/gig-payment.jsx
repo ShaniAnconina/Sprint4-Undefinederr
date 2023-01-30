@@ -147,19 +147,19 @@ export function GigPayment() {
                         <div className="services">
 
                             {features.map(feature => <p key={feature.id} className="feature flex align-center">
-                                {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} />}
-                                {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} />}
-                                {packageType === 'premium' && <BsCheckLg color="#1dbf73" />}
+                                {packageType === 'basic' && <BsCheckLg color={Math.random() > 0.7 ? "#1dbf73" : "#95979d"} size={14} />}
+                                {packageType === 'standard' && <BsCheckLg color={Math.random() > 0.3 ? "#1dbf73" : "#95979d"} size={14} />}
+                                {packageType === 'premium' && <BsCheckLg color="#1dbf73" size={14} />}
                                 <span>{feature.txt}</span>
                             </p>)}
-                            {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions}  Revisions</span></p>}
-                            {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>{gig.revisions + 3}  Revisions</span></p>}
-                            {packageType === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" /><span>Unlimited Revisions</span></p>}
+                            {packageType === 'basic' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" size={14} /><span>{gig.revisions}  Revisions</span></p>}
+                            {packageType === 'standard' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" size={14} /><span>{gig.revisions + 3}  Revisions</span></p>}
+                            {packageType === 'premium' && <p className="flex align-center"> <BsCheckLg color="#1dbf73" size={14} /><span>Unlimited Revisions</span></p>}
                         </div>
                     </div>
 
                 </section>
-                <section className="summery">
+                <section className="summary">
                     <div className="price flex space-between bold">
                         <span>Total</span>
                         {packageType === 'basic' && <span>{`US$${gig.price.toFixed(0)}`}</span>}

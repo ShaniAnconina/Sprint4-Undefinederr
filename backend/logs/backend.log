@@ -1504,3 +1504,7 @@
 >>>>>>> 86406a31d42d9c65e7a5f0f134a09a8d8e1a7fc3
 29.1.2023, 22:09:23 - INFO - Server is running on port: 3030 
 29.1.2023, 22:09:26 - INFO - New connected socket [id: KDwpqM_Brw3E4g17AAAB] 
+29.1.2023, 22:17:12 - DEBUG - auth.service - login with username: shani (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 22:17:12 - INFO - User login:  | {"_id":"63d5ae2d8204a2cc30a3268f","username":"shani","fullname":"shani","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","purchase":["63d5ba1afcccf292b83edce5","63d5ae3b8204a2cc30a32690","63d5b6af8204a2cc30a32691","63d5b8ecf0f37c656e4e54d9","63d5b92366b16904cb5b4c55","63d5b94915bb8af8c25e011c","63d5b99ac2cfc56879f65e32","63d5b9b5c2cfc56879f65e33","63d63c85b1d67a2062b2c1ac","63d63c9fb1d67a2062b2c1ad","63d63ccab1d67a2062b2c1ae","63d63dbbba5e660d09459b55","63d63dcbba5e660d09459b56","63d63e068b6c2981dc7220c2","63d63e608b6c2981dc7220c3","63d66ba5d093b9666b47cd6d","63d66bbdd093b9666b47cd6e","63d66bc4d093b9666b47cd6f","63d66bd8d093b9666b47cd70","63d66bf4d093b9666b47cd71","63d66c49d093b9666b47cd72","63d66c62d093b9666b47cd73","63d66ce609cba3d249b79508","63d66d1e09cba3d249b79509","63d66d4909cba3d249b7950a","63d66d6809cba3d249b7950b"]} (userId: 63d453c95f294e2ec57155f1)
+29.1.2023, 22:17:12 - INFO - Setting socket.userId = 63d5ae2d8204a2cc30a3268f for socket [id: KDwpqM_Brw3E4g17AAAB] 
+29.1.2023, 23:10:19 - DEBUG - Getting Gigs (userId: 63d5ae2d8204a2cc30a3268f)

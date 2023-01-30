@@ -1,14 +1,20 @@
 .gig-payment-screen {
     margin-inline: auto;
-    padding: 32px 0 64px;
+    padding: 50px 0;
     color: $clr5;
+
 
     .gig-payment-container {
         width: 100%;
 
+
         .payment-details {
             text-align: left;
-            width: 765px;
+            width: 800px;
+            height: fit-content;
+            border: 1px solid $clr11;
+            border-color: #f4f4f4 #e4e5e7;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 6%);
 
             h6 {
                 color: $clr6;
@@ -46,14 +52,16 @@
 
             .form-container {
                 background-color: $clr1;
-                border: 1px solid $clr16;
-                padding: 24px 40px;
+                padding: 40px;
                 font-size: 14px;
-                border: 1px solid $clr16;
+                border-top: 1px solid $clr2;
+                box-shadow: inset 0 2px 4px rgb(0 0 0 / 6%);
 
                 input {
                     margin-top: 10px;
                     height: 40px;
+                    border: 1px solid #ddd;
+                    padding: 10px;
                 }
 
                 .card-details {
@@ -84,12 +92,13 @@
         }
 
         .purchase-details {
-            border: 1px solid $clr16;
+            border: 1px solid $clr11;
+            border-color: #f4f4f4 #e4e5e7;
             width: 375px;
             margin-inline: auto;
 
             .order {
-                padding: 32px 48px;
+                padding: 16px 24px;
                 background-color: $clr1;
                 border-bottom: 1px solid $clr18;
 
@@ -136,8 +145,8 @@
                 }
             }
 
-            .summery {
-                padding: 16px 48px 32px;
+            .summary {
+                padding: 16px 24px;
 
                 .price {
                     font-size: 18px;

@@ -40,7 +40,7 @@ export function DynamicTable() {
                             <img src={userType === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
                             <p>{userType === 'buyer' ? item.seller.fullname : item.buyer.fullname}</p>
                         </td>
-                        <td>{item.gig.title}</td>
+                        <td className="gig-title">{item.gig.title}</td>
                         <td>{item.gig.package}</td>
                         {item.gig.package === 'basic' && <td>{item.gig.daysToMake} days</td>}
                         {item.gig.package === 'standard' && <td>{item.gig.daysToMake - 1} days</td>}
