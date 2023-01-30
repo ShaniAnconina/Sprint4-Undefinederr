@@ -20,13 +20,16 @@ export function GigIndex() {
 
     useEffect(() => {
         setIsLoaderOn(true)
-        console.log("reading params: ", searchParams)
+        // console.log("reading params: ", searchParams)
         const tags = searchParams.get('tags')
+        console.log("search params tags: ", tags)
         const txt = searchParams.get('txt')
+        console.log("search params txt: ", txt)
         const defaultFilter = gigService.getDefaultFilter()
-        if(tags) {console.log("showing gigs with QP tags: ",tags);loadGigs({...defaultFilter,tags:[tags]})}
-        else if (txt) {console.log("showing gigs with QP txt: ",txt);loadGigs({...defaultFilter,txt:txt})}
-        else {console.log("filtering from store: ", filterBy);loadGigs(filterBy)}
+        // if(tags) {console.log("showing gigs with QP tags: ",tags);loadGigs({...defaultFilter,tags:[tags]})}
+        // else if (txt) {console.log("showing gigs with QP txt: ",txt);loadGigs({...defaultFilter,txt:txt})}
+        // else {console.log("filtering from store: ", filterBy);loadGigs(filterBy)}
+        loadGigs(filterBy)
     }, [filterBy, searchParams])
     
 
