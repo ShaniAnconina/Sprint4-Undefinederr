@@ -51,6 +51,8 @@ async function updateOrder(req, res) {
     const order = req.body
     const updatedOrder = await orderService.update(order)
     res.json(updatedOrder)
+    let { _id } = updatedOrder.buyer
+    emitToUser({ type: 'on-change-status-order', data: updatedOrder, userId: _id })
   } catch (err) {
     logger.error('Failed to update order', err)
     res.status(500).send({ err: 'Failed to update order' })

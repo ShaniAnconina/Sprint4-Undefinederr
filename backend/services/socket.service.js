@@ -19,7 +19,7 @@ function setupSocketAPI(http) {
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
-            gIo.emit('first-event', `This is my first test ${socket.userId}`) //
+            // gIo.emit('first-event', `This is my first test ${socket.userId}`) //
         })
 
         socket.on('unset-user-socket', () => {

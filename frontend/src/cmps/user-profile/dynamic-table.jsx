@@ -1,21 +1,38 @@
 import { useEffect, useState } from "react"
+import { MdLocalActivity } from "react-icons/md"
 import { useOutletContext } from "react-router-dom"
+import { socketService } from "../../services/socket.service"
 import { StatusModal } from "./status-modal"
 
 export function DynamicTable() {
     const [setStatusModal, statusModal, viewType, user] = useOutletContext()
-    const [items, setItens] = useState(null)
+    const [items, setItems] = useState(null)
 
     useEffect(() => {
         switch (viewType) {
             case 'buyer':
-                setItens(user.purchases)
+                setItems(user.purchases)
                 break
             case 'seller':
-                setItens(user.orders)
+                setItems(user.orders)
                 break
         }
     }, [viewType])
+
+
+    useEffect(() => {
+        socketService.on('on-change-status-order', (data) => {
+            if (items) updateStatus(data)
+        })
+    }, [items])
+
+    function updateStatus(data) {
+        const newOrder = items.map(item => {
+            if (item._id === data._id) item.status = data.status
+            return item
+        })
+        setItems(newOrder)
+    }
 
     function toggleStatusModal(order) {
         setStatusModal(order)

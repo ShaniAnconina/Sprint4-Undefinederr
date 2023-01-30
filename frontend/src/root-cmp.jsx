@@ -25,12 +25,16 @@ export function App() {
   const elApp = useRef(null)
 
   useEffect(() => {
-    socketService.on('first-event', (msg) => {
-      showSuccessMsg(msg)
-    })
+    // socketService.on('first-event', (msg) => {
+    //   showSuccessMsg(msg)
+    // })
 
     socketService.on('ON_INCOMING_ORDER', () => {
       showSuccessMsg('You have a new order!')
+    })
+
+    socketService.on('on-change-status-order', () => {
+      showSuccessMsg('Your order status updated!')
     })
   }, [])
 
