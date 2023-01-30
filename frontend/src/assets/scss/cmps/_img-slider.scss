@@ -17,6 +17,10 @@
         opacity: 0;
         background-color: $clr0;
         border: 1px solid $clr3;
+        &::before{
+            // background-color: red;
+            color: red;
+        }
     }
     
     .previous-btn{
