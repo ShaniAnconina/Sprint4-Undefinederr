@@ -4,7 +4,6 @@ import { NavLink, Outlet, useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
 import { MiniProfile } from '../cmps/user-profile/mini-profile.jsx'
-import { DynamicTable } from '../cmps/user-profile/dynamic-table.jsx'
 
 
 export function UserProfile() {
@@ -12,7 +11,7 @@ export function UserProfile() {
     const [statusModal, setStatusModal] = useState(null)
 
     const loggedInUser = useSelector((globalStore) => globalStore.userModule.loggedinUser)
-    const [userType, setUserType] = useState("buyer")
+    const [viewType, setViewType] = useState("buyer")
     const [user, setUser] = useState(null)
     const { userId } = useParams()
 
@@ -33,35 +32,32 @@ export function UserProfile() {
             navigate('/')
         }
     }
-    function toggleUserType(ev) {
+    function toggleViewType(ev) {
         // console.log(ev.target.getBoundingClientRect())
-        setUserType(prev => {
+        setViewType(prev => {
             if (prev === 'buyer') return 'seller'
             else return 'buyer'
         })
-        
+        navigate(`/user/${userId}/order`)
         setStatusModal(null)
     }
 
     if (!user) return <div>Loading...</div>
     return <div className="profile-page-container main-layout">
         <section className="profile-page">
-            <MiniProfile user={user} userType={userType} />
+            <MiniProfile user={user} userType={viewType} />
             <div className="main-profile">
                 <div className="profile-header">
                     <div className='nav-container'>
-
-                        {userType === 'seller' && <ul>
-                           <NavLink to={'/user/:userId'}><li>Orders</li></NavLink>
-                           <NavLink to={'/user/:userId/dashboard'}><li>Dashboard</li></NavLink>
-                           <NavLink to={'/user/:userId/gigs'}><li>Gigs</li></NavLink>
+                        {viewType === 'seller' && <ul>
+                            <NavLink to={`/user/${userId}/order`}><li>Orders</li></NavLink>
+                            <NavLink to={`/user/${userId}/dashboard`}><li>Dashboard</li></NavLink>
+                            <NavLink to={`/user/${userId}/gigs`}><li>Gigs</li></NavLink>
                         </ul>}
                     </div>
-                    {user.order?.length && <button onClick={(ev)=>toggleUserType(ev)}>{userType === 'buyer' ? 'Switch to seller' : 'Switch to buyer'}</button>}
+                    {user.order?.length && <button onClick={(ev) => toggleViewType(ev)}>{viewType === 'buyer' ? 'Switch to seller' : 'Switch to buyer'}</button>}
                 </div>
-
-                <Outlet context={[setStatusModal, statusModal, userType, user]} />
-
+                <Outlet context={[setStatusModal, statusModal, viewType, user]} />
             </div>
         </section>
     </div >
