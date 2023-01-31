@@ -2120,3 +2120,5 @@
 31.1.2023, 15:08:25 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
 31.1.2023, 15:08:37 - INFO - Socket disconnected [id: undefined] 
 31.1.2023, 15:08:40 - INFO - New connected socket [id: oZquZnsMA9azUFPOAAAD] 
+31.1.2023, 15:15:23 - INFO - Server is running on port: 3030 
+31.1.2023, 15:18:00 - INFO - Server is running on port: 3030 
