@@ -15,32 +15,25 @@
             font-family: Macan-Regular;
             font-size: 26px;
 
-            img {
-                border-radius: 100%;
-                // align-self: center;
-                padding-bottom: 10px;
-                width: 140px;
-                height: 140px;
-            }
-
-            h4 {
-                margin: auto;
-            }
-
-            h5 {
-                margin: 13px 0;
-                line-height: 140%;
-                color: orange;
-                font-size: 16px;
-            }
+        img {
+            border-radius: 100%;
+            // align-self: center;
+            // padding-bottom: 10px;
+            width: 140px;
+            height: 140px;
         }
 
-        .member-since {
+        h4 {
+            margin: 10px auto 0;
+        }
+        h5 {
             margin: 13px 0;
-            list-style: 140%;
-            color: $clr3;
-            font-size: 16px;
+            line-height: 140%;
+            color: orange;
+            font-size:16px;
         }
+    }
+
 
         .performance-stats {
             margin: 26px 0px 0px;
@@ -72,4 +65,5 @@
         }
 
     }
+
 }

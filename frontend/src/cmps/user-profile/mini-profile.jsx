@@ -2,107 +2,83 @@
 //TODO dynamic Member since
 
 import * as React from 'react';
-import Box from '@mui/material/Box';
 
 import { utilService } from '../../services/util.service.js';
 import { useState, useEffect } from 'react';
 
-import LinearProgress, { LinearProgressProps } from '@mui/material/LinearProgress';
-import Typography from '@mui/material/Typography';
-import PropTypes from 'prop-types';
+import {LinearWithValueLabel} from './LinearProgressWithLabel'
+ 
 
 
 export function MiniProfile({ user, userType }) {
 
+// const [financeStats, setFinanceStats] = useState({})
 
     const sellerLevels = ["Top Rated Seller"]
 
-    function LinearProgressWithLabel(props) {
-        return (
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <Box sx={{ width: '100%', mr: 1 }}>
-                    <LinearProgress variant="determinate" {...props} />
-                </Box>
-                <Box sx={{ minWidth: 35 }}>
-                    <Typography variant="body2" color="text.secondary">{`${Math.round(
-                        props.value,
-                    )}%`}</Typography>
-                </Box>
-            </Box>
-        );
+    useEffect(() => { //FOR DEV ONLY
+        console.log('user: ', user)
+        // setFinanceStats(statsCalculate(user.orders))
+    }, [])
+
+    function statsCalculate(orders) {
+        // console.log("receive to calculate: ", orders)
+        const stats = {}
+        // stats.pending = orders.reduce((acc, order)=> {if(order.status == 'pending') return acc= acc+1},0)
+        let calculatedPending = orders.filter((order) => order.status=='pending')
+        stats.pending = calculatedPending.length
+        let calculatedInProcess = orders.filter((order) => order.status=='in-process')
+        stats.inProcess = calculatedInProcess.length
+        let calculatedCompleted = orders.filter((order) => order.status=='completed')
+        stats.completed = calculatedCompleted.length
+        stats.totalEarnings = calculatedCompleted.reduce((acc,order) => acc +=order.gig.price ,0)
+        let calculatedRejected = orders.filter((order) => order.status=='rejected')
+        stats.rejected = calculatedRejected.length
+
+        stats.totalJobs = orders.length
+        // console.log("calculated stats: ", stats)
+
+
+        return stats
     }
 
-    LinearProgressWithLabel.propTypes = {
-        /**
-         * The value of the progress indicator for the determinate and buffer variants.
-         * Value between 0 and 100.
-         */
-        value: PropTypes.number.isRequired,
-    };
-
-
-    function LinearWithValueLabel({ progressValue }) {
-        const [progress, setProgress] = React.useState(10);
-
-        React.useEffect(() => {
-            setProgress(progressValue)
-        }, [progressValue]);
-
-        return (
-            <Box sx={{ width: '100%' }}>
-                <LinearProgressWithLabel value={progress} />
-            </Box>
-        );
-    }
+    const stats = statsCalculate(user.orders)
 
 
     return <section className="mini-profile">
-        <div className={userType === 'seller' ? "profile-username flex space-around" : "profile-username flex column align-center"}>
+        {/* <div className={userType === 'seller' ? "profile-username flex space-around" : "profile-username flex column align-center"}> */}
+        <div className="profile-username flex column align-center">
             <img src={user.imgUrl} />
             <div className='flex column'>
-                <h4>{user.fullname}</h4>
+                <h4>{user.fullname.charAt(0).toUpperCase() + user.fullname.slice(1)}</h4>
                 {userType === 'seller' && <h5>Top Rated Seller</h5>}
             </div>
         </div>
-        <h6 className='member-since'>Member since {utilService.getRandomIntInclusive(1, 12)}/{utilService.getRandomIntInclusive(2008, 2019)}</h6>
         {userType === 'seller' && <section> <div className="performance-stats flex column">
             <div className="stat flex space-between">
-                Inbox response rate
-                <LinearWithValueLabel progressValue={utilService.getRandomIntInclusive(60, 100)} />
+                Pending
+                <LinearWithValueLabel statNum={stats.pending} progressValue={utilService.getPercentage(stats.pending,stats.totalJobs)} />
             </div>
             <div className="stat flex space-between">
-                Inbox response time
-                <LinearWithValueLabel progressValue={utilService.getRandomIntInclusive(60, 100)} />
+                In Process
+                <LinearWithValueLabel statNum={stats.inProcess} progressValue={utilService.getPercentage(stats.inProcess,stats.totalJobs)} />
             </div>
             <div className="stat flex space-between">
-                Order response rate
-                <LinearWithValueLabel progressValue={utilService.getRandomIntInclusive(60, 100)} />
+                Completed
+                <LinearWithValueLabel statNum={stats.completed} progressValue={utilService.getPercentage(stats.completed,stats.totalJobs)} />
             </div>
             <div className="stat flex space-between">
-                Delivered on time
-                <LinearWithValueLabel progressValue={utilService.getRandomIntInclusive(60, 100)} />
-            </div>
-            <div className="stat flex space-between">
-                Order completion
-                <LinearWithValueLabel progressValue={utilService.getRandomIntInclusive(60, 100)} />
+                Rejected
+                <LinearWithValueLabel statNum={stats.rejected} progressValue={utilService.getPercentage(stats.rejected,stats.totalJobs)} />
             </div>
         </div>
             <div className="finance stat flex space-between">
-                <p>Jobs Pending</p>
-                <p>{utilService.getRandomIntInclusive(5, 20)} jobs</p>
+                <p>Jobs Total</p>
+                <p>{stats.totalJobs} jobs</p>
             </div>
-            <div className="finance stat flex space-between">
-                <p>Jobs in process</p>
-                <p>{utilService.getRandomIntInclusive(5, 20)} jobs</p>
-            </div>
-            <div className="finance stat flex space-between">
-                <p>Jobs completed</p>
-                <p>{utilService.getRandomIntInclusive(5, 20)} jobs</p>
-            </div>
-
             <div className="total-earnings finance stat flex space-between">
                 Total Earnings
-                <p>US${utilService.getRandomIntInclusive(500, 3000)}</p>
+                <p>US${stats.totalEarnings}</p>
             </div>
         </section>
         }

@@ -2039,7 +2039,16 @@
 31.1.2023, 1:41:53 - INFO - New connected socket [id: 5l4X8UVntz8iErK0AAAy] 
 31.1.2023, 1:41:54 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: 5l4X8UVntz8iErK0AAAy] 
 31.1.2023, 1:41:57 - INFO - New connected socket [id: 3W6bnqJgixldqI4FAAA0] 
+<<<<<<< HEAD
 31.1.2023, 2:19:19 - INFO - Socket disconnected [id: undefined] 
 31.1.2023, 2:29:32 - INFO - Socket disconnected [id: undefined] 
 31.1.2023, 2:29:40 - INFO - New connected socket [id: 8c2bxxL_o-njgOm5AAA2] 
 31.1.2023, 2:29:41 - INFO - Setting socket.userId = 63d453c95f294e2ec57155eb for socket [id: 8c2bxxL_o-njgOm5AAA2] 
+=======
+31.1.2023, 1:50:22 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 1:50:28 - INFO - New connected socket [id: RsKqCO-pSOmxL2cEAAAD] 
+31.1.2023, 1:50:29 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: RsKqCO-pSOmxL2cEAAAD] 
+31.1.2023, 2:20:34 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 2:20:36 - INFO - New connected socket [id: -TiqUzaxeTTN0sBDAAAF] 
+31.1.2023, 2:20:36 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: -TiqUzaxeTTN0sBDAAAF] 
+>>>>>>> 84e77b24a24b43a5ae9821277b01c65e45a417e5

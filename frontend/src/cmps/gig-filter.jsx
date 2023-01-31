@@ -26,6 +26,7 @@ export function GigFilter({ searchBtnContent, placeholderTxt, inHomeHero = false
         ev?.preventDefault()
         setfilter(filterByToEdit)
         navigate({pathname:'/gig',search: `?txt=${filterByToEdit.txt}`})
+        setFilterByToEdit(gigService.getDefaultFilter())
     }
 
     return <form className='filter-form' onSubmit={onFilterSubmit}>
