@@ -50,7 +50,7 @@ export function MiniProfile({ user, userType }) {
         <div className="profile-username flex column align-center">
             <img src={user.imgUrl} />
             <div className='flex column'>
-                <h4>{user.fullname}</h4>
+                <h4>{user.fullname.charAt(0).toUpperCase() + user.fullname.slice(1)}</h4>
                 {userType === 'seller' && <h5>Top Rated Seller</h5>}
             </div>
         </div>
