@@ -4,7 +4,7 @@ const utilService = require('../../services/util.service')
 
 const ObjectId = require('mongodb').ObjectId
 
-async function query() {
+async function query() { 
     try {
         const collection = await dbService.getCollection('gig')
         var gigs = await collection.find().toArray()
