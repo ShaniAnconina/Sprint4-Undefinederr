@@ -7,8 +7,12 @@
     display: flex;
 
     .main-profile {
-        padding-left: 40px;
+        padding-inline: 50px;
         width: 100%;
+        
+        @media (min-width: 700px) {
+            padding-left: 40px;
+        }
 
         .profile-header {
             display: flex;
