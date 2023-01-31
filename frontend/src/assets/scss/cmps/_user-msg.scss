@@ -4,7 +4,7 @@
     right: 50%;
     z-index: 5;
     height: 42px;
-    min-width: 460px;
+    min-width: 400px;
     padding: 9px 16px;
     background-color: $clr0;
     color: $clr6;
@@ -20,6 +20,11 @@
     justify-content: space-between;
     transition: all 0.5s ease 0.02s;
     transform: translateX(50%);
+
+    @media (min-width: 700px) {
+        min-width: 460px;
+
+    }
 }
 
 .user-msg button {

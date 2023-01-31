@@ -111,21 +111,22 @@ export function DynamicTable() {
         <section className="table-mobile">
             {items?.map((item) => {
                 return <div className="item" key={item._id}>
+                    <div className="top">
+                        <div className="client">
+                            {/* {user.fullname.charAt(0).toUpperCase() + user.fullname.slice(1)} */}
+                            <img src={viewType === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
+                            <p>{viewType === 'buyer' ? (item.seller.fullname.charAt(0).toUpperCase() + item.seller.fullname.slice(1)) : (item.buyer.fullname.charAt(0).toUpperCase() + item.buyer.fullname.slice(1))}</p>
+                        </div>
 
-                    <div className="client">
-                        <img src={viewType === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
-                        <p>{viewType === 'buyer' ? item.seller.fullname : item.buyer.fullname}</p>
+                        <div className="package">{item.gig.package.charAt(0).toUpperCase() + item.gig.package.slice(1)}</div>
+
+                        <div className="price">
+                            {item.gig.package === 'basic' && <p>US${item.gig.price.toFixed(0)}</p>}
+                            {item.gig.package === 'standard' && <p>US${(item.gig.price * 1.1).toFixed(0)}</p>}
+                            {item.gig.package === 'premium' && <p>US${(item.gig.price * 1.5).toFixed(0)}</p>}
+                        </div>
                     </div>
-
                     <div className="title"><p>{item.gig.title}</p></div>
-
-                    <div className="package">{item.gig.package}</div>
-
-                    <div className="price">
-                        {item.gig.package === 'basic' && <p>US${item.gig.price.toFixed(0)}</p>}
-                        {item.gig.package === 'standard' && <p>US${(item.gig.price * 1.1).toFixed(0)}</p>}
-                        {item.gig.package === 'premium' && <p>US${(item.gig.price * 1.5).toFixed(0)}</p>}
-                    </div>
 
                     {viewType === 'buyer' && <p className={`status-item ${item.status}`}>{getStatus(item.status)}</p>}
                     {viewType === 'seller' && <button onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{getStatus(item.status)}</button>}

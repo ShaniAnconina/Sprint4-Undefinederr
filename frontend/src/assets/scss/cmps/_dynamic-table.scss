@@ -90,41 +90,94 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-areas:
-                "client   package   price   status-item"
-                "title    title     title   status-item";
+                "client   package   price   status"
+                "title    title     title   title";
             border-bottom: 1px solid $clr17;
             background-color: $clr0;
-            padding: 10px;
+            padding: 15px 20px 15px 15px;
 
-
-            .client {
-                grid-area: client;
+            .top {
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 80%;
 
-                img {
-                    height: 35px;
-                    border-radius: 100%;
-                    margin: 0 15px 0 0;
+                .client {
+                    grid-area: client;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 35px;
+                        border-radius: 100%;
+                        margin: 0 15px 0 0;
+                    }
+
+                    p {
+                        font-weight: 600;
+                    }
                 }
-            }
 
-            .package {
-                grid-area: package;
-            }
+                .package {
+                    grid-area: package;
+                    color: $clr13;
+                }
 
-            .price {
-                grid-area: price;
+                .price {
+                    grid-area: price;
+                    color: $clr13;
+                }
             }
 
             .title {
                 grid-area: title;
-            }
+                padding: 5px 0 0 50px;
 
-            .status-item {
-                grid-area: status-item;
+                P {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                    overflow: hidden;
+                }
             }
+                
+                .status-item {
+                    grid-area: status;
+                    height: 30px;
+                    margin-block: 5px;
+                    border-radius: 4px;
+                    border: none;
+                    font-size: 16px;
+                    padding-inline: 7px;
+                    width: 101px;
+                    color: $clr0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &.pending {
+                        background-color: $clr3;
+                    }
+
+                    &.in-process {
+                        background-color: $clr14;
+                    }
+
+                    &.completed {
+                        background-color: $clr9;
+                    }
+
+                    &.rejected {
+                        background-color: rgb(220, 78, 78);
+                    }
+                }
+
+                button.status-item:hover {
+                    opacity: 0.7;
+                }
         }
+
 
         @media (min-width: 700px) {
             display: none;

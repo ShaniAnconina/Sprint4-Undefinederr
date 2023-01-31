@@ -7,7 +7,6 @@
     display: flex;
 
     .main-profile {
-        padding-inline: 50px;
         width: 100%;
         
         @media (min-width: 700px) {
@@ -20,6 +19,11 @@
             align-items: center;
             margin-block: 20px;
             height: 50px;
+            padding-inline: 20px;
+            
+            @media (min-width: 700px) {
+                padding-inline: 0;
+            }
 
             .nav-container ul {
                 list-style: none;
