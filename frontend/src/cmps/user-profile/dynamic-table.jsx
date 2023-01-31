@@ -68,7 +68,9 @@ export function DynamicTable() {
 
     if (!items) return <span></span>
     return <article className="dynamic-table">
-        <table>
+
+        {/* DESKTOP */}
+        <table className="table-desktop">
             <thead>
                 <tr>
                     {viewType === 'buyer' && <th>Seller</th>}
@@ -104,5 +106,32 @@ export function DynamicTable() {
                 {statusModal && <StatusModal order={statusModal} setStatusModal={setStatusModal} />}
             </tbody>
         </table>
+
+        {/* MOBILE */}
+        <section className="table-mobile">
+            {items?.map((item) => {
+                return <div className="item" key={item._id}>
+
+                    <div className="client">
+                        <img src={viewType === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
+                        <p>{viewType === 'buyer' ? item.seller.fullname : item.buyer.fullname}</p>
+                    </div>
+
+                    <div className="title"><p>{item.gig.title}</p></div>
+
+                    <div className="package">{item.gig.package}</div>
+
+                    <div className="price">
+                        {item.gig.package === 'basic' && <p>US${item.gig.price.toFixed(0)}</p>}
+                        {item.gig.package === 'standard' && <p>US${(item.gig.price * 1.1).toFixed(0)}</p>}
+                        {item.gig.package === 'premium' && <p>US${(item.gig.price * 1.5).toFixed(0)}</p>}
+                    </div>
+
+                    {viewType === 'buyer' && <p className={`status-item ${item.status}`}>{getStatus(item.status)}</p>}
+                    {viewType === 'seller' && <button onClick={() => toggleStatusModal(item)} className={`status-item ${item.status}`}>{getStatus(item.status)}</button>}
+                </div>
+            })}
+            {statusModal && <StatusModal order={statusModal} setStatusModal={setStatusModal} />}
+        </section>
     </article>
 }
