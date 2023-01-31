@@ -4,6 +4,7 @@ import { NavLink, Outlet, useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
 import { MiniProfile } from '../cmps/user-profile/mini-profile.jsx'
+import { Loader } from '../cmps/home/loader.jsx'
 
 
 export function UserProfile() {
@@ -42,7 +43,7 @@ export function UserProfile() {
         setStatusModal(null)
     }
 
-    if (!user) return <div>Loading...</div>
+    if (!user) return <Loader/>
     return <div className="profile-page-container main-layout">
         <section className="profile-page">
             <MiniProfile user={user} userType={viewType} />

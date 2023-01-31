@@ -7,6 +7,7 @@ import { DetailsSidebar } from "../cmps/details/details-sidebar"
 import { OwnerRate } from "../cmps/details/owner-rate"
 import { Reviews } from "../cmps/details/reviews"
 import { OwnerProfile } from "../cmps/details/owner-profile"
+import { Loader } from "../cmps/home/loader"
 
 import { FaHeart } from "react-icons/fa"
 
@@ -48,7 +49,7 @@ export function GigDetails({ elApp }) {
         }
     }
 
-    if (!gig) return <p>Loading...</p>
+    if (!gig) return <Loader/>
 
     return (
         <section className="gig-details ">

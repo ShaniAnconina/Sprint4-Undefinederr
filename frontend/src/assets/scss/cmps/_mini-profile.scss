@@ -1,12 +1,14 @@
 .mini-profile {
     display: none;
-
+    
     @media (min-width: 700px) {
         display: block;
         width: 390px;
-        height: fit-content;
-        margin-top: 35px;
+        height: 100vh;
+        // height: fit-content;
+        // margin-top: 35px;
         border: 1px solid $clr17;
+        border-top: none;
         background-color: $clr0;
         padding: 1px 20px 5px;
 

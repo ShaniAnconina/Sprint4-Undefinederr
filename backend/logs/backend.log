@@ -2052,3 +2052,57 @@
 31.1.2023, 2:20:36 - INFO - New connected socket [id: -TiqUzaxeTTN0sBDAAAF] 
 31.1.2023, 2:20:36 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: -TiqUzaxeTTN0sBDAAAF] 
 >>>>>>> 84e77b24a24b43a5ae9821277b01c65e45a417e5
+31.1.2023, 10:46:00 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 10:46:16 - INFO - No active socket for user: 63d453c95f294e2ec57155ec (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 12:22:40 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 12:40:31 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:05:33 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:05:35 - INFO - New connected socket [id: 88tZplwuHE9fIGf-AAAJ] 
+31.1.2023, 14:05:35 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: 88tZplwuHE9fIGf-AAAJ] 
+31.1.2023, 14:11:48 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:11:50 - INFO - New connected socket [id: XqCW_zoNBqzKvgeeAAAL] 
+31.1.2023, 14:11:50 - INFO - Setting socket.userId = 63d453c95f294e2ec57155f1 for socket [id: XqCW_zoNBqzKvgeeAAAL] 
+31.1.2023, 14:12:03 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:12:03 - DEBUG - Getting Gigs (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:14:31 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:14:33 - INFO - New connected socket [id: DH-z3m-QmkxJtkuUAAAN] 
+31.1.2023, 14:14:45 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:14:45 - ERROR - Failed to Login Invalid username or password (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:14:45 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:14:45 - INFO - New connected socket [id: ZZhq0laLWXtBdXTrAAAP] 
+31.1.2023, 14:14:52 - DEBUG - auth.service - login with username: tami (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:14:52 - ERROR - Failed to Login Invalid username or password (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:14:52 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:14:53 - INFO - New connected socket [id: Q4HiyIhNfNsc93k6AAAR] 
+31.1.2023, 14:15:15 - DEBUG - auth.service - login with username: ohad (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:15:15 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d189","fullname":"Ohad ","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0496SGPE4S-69a94af3e108-512","username":"ohad","level":"Level One","purchase":["63d9059fe8976f2a12ec79e5"]} (userId: 63d453c95f294e2ec57155f1)
+31.1.2023, 14:15:15 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: Q4HiyIhNfNsc93k6AAAR] 
+31.1.2023, 14:16:40 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:16:42 - INFO - New connected socket [id: zh_hR6ydnufy85sWAAAT] 
+31.1.2023, 14:16:42 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: zh_hR6ydnufy85sWAAAT] 
+31.1.2023, 14:17:44 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:17:46 - INFO - New connected socket [id: syhPLekJ0QFzYqzyAAAV] 
+31.1.2023, 14:17:46 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: syhPLekJ0QFzYqzyAAAV] 
+31.1.2023, 14:23:04 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:23:06 - INFO - New connected socket [id: 5abYdsVot6LsgGpyAAAX] 
+31.1.2023, 14:23:07 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: 5abYdsVot6LsgGpyAAAX] 
+31.1.2023, 14:23:11 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:23:13 - INFO - New connected socket [id: wgkwU3JNBIc_D3TDAAAZ] 
+31.1.2023, 14:23:14 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: wgkwU3JNBIc_D3TDAAAZ] 
+31.1.2023, 14:23:19 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:23:21 - INFO - New connected socket [id: 9C_X4oWPo6VPAKNuAAAb] 
+31.1.2023, 14:23:42 - DEBUG - auth.service - login with username: yovel98 (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 14:23:42 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d190","fullname":"Yovel","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0436HRU213-4cfaf5e6eaa7-512","username":"yovel98","level":"Top Rated Seller"} (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 14:23:42 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d190 for socket [id: 9C_X4oWPo6VPAKNuAAAb] 
+31.1.2023, 14:24:05 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:24:06 - INFO - New connected socket [id: hrEIc1AQzI8QOwJdAAAd] 
+31.1.2023, 14:24:39 - DEBUG - auth.service - login with username: ohad (userId: 63d900aec690fa64cfe6d190)
+31.1.2023, 14:24:39 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d189","fullname":"Ohad ","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0496SGPE4S-69a94af3e108-512","username":"ohad","level":"Level One","purchase":["63d9059fe8976f2a12ec79e5","63d9069ac861a6fa7e3dd7d9"]} (userId: 63d900aec690fa64cfe6d190)
+31.1.2023, 14:24:39 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: hrEIc1AQzI8QOwJdAAAd] 
+31.1.2023, 14:24:57 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 14:24:59 - INFO - New connected socket [id: PiDLdxyfPY2pRwOuAAAf] 
+31.1.2023, 14:25:20 - DEBUG - auth.service - login with username: ohad (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 14:25:20 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d189","fullname":"Ohad ","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0496SGPE4S-69a94af3e108-512","username":"ohad","level":"Level One","purchase":["63d9059fe8976f2a12ec79e5","63d9069ac861a6fa7e3dd7d9"]} (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 14:25:20 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: PiDLdxyfPY2pRwOuAAAf] 
+31.1.2023, 14:25:27 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 14:25:48 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)

@@ -7,6 +7,7 @@ import { CreditCards } from "../cmps/details/credit-cards"
 import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
+import { Loader } from "../cmps/home/loader"
 
 import { BsCheckLg } from "react-icons/bs"
 import { socketService, SOCKET_EMIT_NEW_ORDER } from "../services/socket.service"
@@ -58,7 +59,7 @@ export function GigPayment() {
         }
     }
 
-    if (!gig) return <p>loading...</p>
+    if (!gig) return <Loader/>
     return <section className="gig-payment-screen  main-layout">
 
         <div className="gig-payment-container flex">
