@@ -2114,3 +2114,9 @@
 31.1.2023, 11:26:39 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155ec)
 31.1.2023, 11:26:51 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155ec)
 31.1.2023, 11:26:56 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155ec)
+31.1.2023, 15:07:21 - INFO - Server is running on port: 3030 
+31.1.2023, 15:07:23 - INFO - New connected socket [id: NHLGTBKwNM3anbljAAAB] 
+31.1.2023, 15:07:33 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 15:08:25 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 15:08:37 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 15:08:40 - INFO - New connected socket [id: oZquZnsMA9azUFPOAAAD] 
