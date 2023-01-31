@@ -2,86 +2,132 @@
     text-align: left;
     margin-bottom: 100px;
 
-    table {
-        width: 100%;
-        background-color: $clr0;
-        border: 1px solid $clr17;
-        position: relative;
-        border-collapse: collapse;
+    table.table-desktop {
+        display: none;
 
-        tr {
+        @media (min-width: 700px) {
+
+            display: table;
+            width: 100%;
+            background-color: $clr0;
+            border: 1px solid $clr17;
+            position: relative;
+            border-collapse: collapse;
+
+            tr {
+                border-bottom: 1px solid $clr17;
+            }
+
+            th {
+                padding: 15px;
+            }
+
+            td {
+                padding: 20px 15px;
+                min-width: 135px;
+                max-width: 435px;
+
+                &.client {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        height: 35px;
+                        border-radius: 100%;
+                        margin: 0 15px 0 0;
+                    }
+
+                    p {
+                        font-weight: 500;
+                    }
+                }
+
+                &.gig-title p {
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 300px;
+                    overflow: hidden;
+                }
+
+                button.status-item,
+                p.status-item {
+                    height: 38px;
+                    margin-block: 5px;
+                    border-radius: 4px;
+                    border: none;
+                    font-size: 16px;
+                    padding: 7px;
+                    width: 101px;
+                    color: $clr0;
+                    text-align: center;
+
+                    &.pending {
+                        background-color: $clr3;
+                    }
+
+                    &.in-process {
+                        background-color: $clr14;
+                    }
+
+                    &.completed {
+                        background-color: $clr9;
+                    }
+
+                    &.rejected {
+                        background-color: rgb(220, 78, 78);
+                    }
+                }
+
+                button.status-item:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    section.table-mobile {
+        .item {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "client   package   price   status-item"
+                "title    title     title   status-item";
             border-bottom: 1px solid $clr17;
+            background-color: $clr0;
+            padding: 10px;
+
+
+            .client {
+                grid-area: client;
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: 35px;
+                    border-radius: 100%;
+                    margin: 0 15px 0 0;
+                }
+            }
+
+            .package {
+                grid-area: package;
+            }
+
+            .price {
+                grid-area: price;
+            }
+
+            .title {
+                grid-area: title;
+            }
+
+            .status-item {
+                grid-area: status-item;
+            }
         }
 
-        th {
-            padding: 15px;
-        }
-
-        td {
-            padding: 20px 15px;
-            min-width: 135px;
-            max-width: 435px;
-
-            &.gig-title p {
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                width: 300px;
-                overflow: hidden;
-            }
-
-            button.status-item,
-            p.status-item {
-                height: 38px;
-                margin-block: 5px;
-                border-radius: 4px;
-                border: none;
-                font-size: 16px;
-                padding: 7px;
-                width: 101px;
-                color: $clr0;
-                text-align: center;
-
-                &.pending {
-                    background-color: $clr3;
-                }
-
-                &.in-process {
-                    background-color: $clr14;
-                }
-
-                &.completed {
-                    background-color: $clr9;
-                }
-
-                &.rejected {
-                    background-color: rgb(220, 78, 78);
-                }
-            }
-
-            button.status-item:hover {
-                opacity: 0.7;
-            }
+        @media (min-width: 700px) {
+            display: none;
         }
     }
-
-
-    .client {
-        display: flex;
-        align-items: center;
-
-        img {
-            height: 35px;
-            border-radius: 100%;
-            margin: 0 15px 0 0;
-        }
-
-        p {
-            font-weight: 500;
-        }
-    }
-
-    // .status-item {
-    //     position: relative;
-    // }
-
 }
