@@ -21,7 +21,6 @@ import { DashBoard } from './cmps/user-profile/dash-board'
 import { Gigs } from './cmps/user-profile/gigs'
 import { MobileFooter } from './cmps/mobile-footer'
 
-
 export function App() {
   const elApp = useRef(null)
 
@@ -45,14 +44,11 @@ export function App() {
               <Route element={<GigDetails elApp={elApp} />} path="/gig/:gigId" />
               <Route element={<GigEdit />} path="/gig/edit" />
               <Route element={<GigPayment />} path="/gig/payment/:gigId" />
-
               <Route element={<UserProfile />} path="/user/:userId">
                 <Route element={<DynamicTable />} path="/user/:userId/order" />
                 <Route element={<DashBoard />} path="/user/:userId/dashboard" />
                 <Route element={<Gigs />} path="/user/:userId/gigs" />
               </Route>
-
-
             </Routes>
           </main>
 
@@ -62,6 +58,5 @@ export function App() {
         </section>
       </Router>
     </Provider>
-
   )
 }

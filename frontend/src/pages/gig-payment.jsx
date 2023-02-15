@@ -7,9 +7,9 @@ import { CreditCards } from "../cmps/details/credit-cards"
 import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
 import { gigService } from "../services/gig.service"
 import { orderService } from "../services/order.service"
+import { Loader } from "../cmps/home/loader"
 
 import { BsCheckLg } from "react-icons/bs"
-import { socketService, SOCKET_EMIT_NEW_ORDER } from "../services/socket.service"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -46,19 +46,16 @@ export function GigPayment() {
             order.buyer = buyer
             order.seller = seller
             order.gig = gigToSave
+            console.log(order);
             await orderService.save(order)
-
-            // socketService.emit(SOCKET_EMIT_NEW_ORDER, order.seller._id) 
-            // socketService.on('SOCKET_EMIT_ORDER_STATUS', order.seller._id)
-
             showSuccessMsg('Your order has been sent')
-            navigate(`/user/${loggedinUser._id}/order`) 
+            navigate(`/user/${loggedinUser._id}/order`)
         } catch (error) {
             showErrorMsg()
         }
     }
 
-    if (!gig) return <p>loading...</p>
+    if (!gig) return <Loader />
     return <section className="gig-payment-screen  main-layout">
 
         <div className="gig-payment-container flex">

@@ -1,10 +1,8 @@
 import { ReviewRate } from "./review-rate"
 
 export function ReviewPreview({ review }) {
-
     return <article className="review-preview flex ">
         <img src={review.imgUrl} alt="" />
-
         <div className="review-container flex column">
             <span>
                 <p className="fullname bold">{review.fullname}</p>
@@ -21,6 +19,5 @@ export function ReviewPreview({ review }) {
             </span>
             <p className="txt">{review.review}</p>
         </div>
-
     </article>
 }

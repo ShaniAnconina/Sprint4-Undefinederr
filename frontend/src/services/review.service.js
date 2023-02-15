@@ -1,10 +1,7 @@
-import { storageService } from "./async-storage.service"
-import { utilService } from "./util.service"
-
-
 export const reviewService = {
     getEmptyReview,
 }
+//TODO: add functions, full crad!
 
 function getEmptyReview() {
     return {
@@ -17,4 +14,3 @@ function getEmptyReview() {
 
     }
 }
-

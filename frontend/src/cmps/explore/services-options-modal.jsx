@@ -1,15 +1,11 @@
 export function ServicesOptionsModal({ onSubmit }) {
-
-    const titles = ['Graphics & Design', 'Digital Marketing', 'Writing & Translation', 'Video & Animation', 'Music & Audio', 'Programming & Tech', 'Business', 'Lifestyle', 'Trending']
-
     const filterByCategories = []
 
     function onChange(value) {
         let idx = filterByCategories.indexOf(value)
-        if (idx > -1) { // only splice array when item is found
+        if (idx > -1) {
             filterByCategories.splice(idx, 1)
         } else filterByCategories.push(value)
-        console.log(filterByCategories)
     }
 
     return (

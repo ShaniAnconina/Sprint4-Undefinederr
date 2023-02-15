@@ -4,9 +4,9 @@ export const JOIN_USER = 'JOIN_USER'
 function createEventEmitter() {
     const listenersMap = {}
     return {
-        on(evName, listener){
-            listenersMap[evName] = (listenersMap[evName])? [...listenersMap[evName], listener] : [listener]
-            return ()=>{
+        on(evName, listener) {
+            listenersMap[evName] = (listenersMap[evName]) ? [...listenersMap[evName], listener] : [listener]
+            return () => {
                 listenersMap[evName] = listenersMap[evName].filter(func => func !== listener)
             }
         },
@@ -19,15 +19,16 @@ function createEventEmitter() {
 
 export const eventBus = createEventEmitter()
 
+//USER MSGS
 export function showUserMsg(msg) {
     eventBus.emit(SHOW_MSG, msg)
 }
 
 export function showSuccessMsg(txt) {
-    showUserMsg({txt, type: 'success'})
+    showUserMsg({ txt, type: 'success' })
 }
-export function showErrorMsg(txt= 'We\'re sorry, something went wrong') {
-    showUserMsg({txt, type: 'error'})
+export function showErrorMsg(txt = 'We\'re sorry, something went wrong') {
+    showUserMsg({ txt, type: 'error' })
 }
 
 //LOG IN  USER
@@ -35,6 +36,4 @@ export function openJoinModal() {
     eventBus.emit(JOIN_USER)
 }
 
-
 window.showUserMsg = showUserMsg
-

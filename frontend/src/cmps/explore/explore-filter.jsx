@@ -6,7 +6,6 @@ import { setfilter } from "../../store/gig/gig.action.js"
 
 import { MdKeyboardArrowDown } from 'react-icons/md'
 
-
 export function ExploreFilter({ gigs, filterBy }) {
     const [modalType, setModalType] = useState(null)
     const [sortModal, setSortModal] = useState(false)
@@ -16,12 +15,11 @@ export function ExploreFilter({ gigs, filterBy }) {
     const [sortvalue, setSortValue] = useState('topRated')
     const elNav = useRef(null)
 
-    const sortOptions = { 'topRated': 'Top Rated', 'price': 'Best Price', 'daysToMake': 'Delivery Time' } //used for the system / UI syntax tranlation
+    const sortOptions = { 'topRated': 'Top Rated', 'price': 'Best Price', 'daysToMake': 'Delivery Time' }
 
     useEffect(() => {
         setfilter(filterByToEdit)
 
-        // OBSERVER
         const navObserver = new IntersectionObserver(onNavObserved, { rootMargin: "-100px 0px 0px" })
         navObserver.observe(elNav.current)
         function onNavObserved(entries) {
@@ -31,7 +29,6 @@ export function ExploreFilter({ gigs, filterBy }) {
             })
         }
     }, [filterByToEdit])
-
 
     function toggleFilterModal(ev, type) {
         setModalType(type)

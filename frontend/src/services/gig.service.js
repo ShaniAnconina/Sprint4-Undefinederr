@@ -1,11 +1,6 @@
-// import { storageService } from "./async-storage.service"
 import { httpService } from "./http.service"
-import { utilService } from "./util.service"
 
 const BASE_URL = 'gig/'
-// const STORAGE_KEY = "gig_DB"
-// _createGigs()
-
 
 export const gigService = {
   query,
@@ -19,8 +14,6 @@ export const gigService = {
   getGigsByUser
 }
 
-
-
 function getFeatures() {
   return [
     { id: 101, txt: 'Grammar & spelling' },
@@ -31,16 +24,9 @@ function getFeatures() {
 }
 
 async function query(filterBy) {
-  console.log("querying with filters: ", filterBy) //for filter testing
-  // await new Promise(r => setTimeout(r, 5000)); //sleep 5 seconds for loader testing
-
   try {
     let gigs = await httpService.get(BASE_URL)
-    // let gigs = await storageService.query(STORAGE_KEY)
-
     gigs = getAvgRate(gigs)
-    // utilService.saveToStorage(STORAGE_KEY, gigs)
-
 
     //filter by free text
     if (filterBy?.txt) {
@@ -60,7 +46,6 @@ async function query(filterBy) {
 
     //filter by time range
     if (filterBy?.daysToMake) {
-      if (filterBy.daysToMake < Infinity) console.log("in gig service, filter by daystomake")
       gigs = gigs.filter((gig) => gig.daysToMake <= filterBy.daysToMake)
     }
 
@@ -82,13 +67,11 @@ async function query(filterBy) {
     }
     return gigs
   } catch (err) {
-    console.log("could not retrieve gigs from service")
     throw err
   }
 }
 
 function get(gigId) {
-  // return storageService.get(STORAGE_KEY, gigId)
   return httpService.get(BASE_URL + gigId)
 }
 
@@ -98,21 +81,18 @@ function getGigsByUser(userId) {
 
 function save(gig) {
   if (gig._id) {
-    // return storageService.put(STORAGE_KEY, gig)
     return httpService.put(BASE_URL + gig._id, gig)
   } else {
-    // return storageService.post(STORAGE_KEY, gig)
     return httpService.post(BASE_URL, gig)
   }
 }
 
 function remove(gigId) {
-  // return storageService.remove(STORAGE_KEY, gigId)
   return httpService.delete(BASE_URL + gigId)
 }
 
 function addToWishlist(gigId) {
-  console.log('gigId - service:', gigId)
+  //TODO!
 }
 
 function getAvgRate(gigs) {
@@ -130,7 +110,6 @@ function getAvgRate(gigs) {
 }
 
 function getEmptyGig() {
-
   return {
     title: "",
     description: "",
@@ -143,7 +122,6 @@ function getEmptyGig() {
     likedByUsers: []
   }
 }
-
 
 function getDefaultFilter() {
   return { txt: "", tags: [], budget: { min: 0, max: Infinity }, daysToMake: Infinity, isSaved: false, sortBy: 'topRated' }

@@ -1,20 +1,20 @@
-import { useRef, useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
-
-import { Link } from "react-scroll"
+import { useSelector } from "react-redux"
 
 import { DetailsSidebar } from "../cmps/details/details-sidebar"
 import { OwnerRate } from "../cmps/details/owner-rate"
 import { Reviews } from "../cmps/details/reviews"
 import { OwnerProfile } from "../cmps/details/owner-profile"
-
-import { FaHeart } from "react-icons/fa"
+import { Loader } from "../cmps/home/loader"
+import { BreadCrumbs } from "../cmps/bread-crumbs"
+import { CenterMode } from "../cmps/details/center-mode"
 
 import { gigService } from "../services/gig.service"
 import { showErrorMsg } from "../services/event-bus.service"
-import { useSelector } from "react-redux"
-import { Breadcrumds } from "../cmps/breadcrumds"
-import { CenterMode } from "../cmps/details/center-mode"
+
+import { FaHeart } from "react-icons/fa"
+import { Link } from "react-scroll"
 
 export function GigDetails({ elApp }) {
     const navigate = useNavigate()
@@ -48,7 +48,7 @@ export function GigDetails({ elApp }) {
         }
     }
 
-    if (!gig) return <p>Loading...</p>
+    if (!gig) return <Loader />
 
     return (
         <section className="gig-details ">
@@ -68,13 +68,11 @@ export function GigDetails({ elApp }) {
                         <Link activeClass="active" smooth spy to="about-the-seller" offset={-70} >
                             <li>
                                 About The Seller
-
                             </li >
                         </Link>
                         {gig.reviews.length &&
                             <Link activeClass="active" smooth spy to="reviews" offset={-70}>
                                 <li>
-
                                     Reviews
                                 </li>
                             </Link>
@@ -82,7 +80,7 @@ export function GigDetails({ elApp }) {
                     </ul>
                     <div className="wish-list flex align-center">
                         <button className="add-wishlist"> <FaHeart /></button>
-                        {/* <span className="count-wishlist">{gig.likedByUsers.length}</span> */}
+                        {/* <span className="count-wishlist">{gig.likedByUsers.length}</span> */} //TODO: when like functions woek property
                         <span className="count-wishlist">14</span>
                     </div>
                 </div>
@@ -91,12 +89,11 @@ export function GigDetails({ elApp }) {
                 <div className="details-layout flex">
                     <section className="main">
                         <span id="overview">
-                            <Breadcrumds filterBy={filterBy} />
+                            <BreadCrumbs filterBy={filterBy} />
                             <h1>{gig.title}</h1>
                             <div className="mini-owner flex">
                                 <img className="owner-img" src={gig.owner.imgUrl} />
                                 <div className=" flex">
-
                                     <p className="owner-name">{gig.owner.fullname}</p>
                                     <p className="owner-level">{gig.owner.level}</p>
                                     <p className="separator">|</p>
@@ -106,8 +103,6 @@ export function GigDetails({ elApp }) {
                             <div className="img-container">
                                 <CenterMode imgUrls={gig.imgUrl} />
                             </div>
-
-                            {/* {gig.reviews.length && */}
                             {false &&
                                 <div className="reviews-snippet">
                                     <header className="flex space-between">

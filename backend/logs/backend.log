@@ -2114,5 +2114,124 @@
 31.1.2023, 11:26:39 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155ec)
 31.1.2023, 11:26:51 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155ec)
 31.1.2023, 11:26:56 - INFO - No active socket for user: 63d453c95f294e2ec57155f1 (userId: 63d453c95f294e2ec57155ec)
+<<<<<<< HEAD
 31.1.2023, 13:39:52 - INFO - Socket disconnected [id: undefined] 
 31.1.2023, 13:39:58 - INFO - Socket disconnected [id: undefined] 
+=======
+31.1.2023, 15:07:21 - INFO - Server is running on port: 3030 
+31.1.2023, 15:07:23 - INFO - New connected socket [id: NHLGTBKwNM3anbljAAAB] 
+31.1.2023, 15:07:33 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 15:08:25 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
+31.1.2023, 15:08:37 - INFO - Socket disconnected [id: undefined] 
+31.1.2023, 15:08:40 - INFO - New connected socket [id: oZquZnsMA9azUFPOAAAD] 
+31.1.2023, 15:15:23 - INFO - Server is running on port: 3030 
+31.1.2023, 15:18:00 - INFO - Server is running on port: 3030 
+31.1.2023, 15:24:23 - INFO - Server is running on port: 3030 
+31.1.2023, 15:24:39 - INFO - New connected socket [id: JCnL85H0QEaWNnxCAAAB] 
+8.2.2023, 21:09:53 - INFO - Server is running on port: 3030 
+8.2.2023, 21:10:20 - INFO - Server is running on port: 3030 
+8.2.2023, 21:16:55 - INFO - Server is running on port: 3030 
+8.2.2023, 21:18:40 - INFO - Server is running on port: 3030 
+8.2.2023, 21:21:51 - DEBUG - Getting Gigs 
+15.2.2023, 17:08:13 - INFO - Server is running on port: 3030 
+15.2.2023, 17:08:13 - INFO - New connected socket [id: 8Zlk3EyzJwW9c-YDAAAB] 
+15.2.2023, 17:15:15 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:15:45 - INFO - New connected socket [id: 8SDZcRVRmu_jhHVpAAAD] 
+15.2.2023, 17:15:50 - DEBUG - Getting Gigs 
+15.2.2023, 17:17:16 - DEBUG - Getting Gigs 
+15.2.2023, 17:17:20 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:17:22 - INFO - New connected socket [id: 4jugK-_kR5J5amjYAAAF] 
+15.2.2023, 17:17:22 - DEBUG - Getting Gigs 
+15.2.2023, 17:21:02 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:21:04 - INFO - New connected socket [id: wp-h3lNOkrf7bDhOAAAH] 
+15.2.2023, 17:21:25 - DEBUG - Getting Gigs 
+15.2.2023, 17:24:40 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:24:42 - INFO - New connected socket [id: 08LEc9D863yZM5sxAAAJ] 
+15.2.2023, 17:24:57 - DEBUG - Getting Gigs 
+15.2.2023, 17:26:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:26:31 - INFO - New connected socket [id: sI1U0amxaQXkAnd0AAAL] 
+15.2.2023, 17:30:49 - INFO - New connected socket [id: kMTPLEDWhTbDn84HAAAN] 
+15.2.2023, 17:31:27 - INFO - New connected socket [id: TyWcg6yTqIgpAtPRAAAP] 
+15.2.2023, 17:32:51 - INFO - New connected socket [id: 6NhQruQAZ29UJuYoAAAR] 
+15.2.2023, 17:48:23 - DEBUG - Getting Gigs 
+15.2.2023, 17:49:20 - DEBUG - Getting Gigs 
+15.2.2023, 17:49:37 - DEBUG - Getting Gigs 
+15.2.2023, 17:49:54 - DEBUG - Getting Gigs 
+15.2.2023, 17:50:01 - DEBUG - Getting Gigs 
+15.2.2023, 17:50:29 - DEBUG - Getting Gigs 
+15.2.2023, 17:50:29 - DEBUG - Getting Gigs 
+15.2.2023, 17:52:48 - DEBUG - Getting Gigs 
+15.2.2023, 17:56:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:56:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:56:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:56:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 17:56:33 - INFO - New connected socket [id: r1TfH31BJSnTMUQkAAAT] 
+15.2.2023, 18:04:29 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:04:38 - INFO - New connected socket [id: SpQtPZgWIadHlAnfAAAV] 
+15.2.2023, 18:04:50 - DEBUG - auth.service - login with username: ohad 
+15.2.2023, 18:04:50 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d189","fullname":"Ohad ","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0496SGPE4S-69a94af3e108-512","username":"ohad","level":"Level One","purchase":["63d9059fe8976f2a12ec79e5","63d9069ac861a6fa7e3dd7d9","63d908dc07523d99780d5f18","63d911ca667d13128249ded4","63d91936d267ce522b5eee11","63d92a5ad267ce522b5eee1c"]} 
+15.2.2023, 18:04:50 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: SpQtPZgWIadHlAnfAAAV] 
+15.2.2023, 18:05:01 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:05:02 - INFO - New connected socket [id: S9maI4l5eXe88rnmAAAX] 
+15.2.2023, 18:05:03 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: S9maI4l5eXe88rnmAAAX] 
+15.2.2023, 18:05:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:05:27 - INFO - New connected socket [id: CtBEV1qAMFh7b6AdAAAZ] 
+15.2.2023, 18:05:33 - DEBUG - auth.service - login with username: Yovel (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:05:33 - ERROR - Failed to Login Invalid username or password (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:05:33 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:05:34 - INFO - New connected socket [id: lXtMpp4mFD_-1Oa7AAAb] 
+15.2.2023, 18:05:40 - DEBUG - auth.service - login with username: yovel (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:05:41 - ERROR - Failed to Login Invalid username or password (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:05:41 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:05:42 - INFO - New connected socket [id: AGa86YYfoqFoniLQAAAd] 
+15.2.2023, 18:05:49 - DEBUG - auth.service - login with username: yossi (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:05:49 - ERROR - Failed to Login Invalid username or password (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:05:49 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:05:50 - INFO - New connected socket [id: 6m6DZNH0-6Lp33wcAAAf] 
+15.2.2023, 18:06:08 - DEBUG - auth.service - login with username: yossi (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:06:08 - ERROR - Failed to Login Invalid username or password (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:06:08 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:06:09 - INFO - New connected socket [id: B3K6Kuhnwm5tgAEBAAAh] 
+15.2.2023, 18:06:32 - INFO - Server is running on port: 3030 
+15.2.2023, 18:06:32 - INFO - New connected socket [id: -0ECGkbhGO-jrtpSAAAB] 
+15.2.2023, 18:06:40 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:06:41 - INFO - New connected socket [id: kf0EfKsCNFzBWuOSAAAD] 
+15.2.2023, 18:06:53 - DEBUG - auth.service - login with username: yossi (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:06:54 - ERROR - Failed to Login Invalid username or password (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:06:54 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:06:55 - INFO - New connected socket [id: tnRML5v3N6ubKY_ZAAAF] 
+15.2.2023, 18:07:02 - DEBUG - auth.service - login with username: ohad (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:07:02 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d189","fullname":"Ohad ","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0496SGPE4S-69a94af3e108-512","username":"ohad","level":"Level One","purchase":["63d9059fe8976f2a12ec79e5","63d9069ac861a6fa7e3dd7d9","63d908dc07523d99780d5f18","63d911ca667d13128249ded4","63d91936d267ce522b5eee11","63d92a5ad267ce522b5eee1c"]} (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:07:02 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d189 for socket [id: tnRML5v3N6ubKY_ZAAAF] 
+15.2.2023, 18:07:41 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:07:42 - INFO - New connected socket [id: pDMBlWu9PtFJsKHdAAAH] 
+15.2.2023, 18:07:42 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:07:48 - INFO - New connected socket [id: Tw7lc3_5Qk-EYmwOAAAK] 
+15.2.2023, 18:07:55 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:08:06 - DEBUG - auth.service - login with username: yovel98 (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:08:07 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d190","fullname":"Yovel","imgUrl":"https://ca.slack-edge.com/T043N4KE97B-U0436HRU213-4cfaf5e6eaa7-512","username":"yovel98","level":"Top Rated Seller","order":["63d919dad267ce522b5eee12","63d919efd267ce522b5eee13","63d91cd0d267ce522b5eee14","63d92a5ad267ce522b5eee1c"]} (userId: 63d900aec690fa64cfe6d189)
+15.2.2023, 18:08:07 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d190 for socket [id: Tw7lc3_5Qk-EYmwOAAAK] 
+15.2.2023, 18:08:41 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d190)
+15.2.2023, 18:08:53 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:08:55 - INFO - New connected socket [id: FuUEMtIyr1s8_H_XAAAM] 
+15.2.2023, 18:08:55 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d190)
+15.2.2023, 18:09:02 - DEBUG - auth.service - login with username: moshe (userId: 63d900aec690fa64cfe6d190)
+15.2.2023, 18:09:03 - INFO - User login:  | {"_id":"63d900aec690fa64cfe6d18a","fullname":"Moshe","imgUrl":"https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/ee46166ba8c4ab29d551cb80bf88815e-1600882516719/10098270-e9f3-4ee8-b9f4-2c70cc457dd9.JPG","username":"moshe","purchase":["63d9098f15977e16b4e1253a","63d90c27ac0f390432fe7dee","63d910023c35b37dbda817f4"]} (userId: 63d900aec690fa64cfe6d190)
+15.2.2023, 18:09:03 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d18a for socket [id: FuUEMtIyr1s8_H_XAAAM] 
+15.2.2023, 18:20:27 - INFO - Socket disconnected [id: undefined] 
+15.2.2023, 18:20:29 - INFO - New connected socket [id: atGIzXbYxnT6mS8nAAAO] 
+15.2.2023, 18:20:30 - INFO - Setting socket.userId = 63d900aec690fa64cfe6d18a for socket [id: atGIzXbYxnT6mS8nAAAO] 
+15.2.2023, 18:21:41 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:22:35 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:23:13 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:23:34 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:31:17 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:34:01 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:34:06 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:34:10 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:34:13 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:34:21 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:46:23 - DEBUG - Getting Gigs (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:46:31 - INFO - Emiting event: on-incoming-order to user: 63d900aec690fa64cfe6d18a socket [id: atGIzXbYxnT6mS8nAAAO] (userId: 63d900aec690fa64cfe6d18a)
+15.2.2023, 18:46:41 - INFO - Emiting event: on-change-status-order to user: 63d900aec690fa64cfe6d18a socket [id: atGIzXbYxnT6mS8nAAAO] (userId: 63d900aec690fa64cfe6d18a)
+>>>>>>> b09e10f1480ed51c69a46fce060155bb5403ddf7

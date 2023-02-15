@@ -6,11 +6,10 @@ import { ExploreFilter } from "../cmps/explore/explore-filter"
 import { GigList } from "../cmps/explore/gig-list"
 import { loadGigs, saveGig } from "../store/gig/gig.action"
 import { Loader } from "../cmps/home/loader"
-import { setfilter } from "../store/gig/gig.action.js"
 
 
-import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service"
-import { gigService } from "../services/gig.service"
+import { openJoinModal, showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
+import { gigService } from "../services/gig.service.js"
 
 export function GigIndex() {
     let gigs = useSelector((storeState) => storeState.gigModule.gigs)
@@ -22,28 +21,15 @@ export function GigIndex() {
 
     useEffect(() => {
         setIsLoaderOn(true)
-        // console.log("reading params: ", searchParams)
-        const tags = searchParams.get('tags')
-        console.log("search params tags: ", tags)
-        const txt = searchParams.get('txt')
-        console.log("search params txt: ", txt)
-        const defaultFilter = gigService.getDefaultFilter()
-        // if(tags) {console.log("showing gigs with QP tags: ",tags);loadGigs({...defaultFilter,tags:[tags]})}
-        // else if (txt) {console.log("showing gigs with QP txt: ",txt);loadGigs({...defaultFilter,txt:txt})}
-        // else {console.log("filtering from store: ", filterBy);loadGigs(filterBy)}
         loadGigs(filterBy)
-        // return setfilter(gigService.getDefaultFilter())
     }, [filterBy, searchParams]
     )
-
 
     useEffect(() => {
         if (gigs.length > 0) {
             setIsLoaderOn(false)
         }
     }, [gigs])
-
-
 
     async function onAddToWishlist(ev, gig) {
         try {

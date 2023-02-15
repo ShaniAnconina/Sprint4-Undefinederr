@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
 import { NavLink, Outlet, useNavigate, useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
+import { MiniProfile } from '../cmps/user-profile/mini-profile'
+import { Loader } from '../cmps/home/loader'
+
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { userService } from '../services/user.service.js'
-import { MiniProfile } from '../cmps/user-profile/mini-profile.jsx'
-
 
 export function UserProfile() {
     const navigate = useNavigate()
@@ -33,7 +35,6 @@ export function UserProfile() {
         }
     }
     function toggleViewType(ev) {
-        // console.log(ev.target.getBoundingClientRect())
         setViewType(prev => {
             if (prev === 'buyer') return 'seller'
             else return 'buyer'
@@ -42,7 +43,7 @@ export function UserProfile() {
         setStatusModal(null)
     }
 
-    if (!user) return <div>Loading...</div>
+    if (!user) return <Loader/>
     return <div className="profile-page-container main-layout">
         <section className="profile-page">
             <MiniProfile user={user} userType={viewType} />

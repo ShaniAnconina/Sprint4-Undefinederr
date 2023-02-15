@@ -1,30 +1,12 @@
-//TODO dynamic month
-//TODO dynamic Member since
+import * as React from 'react'
 
-import * as React from 'react';
+import { utilService } from '../../services/util.service.js'
 
-import { utilService } from '../../services/util.service.js';
-import { useState, useEffect } from 'react';
-
-import {LinearWithValueLabel} from './LinearProgressWithLabel'
- 
-
+import {LinearWithValueLabel} from './linear-progress-with-label'
 
 export function MiniProfile({ user, userType }) {
-
-// const [financeStats, setFinanceStats] = useState({})
-
-    const sellerLevels = ["Top Rated Seller"]
-
-    useEffect(() => { //FOR DEV ONLY
-        console.log('user: ', user)
-        // setFinanceStats(statsCalculate(user.orders))
-    }, [])
-
     function statsCalculate(orders) {
-        // console.log("receive to calculate: ", orders)
         const stats = {}
-        // stats.pending = orders.reduce((acc, order)=> {if(order.status == 'pending') return acc= acc+1},0)
         let calculatedPending = orders.filter((order) => order.status=='pending')
         stats.pending = calculatedPending.length
         let calculatedInProcess = orders.filter((order) => order.status=='in-process')
@@ -34,19 +16,13 @@ export function MiniProfile({ user, userType }) {
         stats.totalEarnings = calculatedCompleted.reduce((acc,order) => acc +=order.gig.price ,0)
         let calculatedRejected = orders.filter((order) => order.status=='rejected')
         stats.rejected = calculatedRejected.length
-
         stats.totalJobs = orders.length
-        // console.log("calculated stats: ", stats)
-
-
         return stats
     }
 
     const stats = statsCalculate(user.orders)
 
-
     return <section className="mini-profile">
-        {/* <div className={userType === 'seller' ? "profile-username flex space-around" : "profile-username flex column align-center"}> */}
         <div className="profile-username flex column align-center">
             <img src={user.imgUrl} />
             <div className='flex column'>

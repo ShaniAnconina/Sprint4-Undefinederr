@@ -26,14 +26,12 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
     async function onSubmit(ev) {
         ev.preventDefault()
         try {
-            // const func = isLogin ? login : signup
-            // await func(credentials)
             if (isLogin){
                 login(credentials)
             } else{
                 signup(credentials)
             }
-            //TODO:msg
+            showSuccessMsg(`Welcome back ${credentials.fullname}`)
         } catch (err) {
             showErrorMsg()
         }
@@ -79,7 +77,6 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
                     value={credentials.username}
                     placeholder={usernamePlaceHolder}
                     onChange={handleChange}
-                // required
                 />
 
                 <input
@@ -88,7 +85,6 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
                     value={credentials.password}
                     placeholder={passwordPlaceHolder}
                     onChange={handleChange}
-                // required
                 />
 
                 {!isLogin && <input
@@ -97,11 +93,8 @@ export function LoginSignUp({ elApp, status, setOpenModal }) {
                     value={credentials.fullname}
                     placeholder="Full name"
                     onChange={handleChange}
-                // required
                 />}
-
                 <button className="btn-continue" >{isLogin ? 'Continue' : 'Join'}</button>
-
             </form>
         </div>
 

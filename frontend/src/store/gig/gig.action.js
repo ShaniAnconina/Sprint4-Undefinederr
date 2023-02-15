@@ -4,13 +4,11 @@ import { store } from '../store.js'
 import { showErrorMsg } from '../../services/event-bus.service.js'
 
 export async function loadGigs(filterBy) {
-    // await new Promise(r => setTimeout(r, 5000)); //sleep() for loader test
     try {
         let gigs = await gigService.query(filterBy)
         store.dispatch({ type: SET_GIGS, gigs })
         return gigs
     } catch (err) {
-        console.log('ERROR', err)
         showErrorMsg()
     }
 }
@@ -18,13 +16,10 @@ export async function loadGigs(filterBy) {
 export async function saveGig(gig) {
     const type = (gig._id) ? UPDATE_GIG : ADD_GIG
     try {
-        console.log('gig:', gig)
         const savedGig = await gigService.save(gig)
-        console.log('savedGig:', savedGig)
         store.dispatch({ type, gig: savedGig })
         return savedGig
     } catch (err) {
-        console.error('Cannot save gig:', err)
         throw err
     }
 }
@@ -34,7 +29,6 @@ export async function removeGig(gigId) {
         store.dispatch({ type: REMOVE_GIG, gigId })
         await gigService.remove(gigId)
     } catch (err) {
-        console.log('Had issues Removing gig', err)
         throw err
     }
 }

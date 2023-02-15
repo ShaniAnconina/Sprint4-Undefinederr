@@ -4,10 +4,7 @@ import { GrLanguage } from 'react-icons/gr'
 import { BiDollar } from 'react-icons/bi'
 import { RxAccessibility } from 'react-icons/rx'
 
-import { IconContext } from "react-icons";
-
 export function AppFooter() {
-
 
     return <section className="footer main-layout">
         <div className="flex space-between">
