@@ -10,7 +10,6 @@ import { orderService } from "../services/order.service"
 import { Loader } from "../cmps/home/loader"
 
 import { BsCheckLg } from "react-icons/bs"
-import { socketService, SOCKET_EMIT_NEW_ORDER } from "../services/socket.service"
 
 export function GigPayment() {
     const navigate = useNavigate()
@@ -40,7 +39,6 @@ export function GigPayment() {
 
     async function onConfirm() {
         try {
-            console.log('owner',gig.owner);
             if (!loggedinUser) return openJoinModal()
             const buyer = { _id: loggedinUser._id, fullname: loggedinUser.fullname, username: loggedinUser.username, imgUrl: loggedinUser.imgUrl }
             const seller = { fullname: gig.owner.fullname, _id: gig.owner._id, imgUrl: gig.owner.imgUrl }
@@ -50,18 +48,14 @@ export function GigPayment() {
             order.gig = gigToSave
             console.log(order);
             await orderService.save(order)
-
-            // socketService.emit(SOCKET_EMIT_NEW_ORDER, order.seller._id) 
-            // socketService.on('SOCKET_EMIT_ORDER_STATUS', order.seller._id)
-
             showSuccessMsg('Your order has been sent')
-            navigate(`/user/${loggedinUser._id}/order`) 
+            navigate(`/user/${loggedinUser._id}/order`)
         } catch (error) {
             showErrorMsg()
         }
     }
 
-    if (!gig) return <Loader/>
+    if (!gig) return <Loader />
     return <section className="gig-payment-screen  main-layout">
 
         <div className="gig-payment-container flex">

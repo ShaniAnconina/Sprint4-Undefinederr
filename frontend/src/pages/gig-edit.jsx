@@ -1,12 +1,12 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { saveGig } from "../store/gig/gig.action"
+import { useSelector } from "react-redux"
+
+import { saveGig } from "../store/gig/gig.action.js"
+import { gigService } from "../services/gig.service.js"
+import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
 
 import axios from "axios"
-
-import { gigService } from "../services/gig.service"
-import { showErrorMsg, showSuccessMsg } from "../services/event-bus.service.js"
-import { useSelector } from "react-redux"
 
 export function GigEdit() {
     const navigate = useNavigate()
@@ -21,9 +21,8 @@ export function GigEdit() {
         try {
             gigToEdit.owner.fullname = loggedinUser?.fullname || 'User'
             gigToEdit.owner._id = loggedinUser?._id || '_123'
-            gigToEdit.imgUrl =[ imageData.secure_url]
+            gigToEdit.imgUrl = [imageData.secure_url]
             gigToEdit.tags = tags
-            console.log(gigToEdit)
             await saveGig(gigToEdit)
             navigate('/gig')
             showSuccessMsg('Your gig has been saved!')
@@ -31,7 +30,7 @@ export function GigEdit() {
             showErrorMsg()
         }
     }
-
+    
     function handleChange({ target }) {
         let { type, value, name: field } = target
         value = type === 'number' ? +value : value
@@ -47,14 +46,13 @@ export function GigEdit() {
         const UPLOAD_PRESET = 'vwwno82i'
         const UPLOAD_URL = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/upload`
         const FORM_DATA = new FormData()
-
         FORM_DATA.append('file', selectedImage)
         FORM_DATA.append('upload_preset', UPLOAD_PRESET)
         try {
             const res = await axios.post(UPLOAD_URL, FORM_DATA)
             setImageData(res.data)
         } catch (err) {
-            console.error(err)
+            showErrorMsg()
         }
     }
 

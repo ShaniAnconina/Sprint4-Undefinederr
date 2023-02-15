@@ -1,14 +1,15 @@
+import React, { useEffect } from 'react'
 import { useNavigate, useOutletContext } from "react-router-dom"
-import React, { useEffect } from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut } from 'react-chartjs-2';
+
+import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js'
+import { Doughnut } from 'react-chartjs-2'
 
 export function DashBoard() {
-    const [setStatusModal, statusModal, viewType, user] = useOutletContext()
+    const [viewType, user] = useOutletContext()
     const navigate = useNavigate()
     useEffect(() => {
-        if(viewType !== 'seller')
-        navigate(`/user/${user._id}/order`) 
+        if (viewType !== 'seller')
+            navigate(`/user/${user._id}/order`)
     }, [])
     const chartsDataOrderStatus = user.orders.reduce(
         (acc, order) => {
@@ -38,9 +39,7 @@ export function DashBoard() {
             chartsDataBackBuyers.newCustomer++
         }
     }
-
     ChartJS.register(ArcElement, Tooltip)
-
     const OrderStatus = {
         labels: Object.keys(chartsDataOrderStatus),
         datasets: [
@@ -48,16 +47,16 @@ export function DashBoard() {
                 label: 'Gigs',
                 data: Object.values(chartsDataOrderStatus),
                 backgroundColor: [
-                    'rgba(98, 100, 106, 0.2)', 
+                    'rgba(98, 100, 106, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                 ],
                 borderColor: [
-                    'rgba(98, 100, 106, 1)', 
+                    'rgba(98, 100, 106, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(75, 192, 192, 1)',
-                    'rgba(255, 206, 86, 1)', 
+                    'rgba(255, 206, 86, 1)',
                 ],
                 borderWidth: 1,
             },
@@ -125,4 +124,3 @@ export function DashBoard() {
         </div>
     </section>
 }
-

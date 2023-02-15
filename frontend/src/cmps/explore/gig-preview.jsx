@@ -29,7 +29,6 @@ export function GigPreview({ gig, onAddToWishlist }) {
                 </div>
             </div>
         </Link>
-        // </section>
     )
 }
 

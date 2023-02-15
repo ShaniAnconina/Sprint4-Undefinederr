@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react"
 import { Link, useNavigate, useOutletContext, useParams } from "react-router-dom"
-import { showErrorMsg } from "../../services/event-bus.service"
-import { gigService } from "../../services/gig.service"
+
 import { SimpleSlider } from "../explore/img-slider"
 
+import { showErrorMsg } from "../../services/event-bus.service.js"
+import { gigService } from "../../services/gig.service.js"
+
 export function Gigs() {
-    const [setStatusModal, statusModal, viewType, user] = useOutletContext()
+    const [viewType, user] = useOutletContext()
     const { userId } = useParams()
     const navigate = useNavigate()
     const [gigs, setGigs] = useState([])

@@ -1,9 +1,9 @@
-import { getStackUtilityClass } from "@mui/system"
 import { useEffect, useState } from "react"
-import { MdLocalActivity } from "react-icons/md"
 import { useOutletContext } from "react-router-dom"
-import { socketService } from "../../services/socket.service"
+
 import { StatusModal } from "./status-modal"
+
+import { socketService } from "../../services/socket.service.js"
 
 export function DynamicTable() {
     const [setStatusModal, statusModal, viewType, user] = useOutletContext()
@@ -25,13 +25,6 @@ export function DynamicTable() {
         socketService.on('on-change-status-order', (data) => {
             if (items) updateStatus(data)
         })
-
-        // socketService.on('on-incoming-order', (data) => {
-        //     const newOrder = items.map(item => item)
-        //     newOrder.push(data)
-        //     setItems(newOrder)
-        // if (items) setItems(prevItems => ({ ...prevItems, data }))
-        // })
     }, [items])
 
     function updateStatus(data) {
@@ -113,7 +106,6 @@ export function DynamicTable() {
                 return <div className="item" key={item._id}>
                     <div className="top">
                         <div className="client">
-                            {/* {user.fullname.charAt(0).toUpperCase() + user.fullname.slice(1)} */}
                             <img src={viewType === 'buyer' ? item.seller.imgUrl : item.buyer.imgUrl} />
                             <p>{viewType === 'buyer' ? (item.seller.fullname.charAt(0).toUpperCase() + item.seller.fullname.slice(1)) : (item.buyer.fullname.charAt(0).toUpperCase() + item.buyer.fullname.slice(1))}</p>
                         </div>

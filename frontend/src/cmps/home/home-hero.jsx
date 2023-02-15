@@ -1,9 +1,7 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 
 import { PopularTagSearch } from './popular-tag-search'
 import { GigFilter } from '../gig-filter'
-
-import { AiOutlineSearch } from "react-icons/ai"
 
 export function HomeHero() {
         const [imgIdx, setImgIdx] = useState(0)
@@ -16,6 +14,7 @@ export function HomeHero() {
                 let interval = setInterval(changeSlide, 5000)
                 return () => clearInterval(interval)
         }, [])
+
         return <section className="home-hero">
                 <div className='home-hero-content'>
                         <div className="slider-container">

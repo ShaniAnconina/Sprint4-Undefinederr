@@ -27,13 +27,9 @@ export function gigReducer(state = initialState, action) {
             gigs = state.gigs.filter(gig => gig._id !== action.gigId)
             return { ...state.gigs, gigs }
         case SET_FILTER:
-            console.log("I am dispatching the filter! uff..")
             return { ...state, filterBy: action.filterBy }
-
-
 
         default:
             return state
     }
 }
-

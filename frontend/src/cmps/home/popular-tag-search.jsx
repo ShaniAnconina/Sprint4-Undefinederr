@@ -1,13 +1,10 @@
-import { useSelector } from 'react-redux'
+import { useState } from 'react'
 import { useNavigate } from "react-router-dom"
-
 
 import { setfilter } from "../../store/gig/gig.action.js"
 import { gigService } from '../../services/gig.service.js'
-import { useState } from 'react'
 
 export function PopularTagSearch() {
-
     const [filterBy,setFilterBy] = useState(gigService.getDefaultFilter())
     const navigate = useNavigate()
 
