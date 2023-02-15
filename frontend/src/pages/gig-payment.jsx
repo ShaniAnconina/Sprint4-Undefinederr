@@ -29,7 +29,6 @@ export function GigPayment() {
             const gigToOrder = await gigService.get(gigId)
             setGig(gigToOrder)
         } catch (error) {
-            console.log(error)
             showErrorMsg()
             navigate(-1)
         }
@@ -46,7 +45,6 @@ export function GigPayment() {
             order.buyer = buyer
             order.seller = seller
             order.gig = gigToSave
-            console.log(order);
             await orderService.save(order)
             showSuccessMsg('Your order has been sent')
             navigate(`/user/${loggedinUser._id}/order`)
