@@ -2245,3 +2245,24 @@
 15.2.2023, 19:29:37 - INFO - Server is running on port: 3030 
 15.2.2023, 19:29:40 - INFO - New connected socket [id: gRuzZTX8wIzfpsSPAAAB] 
 15.2.2023, 19:29:44 - INFO - New connected socket [id: negJyJhDQhwtTG81AAAD] 
+11.6.2023, 12:48:03 - INFO - Server is running on port: 3030 
+11.6.2023, 12:49:40 - INFO - Server is running on port: 3030 
+11.6.2023, 19:00:13 - INFO - Server is running on port: 3030 
+11.6.2023, 19:10:47 - INFO - New connected socket [id: byBBuVbDa6vuz-OKAAAB] 
+11.6.2023, 19:11:49 - DEBUG - Getting Gigs 
+11.6.2023, 19:12:54 - DEBUG - auth.service - signup with username: test, fullname: test 
+11.6.2023, 19:12:54 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$j0E6slyWAZQm.KIaR6rnU.Dj8crtJUjqcP4ftxvGcXr4g.sqiGKDe","fullname":"test","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg","_id":"6485f286e1834c1df39da220"} 
+11.6.2023, 19:12:54 - DEBUG - auth.service - login with username: test 
+11.6.2023, 19:12:54 - INFO - User signup: | {"_id":"6485f286e1834c1df39da220","username":"test","fullname":"test","imgUrl":"https://i.pinimg.com/280x280_RS/2e/45/66/2e4566fd829bcf9eb11ccdb5f252b02f.jpg"} 
+11.6.2023, 19:12:55 - INFO - Setting socket.userId = 6485f286e1834c1df39da220 for socket [id: byBBuVbDa6vuz-OKAAAB] 
+11.6.2023, 19:30:35 - INFO - Socket disconnected [id: undefined] 
+11.6.2023, 19:30:35 - INFO - New connected socket [id: Ygk2pQqYnsj5fxV2AAAD] 
+11.6.2023, 19:30:35 - INFO - Setting socket.userId = 6485f286e1834c1df39da220 for socket [id: Ygk2pQqYnsj5fxV2AAAD] 
+11.6.2023, 19:35:05 - INFO - Socket disconnected [id: undefined] 
+11.6.2023, 19:35:05 - INFO - New connected socket [id: efhfVECHHpHEUJ0LAAAF] 
+11.6.2023, 19:35:05 - INFO - Setting socket.userId = 6485f286e1834c1df39da220 for socket [id: efhfVECHHpHEUJ0LAAAF] 
+11.6.2023, 19:35:26 - INFO - Socket disconnected [id: undefined] 
+11.6.2023, 19:35:27 - INFO - New connected socket [id: VMLdCG1ZUCBgTS3NAAAH] 
+11.6.2023, 19:35:27 - INFO - Setting socket.userId = 6485f286e1834c1df39da220 for socket [id: VMLdCG1ZUCBgTS3NAAAH] 
+11.6.2023, 19:35:29 - DEBUG - Getting Gigs 
+11.6.2023, 19:35:38 - INFO - No active socket for user: 63d900aec690fa64cfe6d18c 
