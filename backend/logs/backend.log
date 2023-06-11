@@ -2266,3 +2266,13 @@
 11.6.2023, 19:35:27 - INFO - Setting socket.userId = 6485f286e1834c1df39da220 for socket [id: VMLdCG1ZUCBgTS3NAAAH] 
 11.6.2023, 19:35:29 - DEBUG - Getting Gigs 
 11.6.2023, 19:35:38 - INFO - No active socket for user: 63d900aec690fa64cfe6d18c 
+11.6.2023, 20:02:24 - INFO - Server is running on port: 3030 
+11.6.2023, 20:02:29 - INFO - New connected socket [id: C8_qS0XnHyJ4ajFcAAAB] 
+11.6.2023, 20:02:58 - INFO - Socket disconnected [id: undefined] 
+11.6.2023, 20:03:01 - INFO - New connected socket [id: atI1qlHa-N9lhaRGAAAD] 
+11.6.2023, 20:03:02 - DEBUG - Getting Gigs (userId: 6485f27372ef3716519e7193)
+11.6.2023, 20:03:16 - DEBUG - Getting Gigs (userId: 6485f27372ef3716519e7193)
+11.6.2023, 20:05:08 - INFO - Socket disconnected [id: undefined] 
+11.6.2023, 20:05:20 - INFO - New connected socket [id: qupKXrA_TjOIbokdAAAF] 
+11.6.2023, 20:05:21 - DEBUG - Getting Gigs (userId: 6485f27372ef3716519e7193)
+11.6.2023, 20:27:24 - INFO - Socket disconnected [id: undefined] 
