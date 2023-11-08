@@ -17,11 +17,17 @@ This web application, full-featured freelance marketplace, designed to connect s
 Navigate through Undefinederr's diverse marketplace to find the right freelance professionals or to showcase your services.
 
 ## Screenshots
+### Home page
 ![home](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/2072d275-2e71-47a4-8d5e-e2ca2f5aa056)
-![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/be303ff7-47f8-4531-a2b4-524c84af7c67)
-![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/7ce7563e-5409-4d3c-aadd-b4343d00b839)
-![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/625c3453-c06a-4198-bef4-50176f25477c)
 
+### Gig list
+![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/be303ff7-47f8-4531-a2b4-524c84af7c67)
+
+### Gig preview - Info
+![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/7ce7563e-5409-4d3c-aadd-b4343d00b839)
+
+### Gig preview - Reviews
+![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/625c3453-c06a-4198-bef4-50176f25477c)
 
 ## Contributors
 - Shani Anconina: [LinkedIn](https://www.linkedin.com/in/shani-anconina/) | [GitHub](https://github.com/ShaniAnconina)
