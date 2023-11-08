@@ -26,6 +26,6 @@ Our Popular Services feature highlights in-demand skills, making it simple for c
 At Undefinederr, we understand the importance of trust. Our platform is built to foster a secure and reliable marketplace for freelancers and clients alike.
 
 ## Contributors
-- [Shani Anconina](https://www.linkedin.com/in/shani-anconina/): [LinkedIn](https://www.linkedin.com/in/shani-anconina/) | [GitHub](https://github.com/ShaniAnconina)
-- [Yovel Nehmady](https://www.linkedin.com/in/yovel-nehmady/): [LinkedIn](https://www.linkedin.com/in/yovel-nehmady/) | [GitHub](https://github.com/YovelNehmady)
-- [Ohad Elias](https://www.linkedin.com/in/ohad-elias-7373a1140/): [LinkedIn](https://www.linkedin.com/in/ohad-elias-7373a1140/) | [GitHub](https://github.com/Eliasi1)
+- Shani Anconina: [LinkedIn](https://www.linkedin.com/in/shani-anconina/) | [GitHub](https://github.com/ShaniAnconina)
+- Yovel Nehmady: [LinkedIn](https://www.linkedin.com/in/yovel-nehmady/) | [GitHub](https://github.com/YovelNehmady)
+- Ohad Elias: [LinkedIn](https://www.linkedin.com/in/ohad-elias-7373a1140/) | [GitHub](https://github.com/Eliasi1)
