@@ -14,16 +14,14 @@ This web application, full-featured freelance marketplace, designed to connect s
 - Sass
 
 ## Discover Freelance Opportunities
-![Undefinederr - Marketplace](https://user-images.githubusercontent.com/yourGithubProfile/yourImage.jpg)
 Navigate through Undefinederr's diverse marketplace to find the right freelance professionals or to showcase your services.
 
-## Popular Services at Your Fingertips
-![Undefinederr - Popular Services](https://user-images.githubusercontent.com/yourGithubProfile/yourImage2.jpg)
-Our Popular Services feature highlights in-demand skills, making it simple for clients to find top-tier talent and for freelancers to market their expertise effectively.
+## Screenshots
+![home](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/2072d275-2e71-47a4-8d5e-e2ca2f5aa056)
+![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/be303ff7-47f8-4531-a2b4-524c84af7c67)
+![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/7ce7563e-5409-4d3c-aadd-b4343d00b839)
+![image](https://github.com/ShaniAnconina/Sprint4-Undefinederr/assets/107351434/625c3453-c06a-4198-bef4-50176f25477c)
 
-## Building Trust in the Gig Economy
-![Undefinederr - Trusted](https://user-images.githubusercontent.com/yourGithubProfile/yourImage4.jpg)
-At Undefinederr, we understand the importance of trust. Our platform is built to foster a secure and reliable marketplace for freelancers and clients alike.
 
 ## Contributors
 - Shani Anconina: [LinkedIn](https://www.linkedin.com/in/shani-anconina/) | [GitHub](https://github.com/ShaniAnconina)
